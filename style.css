@@ -50,10 +50,15 @@ a {
 }
 
 button,
-.btn {
+.btn,
+.button {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
 }
 
 footer {
