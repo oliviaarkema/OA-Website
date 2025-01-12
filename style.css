@@ -1,23 +1,17 @@
 /* Ensure the hamburger menu is visible in the viewport */
 .hamburger-menu {
-    display: none;
+    display: block; /* Always display the hamburger menu */
     color: #ffffff;
-}
-
-@media (max-width: 768px) {
-    .hamburger-menu {
-        display: block;
-        text-align: center;
-        width: 8vw; /* Smaller dynamic width */
-        height: 8vw; /* Smaller dynamic height */
-        max-width: 40px; /* Smaller max width */
-        max-height: 40px; /* Smaller max height */
-        position: absolute; /* Ensure it stays in the viewport */
-        top: 2vh; /* Adjust as necessary */
-        right: 4vw; /* Adjust as necessary */
-        z-index: 1001; /* Ensure it is above other elements */
-        cursor: pointer; /* Add a pointer cursor for better UX */
-    }
+    text-align: center;
+    width: 8vw; /* Dynamic width */
+    height: 8vw; /* Dynamic height */
+    max-width: 40px; /* Smaller max width */
+    max-height: 40px; /* Smaller max height */
+    position: absolute; /* Ensure it stays in the viewport */
+    top: 2vh; /* Adjust as necessary */
+    right: 4vw; /* Adjust as necessary */
+    z-index: 1001; /* Ensure it is above other elements */
+    cursor: pointer; /* Add a pointer cursor for better UX */
 }
 
 .dropdown-menu {
@@ -132,7 +126,7 @@ button,
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
-        font-size: 1.25vw; /* Smaller dynamic font size */
+    font-size: 1.25vw; /* Smaller dynamic font size */
     border-radius: 1vh; /* Dynamic border radius */
     padding: 2vh 4vw; /* Dynamic padding */
     text-decoration: none;
