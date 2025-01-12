@@ -142,6 +142,17 @@ section {
 .section-3 {
     background-color: #c7baa8;
     color: #0d3921;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .section-4 {
