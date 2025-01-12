@@ -1,1 +1,55 @@
+/* Colors */
+:root {
+  --primary-color: #0d3921;
+  --secondary-color: #ffffff;
+  --tertiary-color: #9caea4;
+  --accent-color-1: #b6d558;
+  --accent-color-2: #917b69;
+  --accent-color-3: #c7baa8;
+}
 
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Rozha+One&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+/* Headings */
+h1 {
+  font-family: 'Rozha One', serif;
+  font-size: 75pt;
+}
+
+h2 {
+  font-family: 'Rozha One', serif;
+  font-size: 50pt;
+}
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 28pt;
+}
+
+/* Other Elements */
+p, blockquote, li {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16pt; /* Adjust as needed */
+}
+
+/* Additional styles */
+a {
+  color: var(--accent-color-1);
+}
+
+button {
+  background-color: var(--accent-color-2);
+  color: var(--secondary-color);
+}
+
+footer {
+  background-color: var(--accent-color-3);
+  color: var(--primary-color);
+}
