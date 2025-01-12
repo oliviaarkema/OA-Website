@@ -54,6 +54,8 @@ button,
 .button {
   background-color: #0d3921;
   color: var(--secondary-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
   border-radius: 5px;
   padding: 10px 20px;
   text-decoration: none;
