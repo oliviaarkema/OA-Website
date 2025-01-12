@@ -2,7 +2,9 @@
 .section-1 .image-fit {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Prevents stretching */
+    object-fit: cover; /* Ensures the image covers the container without padding */
+    padding: 0; /* Remove any padding around the image */
+    margin: 0; /* Remove any margin around the image */
 }
 
 /* Existing CSS content */
