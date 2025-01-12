@@ -16,6 +16,8 @@ body {
   font-weight: 100;
   color: var(--primary-color);
   background-color: var(--secondary-color);
+  margin: 0; /* Ensure no default margin */
+  padding: 0; /* Ensure no default padding */
 }
 
 /* Headings */
@@ -96,15 +98,16 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%; /* Full width */
 }
 
 section {
-    height: 610px;
-    width: 100%;
+    width: 100vw; /* Full viewport width */
     padding: 20px;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
+    margin: 0; /* Remove any default margin */
 }
 
 .two-columns {
