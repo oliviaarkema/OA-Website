@@ -173,7 +173,7 @@ main {
 
 section {
     width: 100vw; /* Full viewport width */
-    height: 60vh; /* Dynamic height */
+    height: 80vh; /* Dynamic height */
     padding: 4vw; /* Dynamic padding */
     box-sizing: border-box;
     display: flex;
