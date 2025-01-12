@@ -47,7 +47,9 @@
                 <h2>Let's collaborate.</h2>
             </div>
             <div>
-                <h3>Visit my socials:</h3>
+                <a href="contact" class="button">Work with Me</a>
+                </br>
+                </br>
                 </br>
                 <p>Email me:</p>
                 <p>livarkema@gmail.com</p>
