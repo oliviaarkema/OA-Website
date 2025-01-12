@@ -48,7 +48,7 @@ a {
 }
 
 button {
-  background-color: var(--accent-color-2);
+  background-color: var(--primary-color);
   color: var(--secondary-color);
 }
 
