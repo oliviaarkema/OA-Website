@@ -47,9 +47,11 @@ a {
   color: var(--accent-color-1);
 }
 
-button {
+button,
+.btn {
   background-color: var(--primary-color);
   color: var(--secondary-color);
+  border-radius: 5px;
 }
 
 footer {
