@@ -103,6 +103,7 @@ main {
 
 section {
     width: 100vw; /* Full viewport width */
+    height: 580px; /* Maintain section height */
     padding: 20px;
     box-sizing: border-box;
     display: flex;
