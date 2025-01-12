@@ -129,7 +129,7 @@ section {
 
 .two-columns > div {
     flex: 1;
-    margin: 20px;
+    margin: 0px;
 }
 
 .three-columns {
