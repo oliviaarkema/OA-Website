@@ -280,6 +280,7 @@ section {
     padding: 4vw; /* Dynamic padding */
     background-color: #c7baa8;
     margin-top: 8vh; /* Adjust for fixed header height */
+    border-radius: 1vh; /* Dynamic border radius */
 }
 
 .form-container form {
