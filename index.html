@@ -16,6 +16,13 @@
             </a>        
         </div>
         <div class="hamburger-menu">&#9776;</div>
+        <nav class="dropdown-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Get in Touch</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="two-columns section-1">
@@ -100,5 +107,10 @@
             </div>
         </section>
     </main>
+    <script>
+        document.querySelector(".hamburger-menu").addEventListener("click", function() {
+            document.querySelector(".dropdown-menu").classList.toggle("show");
+        });
+    </script>
 </body>
 </html>
