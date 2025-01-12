@@ -53,6 +53,7 @@ footer {
   background-color: var(--accent-color-3);
   color: var(--secondary-color);
 }
+
 /* Header Styles */
 header {
     background-color: var(--primary-color);
