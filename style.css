@@ -18,6 +18,37 @@
     }
 }
 
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: #0d3921;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.dropdown-menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 /* Add specific styles for the button in section 5 */
 .section-5-btn {
     color: #ffffff; /* Ensure the font color is white */
