@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Welcome to my portfolio website. Here you will find my projects, skills, and contact information.">
-    <link rel="icon" href="green_bow.png" type="image/x-icon">
-    <title>Olivia Arkema Marketing & Strategy</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <style>
         /* Header Styles */
@@ -36,6 +35,52 @@
                 height: 40px;
             }
         }
+
+        /* Main Content Styles */
+        main {
+            margin-top: 70px; /* Adjusted for fixed header */
+        }
+
+        section {
+            height: 560px;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .two-columns {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .two-columns > div {
+            flex: 1;
+            margin: 10px;
+        }
+
+        .three-columns {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .three-columns > div {
+            flex: 1;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .three-columns img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .blog-preview {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
@@ -46,7 +91,44 @@
         </div>
     </header>
     <main>
-        <!-- Your content goes here -->
+        <section class="two-columns">
+            <div>Photo or Text</div>
+            <div>Photo or Text</div>
+        </section>
+        <section class="two-columns">
+            <div>Photo or Text</div>
+            <div>Photo or Text</div>
+        </section>
+        <section class="two-columns">
+            <div>Photo or Text</div>
+            <div>Photo or Text</div>
+        </section>
+        <section class="three-columns">
+            <div>
+                <img src="path/to/image1.jpg" alt="Image 1">
+                <p>Text Description 1</p>
+            </div>
+            <div>
+                <img src="path/to/image2.jpg" alt="Image 2">
+                <p>Text Description 2</p>
+            </div>
+            <div>
+                <img src="path/to/image3.jpg" alt="Image 3">
+                <p>Text Description 3</p>
+            </div>
+        </section>
+        <section class="two-columns">
+            <div>Photo or Text</div>
+            <div>Photo or Text</div>
+        </section>
+        <section class="blog-preview">
+            <div>Most Recent Blog Post 1</div>
+            <div>Most Recent Blog Post 2</div>
+        </section>
+        <section class="two-columns">
+            <div>Photo or Text</div>
+            <div>Photo or Text</div>
+        </section>
     </main>
 </body>
 </html>
