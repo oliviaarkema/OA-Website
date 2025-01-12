@@ -50,6 +50,11 @@
     color: #ffffff; /* Ensure the font color is white */
 }
 
+section-6-btn {
+    background-color: #b6d558;
+    color: #0d3921; /* Ensure the font color is dark green */
+}
+
 /* Add new styles for section title alignment */
 .section-4 .section-title {
     text-align: left;
