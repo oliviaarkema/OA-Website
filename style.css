@@ -1,6 +1,7 @@
 /* Ensure the hamburger menu is visible in the viewport */
 .hamburger-menu {
     display: none;
+    color: #ffffff;
 }
 
 @media (max-width: 768px) {
