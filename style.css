@@ -1,3 +1,11 @@
+/* Add the new class for the section 1 image */
+.section-1 .image-fit {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Prevents stretching */
+}
+
+/* Existing CSS content */
 nda/* Colors */
 :root {
   --primary-color: #0d3921;
