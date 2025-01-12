@@ -8,13 +8,13 @@
     .hamburger-menu {
         display: block;
         text-align: center;
-        width: 40px;
-        height: 40px;
+        width: 10vw; /* Dynamic width */
+        height: 10vw; /* Dynamic height */
         max-width: 50px; /* Ensure max width is less than 50px */
         max-height: 50px; /* Ensure max height is less than 50px */
         position: absolute; /* Ensure it stays in the viewport */
-        top: 10px; /* Adjust as necessary */
-        right: 20px; /* Adjust as necessary */
+        top: 2vh; /* Adjust as necessary */
+        right: 4vw; /* Adjust as necessary */
         z-index: 1001; /* Ensure it is above other elements */
         cursor: pointer; /* Add a pointer cursor for better UX */
     }
@@ -23,11 +23,11 @@
 .dropdown-menu {
     display: none;
     position: absolute;
-    top: 50px;
-    right: 20px;
+    top: 8vh; /* Dynamic top position */
+    right: 4vw; /* Dynamic right position */
     background-color: #0d3921;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
+    border: 0.2vh solid #ffffff; /* Dynamic border */
+    border-radius: 1vh; /* Dynamic border radius */
     z-index: 1000;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .dropdown-menu ul li {
-    padding: 10px;
+    padding: 2vh; /* Dynamic padding */
     text-align: center;
 }
 
@@ -60,7 +60,7 @@
 .section-4 .section-title {
     text-align: left;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 2vh; /* Dynamic margin-bottom */
 }
 
 /* Add the new class for the section 1 image */
@@ -74,82 +74,81 @@
     align-items: center;
 }
 
-/* Existing CSS content */
-nda/* Colors */
+/* Colors */
 :root {
-  --primary-color: #0d3921;
-  --secondary-color: #ffffff;
-  --tertiary-color: #9caea4;
-  --accent-color-1: #b6d558;
-  --accent-color-2: #917b69;
-  --accent-color-3: #c7baa8;
+    --primary-color: #0d3921;
+    --secondary-color: #ffffff;
+    --tertiary-color: #9caea4;
+    --accent-color-1: #b6d558;
+    --accent-color-2: #917b69;
+    --accent-color-3: #c7baa8;
 }
 
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Rozha+One&display=swap');
 
 body {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 100;
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
-  margin: 0; /* Ensure no default margin */
-  padding: 0; /* Ensure no default padding */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    margin: 0; /* Ensure no default margin */
+    padding: 0; /* Ensure no default padding */
 }
 
 /* Headings */
 h1 {
-  font-family: 'Rozha One', serif;
-  font-size: 65pt;
+    font-family: 'Rozha One', serif;
+    font-size: 8vw; /* Dynamic font size */
 }
 
 h2 {
-  font-family: 'Rozha One', serif;
-  font-size: 45pt;
+    font-family: 'Rozha One', serif;
+    font-size: 6vw; /* Dynamic font size */
 }
 
 h3 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 100;
-  font-size: 28pt;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-size: 4vw; /* Dynamic font size */
 }
 
 /* Other Elements */
 p, blockquote, li {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 100;
-  font-size: 16pt; /* Adjust as needed */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-size: 2vw; /* Dynamic font size */
 }
 
 /* Additional styles */
 a {
-  color: var(--accent-color-1);
+    color: var(--accent-color-1);
 }
 
 button,
 .btn,
 .button {
-  background-color: #0d3921;
-  color: #ffffff;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 100;
-  border-radius: 5px;
-  padding: 10px 20px;
-  text-decoration: none;
-  display: inline-block;
-  text-align: center;
+    background-color: #0d3921;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    border-radius: 1vh; /* Dynamic border radius */
+    padding: 2vh 4vw; /* Dynamic padding */
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
 }
 
 footer {
-  background-color: var(--accent-color-3);
-  color: var(--secondary-color);
+    background-color: var(--accent-color-3);
+    color: var(--secondary-color);
 }
 
 /* Header Styles */
 header {
     background-color: #0d3921;
     color: #ffffff;
-    height: 50px;
+    height: 8vh; /* Dynamic height */
     width: 100%;
     position: fixed;
     top: 0;
@@ -158,12 +157,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 2vw; /* Dynamic padding */
 }
 
 /* Main Content Styles */
 main {
-    margin-top: 50px; /* Adjusted for fixed header */
+    margin-top: 8vh; /* Adjusted for fixed header */
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -174,8 +173,8 @@ main {
 
 section {
     width: 100vw; /* Full viewport width */
-    height: 580px; /* Maintain section height */
-    padding: 20px;
+    height: 60vh; /* Dynamic height */
+    padding: 4vw; /* Dynamic padding */
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -188,7 +187,7 @@ section {
     align-items: center;
     width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 4vw; /* Dynamic padding */
 }
 
 .two-columns > div {
@@ -203,7 +202,7 @@ section {
 
 .three-columns > div {
     flex: 1;
-    margin: 10px;
+    margin: 2vw; /* Dynamic margin */
     text-align: center;
 }
 
@@ -273,48 +272,48 @@ section {
 
 /* Form Container */
 .form-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background-color: #917b69;
-  margin-top: 50px; /* Adjust for fixed header height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4vw; /* Dynamic padding */
+    background-color: #917b69;
+    margin-top: 8vh; /* Adjust for fixed header height */
 }
 
 .form-container form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 60vw; /* Dynamic max-width */
 }
 
 .form-container label,
 .form-container input,
 .form-container textarea,
 .form-container button {
-  width: 100%;
-  margin-bottom: 10px;
+    width: 100%;
+    margin-bottom: 2vh; /* Dynamic margin-bottom */
 }
 
 .form-container input,
 .form-container textarea {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+    padding: 2vh; /* Dynamic padding */
+    border-radius: 1vh; /* Dynamic border radius */
+    border: 0.2vh solid #ccc; /* Dynamic border */
 }
 
 .form-container button {
-  padding: 10px;
-  background-color: #0d3921;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+    padding: 2vh; /* Dynamic padding */
+    background-color: #0d3921;
+    color: white;
+    border: none;
+    border-radius: 1vh; /* Dynamic border radius */
+    cursor: pointer;
 }
 
 .form-container button:hover {
-  background-color: #0a2d18;
+    background-color: #0a2d18;
 }
 
 body.full-page-background {
@@ -329,7 +328,7 @@ body.full-page-background {
 .form-container,
 .text-container {
     flex: 1;
-    padding: 20px;
+    padding: 4vw; /* Dynamic padding */
 }
 
 .text-container {
