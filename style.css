@@ -8,10 +8,10 @@
     .hamburger-menu {
         display: block;
         text-align: center;
-        width: 10vw; /* Dynamic width */
-        height: 10vw; /* Dynamic height */
-        max-width: 50px; /* Ensure max width is less than 50px */
-        max-height: 50px; /* Ensure max height is less than 50px */
+        width: 8vw; /* Smaller dynamic width */
+        height: 8vw; /* Smaller dynamic height */
+        max-width: 40px; /* Smaller max width */
+        max-height: 40px; /* Smaller max height */
         position: absolute; /* Ensure it stays in the viewport */
         top: 2vh; /* Adjust as necessary */
         right: 4vw; /* Adjust as necessary */
@@ -99,25 +99,25 @@ body {
 /* Headings */
 h1 {
     font-family: 'Rozha One', serif;
-    font-size: 8vw; /* Dynamic font size */
+    font-size: 6vw; /* Smaller dynamic font size */
 }
 
 h2 {
     font-family: 'Rozha One', serif;
-    font-size: 6vw; /* Dynamic font size */
+    font-size: 4.5vw; /* Smaller dynamic font size */
 }
 
 h3 {
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
-    font-size: 4vw; /* Dynamic font size */
+    font-size: 2.5vw; /* Smaller dynamic font size */
 }
 
 /* Other Elements */
 p, blockquote, li {
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
-    font-size: 2vw; /* Dynamic font size */
+    font-size: 1.5vw; /* Smaller dynamic font size */
 }
 
 /* Additional styles */
@@ -207,7 +207,7 @@ section {
 }
 
 .three-columns img {
-    max-width: 100%;
+    max-width: 90%; /* Smaller max width */
     height: auto;
 }
 
@@ -240,8 +240,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    width: 90%; /* Smaller width */
+    height: 90%; /* Smaller height */
 }
 
 .section-4 {
@@ -265,7 +265,7 @@ section {
 }
 
 .full-width-image img {
-    width: 100%;
+    width: 90%; /* Smaller width */
     height: auto;
     display: block;
 }
