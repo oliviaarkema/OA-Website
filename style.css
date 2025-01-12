@@ -85,11 +85,11 @@ header {
 
 /* Main Content Styles */
 main {
-    margin-top: 70px; /* Adjusted for fixed header */
+    margin-top: 50px; /* Adjusted for fixed header */
 }
 
 section {
-    height: 560px;
+    height: 580px;
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
