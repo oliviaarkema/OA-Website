@@ -51,7 +51,7 @@ button {
 
 footer {
   background-color: var(--accent-color-3);
-  color: var(--secondary-color);
+  color: var (--secondary-color);
 }
 
 /* Header Styles */
@@ -96,7 +96,7 @@ main {
 section {
     height: 610px;
     width: 100%;
-    padding: 20px
+    padding: 20px;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -107,11 +107,8 @@ section {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .two-columns > div {
@@ -201,8 +198,6 @@ section {
   justify-content: center;
   padding: 20px;
   background-color: #917b69;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-top: 50px; /* Adjust for fixed header height */
 }
 
