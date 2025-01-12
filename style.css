@@ -52,7 +52,7 @@ a {
 button,
 .btn,
 .button {
-  background-color: var(--primary-color);
+  background-color: #0d3921;
   color: var(--secondary-color);
   border-radius: 5px;
   padding: 10px 20px;
