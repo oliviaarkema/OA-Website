@@ -1,3 +1,8 @@
+/* Add specific styles for the button in section 5 */
+.section-5-btn {
+    color: #ffffff; /* Ensure the font color is white */
+}
+
 /* Add new styles for section title alignment */
 .section-4 .section-title {
     text-align: left;
