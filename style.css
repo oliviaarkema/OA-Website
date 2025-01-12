@@ -86,6 +86,11 @@ header {
 /* Main Content Styles */
 main {
     margin-top: 50px; /* Adjusted for fixed header */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 section {
@@ -100,6 +105,13 @@ section {
 .two-columns {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .two-columns > div {
@@ -229,3 +241,24 @@ section {
   background-color: #0a2d18;
 }
 
+body.full-page-background {
+    background-color: #917b69;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container,
+.text-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
