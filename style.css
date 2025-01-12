@@ -1,4 +1,4 @@
-/* Colors */
+nda/* Colors */
 :root {
   --primary-color: #0d3921;
   --secondary-color: #ffffff;
@@ -51,5 +51,5 @@ button {
 
 footer {
   background-color: var(--accent-color-3);
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
