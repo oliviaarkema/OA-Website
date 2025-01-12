@@ -9,10 +9,11 @@ nda/* Colors */
 }
 
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Rozha+One&display=swap');
 
 body {
   font-family: 'Raleway', sans-serif;
+  font-weight: 100;
   color: var(--primary-color);
   background-color: var(--secondary-color);
 }
@@ -30,12 +31,14 @@ h2 {
 
 h3 {
   font-family: 'Raleway', sans-serif;
+  font-weight: 100;
   font-size: 28pt;
 }
 
 /* Other Elements */
 p, blockquote, li {
   font-family: 'Raleway', sans-serif;
+  font-weight: 100;
   font-size: 16pt; /* Adjust as needed */
 }
 
@@ -51,7 +54,7 @@ button {
 
 footer {
   background-color: var(--accent-color-3);
-  color: var (--secondary-color);
+  color: var(--secondary-color);
 }
 
 /* Header Styles */
