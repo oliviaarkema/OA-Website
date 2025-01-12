@@ -1,10 +1,12 @@
 /* Add the new class for the section 1 image */
 .section-1 .image-fit {
-    width: 80%;
-    height: 80%;
+    width: 60%;
+    height: 60%;
     object-fit: cover; /* Ensures the image covers the container without padding */
     padding: 0; /* Remove any padding around the image */
     margin: 0; /* Remove any margin around the image */
+    justify-content: center;
+    align-items: center;
 }
 
 /* Existing CSS content */
