@@ -91,6 +91,7 @@ main {
 section {
     height: 580px;
     width: 100%;
+    padding: 20px
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -103,7 +104,7 @@ section {
 
 .two-columns > div {
     flex: 1;
-    margin: 10px;
+    margin: 20px;
 }
 
 .three-columns {
