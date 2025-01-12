@@ -56,8 +56,8 @@ footer {
 
 /* Header Styles */
 header {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background-color: #0d3921;
+    color: #ffffff;
     height: 50px;
     width: 100%;
     position: fixed;
