@@ -9,7 +9,7 @@
   <link rel="icon" href="green_bow.png" type="image/png"> <!-- Set bow.png as favicon -->
 </head>
 
-<body>
+<body class="full-page-background">
     <header>
         <div class="logo">
             <img src="white_bow2.png" alt="Olivia Arkema Logo" style="max-width: 30px;max-height: 30px;">
@@ -34,10 +34,12 @@
           <div id="success-message" style="display:none; color: white; font-size: 14px; font-style: italic; margin-top: 20px;">
           Thank you! Your message has been sent. I'll be in touch soon.
         </div>
-          <div>
+        </div>
+        <div class="text-container">
                 <h1>Let's collaborate!</h1>
                 <p>Please fill out the form, and I will get back to you as soon as possible. </p>
-          </div>
+        </div>
+      </section>
     </main>
   
   <script>
