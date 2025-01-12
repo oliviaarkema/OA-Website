@@ -10,6 +10,8 @@
         text-align: center;
         width: 40px;
         height: 40px;
+        max-width: 50px; /* Ensure max width is less than 50px */
+        max-height: 50px; /* Ensure max height is less than 50px */
         position: absolute; /* Ensure it stays in the viewport */
         top: 10px; /* Adjust as necessary */
         right: 20px; /* Adjust as necessary */
