@@ -1,3 +1,22 @@
+/* Ensure the hamburger menu is visible in the viewport */
+.hamburger-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        position: absolute; /* Ensure it stays in the viewport */
+        top: 10px; /* Adjust as necessary */
+        right: 20px; /* Adjust as necessary */
+        z-index: 1001; /* Ensure it is above other elements */
+        cursor: pointer; /* Add a pointer cursor for better UX */
+    }
+}
+
 /* Add specific styles for the button in section 5 */
 .section-5-btn {
     color: #ffffff; /* Ensure the font color is white */
@@ -106,19 +125,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-}
-
-.hamburger-menu {
-    display: none;
-}
-
-@media (max-width: 768px) {
-    .hamburger-menu {
-        display: block;
-        text-align: center;
-        width: 40px;
-        height: 40px;
-    }
 }
 
 /* Main Content Styles */
