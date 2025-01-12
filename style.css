@@ -132,6 +132,7 @@ button,
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
+        font-size: 1.25vw; /* Smaller dynamic font size */
     border-radius: 1vh; /* Dynamic border radius */
     padding: 2vh 4vw; /* Dynamic padding */
     text-decoration: none;
