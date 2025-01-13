@@ -193,7 +193,7 @@ section {
 
 .two-columns > div {
     flex: 1;
-    margin: 0px;
+    margin: 0px 2vw; /* Add margin for spacing */
 }
 
 .three-columns {
