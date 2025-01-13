@@ -339,3 +339,22 @@ body.full-page-background {
     justify-content: center;
     align-items: flex-start;
 }
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        height: auto; /* Dynamic height */
+    }
+
+    .two-columns,
+    .three-columns {
+        flex-direction: column;
+    }
+
+    .two-columns > div,
+    .three-columns > div {
+        width: 100%;
+        margin: 0 0 2vw 0; /* Adjust margin for spacing */
+    }
+}
