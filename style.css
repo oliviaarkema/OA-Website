@@ -357,4 +357,35 @@ body.full-page-background {
         width: 100%;
         margin: 0 0 2vw 0; /* Adjust margin for spacing */
     }
+
+    /* Adjust text size for mobile */
+    h1 {
+        font-size: 8vw;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+
+    h3 {
+        font-size: 4vw;
+    }
+
+    p, blockquote, li {
+        font-size: 3vw;
+    }
+
+    button,
+    .btn,
+    .button {
+        font-size: 3vw;
+        padding: 4vh 6vw; /* Adjust padding for better touch targets */
+    }
+
+    /* Adjust image size for mobile */
+    .three-columns img,
+    .full-width-image img {
+        width: 100%;
+        max-width: none;
+    }
 }
