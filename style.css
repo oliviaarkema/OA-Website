@@ -99,12 +99,12 @@ body {
 /* Headings */
 h1 {
     font-family: 'Rozha One', serif;
-    font-size: 6vw; /* Smaller dynamic font size */
+    font-size: 5vw; /* Smaller dynamic font size */
 }
 
 h2 {
     font-family: 'Rozha One', serif;
-    font-size: 4.5vw; /* Smaller dynamic font size */
+    font-size: 3.5vw; /* Smaller dynamic font size */
 }
 
 h3 {
