@@ -480,7 +480,7 @@ section.blog-preview {
 
 .dynamic-line {
     width: 80%; /* Dynamic width */
-    height: 5px; /* Dynamic height */
+    height: 2.5px; /* Dynamic height */
     background-color: var(--primary-color); /* Primary color */
     margin: 0 auto; /* Center the line */
     margin-top: 20px; /* Space above the line */
