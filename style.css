@@ -267,6 +267,8 @@ section {
     color: #ffffff;
     width: 100vw; /* Full viewport width */
     margin: 0; /* Remove any margin */
+    padding: 0; /* Ensure no padding */
+    box-sizing: border-box;
 }
 
 .section-7 {
@@ -274,6 +276,8 @@ section {
     color: #ffffff;
     width: 100vw; /* Full viewport width */
     margin: 0; /* Remove any margin */
+    padding: 0; /* Ensure no padding */
+    box-sizing: border-box;
 }
 
 .full-width-image img {
@@ -408,7 +412,7 @@ body.full-page-background {
     flex-wrap: wrap;
     justify-content: space-around; /* Adjust alignment */
     align-items: flex-start; /* Align items to the start */
-    padding: 2vw; /* Dynamic padding */
+    padding: 0vw; /* Dynamic padding */
     gap: 2vw; /* Add gap between items */
     max-width: calc(2 * (30% + 2vw)); /* Ensure max width of 2 grid items */
 }
@@ -419,7 +423,7 @@ body.full-page-background {
     height: auto;
     width: 100%; /* Ensure full width */
     box-sizing: border-box;
-    padding: 2vw;
+    padding: 0vw;
 }
 
 /* Blog Grid Items */
