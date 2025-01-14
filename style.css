@@ -265,11 +265,15 @@ section {
 .section-6 {
     background-color: #0d3921;
     color: #ffffff;
+    width: 100vw; /* Full viewport width */
+    margin: 0; /* Remove any margin */
 }
 
 .section-7 {
     background-color: #c7baa8;
     color: #ffffff;
+    width: 100vw; /* Full viewport width */
+    margin: 0; /* Remove any margin */
 }
 
 .full-width-image img {
