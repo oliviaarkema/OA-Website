@@ -390,11 +390,20 @@ body.full-page-background {
     }
 }
 
+/* Add this to your existing style.css */
+
+/* Ensure the blog title is centered */
+.blog-title {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2vh; /* Adjust margin as needed */
+}
+
 /* Blog Home Page Grid */
 .blog-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center; /* Center the grid items */
     padding: 2vw; /* Dynamic padding */
 }
 
