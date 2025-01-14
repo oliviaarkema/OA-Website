@@ -420,7 +420,7 @@ body.full-page-background {
 }
 
 .blog-preview {
-    background-color: var(--accent-color-3); /* Change background color */
+    background-color: #ffffff; /* Change background color */
     color: var(--primary-color); /* Ensure text color contrasts well */
     height: auto;
     width: 100vw; /* Ensure full width */
