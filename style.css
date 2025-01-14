@@ -255,6 +255,12 @@ section {
     color: #113a22;
 }
 
+/* Add scrolling for the right column in section 5 */
+.section-5 .right-column {
+    max-height: 80vh; /* Adjust this value as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
 .section-6 {
     background-color: #0d3921;
     color: #ffffff;
