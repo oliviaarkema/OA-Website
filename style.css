@@ -484,4 +484,5 @@ section.blog-preview {
     background-color: var(--primary-color); /* Primary color */
     margin: 0 auto; /* Center the line */
     margin-top: 20px; /* Space above the line */
+    margin-bottom: 20px; /* Space above the line */
 }
