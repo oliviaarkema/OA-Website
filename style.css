@@ -216,6 +216,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #0d3921;
 }
 
 .section-1 {
