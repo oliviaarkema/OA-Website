@@ -447,7 +447,7 @@ body.full-page-background {
 
 .blog-grid-item .date-posted {
     font-size: 1.5vw; /* Dynamic font size */
-    color: var(--accent-color-2); /* Change date color */
+    color: #ffffff; /* Change date color */
 }
 
 /* Ensure section height is auto to fit content */
