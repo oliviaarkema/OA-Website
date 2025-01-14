@@ -398,22 +398,37 @@ body.full-page-background {
 }
 
 /* Update the colors for the blog page */
+/* Blog Home Page Grid */
+.blog-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust alignment */
+    align-items: flex-start; /* Align items to the start */
+    padding: 2vw; /* Dynamic padding */
+    gap: 2vw; /* Add gap between items */
+}
+
 .blog-preview {
     background-color: var(--accent-color-3); /* Change background color */
     color: var(--primary-color); /* Ensure text color contrasts well */
+    height: auto;
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box;
+    padding: 2vw;
 }
 
+/* Blog Grid Items */
 .blog-grid-item {
     background-color: var(--tertiary-color); /* Change blog grid item background color */
     color: var(--primary-color); /* Ensure text color contrasts well */
     border-radius: 1vh; /* Dynamic border radius */
-    margin: 2vw; /* Dynamic margin */
     padding: 2vw; /* Dynamic padding */
-    width: calc(33% - 4vw); /* Adjust width to fit three items in a row with spacing */
+    flex: 1 1 calc(30% - 4vw); /* Flex-grow, flex-shrink, and base width */
     box-sizing: border-box;
     transition: transform 0.3s ease;
     text-align: center;
     text-decoration: none;
+    margin-bottom: 2vw; /* Add margin-bottom for spacing */
 }
 
 .blog-grid-item:hover {
