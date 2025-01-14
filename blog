@@ -43,21 +43,6 @@
                 <!-- Add more blog-grid-item entries as needed -->
             </div>
         </section>
-        <section class="two-columns section-7">
-            <div>
-                <h2>Let's collaborate.</h2>
-            </div>
-            <div>
-                <a href="contact" class="button">Work with Me</a>
-                </br>
-                </br>
-                <p>Email me:</p>
-                <p>livarkema@gmail.com</p>
-                 </br>
-                <p>Give me a call:</p>
-                <p>970-672-6402</p>
-            </div>
-        </section>
     </main>
     <script>
         document.querySelector(".hamburger-menu").addEventListener("click", function() {
