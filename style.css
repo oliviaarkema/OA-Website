@@ -413,8 +413,9 @@ body.full-page-background {
     padding: 2vw; /* Dynamic padding */
 }
 
+/* Update the blog grid items */
 .blog-grid-item {
-    background-color: var(--tertiary-color);
+    background-color: var(--accent-color-1); /* Change blog grid item background color */
     color: var(--primary-color);
     border-radius: 1vh; /* Dynamic border radius */
     margin: 2vw; /* Dynamic margin */
