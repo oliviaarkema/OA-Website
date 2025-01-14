@@ -25,7 +25,7 @@
         </nav>
     </header>
     <main>
-        <section class="blog-preview section-6">
+        <section class="blog-preview">
             <div class="blog-title">
                 <h2>Blog</h2>
             </div>
