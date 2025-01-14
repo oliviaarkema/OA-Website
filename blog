@@ -29,8 +29,19 @@
             <div>
                 <h2>Blog</h2>
             </div>
-                <a href="improve-google-rankings-without-seo-experts" class="h2">10 Ways to Improve Your Google Rankings Without Hiring an SEO Expert</a>
-                <a href="paid-advertising-mistakes-small-businesses" class="h2">5 Common Paid Advertising Mistakes Small Businesses Make (And How to Fix Them)</a>            
+            <div class="blog-grid">
+                <a href="improve-google-rankings-without-seo-experts" class="blog-grid-item">
+                    <img src="image1.jpg" alt="Blog Image 1">
+                    <h3>10 Ways to Improve Your Google Rankings Without Hiring an SEO Expert</h3>
+                    <p class="date-posted">Posted on: <!-- Add dynamic date here --></p>
+                </a>
+                <a href="paid-advertising-mistakes-small-businesses" class="blog-grid-item">
+                    <img src="image2.jpg" alt="Blog Image 2">
+                    <h3>5 Common Paid Advertising Mistakes Small Businesses Make (And How to Fix Them)</h3>
+                    <p class="date-posted">Posted on: <!-- Add dynamic date here --></p>
+                </a>
+                <!-- Add more blog-grid-item entries as needed -->
+            </div>
         </section>
         <section class="two-columns section-7">
             <div>
