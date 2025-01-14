@@ -423,9 +423,10 @@ body.full-page-background {
     background-color: var(--accent-color-3); /* Change background color */
     color: var(--primary-color); /* Ensure text color contrasts well */
     height: auto;
-    width: 100%; /* Ensure full width */
+    width: 100vw; /* Ensure full width */
     box-sizing: border-box;
-    padding: 0vw;
+    padding: 0; /* Ensure no padding */
+    margin: 0; /* Remove any margin */
 }
 
 /* Blog Grid Items */
