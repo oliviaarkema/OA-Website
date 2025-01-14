@@ -26,7 +26,7 @@
     </header>
     <main>
         <section class="blog-preview section-6">
-            <div>
+            <div style="text-align: center;">
                 <h2>Blog</h2>
             </div>
             <div class="blog-grid">
