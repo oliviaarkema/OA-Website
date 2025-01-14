@@ -406,6 +406,7 @@ body.full-page-background {
     align-items: flex-start; /* Align items to the start */
     padding: 2vw; /* Dynamic padding */
     gap: 2vw; /* Add gap between items */
+    max-width: calc(2 * (30% + 2vw)); /* Ensure max width of 2 grid items */
 }
 
 .blog-preview {
@@ -424,6 +425,7 @@ body.full-page-background {
     border-radius: 1vh; /* Dynamic border radius */
     padding: 2vw; /* Dynamic padding */
     flex: 1 1 calc(30% - 4vw); /* Flex-grow, flex-shrink, and base width */
+    max-width: calc(50% - 2vw); /* Ensure max width of 2 grid items */
     box-sizing: border-box;
     transition: transform 0.3s ease;
     text-align: center;
@@ -453,4 +455,14 @@ body.full-page-background {
 /* Ensure section height is auto to fit content */
 section.blog-preview {
     height: auto;
+}
+
+@media (max-width: 768px) {
+    .blog-grid {
+        max-width: 100%; /* Ensure full width on mobile */
+    }
+
+    .blog-grid-item {
+        max-width: 100%; /* Ensure full width on mobile */
+    }
 }
