@@ -454,3 +454,8 @@ body.full-page-background {
         font-size: 4.5vw; /* Adjust font size for mobile */
     }
 }
+
+/* Ensure section height is auto to fit content */
+section.blog-preview {
+    height: auto;
+}
