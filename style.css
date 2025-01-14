@@ -397,27 +397,15 @@ body.full-page-background {
     }
 }
 
-/* Add this to your existing style.css */
-
-/* Ensure the blog title is centered */
-.blog-title {
-    text-align: center;
-    width: 100%;
-    margin-bottom: 2vh; /* Adjust margin as needed */
+/* Update the colors for the blog page */
+.blog-preview {
+    background-color: var(--accent-color-3); /* Change background color */
+    color: var(--primary-color); /* Ensure text color contrasts well */
 }
 
-/* Blog Home Page Grid */
-.blog-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center the grid items */
-    padding: 2vw; /* Dynamic padding */
-}
-
-/* Update the blog grid items */
 .blog-grid-item {
-    background-color: var(--accent-color-1); /* Change blog grid item background color */
-    color: var(--primary-color);
+    background-color: var(--tertiary-color); /* Change blog grid item background color */
+    color: var(--primary-color); /* Ensure text color contrasts well */
     border-radius: 1vh; /* Dynamic border radius */
     margin: 2vw; /* Dynamic margin */
     padding: 2vw; /* Dynamic padding */
@@ -444,23 +432,7 @@ body.full-page-background {
 
 .blog-grid-item .date-posted {
     font-size: 1.5vw; /* Dynamic font size */
-    color: var(--accent-color-2);
-}
-
-/* Mobile styles */
-@media (max-width: 768px) {
-    .blog-grid-item {
-        width: 100%; /* Full width for mobile */
-        margin: 2vw 0; /* Adjust margin for spacing */
-    }
-
-    .blog-grid-item h3 {
-        font-size: 6vw; /* Adjust font size for mobile */
-    }
-
-    .blog-grid-item .date-posted {
-        font-size: 4.5vw; /* Adjust font size for mobile */
-    }
+    color: var(--accent-color-2); /* Change date color */
 }
 
 /* Ensure section height is auto to fit content */
