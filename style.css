@@ -571,3 +571,34 @@ section.blog-preview {
 .section-1.single-column .button {
     margin-top: 20px;
 }
+
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 2vw; /* Adjust padding for mobile */
+    }
+    
+    .form-container form {
+        max-width: 90vw; /* Increase max-width for mobile */
+    }
+    
+    .form-container label,
+    .form-container input,
+    .form-container textarea,
+    .form-container button {
+        font-size: 4vw; /* Adjust font size for mobile */
+        margin-bottom: 1vh; /* Adjust margin for mobile */
+    }
+    
+    .form-container input,
+    .form-container textarea {
+        padding: 1.5vh; /* Adjust padding for mobile */
+        border-radius: 0.5vh; /* Adjust border radius for mobile */
+    }
+    
+    .form-container button {
+        padding: 2vh; /* Adjust padding for mobile */
+        font-size: 4vw; /* Adjust font size for mobile */
+    }
+}
