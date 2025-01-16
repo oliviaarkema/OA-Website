@@ -6,7 +6,7 @@
     <meta name="description" content="Welcome to my portfolio website. Here you will find my projects, skills, and contact information.">
     <title>Work With Liv</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="green_bow.png" type="image/png"> <!-- Set bow.png as favicon -->
+    <link rel="icon" href="green_bow.png" type="image/png">
 </head>
 <body>
     <header>
@@ -24,11 +24,27 @@
             </ul>
         </nav>
     </header>
-    <main>
-    <section>
-      <h1>Blog Title </h1>
-      <p>Text</p>
-    </section>
+    <main class="blog-page">
+        <section>
+            <h1>Improve Google Rankings Without SEO Experts</h1>
+            <p>Welcome to my blog where I share insights on improving your website's Google rankings without the need for SEO experts. Follow these steps to enhance your online presence.</p>
+
+            <h2 class="subheading">Understanding Google Rankings</h2>
+            <p>Google's ranking algorithm considers numerous factors when ranking websites. These include website content, backlinks, mobile-friendliness, and page speed. Understanding these elements is crucial for improving your site's visibility.</p>
+
+            <h2 class="subheading">Optimizing Content</h2>
+            <p>High-quality, relevant content is key to attracting and retaining website visitors. Ensure your content is well-written, informative, and updated regularly. Use keywords naturally and avoid keyword stuffing, which can harm your rankings.</p>
+
+            <h2 class="subheading">Building Backlinks</h2>
+            <p>Backlinks from reputable websites signal to Google that your site is trustworthy and authoritative. Focus on acquiring backlinks through guest posts, partnerships, and creating shareable content.</p>
+
+            <h2 class="subheading">Enhancing User Experience</h2>
+            <p>User experience is a significant factor in Google rankings. Ensure your website is mobile-friendly, fast-loading, and easy to navigate. Engage your visitors with a clean design and intuitive interface.</p>
+
+            <h2 class="subheading">Conclusion</h2>
+            <p>Improving your Google rankings requires a holistic approach that includes optimizing content, building backlinks, and enhancing user experience. By implementing these strategies, you can boost your online presence without relying on SEO experts.</p>
+        </section>
+
         <section class="two-columns section-7">
             <div>
                 <h2>Let's collaborate.</h2>
