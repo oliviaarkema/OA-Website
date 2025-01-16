@@ -504,7 +504,7 @@ section.blog-preview {
 
 .blog-page h1 {
     font-family: 'Rozha One', serif;
-    font-size: 6vw; /* Dynamic font size */
+    font-size: 5vw; /* Dynamic font size */
     text-align: center;
     margin-bottom: 2vh; /* Dynamic margin */
 }
@@ -512,7 +512,7 @@ section.blog-preview {
 .blog-page h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
-    font-size: 4vw; /* Dynamic font size */
+    font-size: 2.5vw; /* Dynamic font size */
     text-align: center;
     margin-bottom: 2vh; /* Dynamic margin */
 }
@@ -520,7 +520,7 @@ section.blog-preview {
 .blog-page p {
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
-    font-size: 2vw; /* Dynamic font size */
+    font-size: 1.5vw; /* Dynamic font size */
     text-align: left;
     margin-bottom: 2vh; /* Dynamic margin */
     line-height: 1.6; /* Improved readability */
@@ -530,7 +530,7 @@ section.blog-preview {
 .blog-page .subheading {
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
-    font-size: 3vw; /* Dynamic font size */
+    font-size: 2.5vw; /* Dynamic font size */
     text-align: center;
     margin: 2vh 0; /* Dynamic margin */
 }
