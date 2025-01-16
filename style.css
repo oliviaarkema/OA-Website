@@ -556,7 +556,7 @@ section.blog-preview {
 }
 
 .section-1.single-column .content {
-    background: rgba(0, 0, 0, 0); /* Add a semi-transparent background for better text readability */
+    background: rgba(0, 0, 0, 0.25); /* Add a semi-transparent background for better text readability */
     padding: 20px;
     border-radius: 10px;
 }
