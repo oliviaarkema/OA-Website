@@ -486,3 +486,53 @@ section.blog-preview {
     margin-top: 20px; /* Space above the line */
     margin-bottom: 20px; /* Space above the line */
 }
+
+
+/* Individual Blog Page Styles */
+.blog-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4vw; /* Dynamic padding */
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.blog-page h1 {
+    font-family: 'Rozha One', serif;
+    font-size: 6vw; /* Dynamic font size */
+    text-align: center;
+    margin-bottom: 2vh; /* Dynamic margin */
+}
+
+.blog-page h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-size: 4vw; /* Dynamic font size */
+    text-align: center;
+    margin-bottom: 2vh; /* Dynamic margin */
+}
+
+.blog-page p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-size: 2vw; /* Dynamic font size */
+    text-align: left;
+    margin-bottom: 2vh; /* Dynamic margin */
+    line-height: 1.6; /* Improved readability */
+    max-width: 80vw; /* Dynamic max width */
+}
+
+.blog-page .subheading {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-size: 3vw; /* Dynamic font size */
+    text-align: center;
+    margin: 2vh 0; /* Dynamic margin */
+}
+
+.blog-page .content {
+    max-width: 80vw; /* Dynamic max width */
+    margin: 0 auto; /* Center the content */
+}
