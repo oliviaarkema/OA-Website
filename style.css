@@ -563,7 +563,7 @@ section.blog-preview {
 
 .section-1.single-column h1,
 .section-1.single-column h2 {
-    color: #ffffff; /* Ensure the text is readable against the background image */
+    color: #0d3921; /* Ensure the text is readable against the background image */
     margin: 10px 0;
 }
 
