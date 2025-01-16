@@ -549,7 +549,7 @@ section.blog-preview {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: url('coffee-hero.jpg') no-repeat center center;
+    background: url('paper-hero.jpg') no-repeat center center;
     background-size: cover;
     height: 80vh; /* Retain the existing height */
     position: relative;
