@@ -489,6 +489,7 @@ section.blog-preview {
 
 
 /* Individual Blog Page Styles */
+/* Individual Blog Page Styles */
 .blog-page {
     display: flex;
     flex-direction: column;
@@ -497,6 +498,8 @@ section.blog-preview {
     padding: 4vw; /* Dynamic padding */
     background-color: var(--secondary-color);
     color: var(--primary-color);
+    height: auto; /* Dynamic height */
+    min-height: 100vh; /* Ensure it takes at least the full viewport height */
 }
 
 .blog-page h1 {
