@@ -549,14 +549,14 @@ section.blog-preview {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: url('paper-hero.jpg') no-repeat center center;
+    background: url('journal-hero.jpg') no-repeat center center;
     background-size: cover;
     height: 80vh; /* Retain the existing height */
     position: relative;
 }
 
 .section-1.single-column .content {
-    background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background for better text readability */
+    background: rgba(0, 0, 0, 1); /* Add a semi-transparent background for better text readability */
     padding: 20px;
     border-radius: 10px;
 }
