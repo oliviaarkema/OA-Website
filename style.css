@@ -420,8 +420,8 @@ body.full-page-background {
 }
 
 .blog-preview {
-    background-color: #ffffff; /* Change background color */
-    color: var(--primary-color); /* Ensure text color contrasts well */
+    background-color: #0d3921; /* Change background color */
+    color: #ffffff; /* Ensure text color contrasts well */
     height: auto;
     width: 100vw; /* Ensure full width */
     box-sizing: border-box;
