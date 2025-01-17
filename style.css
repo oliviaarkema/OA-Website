@@ -556,7 +556,7 @@ section.blog-preview {
 }
 
 .section-1.single-column .content {
-    background: rgba(0, 0, 0, 0.25); /* Add a semi-transparent background for better text readability */
+    background: rgba(13, 57, 33, 0.5); /* Add a semi-transparent background for better text readability */
     padding: 20px;
     border-radius: 10px;
 }
@@ -564,7 +564,7 @@ section.blog-preview {
 .section-1.single-column h1,
 .section-1.single-column h2,
 .section-1.single-column h3{
-    color: #0d3921; /* Ensure the text is readable against the background image */
+    color: #ffffff; /* Ensure the text is readable against the background image */
     margin: 10px 0;
 }
 
