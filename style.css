@@ -642,6 +642,9 @@ section.blog-preview {
     padding: 5px;
     border-radius: 3px;
     white-space: nowrap;
+    max-width: 150px; /* Ensures the description stays within the grid item */
+    overflow: hidden; /* Prevents overflow */
+    text-overflow: ellipsis; /* Adds ellipsis if text overflows */
 }
 
 .logo-grid-item:hover .description {
