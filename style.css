@@ -652,12 +652,12 @@ section.blog-preview {
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(13, 57, 33, 0.7);
     color: #ffffff;
     padding: 5px;
     border-radius: 3px;
     white-space: nowrap;
-    max-width: 350px; /* Ensures the description stays within the grid item */
+    max-width: 250px; /* Ensures the description stays within the grid item */
     overflow: hidden; /* Prevents overflow */
     text-overflow: ellipsis; /* Adds ellipsis if text overflows */
     text-align: center; /* Center the text */
