@@ -618,6 +618,7 @@ section.blog-preview {
     position: relative;
     width: 150px;  /* Increased width */
     height: 150px; /* Increased height */
+    overflow: hidden; /* Ensure the logo item does not overflow */
     transition: transform 0.3s ease;
 }
 
@@ -625,16 +626,21 @@ section.blog-preview {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    transition: transform 0.3s ease; /* Ensure smooth scrolling */
 }
 
 .logo-grid-item:hover {
     transform: scale(1.1);
 }
 
+.logo-grid-item:hover img {
+    transform: translateY(-30px); /* Move the image up to reveal the description */
+}
+
 .logo-grid-item .description {
-    display: none;
+    display: block;
     position: absolute;
-    bottom: -30px;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.7);
@@ -645,8 +651,10 @@ section.blog-preview {
     max-width: 150px; /* Ensures the description stays within the grid item */
     overflow: hidden; /* Prevents overflow */
     text-overflow: ellipsis; /* Adds ellipsis if text overflows */
+    opacity: 0; /* Hide description initially */
+    transition: opacity 0.3s ease; /* Smooth transition for the description */
 }
 
 .logo-grid-item:hover .description {
-    display: block;
+    opacity: 1; /* Show description on hover */
 }
