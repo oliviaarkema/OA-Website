@@ -657,9 +657,10 @@ section.blog-preview {
     padding: 5px;
     border-radius: 3px;
     white-space: nowrap;
-    max-width: 250px; /* Ensures the description stays within the grid item */
+    max-width: 350px; /* Ensures the description stays within the grid item */
     overflow: hidden; /* Prevents overflow */
     text-overflow: ellipsis; /* Adds ellipsis if text overflows */
+    text-align: center; /* Center the text */
     opacity: 0; /* Hide description initially */
     transition: opacity 0.3s ease; /* Smooth transition for the description */
 }
