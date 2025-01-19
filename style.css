@@ -616,10 +616,20 @@ section.blog-preview {
 
 .logo-grid-item {
     position: relative;
-    width: 150px;  /* Increased width */
-    height: 150px; /* Increased height */
+    width: 250px;  /* Increased width */
+    height: 250px; /* Increased height */
     overflow: hidden; /* Ensure the logo item does not overflow */
     transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .logo-grid {
+        max-width: 100%; /* Ensure full width on mobile */
+    }
+
+    .logo-grid-item {
+        max-width: 100%; /* Ensure full width on mobile */
+    }
 }
 
 .logo-grid-item img {
