@@ -616,8 +616,8 @@ section.blog-preview {
 
 .logo-grid-item {
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: 150px;  /* Increased width */
+    height: 150px; /* Increased height */
     transition: transform 0.3s ease;
 }
 
