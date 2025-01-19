@@ -604,30 +604,29 @@ section.blog-preview {
 }
 
 
-/* New styles for logo container grid */
+/* Existing styles for logo container grid */
 .logo-grid {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Set maximum 2 items per row */
     gap: 20px;
     padding: 20px;
 }
 
 .logo-grid-item {
     position: relative;
-    width: 250px;  /* Increased width */
-    height: 250px; /* Increased height */
+    width: 250px;  /* Adjusted width */
+    height: 250px; /* Adjusted height */
     overflow: hidden; /* Ensure the logo item does not overflow */
     transition: transform 0.3s ease;
 }
 
 @media (max-width: 768px) {
     .logo-grid {
-        max-width: 100%; /* Ensure full width on mobile */
+        grid-template-columns: 1fr; /* Single column on mobile */
     }
 
     .logo-grid-item {
+        width: 100%; /* Ensure full width on mobile */
         max-width: 100%; /* Ensure full width on mobile */
     }
 }
