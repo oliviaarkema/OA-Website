@@ -47,7 +47,7 @@
         </section>
         <section class="two-columns section-3">
             <div class="centered-image">
-                <img src="profile_pic_with_circle.png" alt="Profile Picture" style="max-width: 400px; max-height: 400px;">
+                <img src="profile_pic_with_circle.png" alt="Profile Picture" class="animated-image" style="max-width: 400px; max-height: 400px;">
             </div>
             <div>
                 <h2>About Me</h2>
@@ -60,15 +60,15 @@
         <section class="three-columns section-4">
             <h2 class="section-title">What I Do</h2>
             <div>
-                <img src="service-2.png" alt="Marketing" style="max-width: 300px;max-height: 300px;">
+                <img src="service-2.png" alt="Marketing" class="animated-image" style="max-width: 300px;max-height: 300px;">
                 <p>Marketing</p>
             </div>
             <div>
-                <img src="service-3.png" alt="Website Design and Development"style="max-width: 300px;max-height: 300px;">
+                <img src="service-3.png" alt="Website Design and Development" class="animated-image" style="max-width: 300px;max-height: 300px;">
                 <p>Web Design & Development</p>
             </div>
             <div>
-                <img src="service-1.png" alt="Market Research" style="max-width: 300px;max-height: 300px;">
+                <img src="service-1.png" alt="Market Research" class="animated-image" style="max-width: 300px;max-height: 300px;">
                 <p>Market Research</p>
             </div>
         </section>
@@ -139,6 +139,22 @@
     <script>
         document.querySelector(".hamburger-menu").addEventListener("click", function() {
             document.querySelector(".dropdown-menu").classList.toggle("show");
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const animatedImages = document.querySelectorAll('.animated-image');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('slide-up');
+                    }
+                });
+            });
+
+            animatedImages.forEach(image => {
+                observer.observe(image);
+            });
         });
     </script>
 </body>
