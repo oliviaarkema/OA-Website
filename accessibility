@@ -35,12 +35,11 @@
                   <h3>Accessibility Features</h3>
                     <p>Our website is designed to meet WCAG 2.1 AA standards.
                   We use clear navigation, alt text for images, and keyboard accessibility.</p>
-                 <h3>Need Assistance?</h3>
-                    <p>If you encounter any barriers to accessing our website or services, please let us know at [your email] or [phone number]. We’ll work to address the issue promptly. We continuously strive to enhance accessibility and welcome feedback to help us serve all users better.</p>
+                 <p>Need Assistance?</p3>
+                    <p>If you encounter any barriers to accessing our website or services, please let us know by emailing hello@oliviaarkema.com. We’ll work to address the issue promptly. We continuously strive to enhance accessibility and welcome feedback to help us serve all users better.</p>
             </div>
         </section>
     </main>
-
         <section class="two-columns section-7">
     <div>
         <h2>Let's collaborate.</h2>
