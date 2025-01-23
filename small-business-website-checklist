@@ -1,1 +1,59 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boost your Google rankings with these 10 simple, actionable tips-no SEO expert needed! 
+                Learn how to optimize your website, create quality content, 
+                improve local SEO, and more to drive traffic and grow your business.">
+    <title>Small Business Website Checklist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="green_bow.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="white_bow2.png" alt="Olivia Arkema Logo" style="max-width: 30px;max-height: 30px;">
+            </a>        
+        </div>
+        <div class="hamburger-menu">&#9776;</div>
+        <nav class="dropdown-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog">Blog</a></li>
+                <li><a href="contact">Get in Touch</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="blog-page">
+            <img src="checklist.jpg" alt="Website Checklist for Small and Medium Businesses" style="width:100%; max-width:600px; margin-bottom:20px;">
+            <h1>Small Business Website Checklist </h1>
+            <p>Your website is one of your most important tools for growing your small business. It should make a great first impression, guide visitors seamlessly, and help turn them into customers. </p>
+            <p>Focus on clear branding, a mobile-friendly design, and simple navigation to create a user-friendly experience. Make sure your website loads quickly, features accurate contact details, and has strong calls-to-action like “Get a Quote” or “Shop Now.” Link to your Google Business Profile to improve local visibility, add social media links, and optimize your content with relevant keywords for SEO. Don’t forget to secure your site with an SSL certificate and use analytics tools to measure performance and refine your strategy. </p>
+            <p>A great website can make a big difference for your business. For the full checklist, click to download here.</p>
+        </section>
+        <section class="two-columns section-7">
+            <div>
+                <h2>Let's collaborate.</h2>
+            </div>
+            <div>
+                <a href="contact" class="button">Work with Me</a>
+                </br>
+                </br>
+                <p>Email me:</p>
+                <p>livarkema@gmail.com</p>
+                 </br>
+                <p>Give me a call:</p>
+                <p>970-672-6402</p>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.querySelector(".hamburger-menu").addEventListener("click", function() {
+            document.querySelector(".dropdown-menu").classList.toggle("show");
+        });
+    </script>
+</body>
+</html>
