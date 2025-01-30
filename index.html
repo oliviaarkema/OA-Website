@@ -172,6 +172,41 @@
                 observer.observe(image);
             });
         });
+            const form = document.getElementById('form');
+    const successMessage = document.getElementById('success-message');
+    
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const formData = new FormData(form);
+      const plainFormData = Object.fromEntries(formData.entries());
+      const formDataJsonString = JSON.stringify(plainFormData);
+      
+      try {
+        const response = await fetch('https://formspree.io/f/xdkazopw', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: formDataJsonString
+        });
+        
+        if (response.ok) {
+          form.reset();
+          successMessage.style.display = 'block';
+        } else {
+          alert('There was an issue with your submission. Please try again.');
+        }
+      } catch (error) {
+        alert('There was an error submitting the form. Please try again.');
+      }
+    });
+
+    window.onbeforeunload = () => {
+      for (const form of document.getElementsByTagName('form')) {
+        form.reset();
+      }
+    }
     </script>
 </body>
 </html>
