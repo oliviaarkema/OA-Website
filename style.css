@@ -672,3 +672,8 @@ section.blog-preview {
 .logo-grid-item:hover .description {
     opacity: 1; /* Show description on hover */
 }
+.email-input {
+    width: 80%; /* Make the input box wider */
+    padding: 10px; /* Add padding inside the input box */
+    margin-bottom: 20px; /* Add padding below the box */
+}
