@@ -30,13 +30,17 @@
                 <h2>Market Research</h2>
             </div>
             <div>
-                  <h3>Digital Marketing</h3>
-                  <p>Email marketing, PPC, content marketing, social media marketing.</p> 
-                  <h3>Traditional Marketing</h3>
-                  <p>Print marketing, direct mail, billboards, PR.</p> 
-                  <h3>Creative Marketing</h3>
-                  <p>Event marketing, SMS, Guerilla, in-app. </p> 
+              <h3>No matter your business goals, the right marketing strategy can help you reach more customers, increase brand awareness, and boost sales. 
+                I offer a mix of digital, traditional, and creative marketing solutions tailored to your unique needs. </h3>
             </div>
+        </section>
+        <section class="blog-page">
+            <img src="marketresearch.jpg" alt="Market Research" style="width:100%; max-width:600px; margin-bottom:20px;">
+            <h1>What marketing strategy is best for your business?</h1>
+            <p>The best marketing strategy depends on your goals, audience, and budget. If you want quick results, PPC advertising and email marketing can drive immediate traffic and conversions. For long-term growth, content marketing and SEO help establish credibility and attract organic traffic. Social media marketing is great for engagement, while traditional marketing like direct mail or billboards can work well for local businesses.
+                If your business thrives on word-of-mouth, event marketing or PR might be a good fit. For mobile engagement, SMS marketing and in-app ads can be effective. The key is finding a mix of strategies that align with your audience and business objectives.
+                Not sure where to start? Let’s chat and find the right approach for you.</p>
+            <a href="contact" class="button">Get in Touch</a>
         </section>
     </main>
         <section class="two-columns section-7">
