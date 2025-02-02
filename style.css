@@ -710,11 +710,11 @@ section.blog-preview {
     }
 
     h3 {
-        font-size: 8vw;
+        font-size: 9vw;
     }
 
     p, blockquote, li, .blog-page p {
-        font-size: 10vw; /* Increase font size */
+        font-size: 8vw; /* Increase font size */
     }
 
     button,
