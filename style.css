@@ -713,8 +713,8 @@ section.blog-preview {
         font-size: 8vw;
     }
 
-    p, blockquote, li {
-        font-size: 7vw; /* Increase font size */
+    p, blockquote, li, .blog-page p {
+        font-size: 10vw; /* Increase font size */
     }
 
     button,
