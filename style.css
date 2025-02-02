@@ -730,4 +730,13 @@ section.blog-preview {
         width: 100%;
         max-width: none;
     }
+
+        button,
+    .btn,
+    .button {
+        font-size: 4vw;
+        padding: 4vh 6vw; /* Adjust padding for better touch targets */
+        display: block;
+        margin: 0 auto; /* Center buttons */
+    }
 }
