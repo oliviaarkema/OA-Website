@@ -30,6 +30,11 @@
                 <h2>Blog</h2>
             </div>
             <div class="blog-grid">
+                <a href="does-your-small-business-really-need-a-website" class="blog-grid-item">
+                    <img src="web_design_layout.jpg" alt="Website Design Layout">
+                    <h3>Is a Facebook Page Enough? Why Your Business Needs a Website</h3>
+                    <p class="date-posted">Posted on: February 7, 2025</p>
+                </a>
                 <a href="improve-google-rankings-without-seo-experts" class="blog-grid-item">
                     <img src="orange-grove-growing.jpg" alt="Website Growth and SEO Explained - Orange Grove">
                     <h3>10 Ways to Improve Your Google Rankings Without Hiring an SEO Expert</h3>
@@ -44,11 +49,6 @@
                     <img src="checklist.jpg" alt="Small Business Website Checklist Image">
                     <h3>Small Business Website Checklist</h3>
                     <p class="date-posted">Posted on: January 23rd, 2025</p>
-                </a>
-                <a href="does-your-small-business-really-need-a-website" class="blog-grid-item">
-                    <img src="web_design_layout.jpg" alt="Website Design Layout">
-                    <h3>Is a Facebook Page Enough? Why Your Business Needs a Website</h3>
-                    <p class="date-posted">Posted on: February 7, 2025</p>
                 </a>
                 <!-- Add more blog-grid-item entries as needed -->
             </div>
