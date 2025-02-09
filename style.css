@@ -7,6 +7,15 @@
   font-style: normal;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Prata&display=swap');
+
+.prata-regular {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 /* Existing styles for body */
 body {
     font-family: 'Poiret One', sans-serif;
@@ -150,17 +159,17 @@ section.blog-preview .section-6-btn {
 
 /* Headings */
 h1 {
-    font-family: 'Rozha One', serif; /* Ensure Rozha One font is used */
+    font-family: 'Prata', serif; /* Ensure  One font is used */
     font-size: 3rem; /* Larger desktop font size for better readability */
 }
 
 h2 {
-    font-family: 'Rozha One', serif; /* Ensure Rozha One font is used */
+    font-family: 'Prata', serif; /* Ensure  One font is used */
     font-size: 2.5rem; /* Larger desktop font size for better readability */
 }
 
 h3 {
-    font-family: 'Rozha One', serif; /* Ensure Rozha One font is used */
+    font-family: 'Prata', serif; /* Ensure  One font is used */
     font-size: 2rem; /* Larger desktop font size for better readability */
 }
 
@@ -385,12 +394,12 @@ body.full-page-background {
 
     /* Adjust text size for mobile */
     h1 {
-        font-family: 'Rozha One', serif; /* Ensure Rozha One font is used */
+        font-family: 'Prata', serif; /* Ensure  One font is used */
         font-size: 8vw; /* Optimized font size */
     }
 
     h2 {
-        font-family: 'Rozha One', serif; /* Ensure Rozha One font is used */
+        font-family: 'Prata', serif; /* Ensure  One font is used */
         font-size: 6vw; /* Optimized font size */
     }
 
@@ -513,7 +522,7 @@ section.blog-preview {
 }
 
 .blog-page h1 {
-    font-family: 'Rozha One', serif;
+    font-family: 'Prata', serif;
     font-size: 5vw; /* Dynamic font size */
     text-align: center;
     margin-bottom: 2vh; /* Dynamic margin */
