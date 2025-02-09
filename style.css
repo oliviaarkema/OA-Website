@@ -254,7 +254,9 @@ section {
 }
 
 .section-4 {
-    background: linear-gradient(180deg, #c7baa8 0%, #0d3921 50%, #c7baa8 100%);
+    background: radial-gradient(circle at 10% 20%, #c7baa8, transparent 20%),
+                radial-gradient(circle at 80% 80%, #0d3921, transparent 20%),
+                radial-gradient(circle at 50% 50%, #c7baa8, transparent 50%);
     color: #ffffff;
 }
 
