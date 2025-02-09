@@ -1,5 +1,5 @@
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poiret One', sans-serif;
     font-weight: 100;
     color: var(--primary-color);
     background: linear-gradient(to bottom, #c7baa8, #0d3921);
@@ -138,7 +138,7 @@ section.blog-preview .section-6-btn {
 }
 
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
 /* Headings */
 h1 {
