@@ -233,6 +233,7 @@ section {
 
 .section-2 {
     background-color: #9caea4;
+    height: 40vh; /* Dynamic height */
     color: #113a22;
 }
 
