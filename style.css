@@ -1,3 +1,49 @@
+To implement your request, here are the changes to the `style.css` file:
+
+1. **Remove individual section backgrounds**:
+   - Remove background colors from `.section-1`, `.section-2`, `.section-3`, `.section-4`, `.section-5`, `.section-6`, and `.section-7`.
+   
+2. **Add a single background for the whole page**:
+   ```css
+   body {
+       background: linear-gradient(to bottom, #c7baa8, #0d3921);
+   }
+   ```
+
+3. **Add containers with contrasting color fill to sections where text does not contrast well**:
+   - Add a class `.contrast-container` to wrap text in sections needing contrast.
+
+### Updated `style.css`:
+
+```css
+/* Single background for the whole page */
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    color: var(--primary-color);
+    background: linear-gradient(to bottom, #c7baa8, #0d3921);
+    margin: 0; /* Ensure no default margin */
+    padding: 0; /* Ensure no default padding */
+}
+
+/* Remove individual section backgrounds */
+.section-1,
+.section-2,
+.section-3,
+.section-4,
+.section-5,
+.section-6,
+.section-7 {
+    background: none;
+}
+
+/* Add contrasting container */
+.contrast-container {
+    background-color: var(--secondary-color);
+    padding: 2vw;
+    border-radius: 1vh;
+}
+
 /* Ensure the hamburger menu is visible in the viewport */
 .hamburger-menu {
     display: block; /* Always display the hamburger menu */
@@ -86,15 +132,6 @@ section.blog-preview .section-6-btn {
 
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Rozha+One&display=swap');
-
-body {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 100;
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
-    margin: 0; /* Ensure no default margin */
-    padding: 0; /* Ensure no default padding */
-}
 
 /* Headings */
 h1 {
@@ -222,27 +259,6 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #0d3921;
-}
-
-.section-1 {
-    background-color: #917b69;
-    color: #ffffff;
-    margin-top: 0; /* Remove any margin above section 1 */
-}
-
-.section-2 {
-    background-color: #9caea4;
-    height: 40vh; /* Dynamic height */
-    color: #113a22;
-}
-
-.section-3 {
-    background-color: #c7baa8;
-    color: #0d3921;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .centered-image {
@@ -253,40 +269,10 @@ section {
     height: 90%; /* Smaller height */
 }
 
-.section-4 {
-    background: #0d3921;
-    color: #ffffff;
-}
-
-.section-5 {
-    background-color: #c7baa8;
-    color: #113a22;
-}
-
 /* Add scrolling for the right column in section 5 */
 .section-5 .right-column {
     max-height: 80vh; /* Adjust this value as needed */
     overflow-y: auto; /* Enable vertical scrolling */
-}
-
-.section-6 {
-    background-color: #0d3921;
-    color: #ffffff;
-    width: 100vw; /* Full viewport width */
-    padding: 0; /* Ensure no padding */
-    box-sizing: border-box;
-    margin: 0; /* Remove any margin */
-    border: 0; /* Remove any border */
-}
-
-.section-7 {
-    background-color: #c7baa8;
-    color: #ffffff;
-    width: 100vw; /* Full viewport width */
-    padding: 0; /* Ensure no padding */
-    box-sizing: border-box;
-    margin: 0; /* Remove any margin */
-    border: 0; /* Remove any border */
 }
 
 .full-width-image img {
@@ -433,8 +419,6 @@ body.full-page-background {
 }
 
 .blog-preview {
-    background-color: #0d3921; /* Change background color */
-    color: #ffffff; /* Ensure text color contrasts well */
     height: auto;
     width: 100vw; /* Ensure full width */
     box-sizing: border-box;
@@ -500,8 +484,6 @@ section.blog-preview {
     margin-bottom: 20px; /* Space above the line */
 }
 
-
-/* Individual Blog Page Styles */
 /* Individual Blog Page Styles */
 .blog-page {
     display: flex;
@@ -553,9 +535,6 @@ section.blog-preview {
     margin: 0 auto; /* Center the content */
 }
 
-
-/* Add this to the existing CSS file */
-
 /* New styles for the reworked section 1 */
 .section-1.single-column {
     display: flex;
@@ -576,7 +555,7 @@ section.blog-preview {
 
 .section-1.single-column h1,
 .section-1.single-column h2,
-.section-1.single-column h3{
+.section-1.single-column h3 {
     color: #ffffff; /* Ensure the text is readable against the background image */
     margin: 10px 0;
 }
@@ -585,17 +564,16 @@ section.blog-preview {
     margin-top: 20px;
 }
 
-
 /* Media query for mobile devices */
 @media (max-width: 768px) {
     .form-container {
         padding: 2vw; /* Adjust padding for mobile */
     }
-    
+
     .form-container form {
         max-width: 90vw; /* Increase max-width for mobile */
     }
-    
+
     .form-container label,
     .form-container input,
     .form-container textarea,
@@ -603,19 +581,18 @@ section.blog-preview {
         font-size: 4vw; /* Adjust font size for mobile */
         margin-bottom: 1vh; /* Adjust margin for mobile */
     }
-    
+
     .form-container input,
     .form-container textarea {
         padding: 1.5vh; /* Adjust padding for mobile */
         border-radius: 0.5vh; /* Adjust border radius for mobile */
     }
-    
+
     .form-container button {
         padding: 2vh; /* Adjust padding for mobile */
         font-size: 4vw; /* Adjust font size for mobile */
     }
 }
-
 
 /* Existing styles for logo container grid */
 .logo-grid {
@@ -654,6 +631,8 @@ section.blog-preview {
 .logo-grid-item:hover {
     transform: scale(1.1);
 }
+
+
 
 .logo-grid-item:hover img {
     transform: translateY(-30px); /* Move the image up to reveal the description */
