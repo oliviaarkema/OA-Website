@@ -98,30 +98,30 @@ body {
 
 /* Headings */
 h1 {
-    font-family: 'Rozha One', serif;
-    font-size: 5vw; /* Smaller dynamic font size */
+    font-size: 3rem; /* Larger desktop font size for better readability */
 }
 
 h2 {
-    font-family: 'Rozha One', serif;
-    font-size: 3.5vw; /* Smaller dynamic font size */
+    font-size: 2.5rem; /* Larger desktop font size for better readability */
 }
 
 h3 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 100;
-    font-size: 2.5vw; /* Smaller dynamic font size */
+    font-size: 2rem; /* Larger desktop font size for better readability */
 }
 
-h4 {    font-family: 'Rozha One', serif;
-    font-size: 2vw; /* Smaller dynamic font size */
+h4 {
+    font-size: 1.75rem; /* Larger desktop font size for better readability */
 }
 
 /* Other Elements */
 p, blockquote, li {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 100;
-    font-size: 1.5vw; /* Smaller dynamic font size */
+    font-size: 1.25rem; /* Larger desktop font size for better readability */
+}
+
+button,
+.btn,
+.button {
+    font-size: 1rem; /* Larger desktop font size for better readability */
 }
 
 /* Additional styles */
@@ -381,26 +381,30 @@ body.full-page-background {
 
     /* Adjust text size for mobile */
     h1 {
-        font-size: 14vw;
+        font-size: 8vw; /* Optimized font size */
     }
 
     h2 {
-        font-size: 10vw;
+        font-size: 6vw; /* Optimized font size */
     }
 
     h3 {
-        font-size: 8vw;
+        font-size: 5vw; /* Optimized font size */
+    }
+
+    h4 {
+        font-size: 4.5vw; /* Optimized font size */
     }
 
     p, blockquote, li {
-        font-size: 6vw;
+        font-size: 4vw; /* Optimized font size */
     }
 
     button,
     .btn,
     .button {
-        font-size: 6vw;
-        padding: 4vh 6vw; /* Adjust padding for better touch targets */
+        font-size: 4vw; /* Optimized font size */
+        padding: 4vh 6vw; /* Ensure better touch targets */
     }
 
     /* Adjust image size for mobile */
