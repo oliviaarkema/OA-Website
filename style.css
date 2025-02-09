@@ -748,3 +748,7 @@ section.blog-preview {
         margin: 0 auto; /* Center buttons */
     }
 }
+
+.section-1.single-column h3 {
+    font-weight: 100; /* Set font-weight to 100 for a lighter appearance */
+}
