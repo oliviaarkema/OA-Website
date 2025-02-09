@@ -1,3 +1,12 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+.poiret-one-regular {
+  font-family: "Poiret One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* Existing styles for body */
 body {
     font-family: 'Poiret One', sans-serif;
@@ -138,14 +147,6 @@ section.blog-preview .section-6-btn {
     --accent-color-3: #c7baa8;
 }
 
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
-
-.poiret-one-regular {
-  font-family: "Poiret One", serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
 /* Headings */
 h1 {
