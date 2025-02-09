@@ -39,7 +39,7 @@ body {
 
 /* Add contrasting container */
 .contrast-container {
-    background-color: var(--secondary-color);
+    background-color: var(--tertiary-color);
     padding: 2vw;
     border-radius: 1vh;
 }
