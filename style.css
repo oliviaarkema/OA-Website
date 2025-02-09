@@ -1,3 +1,4 @@
+/* Existing styles for body */
 body {
     font-family: 'Poiret One', sans-serif;
     font-weight: 100;
@@ -152,6 +153,7 @@ h2 {
 }
 
 h3 {
+    font-family: 'Rozha One', serif; /* Ensure Rozha One font is used */
     font-size: 2rem; /* Larger desktop font size for better readability */
 }
 
@@ -175,12 +177,11 @@ a {
     color: var(--accent-color-1);
 }
 
+/* Update styles for buttons, etc. */
 button,
 .btn,
 .button {
-    background-color: #0d3921;
-    color: #ffffff;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poiret One', sans-serif;
     font-weight: 100;
     font-size: 1.25vw; /* Smaller dynamic font size */
     border-radius: 1vh; /* Dynamic border radius */
@@ -511,26 +512,11 @@ section.blog-preview {
     margin-bottom: 2vh; /* Dynamic margin */
 }
 
-.blog-page h2 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 80;
-    font-size: 2.5vw; /* Dynamic font size */
-    text-align: center;
-    margin-bottom: 2vh; /* Dynamic margin */
-}
-
-.blog-page p {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 100;
-    font-size: 1.5vw; /* Dynamic font size */
-    text-align: left;
-    margin-bottom: 2vh; /* Dynamic margin */
-    line-height: 1.6; /* Improved readability */
-    max-width: 80vw; /* Dynamic max width */
-}
-
+/* Update styles for blog page elements */
+.blog-page h2,
+.blog-page p,
 .blog-page .subheading {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poiret One', sans-serif;
     font-weight: 100;
     font-size: 2.5vw; /* Dynamic font size */
     text-align: center;
