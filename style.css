@@ -254,7 +254,7 @@ section {
 }
 
 .section-4 {
-    background-color: #0d3921;
+    background: linear-gradient(180deg, #c7baa8 0%, #0d3921 50%, #c7baa8 100%);
     color: #ffffff;
 }
 
