@@ -98,10 +98,12 @@ body {
 
 /* Headings */
 h1 {
+    font-family: 'Rozha One', serif; /* Ensure Rozha One font is used */
     font-size: 3rem; /* Larger desktop font size for better readability */
 }
 
 h2 {
+    font-family: 'Rozha One', serif; /* Ensure Rozha One font is used */
     font-size: 2.5rem; /* Larger desktop font size for better readability */
 }
 
@@ -381,10 +383,12 @@ body.full-page-background {
 
     /* Adjust text size for mobile */
     h1 {
+        font-family: 'Rozha One', serif; /* Ensure Rozha One font is used */
         font-size: 8vw; /* Optimized font size */
     }
 
     h2 {
+        font-family: 'Rozha One', serif; /* Ensure Rozha One font is used */
         font-size: 6vw; /* Optimized font size */
     }
 
