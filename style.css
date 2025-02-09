@@ -34,12 +34,12 @@ body {
 .section-5,
 .section-6,
 .section-7 {
-    background: none;
+    background: var(--primary-color);
 }
 
 /* Add contrasting container */
 .contrast-container {
-    background-color: var(--tertiary-color);
+    background-color: var(--secondary-color);
     padding: 2vw;
     border-radius: 1vh;
 }
