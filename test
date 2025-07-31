@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
+    <title>OA Studio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
@@ -52,8 +52,8 @@
     <section id="home" class="gradient-bg min-h-screen flex items-center">
         <div class="max-w-6xl mx-auto px-6 text-center text-white">
             <div class="fade-in">
-                <h1 class="text-5xl md:text-7xl font-bold mb-6">Creative Professional</h1>
-                <p class="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">Crafting exceptional digital experiences through innovative design and strategic thinking</p>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">Creative Marketing, Data Analysis, & Web Design for Small Businesses</h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">Marketing that works as hard as you do</p>
                 <div class="space-x-4">
                     <button onclick="scrollToSection('work')" class="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">View My Work</button>
                     <button onclick="scrollToSection('contact')" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-purple-600 transition-colors">Get In Touch</button>
@@ -67,7 +67,7 @@
         <div class="max-w-6xl mx-auto px-6">
             <div class="text-center mb-16 fade-in">
                 <h2 class="text-4xl font-bold text-gray-800 mb-4">Services</h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Comprehensive solutions tailored to bring your vision to life</p>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Comprehensive solutions tailored to bring your brand to life</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="card-hover bg-gray-50 p-8 rounded-2xl text-center fade-in stagger-1">
@@ -76,7 +76,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Strategy & Consulting</h3>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Marketing Strategy & Consulting</h3>
                     <p class="text-gray-600">Strategic planning and consultation to align your goals with market opportunities and user needs.</p>
                 </div>
                 <div class="card-hover bg-gray-50 p-8 rounded-2xl text-center fade-in stagger-2">
@@ -85,7 +85,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Design & Development</h3>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Web Design & Development</h3>
                     <p class="text-gray-600">Beautiful, functional designs brought to life with clean, efficient code and seamless user experiences.</p>
                 </div>
                 <div class="card-hover bg-gray-50 p-8 rounded-2xl text-center fade-in stagger-3">
@@ -111,19 +111,19 @@
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
                 <div class="card-hover bg-white p-8 rounded-xl text-center fade-in stagger-1">
                     <div class="text-3xl font-bold text-gray-400 mb-2">TECH</div>
-                    <div class="text-sm text-gray-500">Innovation Co.</div>
+                    <div class="text-sm text-gray-500">Better People Care</div>
                 </div>
                 <div class="card-hover bg-white p-8 rounded-xl text-center fade-in stagger-2">
                     <div class="text-3xl font-bold text-gray-400 mb-2">DESIGN</div>
-                    <div class="text-sm text-gray-500">Studio Plus</div>
+                    <div class="text-sm text-gray-500">SDG Precision Agriculture</div>
                 </div>
                 <div class="card-hover bg-white p-8 rounded-xl text-center fade-in stagger-3">
                     <div class="text-3xl font-bold text-gray-400 mb-2">BRAND</div>
-                    <div class="text-sm text-gray-500">Global Inc.</div>
+                    <div class="text-sm text-gray-500">The DAWN Program</div>
                 </div>
                 <div class="card-hover bg-white p-8 rounded-xl text-center fade-in stagger-4">
                     <div class="text-3xl font-bold text-gray-400 mb-2">MEDIA</div>
-                    <div class="text-sm text-gray-500">Creative Lab</div>
+                    <div class="text-sm text-gray-500">Country Dairy</div>
                 </div>
             </div>
         </div>
@@ -250,8 +250,8 @@
         <div class="max-w-6xl mx-auto px-6">
             <div class="grid md:grid-cols-3 gap-8">
                 <div>
-                    <div class="text-2xl font-bold text-white mb-4">Portfolio</div>
-                    <p class="text-gray-400">Creating exceptional digital experiences through thoughtful design and strategic innovation.</p>
+                    <div class="text-2xl font-bold text-white mb-4">OA Studio</div>
+                    <p class="text-gray-400">Creative Marketing, Data Analysis, & Web Design for Small Businesses.</p>
                 </div>
                 <div>
                     <h4 class="text-white font-semibold mb-4">Quick Links</h4>
