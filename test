@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .fade-in { opacity: 0; animation: fadeIn 0.8s ease-in forwards; }
+        @keyframes fadeIn { to { opacity: 1; } }
+        .stagger-1 { animation-delay: 0.1s; }
+        .stagger-2 { animation-delay: 0.2s; }
+        .stagger-3 { animation-delay: 0.3s; }
+        .stagger-4 { animation-delay: 0.4s; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-gray-800">Portfolio</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-purple-600 transition-colors">Home</a>
+                    <a href="#services" class="text-gray-600 hover:text-purple-600 transition-colors">Services</a>
+                    <a href="#clients" class="text-gray-600 hover:text-purple-600 transition-colors">Clients</a>
+                    <a href="#work" class="text-gray-600 hover:text-purple-600 transition-colors">Work</a>
+                    <a href="#contact" class="text-gray-600 hover:text-purple-600 transition-colors">Contact</a>
+                </div>
+                <button class="md:hidden text-gray-600" onclick="toggleMenu()">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="#home" class="block text-gray-600 hover:text-purple-600 py-2">Home</a>
+                <a href="#services" class="block text-gray-600 hover:text-purple-600 py-2">Services</a>
+                <a href="#clients" class="block text-gray-600 hover:text-purple-600 py-2">Clients</a>
+                <a href="#work" class="block text-gray-600 hover:text-purple-600 py-2">Work</a>
+                <a href="#contact" class="block text-gray-600 hover:text-purple-600 py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg min-h-screen flex items-center">
+        <div class="max-w-6xl mx-auto px-6 text-center text-white">
+            <div class="fade-in">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">Creative Professional</h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">Crafting exceptional digital experiences through innovative design and strategic thinking</p>
+                <div class="space-x-4">
+                    <button onclick="scrollToSection('work')" class="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">View My Work</button>
+                    <button onclick="scrollToSection('contact')" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-purple-600 transition-colors">Get In Touch</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Services</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Comprehensive solutions tailored to bring your vision to life</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-hover bg-gray-50 p-8 rounded-2xl text-center fade-in stagger-1">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Strategy & Consulting</h3>
+                    <p class="text-gray-600">Strategic planning and consultation to align your goals with market opportunities and user needs.</p>
+                </div>
+                <div class="card-hover bg-gray-50 p-8 rounded-2xl text-center fade-in stagger-2">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Design & Development</h3>
+                    <p class="text-gray-600">Beautiful, functional designs brought to life with clean, efficient code and seamless user experiences.</p>
+                </div>
+                <div class="card-hover bg-gray-50 p-8 rounded-2xl text-center fade-in stagger-3">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Brand & Identity</h3>
+                    <p class="text-gray-600">Comprehensive brand development from concept to execution, creating memorable and impactful identities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clients" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Trusted by Industry Leaders</h2>
+                <p class="text-xl text-gray-600">Proud to work with amazing companies and organizations</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+                <div class="card-hover bg-white p-8 rounded-xl text-center fade-in stagger-1">
+                    <div class="text-3xl font-bold text-gray-400 mb-2">TECH</div>
+                    <div class="text-sm text-gray-500">Innovation Co.</div>
+                </div>
+                <div class="card-hover bg-white p-8 rounded-xl text-center fade-in stagger-2">
+                    <div class="text-3xl font-bold text-gray-400 mb-2">DESIGN</div>
+                    <div class="text-sm text-gray-500">Studio Plus</div>
+                </div>
+                <div class="card-hover bg-white p-8 rounded-xl text-center fade-in stagger-3">
+                    <div class="text-3xl font-bold text-gray-400 mb-2">BRAND</div>
+                    <div class="text-sm text-gray-500">Global Inc.</div>
+                </div>
+                <div class="card-hover bg-white p-8 rounded-xl text-center fade-in stagger-4">
+                    <div class="text-3xl font-bold text-gray-400 mb-2">MEDIA</div>
+                    <div class="text-sm text-gray-500">Creative Lab</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Featured Work</h2>
+                <p class="text-xl text-gray-600">A collection of projects, writings, and creative explorations</p>
+            </div>
+            
+            <!-- Filter Tabs -->
+            <div class="flex justify-center mb-12">
+                <div class="bg-gray-100 p-1 rounded-full">
+                    <button onclick="filterWork('all')" class="filter-btn active px-6 py-2 rounded-full font-medium transition-colors">All</button>
+                    <button onclick="filterWork('projects')" class="filter-btn px-6 py-2 rounded-full font-medium transition-colors">Projects</button>
+                    <button onclick="filterWork('blog')" class="filter-btn px-6 py-2 rounded-full font-medium transition-colors">Blog</button>
+                    <button onclick="filterWork('writings')" class="filter-btn px-6 py-2 rounded-full font-medium transition-colors">Writings</button>
+                </div>
+            </div>
+
+            <!-- Work Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Items -->
+                <div class="work-item projects card-hover bg-gray-50 rounded-2xl overflow-hidden fade-in stagger-1">
+                    <div class="h-48 bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center">
+                        <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">E-commerce Platform</h3>
+                        <p class="text-gray-600 mb-4">Complete redesign of a modern e-commerce platform with focus on user experience and conversion optimization.</p>
+                        <span class="inline-block bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm font-medium">Project</span>
+                    </div>
+                </div>
+
+                <div class="work-item blog card-hover bg-gray-50 rounded-2xl overflow-hidden fade-in stagger-2">
+                    <div class="h-48 bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center">
+                        <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">The Future of Design</h3>
+                        <p class="text-gray-600 mb-4">Exploring emerging trends in digital design and their impact on user behavior and business outcomes.</p>
+                        <span class="inline-block bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">Blog</span>
+                    </div>
+                </div>
+
+                <div class="work-item projects card-hover bg-gray-50 rounded-2xl overflow-hidden fade-in stagger-3">
+                    <div class="h-48 bg-gradient-to-br from-green-400 to-emerald-400 flex items-center justify-center">
+                        <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Mobile App Design</h3>
+                        <p class="text-gray-600 mb-4">Native mobile application design for a fintech startup, focusing on security and user trust.</p>
+                        <span class="inline-block bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm font-medium">Project</span>
+                    </div>
+                </div>
+
+                <div class="work-item writings card-hover bg-gray-50 rounded-2xl overflow-hidden fade-in stagger-1">
+                    <div class="h-48 bg-gradient-to-br from-orange-400 to-red-400 flex items-center justify-center">
+                        <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Design Systems Guide</h3>
+                        <p class="text-gray-600 mb-4">Comprehensive guide on building and maintaining design systems for scalable product development.</p>
+                        <span class="inline-block bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-medium">Writing</span>
+                    </div>
+                </div>
+
+                <div class="work-item blog card-hover bg-gray-50 rounded-2xl overflow-hidden fade-in stagger-2">
+                    <div class="h-48 bg-gradient-to-br from-indigo-400 to-purple-400 flex items-center justify-center">
+                        <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">UX Metrics That Matter</h3>
+                        <p class="text-gray-600 mb-4">Deep dive into measuring user experience success and the metrics that actually drive business value.</p>
+                        <span class="inline-block bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">Blog</span>
+                    </div>
+                </div>
+
+                <div class="work-item writings card-hover bg-gray-50 rounded-2xl overflow-hidden fade-in stagger-3">
+                    <div class="h-48 bg-gradient-to-br from-pink-400 to-rose-400 flex items-center justify-center">
+                        <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Creative Process</h3>
+                        <p class="text-gray-600 mb-4">Personal reflections on creativity, inspiration, and the iterative process of bringing ideas to life.</p>
+                        <span class="inline-block bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-medium">Writing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="fade-in">
+                <h2 class="text-4xl font-bold mb-6">Let's Create Something Amazing</h2>
+                <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">Ready to bring your vision to life? Let's discuss your project and explore how we can work together.</p>
+                <div class="space-x-4">
+                    <button onclick="openContact()" class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full font-semibold transition-colors">Start a Project</button>
+                    <button onclick="openContact()" class="border-2 border-gray-400 text-gray-300 hover:border-white hover:text-white px-8 py-3 rounded-full font-semibold transition-colors">Say Hello</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="text-2xl font-bold text-white mb-4">Portfolio</div>
+                    <p class="text-gray-400">Creating exceptional digital experiences through thoughtful design and strategic innovation.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <div class="space-y-2">
+                        <a href="#services" class="block hover:text-white transition-colors">Services</a>
+                        <a href="#work" class="block hover:text-white transition-colors">Work</a>
+                        <a href="#contact" class="block hover:text-white transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Connect</h4>
+                    <div class="space-y-2">
+                        <a href="#" class="block hover:text-white transition-colors">LinkedIn</a>
+                        <a href="#" class="block hover:text-white transition-colors">Twitter</a>
+                        <a href="#" class="block hover:text-white transition-colors">Email</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p>&copy; 2024 Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Smooth scrolling
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Work filter functionality
+        function filterWork(category) {
+            const items = document.querySelectorAll('.work-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            // Update active button
+            buttons.forEach(btn => btn.classList.remove('active', 'bg-purple-600', 'text-white'));
+            event.target.classList.add('active', 'bg-purple-600', 'text-white');
+            
+            // Filter items
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                    item.style.opacity = '0';
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                    }, 100);
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Contact modal (demo)
+        function openContact() {
+            alert('Contact form would open here! This is a demo portfolio - replace with your actual contact information or form.');
+        }
+
+        // Initialize active filter button
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.filter-btn').classList.add('bg-purple-600', 'text-white');
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9680043823addd92',t:'MTc1Mzk5NTUzNC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
