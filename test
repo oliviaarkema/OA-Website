@@ -58,10 +58,10 @@
     
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         body { font-family: 'Inter', sans-serif; }
-        h1, h2, h3, h4, h5, h6, .heading-font { font-family: 'Rozha One', serif; }
+        h1, h2, h3, h4, h5, h6, .heading-font { font-family: 'Meow Script', cursive; letter-spacing: 0.02em; }
         .hero-bg { background-color: #23424c; }
         .elegant-border { border: 2px solid #5f849c; }
         .subtle-shadow { box-shadow: 0 8px 32px rgba(57, 56, 49, 0.1); }
@@ -84,7 +84,7 @@
     <nav id="navbar" class="fixed w-full z-50 shadow-sm transition-transform duration-300" style="background-color: rgba(254, 254, 254, 0.9); backdrop-filter: blur(12px);">
         <div class="max-w-6xl mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
-                <div class="text-2xl font-bold heading-font" style="color: #393831;">Portfolio</div>
+                <div class="text-3xl font-bold heading-font" style="color: #393831;">Portfolio</div>
                 <div class="hidden md:flex space-x-8">
                     <a href="#home" class="transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Home</a>
                     <a href="#services" class="transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Services</a>
@@ -111,16 +111,12 @@
     <!-- Hero Section -->
     <main>
     <section id="home" class="hero-bg min-h-screen flex items-center relative" role="banner">
-        <!-- Decorative elements -->
-        <div class="absolute top-20 left-10 w-32 h-32 rounded-full opacity-10" style="background-color: #5f849c;"></div>
-        <div class="absolute bottom-20 right-10 w-24 h-24 rounded-full opacity-10" style="background-color: #929673;"></div>
         
         <div class="max-w-5xl mx-auto px-6 text-center">
             <div class="fade-in">
                 <!-- Newspaper-style header -->
                 <div class="mb-8">
                     <div class="w-24 h-1 mx-auto mb-4" style="background-color: #5f849c;"></div>
-                    <div class="text-sm font-medium tracking-widest mb-2" style="color: #9e9383;">CREATIVE PROFESSIONAL • 2024</div>
                     <div class="w-full h-px mb-6" style="background-color: #5f849c; opacity: 0.3;"></div>
                 </div>
                 
@@ -134,11 +130,7 @@
                     <cite class="text-lg font-medium not-italic" style="color: #9e9383;">— Steve Jobs</cite>
                 </blockquote>
                 
-                <!-- Subtitle -->
-                <p class="text-xl md:text-2xl mb-12 max-w-4xl mx-auto leading-relaxed" style="color: #dae4eb;">
-                    Crafting exceptional digital experiences through innovative design and strategic thinking, 
-                    with a focus on timeless elegance and purposeful creativity.
-                </p>
+
                 
                 <!-- Action buttons -->
                 <div class="space-y-4 md:space-y-0 md:space-x-6 md:flex md:justify-center">
@@ -149,11 +141,13 @@
         </div>
     </section>
 
+
+
     <!-- Clients Section -->
     <section id="clients" class="py-20" style="background-color: #ebe3db;" aria-labelledby="clients-heading">
         <div class="max-w-6xl mx-auto px-6">
             <div class="text-center mb-16 fade-in">
-                <h2 id="clients-heading" class="text-4xl font-bold mb-4" style="color: #393831;">Trusted by Industry Leaders</h2>
+                <h2 id="clients-heading" class="text-5xl font-bold mb-4" style="color: #393831;">Trusted by Industry Leaders</h2>
                 <p class="text-xl" style="color: #9e9383;">Proud to work with amazing companies and organizations</p>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
@@ -181,7 +175,7 @@
     <section id="services" class="py-20" style="background-color: #fefefe;" aria-labelledby="services-heading">
         <div class="max-w-6xl mx-auto px-6">
             <div class="text-center mb-16 fade-in">
-                <h2 id="services-heading" class="text-4xl font-bold mb-4" style="color: #393831;">Services</h2>
+                <h2 id="services-heading" class="text-5xl font-bold mb-4" style="color: #393831;">Services</h2>
                 <p class="text-xl max-w-2xl mx-auto" style="color: #9e9383;">Comprehensive solutions tailored to bring your vision to life</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
@@ -220,7 +214,7 @@
     <section id="work" class="py-20" style="background-color: #fefefe;" aria-labelledby="work-heading">
         <div class="max-w-6xl mx-auto px-6">
             <div class="text-center mb-16 fade-in">
-                <h2 id="work-heading" class="text-4xl font-bold mb-4" style="color: #393831;">Featured Work</h2>
+                <h2 id="work-heading" class="text-5xl font-bold mb-4" style="color: #393831;">Featured Work</h2>
                 <p class="text-xl" style="color: #9e9383;">A collection of projects, writings, and creative explorations</p>
             </div>
             
@@ -245,7 +239,7 @@
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-semibold" style="color: #393831;">E-commerce Platform</h3>
+                            <h3 class="text-xl font-semibold" style="color: #393831; font-family: 'Inter', sans-serif;">E-commerce Platform</h3>
                             <div class="w-4 h-4" style="background-color: #5f849c;"></div>
                         </div>
                         <p class="mb-4 text-sm leading-relaxed" style="color: #9e9383;">Complete redesign of a modern e-commerce platform with focus on user experience and conversion optimization.</p>
@@ -262,7 +256,7 @@
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-semibold" style="color: #393831;">The Future of Design</h3>
+                            <h3 class="text-xl font-semibold" style="color: #393831; font-family: 'Inter', sans-serif;">The Future of Design</h3>
                             <div class="w-4 h-4" style="background-color: #929673;"></div>
                         </div>
                         <p class="mb-4 text-sm leading-relaxed" style="color: #9e9383;">Exploring emerging trends in digital design and their impact on user behavior and business outcomes.</p>
@@ -279,7 +273,7 @@
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-semibold" style="color: #393831;">Mobile App Design</h3>
+                            <h3 class="text-xl font-semibold" style="color: #393831; font-family: 'Inter', sans-serif;">Mobile App Design</h3>
                             <div class="w-4 h-4" style="background-color: #5f849c;"></div>
                         </div>
                         <p class="mb-4 text-sm leading-relaxed" style="color: #9e9383;">Native mobile application design for a fintech startup, focusing on security and user trust.</p>
@@ -296,7 +290,7 @@
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-semibold" style="color: #393831;">Design Systems Guide</h3>
+                            <h3 class="text-xl font-semibold" style="color: #393831; font-family: 'Inter', sans-serif;">Design Systems Guide</h3>
                             <div class="w-4 h-4" style="background-color: #9e9383;"></div>
                         </div>
                         <p class="mb-4 text-sm leading-relaxed" style="color: #9e9383;">Comprehensive guide on building and maintaining design systems for scalable product development.</p>
@@ -313,7 +307,7 @@
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-semibold" style="color: #393831;">UX Metrics That Matter</h3>
+                            <h3 class="text-xl font-semibold" style="color: #393831; font-family: 'Inter', sans-serif;">UX Metrics That Matter</h3>
                             <div class="w-4 h-4" style="background-color: #23424c;"></div>
                         </div>
                         <p class="mb-4 text-sm leading-relaxed" style="color: #9e9383;">Deep dive into measuring user experience success and the metrics that actually drive business value.</p>
@@ -330,7 +324,7 @@
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-semibold" style="color: #393831;">Creative Process</h3>
+                            <h3 class="text-xl font-semibold" style="color: #393831; font-family: 'Inter', sans-serif;">Creative Process</h3>
                             <div class="w-4 h-4" style="background-color: #9e9383;"></div>
                         </div>
                         <p class="mb-4 text-sm leading-relaxed" style="color: #9e9383;">Personal reflections on creativity, inspiration, and the iterative process of bringing ideas to life.</p>
@@ -355,9 +349,8 @@
                 <div class="w-24 h-1 mx-auto mb-8" style="background-color: #5f849c;" aria-hidden="true"></div>
                 <h2 id="contact-heading" class="text-4xl font-bold mb-6 heading-font" style="color: #fefefe;">Let's Create Something Amazing</h2>
                 <p class="text-xl mb-12 max-w-2xl mx-auto leading-relaxed" style="color: #dae4eb;">Ready to bring your vision to life? Let's discuss your project and explore how we can work together to create something meaningful.</p>
-                <div class="space-y-4 md:space-y-0 md:space-x-6 md:flex md:justify-center">
-                    <button onclick="openContact()" class="block w-full md:w-auto px-10 py-4 font-semibold transition-all elegant-border rounded-xl" style="background-color: #5f849c; color: #fefefe; border-color: #5f849c;" onmouseover="this.style.backgroundColor='transparent'; this.style.color='#5f849c'" onmouseout="this.style.backgroundColor='#5f849c'; this.style.color='#fefefe'" aria-label="Start a new project consultation">Start a Project</button>
-                    <button onclick="openContact()" class="block w-full md:w-auto px-10 py-4 font-semibold transition-all elegant-border rounded-xl" style="background-color: transparent; color: #dae4eb; border-color: #dae4eb;" onmouseover="this.style.backgroundColor='#dae4eb'; this.style.color='#23424c'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#dae4eb'" aria-label="Send a general inquiry">Say Hello</button>
+                <div class="flex justify-center">
+                    <button onclick="openContact()" class="px-10 py-4 font-semibold transition-all elegant-border rounded-xl" style="background-color: transparent; color: #dae4eb; border-color: #dae4eb;" onmouseover="this.style.backgroundColor='#dae4eb'; this.style.color='#23424c'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#dae4eb'" aria-label="Send a general inquiry">Say Hello</button>
                 </div>
             </div>
         </div>
@@ -368,7 +361,7 @@
         <div class="max-w-6xl mx-auto px-6">
             <div class="grid md:grid-cols-3 gap-12">
                 <div>
-                    <div class="text-2xl font-bold mb-6 heading-font" style="color: #fefefe;">Portfolio</div>
+                    <div class="text-3xl font-bold mb-6 heading-font" style="color: #fefefe;">Portfolio</div>
                     <p class="leading-relaxed" style="color: #9e9383;">Creating exceptional digital experiences through thoughtful design and strategic innovation.</p>
                     <div class="w-12 h-1 mt-4" style="background-color: #5f849c;"></div>
                 </div>
@@ -483,5 +476,5 @@
             });
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96803ed6400a0ceb',t:'MTc1Mzk5NzkzNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96806c14b005299f',t:'MTc1Mzk5OTc4OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
