@@ -91,7 +91,7 @@
                 <div class="text-3xl font-bold heading-font" style="color: #393831;">OA</div>
                 <div class="hidden md:flex space-x-8">
                     <a href="#home" class="transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Home</a>
-                    <a href="#services" class="transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">What I Do</a>
+                    <a href="#services" class="transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Services</a>
                     <a href="#clients" class="transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Clients</a>
                     <a href="#featuredwork" class="transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Featured Work</a>
                     <a href="#contact" class="transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Contact</a>
