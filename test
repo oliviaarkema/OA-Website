@@ -93,7 +93,7 @@
                     <a href="#home" class="transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Home</a>
                     <a href="#whatido" class="transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">What I Do</a>
                     <a href="#clients" class="transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Clients</a>
-                    <a href="#thingsimworkingon" class="transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Things I'm Working On</a>
+                    <a href="#featuredwork" class="transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Featured Work</a>
                     <a href="#contact" class="transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Contact</a>
                 </div>
                 <button class="md:hidden" style="color: #9e9383;" onclick="toggleMenu()">
@@ -106,7 +106,7 @@
                 <a href="#home" class="block py-2 transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Home</a>
                 <a href="#whatido" class="block py-2 transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Services</a>
                 <a href="#clients" class="block py-2 transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Clients</a>
-                <a href="#thingsimworkingon" class="block py-2 transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Work</a>
+                <a href="#featuredwork" class="block py-2 transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Featured Work</a>
                 <a href="#contact" class="block py-2 transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Contact</a>
             </div>
         </div>
@@ -137,7 +137,7 @@ for Small Businesses"</span>
                 
                 <!-- Action buttons -->
                 <div class="space-y-4 md:space-y-0 md:space-x-6 md:flex md:justify-center">
-                    <button onclick="scrollToSection('thingsimworkingon')" class="block w-full md:w-auto px-10 py-4 font-semibold transition-all elegant-border rounded-xl" style="background-color: transparent; color: #fefefe;" onmouseover="this.style.backgroundColor='#5f849c'; this.style.borderColor='#5f849c'" onmouseout="this.style.backgroundColor='transparent'; this.style.borderColor='#5f849c'" aria-label="View portfolio work section">See What I'm Working On</button>
+                    <button onclick="scrollToSection('featuredwork')" class="block w-full md:w-auto px-10 py-4 font-semibold transition-all elegant-border rounded-xl" style="background-color: transparent; color: #fefefe;" onmouseover="this.style.backgroundColor='#5f849c'; this.style.borderColor='#5f849c'" onmouseout="this.style.backgroundColor='transparent'; this.style.borderColor='#5f849c'" aria-label="View portfolio work section">See What I'm Working On</button>
                     <button onclick="scrollToSection('contact')" class="block w-full md:w-auto px-10 py-4 font-semibold transition-all rounded-xl" style="background-color: #5f849c; color: #fefefe; border: 2px solid #5f849c;" onmouseover="this.style.backgroundColor='transparent'; this.style.color='#5f849c'" onmouseout="this.style.backgroundColor='#5f849c'; this.style.color='#fefefe'" aria-label="Navigate to contact section">Get In Touch</button>
                 </div>
             </div>
@@ -214,7 +214,7 @@ for Small Businesses"</span>
     </section>
 
     <!-- Work Section -->
-    <section id="work" class="py-20" style="background-color: #fefefe;" aria-labelledby="work-heading">
+    <section id="featuredwork" class="py-20" style="background-color: #fefefe;" aria-labelledby="work-heading">
         <div class="max-w-6xl mx-auto px-6">
             <div class="text-center mb-16 fade-in">
                 <h2 id="work-heading" class="text-5xl font-bold mb-4" style="color: #393831;">Featured Work</h2>
