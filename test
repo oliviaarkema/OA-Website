@@ -360,8 +360,9 @@ for Small Businesses"</span>
         <div class="max-w-6xl mx-auto px-6">
             <div class="grid md:grid-cols-3 gap-12">
                 <div>
-                    <div class="text-3xl font-bold mb-6 heading-font" style="color: #fefefe;">Portfolio</div>
-                    <p class="leading-relaxed" style="color: #9e9383;">Creating exceptional digital experiences through thoughtful design and strategic innovation.</p>
+                    <div class="text-3xl font-bold mb-6 heading-font" style="color: #fefefe;">Olivia Arkema</div>
+                    <p class="leading-relaxed" style="color: #9e9383;">Creative Marketing, Data Analysis, & Web Design
+for Small Businesses</p>
                     <div class="w-12 h-1 mt-4" style="background-color: #5f849c;"></div>
                 </div>
                 <div>
@@ -375,9 +376,9 @@ for Small Businesses"</span>
                 <div>
                     <h4 class="font-semibold mb-6 heading-font" style="color: #fefefe;">Connect</h4>
                     <div class="space-y-3">
-                        <a href="#" class="block transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">LinkedIn</a>
-                        <a href="#" class="block transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Twitter</a>
-                        <a href="#" class="block transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Email</a>
+                        <a href="https://www.linkedin.com/in/oliviaarkema/" class="block transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">LinkedIn</a>
+                        <a href="https://x.com/livlavonne" class="block transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Twitter</a>
+                        <a href="mailto:livarkema@gmail.com" class="block transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Email</a>
                     </div>
                 </div>
             </div>
