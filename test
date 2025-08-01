@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO Meta Tags -->
-    <title>OA Studio | Marketing, Web Design, & Data Services for Small Businesses</title>
+    <title>Creative Portfolio | Design & Development Services | Your Name</title>
     <meta name="description" content="Award-winning creative professional specializing in digital design, web development, and brand identity. Trusted by industry leaders for innovative solutions and exceptional user experiences.">
     <meta name="keywords" content="web design, digital design, brand identity, UX design, creative portfolio, web development, design consulting">
     <meta name="author" content="Your Name">
@@ -13,7 +13,7 @@
     <link rel="canonical" href="https://yourportfolio.com">
     
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Olivia Arkema | OA Studio | Marketing, Web Design, & Data Services for Small Businesses">
+    <meta property="og:title" content="Creative Portfolio | Design & Development Services">
     <meta property="og:description" content="Award-winning creative professional specializing in digital design, web development, and brand identity. Trusted by industry leaders.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://yourportfolio.com">
@@ -340,10 +340,6 @@
     
     <!-- Contact Section -->
     <section id="contact" class="py-20 relative" style="background-color: #23424c;" aria-labelledby="contact-heading">
-        <div class="absolute inset-0 opacity-5" aria-hidden="true">
-            <div class="absolute top-10 left-1/4 w-20 h-20" style="background-color: #5f849c;"></div>
-            <div class="absolute bottom-20 right-1/3 w-16 h-16" style="background-color: #929673;"></div>
-        </div>
         <div class="max-w-4xl mx-auto px-6 text-center relative">
             <div class="fade-in">
                 <div class="w-24 h-1 mx-auto mb-8" style="background-color: #5f849c;" aria-hidden="true"></div>
@@ -476,5 +472,5 @@
             });
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96806c14b005299f',t:'MTc1Mzk5OTc4OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9684f5fef5a4183c',t:'MTc1NDA0NzM4MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
