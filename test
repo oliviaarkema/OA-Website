@@ -155,8 +155,8 @@ for Small Businesses"</span>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
                 <div class="card-hover p-8 rounded-xl text-center fade-in stagger-1" style="background-color: #fefefe;">
-                    <div class="text-3xl font-bold mb-2 heading-font" style="color: #9e9383;">TECH</div>
-                    <div class="text-sm" style="color: #929673;">Innovation Co.</div>
+                        <a href="https://www.sdgprecisionag.com"><img src="SDG_logo.png" alt="SDG Logo" style="max-width: 150px;max-height: 150px;"></a>
+                    <div class="text-sm" style="color: #929673;">SDG Precision Agriculture</div>
                 </div>
                 <div class="card-hover p-8 rounded-xl text-center fade-in stagger-2" style="background-color: #fefefe;">
                     <div class="text-3xl font-bold mb-2 heading-font" style="color: #9e9383;">DESIGN</div>
