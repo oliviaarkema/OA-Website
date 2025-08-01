@@ -5,31 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO Meta Tags -->
-    <title>Creative Portfolio | Design & Development Services | Your Name</title>
-    <meta name="description" content="Award-winning creative professional specializing in digital design, web development, and brand identity. Trusted by industry leaders for innovative solutions and exceptional user experiences.">
-    <meta name="keywords" content="web design, digital design, brand identity, UX design, creative portfolio, web development, design consulting">
+    <title>Olivia Arkema | Marketing & Web Design </title>
+    <meta name="description" content="Helping small business owners grow with simple, effective marketing and website solutions. 
+        From strategy to design, I make it easy to connect with your audience and drive results. Get in touch or check out my free guides and resources for small businesses.">
+    <meta name="keywords" content="web design, digital design, brand identity, UX design, creative portfolio, web development, design consulting, marketing, social media, content creation">
     <meta name="author" content="Your Name">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://yourportfolio.com">
+    <link rel="icon" href="green_bow.png" type="image/png">
+    <link rel="canonical" href="https://oliviaarkema.com">
     
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Creative Portfolio | Design & Development Services">
-    <meta property="og:description" content="Award-winning creative professional specializing in digital design, web development, and brand identity. Trusted by industry leaders.">
+    <meta property="og:title" content="Olivia Arkema | Marketing & Web Design">
+    <meta property="og:description" content="Helping small business owners grow with simple, effective marketing and website solutions. 
+        From strategy to design, I make it easy to connect with your audience and drive results. Get in touch or check out my free guides and resources for small businesses.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourportfolio.com">
-    <meta property="og:image" content="https://yourportfolio.com/og-image.jpg">
+    <meta property="og:url" content="https://oliviaarkema.com">
+    <meta property="og:image" content="https://oliviaarkema.com/green_bow.png">
     <meta property="og:site_name" content="Your Portfolio">
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Creative Portfolio | Design & Development Services">
-    <meta name="twitter:description" content="Award-winning creative professional specializing in digital design, web development, and brand identity.">
+    <meta name="twitter:title" content="Olivia Arkema | Marketing & Web Design">
+    <meta name="twitter:description" content="Helping small business owners grow with simple, effective marketing and website solutions. 
+        From strategy to design, I make it easy to connect with your audience and drive results. Get in touch or check out my free guides and resources for small businesses.">
     <meta name="twitter:image" content="https://yourportfolio.com/twitter-image.jpg">
     <meta name="twitter:creator" content="@yourusername">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/green_bow.png">
     
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
