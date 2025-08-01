@@ -150,7 +150,7 @@ for Small Businesses"</span>
     <section id="clients" class="py-20" style="background-color: #ebe3db;" aria-labelledby="clients-heading">
         <div class="max-w-6xl mx-auto px-6">
             <div class="text-center mb-16 fade-in">
-                <h2 id="clients-heading" class="text-5xl font-bold mb-4" style="color: #393831;">Trusted by Industry Leaders</h2>
+                <h2 id="clients-heading" class="text-5xl font-bold mb-4" style="color: #393831;">Trusted by Growing Businesses</h2>
                 <p class="text-xl" style="color: #9e9383;">Proud to work with amazing companies and organizations</p>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
@@ -179,7 +179,7 @@ for Small Businesses"</span>
         <div class="max-w-6xl mx-auto px-6">
             <div class="text-center mb-16 fade-in">
                 <h2 id="services-heading" class="text-5xl font-bold mb-4" style="color: #393831;">Services</h2>
-                <p class="text-xl max-w-2xl mx-auto" style="color: #9e9383;">Comprehensive solutions tailored to bring your vision to life</p>
+                <p class="text-xl max-w-2xl mx-auto" style="color: #9e9383;">Marketing should work as hard as you do.</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="card-hover p-8 rounded-2xl text-center fade-in stagger-1" style="background-color: #dae4eb;">
@@ -188,8 +188,8 @@ for Small Businesses"</span>
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-semibold mb-4" style="color: #393831;">Strategy & Consulting</h3>
-                    <p style="color: #9e9383;">Strategic planning and consultation to align your goals with market opportunities and user needs.</p>
+                    <h3 class="text-2xl font-semibold mb-4" style="color: #393831;">Marketing Strategy & Consulting</h3>
+                    <p style="color: #9e9383;">Grow your brand with strategic marketing and engaging social media.</p>
                 </div>
                 <div class="card-hover p-8 rounded-2xl text-center fade-in stagger-2" style="background-color: #dae4eb;">
                     <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6" style="background-color: rgba(95, 132, 156, 0.2);">
@@ -197,8 +197,8 @@ for Small Businesses"</span>
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-semibold mb-4" style="color: #393831;">Design & Development</h3>
-                    <p style="color: #9e9383;">Beautiful, functional designs brought to life with clean, efficient code and seamless user experiences.</p>
+                    <h3 class="text-2xl font-semibold mb-4" style="color: #393831;">Web Design & Development</h3>
+                    <p style="color: #9e9383;">Stunning websites, built for your business to thrive.</p>
                 </div>
                 <div class="card-hover p-8 rounded-2xl text-center fade-in stagger-3" style="background-color: #dae4eb;">
                     <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6" style="background-color: rgba(95, 132, 156, 0.2);">
@@ -206,8 +206,8 @@ for Small Businesses"</span>
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-semibold mb-4" style="color: #393831;">Brand & Identity</h3>
-                    <p style="color: #9e9383;">Comprehensive brand development from concept to execution, creating memorable and impactful identities.</p>
+                    <h3 class="text-2xl font-semibold mb-4" style="color: #393831;">Market Research & Data Analysis</h3>
+                    <p style="color: #9e9383;">Smart decisions start with solid insights.</p>
                 </div>
             </div>
         </div>
