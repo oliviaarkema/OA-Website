@@ -39,21 +39,22 @@
     {
       "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Your Name",
-      "jobTitle": "Creative Director & Designer",
-      "description": "Award-winning creative professional specializing in digital design, web development, and brand identity.",
-      "url": "https://yourportfolio.com",
+      "name": "Olivia Arkema",
+      "jobTitle": "Marketing Professional & Website Designer/Developer",
+      "description": "Helping small business owners grow with simple, effective marketing and website solutions. 
+        From strategy to design, I make it easy to connect with your audience and drive results. Get in touch or check out my free guides and resources for small businesses.",
+      "url": "https://oliviaarkema.com",
       "sameAs": [
-        "https://linkedin.com/in/yourprofile",
-        "https://twitter.com/yourusername"
+        "https://linkedin.com/in/oliviaarkema",
+        "https://twitter.com/livarkema"
       ],
       "knowsAbout": ["Web Design", "Brand Identity", "UX Design", "Digital Strategy"],
       "hasOccupation": {
-        "@type": "Occupation",
-        "name": "Creative Director",
+        "@type": "Marketing & Data Operations",
+        "name": "Operations Director",
         "occupationLocation": {
           "@type": "City",
-          "name": "Your City"
+          "name": "Ludington"
         }
       }
     }
@@ -90,9 +91,9 @@
                 <div class="text-3xl font-bold heading-font" style="color: #393831;">Portfolio</div>
                 <div class="hidden md:flex space-x-8">
                     <a href="#home" class="transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Home</a>
-                    <a href="#services" class="transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Services</a>
+                    <a href="#whatido" class="transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">What I Do</a>
                     <a href="#clients" class="transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Clients</a>
-                    <a href="#work" class="transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Work</a>
+                    <a href="#thingsimworkingon" class="transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Things I'm Working On</a>
                     <a href="#contact" class="transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Contact</a>
                 </div>
                 <button class="md:hidden" style="color: #9e9383;" onclick="toggleMenu()">
@@ -103,9 +104,9 @@
             </div>
             <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
                 <a href="#home" class="block py-2 transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Home</a>
-                <a href="#services" class="block py-2 transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Services</a>
+                <a href="#whatido" class="block py-2 transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Services</a>
                 <a href="#clients" class="block py-2 transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Clients</a>
-                <a href="#work" class="block py-2 transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Work</a>
+                <a href="#thingsimworkingon" class="block py-2 transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Work</a>
                 <a href="#contact" class="block py-2 transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Contact</a>
             </div>
         </div>
@@ -126,18 +127,17 @@
                 <!-- Large newspaper headline quote -->
                 <blockquote class="mb-12">
                     <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6 heading-font" style="color: #fefefe; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">
-                        <span class="sr-only">Creative Portfolio - </span>"Design is not just what it looks like—
-                        <span class="block" style="color: #dae4eb;">design is how it works."</span>
+                        <span class="sr-only">Olivia Arkema Portfolio - </span>"Creative Marketing, Data Analysis, & Web Design
+for Small Businesses"</span>
                     </h1>
                     <div class="w-full h-px mb-4" style="background-color: #5f849c; opacity: 0.3;"></div>
-                    <cite class="text-lg font-medium not-italic" style="color: #9e9383;">— Steve Jobs</cite>
                 </blockquote>
                 
 
                 
                 <!-- Action buttons -->
                 <div class="space-y-4 md:space-y-0 md:space-x-6 md:flex md:justify-center">
-                    <button onclick="scrollToSection('work')" class="block w-full md:w-auto px-10 py-4 font-semibold transition-all elegant-border rounded-xl" style="background-color: transparent; color: #fefefe;" onmouseover="this.style.backgroundColor='#5f849c'; this.style.borderColor='#5f849c'" onmouseout="this.style.backgroundColor='transparent'; this.style.borderColor='#5f849c'" aria-label="View portfolio work section">View My Work</button>
+                    <button onclick="scrollToSection('thingsimworkingon')" class="block w-full md:w-auto px-10 py-4 font-semibold transition-all elegant-border rounded-xl" style="background-color: transparent; color: #fefefe;" onmouseover="this.style.backgroundColor='#5f849c'; this.style.borderColor='#5f849c'" onmouseout="this.style.backgroundColor='transparent'; this.style.borderColor='#5f849c'" aria-label="View portfolio work section">See What I'm Working On</button>
                     <button onclick="scrollToSection('contact')" class="block w-full md:w-auto px-10 py-4 font-semibold transition-all rounded-xl" style="background-color: #5f849c; color: #fefefe; border: 2px solid #5f849c;" onmouseover="this.style.backgroundColor='transparent'; this.style.color='#5f849c'" onmouseout="this.style.backgroundColor='#5f849c'; this.style.color='#fefefe'" aria-label="Navigate to contact section">Get In Touch</button>
                 </div>
             </div>
