@@ -159,16 +159,16 @@ for Small Businesses"</span>
                     <div class="text-sm" style="color: #929673;">SDG Precision Agriculture</div>
                 </div>
                 <div class="card-hover p-8 rounded-xl text-center fade-in stagger-2" style="background-color: #fefefe;">
-                    <div class="text-3xl font-bold mb-2 heading-font" style="color: #9e9383;">DESIGN</div>
-                    <div class="text-sm" style="color: #929673;">Studio Plus</div>
+                        <a href="https://www.thedawnmethod.com"><img src="dawn.png" alt="The DAWN Method Logo" style="max-width: 150px;max-height: 150px;"></a>
+                    <div class="text-sm" style="color: #929673;">The DAWN Program</div>
                 </div>
                 <div class="card-hover p-8 rounded-xl text-center fade-in stagger-3" style="background-color: #fefefe;">
-                    <div class="text-3xl font-bold mb-2 heading-font" style="color: #9e9383;">BRAND</div>
-                    <div class="text-sm" style="color: #929673;">Global Inc.</div>
+                        <a href="https://www.countrydairy.com"><img src="countrydairy.png" alt="Country Dairy Logo" style="max-width: 150px;max-height: 150px;"></a>
+                    <div class="text-sm" style="color: #929673;">Country Dairy</div>
                 </div>
                 <div class="card-hover p-8 rounded-xl text-center fade-in stagger-4" style="background-color: #fefefe;">
-                    <div class="text-3xl font-bold mb-2 heading-font" style="color: #9e9383;">MEDIA</div>
-                    <div class="text-sm" style="color: #929673;">Creative Lab</div>
+                        <a href="https://www.betterpeoplecare.com"><img src="bpc.png" alt="Better People Care Logo" style="max-width: 150px;max-height: 150px;"></a>
+                    <div class="text-sm" style="color: #929673;">Better People Care</div>
                 </div>
             </div>
         </div>
