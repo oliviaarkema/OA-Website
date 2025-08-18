@@ -1,219 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- ===== Core SEO (edit all placeholders) ===== -->
-  <meta charset="UTF-8" />
+  <!-- ===== SEO (edit these) ===== -->
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title><!-- 60–65 chars -->Post Title | Olivia Arkema</title>
-  <meta name="description" content="<!-- 150–160 char summary of this article. -->" />
-  <meta name="keywords" content="keyword 1, keyword 2, keyword 3" />
-  <meta name="author" content="Olivia Arkema" />
-  <meta name="robots" content="index, follow" />
+  <title><!-- 60–65 chars -->Blog Post Title | Olivia Arkema</title>
+  <meta name="description" content="One-sentence summary of this post for search and social." />
   <link rel="canonical" href="https://oliviaarkema.com/blog/your-post-slug" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Post Title | Olivia Arkema" />
-  <meta property="og:description" content="Short social summary for the article." />
+  <meta property="og:title" content="Blog Post Title | Olivia Arkema" />
+  <meta property="og:description" content="Social-friendly summary." />
   <meta property="og:url" content="https://oliviaarkema.com/blog/your-post-slug" />
-  <meta property="og:image" content="https://oliviaarkema.com/assets/featured-image.jpg" />
-  <meta property="og:site_name" content="OA Marketing Data Web Design Portfolio" />
+  <meta property="og:image" content="https://oliviaarkema.com/assets/featured.jpg" />
 
-  <!-- Twitter Card -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Post Title | Olivia Arkema" />
-  <meta name="twitter:description" content="Short social summary for Twitter." />
-  <meta name="twitter:image" content="https://oliviaarkema.com/assets/featured-image.jpg" />
-  <meta name="twitter:creator" content="@livarkema" />
+  <meta name="twitter:title" content="Blog Post Title | Olivia Arkema" />
+  <meta name="twitter:description" content="Social-friendly summary." />
+  <meta name="twitter:image" content="https://oliviaarkema.com/assets/featured.jpg" />
 
-  <!-- JSON-LD: BlogPosting -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"BlogPosting",
-    "headline":"Post Title",
-    "description":"Plain-text description of this article.",
-    "image":["https://oliviaarkema.com/assets/featured-image.jpg"],
-    "datePublished":"2025-08-18T12:00:00-04:00",
-    "dateModified":"2025-08-18T12:00:00-04:00",
-    "author":{"@type":"Person","name":"Olivia Arkema"},
-    "publisher":{"@type":"Organization","name":"Olivia Arkema"},
-    "mainEntityOfPage":{"@type":"WebPage","@id":"https://oliviaarkema.com/blog/your-post-slug"}
-  }
-  </script>
-
-  <!-- Favicons -->
-  <link rel="icon" href="/green_bow.png" type="image/png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/green_bow.png" />
-
-  <!-- Tailwind (matches homepage) -->
+  <!-- Tailwind + Typography -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Reused custom styles from homepage -->
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
-    body { font-family: 'Noto Serif', serif; background-color: #ebe3db; }
-    h1, h2, h3, h4, h5, h6, .heading-font { font-family: 'Noto Serif', serif; letter-spacing: 0.02em; }
-
-    /* Color tokens from homepage */
-    .hero-bg { background-color: #23424c; }     /* deep blue */
+    body { font-family: 'Noto Serif', serif; background-color:#faf7f2; color:#393831; }
+    .heading-font { font-family: 'Noto Serif', serif; letter-spacing: .02em; }
+    .subtle-shadow { box-shadow: 0 8px 32px rgba(57,56,49,0.08); }
     .elegant-border { border: 2px solid #5f849c; }
-    .subtle-shadow { box-shadow: 0 8px 32px rgba(57, 56, 49, 0.1); }
-    .text-accent { color: #5f849c; }
-    .bg-accent { background-color: #5f849c; }
-    .divider { height: 1px; background-color: #9e9383; opacity: 0.3; }
-    .card-hover { transition: all 0.3s ease; }
-    .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
-    .fade-in { opacity: 0; animation: fadeIn 0.8s ease-in forwards; }
-    @keyframes fadeIn { to { opacity: 1; } }
-    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
-
-    /* Article helpers */
-    .article-shell { max-width: 75rem; }           /* ~1200px */
-    .prose-wrap   { max-width: 68ch; }             /* readable text width */
+    .text-accent { color:#5f849c; }
+    .bg-accent { background-color:#5f849c; }
   </style>
 </head>
 
 <body>
-  <!-- ===== Fixed Nav (mirrors homepage) ===== -->
-  <nav id="navbar" class="fixed w-full z-50 shadow-sm transition-transform duration-300" style="background-color: rgba(254, 254, 254, 0.9); backdrop-filter: blur(12px);">
+  <!-- ===== NAV (from homepage pattern) ===== -->
+  <nav id="navbar" class="fixed w-full z-50 shadow-sm transition-transform duration-300" style="background-color: rgba(254,254,254,0.9); backdrop-filter: blur(12px);">
     <div class="max-w-6xl mx-auto px-6 py-4">
       <div class="flex justify-between items-center">
-        <a href="/" class="text-3xl font-bold heading-font" style="color: #393831;" aria-label="Go to Olivia Arkema home">OA</a>
+        <a href="/" class="text-3xl font-bold heading-font" style="color:#393831;">OA</a>
+
+        <!-- Desktop links -->
         <div class="hidden md:flex space-x-8">
-          <!-- Link back to homepage sections -->
           <a href="/#home" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Home</a>
           <a href="/#services" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Services</a>
           <a href="/#clients" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Clients</a>
           <a href="/#featuredwork" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Featured Work</a>
           <a href="/#contact" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Contact</a>
         </div>
-        <button class="md:hidden" style="color:#9e9383;" onclick="toggleMenu()" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+
+        <!-- Mobile hamburger -->
+        <button class="md:hidden" style="color:#9e9383;" aria-label="Open menu" onclick="toggleMenu()">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
         </button>
       </div>
-      <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
-        <a href="/#home" class="block py-2 transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Home</a>
-        <a href="/#services" class="block py-2 transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Services</a>
-        <a href="/#clients" class="block py-2 transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Clients</a>
-        <a href="/#featuredwork" class="block py-2 transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Featured Work</a>
-        <a href="/#contact" class="block py-2 transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Contact</a>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden">
+      <div class="px-6 pb-4 space-y-2">
+        <a href="/#home" class="block" style="color:#9e9383;">Home</a>
+        <a href="/#services" class="block" style="color:#9e9383;">Services</a>
+        <a href="/#clients" class="block" style="color:#9e9383;">Clients</a>
+        <a href="/#featuredwork" class="block" style="color:#9e9383;">Featured Work</a>
+        <a href="/#contact" class="block" style="color:#9e9383;">Contact</a>
       </div>
     </div>
   </nav>
 
-  <!-- ===== Article Hero ===== -->
-  <header class="hero-bg min-h-[44vh] flex items-end pt-28 pb-10">
-    <div class="article-shell mx-auto px-6 w-full">
-      <div class="max-w-4xl">
-        <p class="sr-only"><!-- Optional category/kicker --></p>
-        <h1 class="text-4xl md:text-6xl font-bold heading-font mb-4" style="color:#fefefe; text-shadow:0 2px 4px rgba(0,0,0,0.3);">
-          <!-- H1: Article Title -->
+  <!-- Spacer for fixed nav -->
+  <div class="h-20 md:h-24"></div>
+
+  <!-- ===== ARTICLE CARD (design-forward container) ===== -->
+  <main class="px-6">
+    <article class="max-w-3xl mx-auto bg-white rounded-xl subtle-shadow elegant-border px-6 sm:px-8 py-8 md:py-10">
+      <!-- Centered Title -->
+      <header class="mb-6 text-center">
+        <p class="uppercase tracking-wide text-sm" style="color:#9e9383;">Category Name</p>
+        <h1 class="heading-font text-3xl md:text-4xl font-bold mt-1" style="color:#23424c;">
           Blog Post Title That’s Clear & Compelling
         </h1>
-        <div class="flex flex-wrap items-center gap-3 text-sm" style="color:#dae4eb;">
-          <span>By <a href="/#home" class="underline" style="color:#dae4eb;">Olivia Arkema</a></span>
-          <span>•</span>
+        <div class="mt-3 text-sm flex items-center justify-center gap-2" style="color:#9e9383;">
+          <span>By Olivia Arkema</span><span>•</span>
           <time datetime="2025-08-18">August 18, 2025</time>
-          <span>•</span>
-          <span>8 min read</span>
-          <span>•</span>
-          <span class="px-2 py-0.5 rounded-full" style="background-color:#5f849c; color:#fefefe;">Marketing</span>
         </div>
-        <div class="w-24 h-1 mt-6" style="background-color:#5f849c;"></div>
+      </header>
+
+      <!-- Centered Featured Image -->
+      <figure class="my-6">
+        <img src="https://via.placeholder.com/1600x900" alt="Describe the featured image" class="rounded-lg border-2 mx-auto subtle-shadow" style="border-color:#5f849c;" />
+        <figcaption class="text-center mt-2 text-sm" style="color:#9e9383;">Optional caption or credit.</figcaption>
+      </figure>
+
+      <!-- Body -->
+      <div class="prose max-w-none">
+        <p>Opening paragraph—hook the reader and set context. Keep it crisp and scannable.</p>
+
+        <h2>Subhead One</h2>
+        <p>Add supporting details, bullets, or visuals:</p>
+        <ul>
+          <li>Practical tip or insight.</li>
+          <li>Short example with outcome.</li>
+          <li>Link to a deeper resource.</li>
+        </ul>
+
+        <blockquote class="my-6 border-l-4 pl-4 italic" style="border-color:#5f849c; color:#5f849c;">
+          “Let whitespace and typography do the heavy lifting.”
+        </blockquote>
+
+        <h2>Subhead Two</h2>
+        <p>Keep paragraphs ~2–4 sentences. Use descriptive subheads for scanning.</p>
       </div>
-    </div>
-  </header>
 
-  <!-- ===== Centered Featured Image ===== -->
-  <figure class="article-shell mx-auto px-6 -mt-10">
-    <div class="max-w-4xl mx-auto subtle-shadow elegant-border rounded-xl overflow-hidden bg-white">
-      <img src="https://via.placeholder.com/1600x900" alt="Descriptive alt text for featured image" class="block w-full h-auto" />
-    </div>
-    <figcaption class="text-center text-sm mt-3" style="color:#9e9383;">
-      <!-- Optional caption/credit -->
-      Photo credit / source (optional)
-    </figcaption>
-  </figure>
-
-  <!-- ===== Article Body ===== -->
-  <main class="article-shell mx-auto px-6 mt-10">
-    <!-- Table of Contents (optional: remove if not needed) -->
-    <aside class="max-w-4xl mx-auto mb-8 rounded-xl bg-white elegant-border subtle-shadow p-5">
-      <strong class="heading-font block mb-2" style="color:#393831;">On this page</strong>
-      <nav aria-label="Table of contents">
-        <ol class="list-decimal ml-5 space-y-1" style="color:#9e9383;">
-          <li><a href="#intro" class="underline">Introduction</a></li>
-          <li><a href="#section-1" class="underline">Key Section</a></li>
-          <li><a href="#section-2" class="underline">Another Section</a></li>
-        </ol>
-      </nav>
-    </aside>
-
-    <!-- Prose -->
-    <article class="prose-wrap mx-auto">
-      <p class="text-lg leading-8 mb-6" style="color:#393831;">
-        <!-- Opening lede -->
-        Write an engaging first paragraph that sets context and hooks the reader. Keep sentences active and conversational.
-      </p>
-
-      <h2 id="intro" class="text-3xl font-bold mt-10 mb-4 heading-font" style="color:#393831;">Introduction</h2>
-      <p class="text-lg leading-8 mb-6" style="color:#393831;">
-        Your introduction section content goes here. Use short paragraphs and scannable structure.
-      </p>
-
-      <h2 id="section-1" class="text-3xl font-bold mt-10 mb-4 heading-font" style="color:#393831;">Key Section</h2>
-      <ul class="list-disc pl-6 mb-6" style="color:#393831;">
-        <li>Point one with detail.</li>
-        <li>Point two with detail.</li>
-        <li>Point three with detail.</li>
-      </ul>
-
-      <blockquote class="rounded-lg p-5 my-8" style="background-color:#dae4eb; color:#23424c; border-left:4px solid #5f849c;">
-        “Let whitespace and typography do the heavy lifting.”
-      </blockquote>
-
-      <h3 id="section-2" class="text-2xl font-bold mt-10 mb-4 heading-font" style="color:#393831;">Another Section</h3>
-      <p class="text-lg leading-8 mb-6" style="color:#393831;">
-        Add supporting images, subheads, and lists to keep scanning easy.
-      </p>
-
-      <!-- Tags + Share -->
-      <div class="mt-10 pt-6">
-        <div class="divider mb-6"></div>
-        <div class="flex flex-wrap items-center justify-between gap-4">
-          <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1 rounded-full text-sm" style="background-color:#dae4eb; color:#23424c;">#SmallBusiness</span>
-            <span class="px-3 py-1 rounded-full text-sm" style="background-color:#dae4eb; color:#23424c;">#WebDesign</span>
-          </div>
-          <div class="text-sm" style="color:#9e9383;">
-            Share:
-            <a href="#" class="underline ml-2">LinkedIn</a>
-            <a href="#" class="underline ml-3">X</a>
-            <a href="#" class="underline ml-3">Facebook</a>
-          </div>
+      <!-- Optional: Tags / Share (no prev/next) -->
+      <section class="mt-8 flex flex-wrap items-center justify-between gap-3">
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 rounded-full text-sm" style="background:#dae4eb; color:#23424c;">Tag One</span>
+          <span class="px-3 py-1 rounded-full text-sm" style="background:#dae4eb; color:#23424c;">Tag Two</span>
         </div>
-      </div>
+        <div class="text-sm" style="color:#9e9383;">
+          <a href="#" class="underline">Share</a>
+        </div>
+      </section>
     </article>
-
-    <!-- Prev/Next -->
-    <nav class="article-shell mx-auto px-0 mt-12">
-      <div class="flex flex-wrap gap-4 justify-between">
-        <a href="/blog/previous-post" class="card-hover inline-block px-5 py-3 rounded-xl elegant-border bg-white" style="color:#393831;">← Previous</a>
-        <a href="/blog/next-post" class="card-hover inline-block px-5 py-3 rounded-xl elegant-border bg-white" style="color:#393831;">Next →</a>
-      </div>
-    </nav>
   </main>
 
-  <!-- ===== Footer (mirrors homepage) ===== -->
+  <!-- ===== FOOTER (matches homepage layout/colors) ===== -->
   <footer class="py-16 mt-16" style="background-color:#393831;">
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid md:grid-cols-3 gap-12">
         <div>
           <div class="text-3xl font-bold mb-6 heading-font" style="color:#fefefe;">Olivia Arkema</div>
-          <p class="leading-relaxed" style="color:#9e9383;">Creative Marketing, Data Analysis, & Web Design
-for Small Businesses</p>
+          <p class="leading-relaxed" style="color:#9e9383;">Creative Marketing, Data Analysis, & Web Design for Small Businesses</p>
           <div class="w-12 h-1 mt-4" style="background-color:#5f849c;"></div>
         </div>
         <div>
@@ -227,29 +148,41 @@ for Small Businesses</p>
         <div>
           <h4 class="font-semibold mb-6 heading-font" style="color:#fefefe;">Connect</h4>
           <div class="space-y-3">
-            <a href="https://www.linkedin.com/in/oliviaarkema/" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/oliviaarkema" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">LinkedIn</a>
             <a href="https://x.com/livlavonne" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Twitter</a>
-            <a href="mailto:livarkema@gmail.com" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Email</a>
+            <a href="mailto:hello@oliviaarkema.com" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Email</a>
           </div>
         </div>
       </div>
-      <div class="divider my-8"></div>
+      <div class="my-8 border-t" style="border-color:#5f849c;"></div>
       <div class="text-center">
-        <p style="color:#9e9383;">&copy; <span id="year"></span> Portfolio. All rights reserved.</p>
+        <p style="color:#9e9383;">&copy; <span id="year"></span> Olivia Arkema. All rights reserved.</p>
       </div>
     </div>
   </footer>
-  <!-- ===== Minimal JS ===== -->
+
+  <!-- ===== Minimal JS (mirrors homepage behavior) ===== -->
   <script>
-    // Hamburger toggle (uses your .hidden utility)
-    const toggle = document.getElementById('navToggle');
-    const menu = document.getElementById('mobile-menu');
-    toggle?.addEventListener('click', () => {
-      const isHidden = menu.classList.toggle('hidden');
-      toggle.setAttribute('aria-expanded', String(!isHidden));
+    // Nav hide/show on scroll (optional; matches homepage pattern)
+    let lastScrollTop = 0;
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', function () {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > lastScrollTop && scrollTop > 100) {
+        navbar.style.transform = 'translateY(-100%)';
+      } else {
+        navbar.style.transform = 'translateY(0)';
+      }
+      lastScrollTop = scrollTop;
     });
 
-    // Dynamic year
+    // Mobile menu toggle
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+
+    // Footer year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
