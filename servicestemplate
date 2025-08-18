@@ -7,7 +7,7 @@
   <title><!-- 60–65 chars -->Service Name — Olivia Arkema</title>
   <meta name="description" content="A short, compelling summary of this service and the outcome it delivers." />
   <link rel="canonical" href="https://oliviaarkema.com/services/service-slug" />
-  <link rel="icon" href="green_bow.png" type="image/png" />
+  <link rel="icon" href="green_bow.png" type="image/png">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
