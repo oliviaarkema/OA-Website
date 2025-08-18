@@ -1,89 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO Meta Tags -->
-    <title>Is a Facebook Page Enough? Why Your Small Business Needs a Website</title>
-    <meta name="description" content="Does your business really need a website? Find out why every small business should have a professional website and how it can help you grow.">
-    <meta name="keywords" content="web design, digital design, brand identity, UX design, creative portfolio, web development, design consulting, marketing, social media, content creation">
-    <meta name="author" content="Olivia Arkema">
-    <meta name="robots" content="index, follow">
-    <link rel="icon" href="green_bow.png" type="image/png">
-    <link rel="canonical" href="https://oliviaarkema.com">
-    <link rel="stylesheet" href="style.css">
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Olivia Arkema | Marketing & Web Design">
-    <meta property="og:description" content="Helping small business owners grow with simple, effective marketing and website solutions. From strategy to design, I make it easy to connect with your audience and drive results. Get in touch or check out my free guides and resources for small businesses.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://oliviaarkema.com">
-    <meta property="og:image" content="https://oliviaarkema.com/green_bow.png">
-    <meta property="og:site_name" content="Olivia Arkema Portfolio">
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Olivia Arkema | Marketing & Web Design">
-    <meta name="twitter:description" content="Helping small business owners grow with simple, effective marketing and website solutions. From strategy to design, I make it easy to connect with your audience and drive results. Get in touch or check out my free guides and resources for small businesses.">
-    <meta name="twitter:image" content="https://oliviaarkema.com/profile_pic_with_circle.png">
-    <meta name="twitter:creator" content="@liv.arkema">
-    <link rel="apple-touch-icon" sizes="180x180" href="/green_bow.png">
+  <!-- ===== SEO (edit these) ===== -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Is a Facebook Page Enough? Why Your Small Business Needs a Website | Olivia Arkema</title>
+  <meta name="description" content="Does your business really need a website? Find out why every small business should have a professional website and how it can help you grow." />
+  <link rel="canonical" href="https://oliviaarkema.com/blog/does-your-small-business-really-need-a-website" />
+  <link rel="icon" href="green_bow.png" type="image/png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Is a Facebook Page Enough? Why Your Small Business Needs a Website | Olivia Arkema" />
+  <meta property="og:description" content="Does your business really need a website? Find out why every small business should have a professional website and how it can help you grow." />
+  <meta property="og:url" content="https://oliviaarkema.com/blog/does-your-small-business-really-need-a-website" />
+  <meta property="og:image" content="https://oliviaarkema.com/web_design_layout.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Is a Facebook Page Enough? Why Your Small Business Needs a Website | Olivia Arkema" />
+  <meta name="twitter:description" content="Does your business really need a website? Find out why every small business should have a professional website and how it can help you grow." />
+  <meta name="twitter:image" content="https://oliviaarkema.com/web_design_layout.jpg" />
+
+  <!-- Tailwind + Typography -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+    body { font-family: 'Noto Serif', serif; background-color:#faf7f2; color:#393831; }
+    .heading-font { font-family: 'Noto Serif', serif; letter-spacing: .02em; }
+    .subtle-shadow { box-shadow: 0 8px 32px rgba(57,56,49,0.08); }
+    .elegant-border { border: 2px solid #5f849c; }
+    .text-accent { color:#5f849c; }
+    .bg-accent { background-color:#5f849c; }
+    /* Brand blue for H2s inside article */
+    .prose h2 { color:#5f849c; }
+  </style>
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="white_bow2.png" alt="Olivia Arkema Logo" style="max-width: 30px;max-height: 30px;">
-            </a>        
+  <!-- ===== NAV (from homepage pattern) ===== -->
+  <nav id="navbar" class="fixed w-full z-50 shadow-sm transition-transform duration-300" style="background-color: rgba(254,254,254,0.9); backdrop-filter: blur(12px);">
+    <div class="max-w-6xl mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <a href="/" class="text-3xl font-bold heading-font" style="color:#393831;">OA</a>
+
+        <!-- Desktop links -->
+        <div class="hidden md:flex space-x-8">
+          <a href="/#home" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Home</a>
+          <a href="/#services" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Services</a>
+          <a href="/#clients" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Clients</a>
+          <a href="/#featuredwork" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Featured Work</a>
+          <a href="/#contact" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Contact</a>
         </div>
-        <div class="hamburger-menu">&#9776;</div>
-        <nav class="dropdown-menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog">Blog</a></li>
-                <li><a href="contact">Get in Touch</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="blog-page">
-            <img src="web_design_layout.jpg" alt="Is a Facebook Page Enough? Why Your Small Business Needs a Website" style="width:100%; max-width:600px; margin-bottom:20px;">
-            <h1>Is a Facebook Page Enough? Why Your Small Business Needs a Website</h1>
-            <p>The other day, I was talking to my husband about a friend of his. The friend has a small side business doing excavation, grading, and some other site prep work. We are looking to redo our driveway, so I wanted to check out his services. But when I searched for his business, I couldn’t find a website—just a Facebook page with limited info.</p>
-            <p>This got me thinking. I know so many people who think a Facebook or Instagram page is enough for their small business. I disagree! I believe every small business needs a website, even if it’s simple.</p>
-            <h2>Websites Build Credibility</h2>
-            <p>A website adds credibility to your business. In today's digital age, customers expect businesses to have a website. A well-designed website shows that you are a professional and established business.</p>
-            <h2>You’re in Control</h2>
-            <p>You have complete control over your website's content and design. Unlike social media platforms, you are not limited by their templates or rules. You can create a website that perfectly fits your brand and message.</p>
-            <h2>Reach More People</h2>
-            <p>A website can help you reach a wider audience. Search engines like Google can index your website, making it easier for potential customers to find you. You control ranking through SEO. Social media posts are limited to your followers.</p>
-            <h2>Marketing Powerhouse</h2>
-            <p>A website is a great way to market your business. You can show off your services, collect email addresses from interested customers, and build relationships. Imagine if Facebook or Instagram disappeared tomorrow—would your customers know how to reach you?</p>
-            <h2>24/7 Customer Service</h2>
-            <p>Your website can answer customer questions anytime, day or night. You can include a FAQ (Frequently Asked Questions) section, your contact information, and even a live chat feature. It’s always working for you.</p>
-            <h2>Know Your Audience</h2>
-            <p>Websites have tools that track how many people visit and what they look at. This helps you understand what your customers are interested in so you can improve your business. While social media has some analytics, a website gives you more detailed info.</p>
-            <p>I'm not saying you should get rid of your social media pages – they're still helpful! But a website and social media together are a super powerful combination. A website is a key tool for building trust and growing your business.</p>
-            <br>
-            <a href="contact" class="button">Get in Touch</a>
-        </section>
-        <section class="two-columns section-7">
-            <div>
-                <h2>Let's collaborate.</h2>
-            </div>
-            <div>
-                <a href="contact" class="button">Work with Me</a>
-                <br><br>
-                <p>Email me:</p>
-                <p>livarkema@gmail.com</p>
-                <br>
-                <p>Give me a call:</p>
-                <p>970-672-6402</p>
-            </div>
-        </section>
-    </main>
-    <script>
-        document.querySelector(".hamburger-menu").addEventListener("click", function() {
-            document.querySelector(".dropdown-menu").classList.toggle("show");
-        });
-    </script>
+
+        <!-- Mobile hamburger -->
+        <button class="md:hidden" style="color:#9e9383;" aria-label="Open menu" onclick="toggleMenu()">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden">
+      <div class="px-6 pb-4 space-y-2">
+        <a href="/#home" class="block" style="color:#9e9383;">Home</a>
+        <a href="/#services" class="block" style="color:#9e9383;">Services</a>
+        <a href="/#clients" class="block" style="color:#9e9383;">Clients</a>
+        <a href="/#featuredwork" class="block" style="color:#9e9383;">Featured Work</a>
+        <a href="/#contact" class="block" style="color:#9e9383;">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Spacer for fixed nav -->
+  <div class="h-20 md:h-24"></div>
+
+  <!-- ===== ARTICLE CARD (design-forward container) ===== -->
+  <main class="px-6">
+    <article class="max-w-3xl mx-auto bg-white rounded-xl subtle-shadow elegant-border px-6 sm:px-8 py-8 md:py-10">
+      <!-- Centered Title -->
+      <header class="mb-6 text-center">
+        <p class="uppercase tracking-wide text-sm" style="color:#9e9383;">Websites & Marketing</p>
+        <h1 class="heading-font text-3xl md:text-4xl font-bold mt-1" style="color:#23424c;">
+          Is a Facebook Page Enough? Why Your Small Business Needs a Website
+        </h1>
+        <div class="mt-3 text-sm flex items-center justify-center gap-2" style="color:#9e9383;">
+          <span>By Olivia Arkema</span><span>•</span>
+          <time datetime="2025-08-18">August 18, 2025</time>
+        </div>
+      </header>
+
+      <!-- Centered Featured Image -->
+      <figure class="my-6">
+        <img src="web_design_layout.jpg" alt="Is a Facebook Page Enough? Why Your Small Business Needs a Website" class="rounded-lg border-2 mx-auto subtle-shadow" style="border-color:#5f849c;" />
+        <figcaption class="text-center mt-2 text-sm" style="color:#9e9383;"></figcaption>
+      </figure>
+
+      <!-- Body -->
+      <div class="prose max-w-none">
+        <p>The other day, I was talking to my husband about a friend of his. The friend has a small side business doing excavation, grading, and some other site prep work. We are looking to redo our driveway, so I wanted to check out his services. But when I searched for his business, I couldn’t find a website—just a Facebook page with limited info.</p>
+        <p>This got me thinking. I know so many people who think a Facebook or Instagram page is enough for their small business. I disagree! I believe every small business needs a website, even if it’s simple.</p>
+
+        <h2>Websites Build Credibility</h2>
+        <p>A website adds credibility to your business. In today's digital age, customers expect businesses to have a website. A well-designed website shows that you are a professional and established business.</p>
+
+        <h2>You’re in Control</h2>
+        <p>You have complete control over your website's content and design. Unlike social media platforms, you are not limited by their templates or rules. You can create a website that perfectly fits your brand and message.</p>
+
+        <h2>Reach More People</h2>
+        <p>A website can help you reach a wider audience. Search engines like Google can index your website, making it easier for potential customers to find you. You control ranking through SEO. Social media posts are limited to your followers.</p>
+
+        <h2>Marketing Powerhouse</h2>
+        <p>A website is a great way to market your business. You can show off your services, collect email addresses from interested customers, and build relationships. Imagine if Facebook or Instagram disappeared tomorrow—would your customers know how to reach you?</p>
+
+        <h2>24/7 Customer Service</h2>
+        <p>Your website can answer customer questions anytime, day or night. You can include a FAQ (Frequently Asked Questions) section, your contact information, and even a live chat feature. It’s always working for you.</p>
+
+        <h2>Know Your Audience</h2>
+        <p>Websites have tools that track how many people visit and what they look at. This helps you understand what your customers are interested in so you can improve your business. While social media has some analytics, a website gives you more detailed info.</p>
+
+        <p>I'm not saying you should get rid of your social media pages – they're still helpful! But a website and social media together are a super powerful combination. A website is a key tool for building trust and growing your business.</p>
+      </div>
+
+      <!-- Optional: Tags / Share (no prev/next) -->
+      <section class="mt-8 flex flex-wrap items-center justify-between gap-3">
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 rounded-full text-sm" style="background:#dae4eb; color:#23424c;">Websites</span>
+          <span class="px-3 py-1 rounded-full text-sm" style="background:#dae4eb; color:#23424c;">Small Business</span>
+        </div>
+        <div class="text-sm" style="color:#9e9383;">
+          <a id="shareCopy" class="underline" href="#" aria-label="Copy link to clipboard">Share</a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- ===== FOOTER (matches homepage layout/colors) ===== -->
+  <footer class="py-16 mt-16" style="background-color:#393831;">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-12">
+        <div>
+          <div class="text-3xl font-bold mb-6 heading-font" style="color:#fefefe;">Olivia Arkema</div>
+          <p class="leading-relaxed" style="color:#9e9383;">Creative Marketing, Data Analysis, & Web Design for Small Businesses</p>
+          <div class="w-12 h-1 mt-4" style="background-color:#5f849c;"></div>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-6 heading-font" style="color:#fefefe;">Quick Links</h4>
+          <div class="space-y-3">
+            <a href="/#services" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Services</a>
+            <a href="/#featuredwork" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Work</a>
+            <a href="/#contact" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-6 heading-font" style="color:#fefefe;">Connect</h4>
+          <div class="space-y-3">
+            <a href="https://www.linkedin.com/in/oliviaarkema" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">LinkedIn</a>
+            <a href="https://x.com/livlavonne" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Twitter</a>
+            <a href="mailto:hello@oliviaarkema.com" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Email</a>
+          </div>
+        </div>
+      </div>
+      <div class="my-8 border-t" style="border-color:#5f849c;"></div>
+      <div class="text-center">
+        <p style="color:#9e9383;">&copy; <span id="year"></span> Olivia Arkema. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== Minimal JS (mirrors homepage behavior) ===== -->
+  <script>
+    // Nav hide/show on scroll (optional; matches homepage pattern)
+    let lastScrollTop = 0;
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', function () {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > lastScrollTop && scrollTop > 100) {
+        navbar.style.transform = 'translateY(-100%)';
+      } else {
+        navbar.style.transform = 'translateY(0)';
+      }
+      lastScrollTop = scrollTop;
+    });
+
+    // Mobile menu toggle
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Copy-to-clipboard toast -->
+  <div id="copyToast" role="status" aria-live="polite" hidden
+       style="position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(8px);
+              background:#5f849c;color:#fff;padding:.6rem .9rem;border-radius:9999px;
+              box-shadow:0 8px 24px rgba(0,0,0,.12);font-size:.95rem;
+              opacity:0;transition:opacity .2s ease, transform .2s ease;z-index:60;">
+    Link copied
+  </div>
+  <script>
+  (function () {
+    const btn = document.getElementById('shareCopy');
+    const toast = document.getElementById('copyToast');
+    if (!btn || !toast) return;
+
+    function pageUrl() {
+      const fromDataAttr = btn.getAttribute('data-url');
+      if (fromDataAttr) return fromDataAttr;
+      const canonical = document.querySelector('link[rel="canonical"]');
+      return (canonical && canonical.href) || window.location.href;
+    }
+
+    async function copyText(text) {
+      try {
+        await navigator.clipboard.writeText(text);
+        return true;
+      } catch (e) {
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.top = '-9999px';
+        document.body.appendChild(ta);
+        ta.focus();
+        ta.select();
+        let ok = false;
+        try { ok = document.execCommand('copy'); } catch {}
+        document.body.removeChild(ta);
+        return ok;
+      }
+    }
+
+    let hideTimer;
+    function showToast() {
+      clearTimeout(hideTimer);
+      toast.hidden = false;
+      requestAnimationFrame(() => {
+        toast.style.opacity = '1';
+        toast.style.transform = 'translateX(-50%) translateY(0)';
+      });
+      hideTimer = setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.transform = 'translateX(-50%) translateY(8px)';
+        setTimeout(() => { toast.hidden = true; }, 220);
+      }, 1500);
+    }
+
+    btn.addEventListener('click', async (e) => {
+      e.preventDefault();
+      const url = pageUrl();
+      const ok = await copyText(url);
+      if (ok) showToast();
+    });
+  })();
+  </script>
 </body>
 </html>
