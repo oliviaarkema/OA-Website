@@ -1,76 +1,156 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover actionable tips, guides, and insights to help small business owners succeed with marketing, websites, and digital strategies. Simple solutions for big growth!">
-    <title>Website Design & Development</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="green_bow.png" type="image/png"> <!-- Set bow.png as favicon -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Website Design & Development — Olivia Arkema</title>
+  <meta name="description" content="Website design and development tailored to your goals—fast, mobile-friendly, credible. From simple service sites to e-commerce, bookings, SEO blogs, and fully custom builds." />
+  <link rel="canonical" href="https://oliviaarkema.com/services/website-design-development" />
+    <link rel="icon" href="green_bow.png"/>
+
+  <!-- Noto Serif -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===== Minimal design tokens ===== */
+    :root{
+      --bg:#faf7f2; --ink:#393831; --muted:#9e9383;
+      --blue:#5f849c; --deep:#23424c; --wash:#dae4eb;
+      --measure:72ch; --radius:14px;
+    }
+    /* ===== Base ===== */
+    html,body{margin:0;padding:0}
+    body{
+      background:var(--bg);
+      color:var(--ink);
+      font:16px/1.75 'Noto Serif', serif;
+      text-rendering:optimizeLegibility;
+    }
+    a{color:var(--deep); text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    /* ===== Layout ===== */
+    .wrap{max-width:960px; margin:0 auto; padding:0 20px}
+    main{padding:3rem 0 4rem}
+
+    /* Header (simple, sticky) */
+    header.site{padding:14px 0; background:#fff; border-bottom:1px solid #e8e4de; position:sticky; top:0; z-index:10}
+    .brand{font-weight:700; color:var(--deep); font-size:20px}
+    .site-row{ display:flex; align-items:center; justify-content:space-between; gap:12px; }
+    .site-links{ display:flex; gap:16px; flex-wrap:wrap; }
+    .nav-toggle{ display:none; background:none; border:0; color:var(--muted); }
+    @media (max-width:760px){
+      .nav-toggle{ display:inline-flex; }
+      .site-links{
+        display:none; position:absolute; right:20px; top:calc(100% + 8px);
+        background:#fff; border:1px solid #e8e4de; border-radius:12px; padding:10px;
+        box-shadow:0 12px 28px rgba(0,0,0,.08); width:calc(100% - 40px); max-width:440px;
+        flex-direction:column; gap:10px;
+      }
+      .site-links.open{ display:flex; }
+    }
+
+    /* ===== Writing surface ===== */
+    .letter{max-width:var(--measure); margin:0 auto}
+    .lede{font-size:1.125rem; color:var(--muted); margin:.25rem 0 1rem}
+    .meta{color:var(--muted); font-size:.95rem; margin:.25rem 0 1.5rem}
+
+    /* Headings */
+    h1,h2,h3{line-height:1.2; margin:0 0 .6rem}
+    h1{font-size:clamp(28px,4vw,44px); color:var(--deep)}
+    h2{font-size:clamp(20px,3vw,28px); color:var(--blue); margin-top:2.25rem}
+    h3{font-size:clamp(18px,2.2vw,22px); color:var(--deep); margin-top:1.75rem}
+    p{margin:0 0 1rem}
+
+    /* Blocks */
+    .hr{height:1px; background:rgba(95,132,156,.25); margin:2rem 0}
+    .callout{ background:#fff; border:2px solid var(--blue); border-radius:var(--radius);
+      padding:1rem; margin:1.25rem 0; }
+    blockquote{ margin:1.5rem 0; padding:.75rem 1rem; border-left:4px solid var(--blue);
+      background:#fff; border-radius:8px; color:var(--deep); }
+    figure{margin:1.25rem 0}
+    figure img{display:block; width:100%; height:auto; border-radius:10px; border:2px solid var(--blue)}
+    figcaption{font-size:.9rem; color:var(--muted); margin-top:.5rem; text-align:center}
+
+    ul,ol{padding-left:1.2rem; margin:0 0 1rem}
+    .cta{display:inline-block; background:var(--blue); color:#fff; padding:.7rem 1rem; border-radius:10px}
+    .cta:hover{filter:brightness(.95)}
+
+    /* Optional two-column flow on very wide screens */
+    @media (min-width:1100px){
+      .columns{column-count:2; column-gap:32px}
+      .columns > *{break-inside:avoid}
+    }
+
+    /* Footer */
+    footer.site{padding:28px 0; background:#393831; color:#9e9383}
+    footer.site a{color:#9e9383}
+  </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="white_bow2.png" alt="Olivia Arkema Logo" style="max-width: 30px;max-height: 30px;">
-            </a>        
-        </div>
-        <div class="hamburger-menu">&#9776;</div>
-        <nav class="dropdown-menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog">Blog</a></li>
-                <li><a href="contact">Get in Touch</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="two-columns section-2">
-            <div>
-                <h2>Website Design & Development</h2>
-            </div>
-            <div>
-                  <h3>Many business owners avoid investing in a website because they think it’s too expensive, time-consuming, or complicated. Others feel their social media presence is enough, 
-                    not realizing how much potential traffic and credibility they’re missing out on.</h3>
-            </div>
-        </section>
-        <section class="blog-page">
-            <img src="website_design.jpg" alt="Website Development" style="width:100%; max-width:600px; margin-bottom:20px;">
-            <h1>What kind of website do you need for your business?</h1>
-            <p>The right website depends on your business goals. A simple, professional website works well for service-based businesses that need to showcase their expertise and provide contact information. If you sell products, an e-commerce site with a secure checkout is essential. For businesses focused on bookings or appointments, a scheduling-friendly website helps streamline customer interactions.
-                If your goal is to attract more traffic, a content-driven website with a blog and SEO-optimized pages can help. Need something highly customized? A fully tailored site with advanced features might be the best option.
-                Whatever your business needs, your website should be fast, mobile-friendly, and easy to navigate. Not sure what’s right for you? Let’s figure it out together.</p>
-            <a href="contact" class="button">Get in Touch</a>
-        </section>
-    </main>
-        <section class="two-columns section-7">
-    <div>
-        <h2>Let's collaborate.</h2>
+  <!-- Header -->
+  <header class="site">
+    <div class="wrap site-row">
+      <a class="brand" href="/">OA</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <nav id="site-menu" class="site-links">
+        <a href="/#services">Services</a>
+        <a href="/#featuredwork">Work</a>
+        <a href="/#contact">Contact</a>
+      </nav>
     </div>
-    <div>
-        <h3>Follow me on Socials:</h3>
-        <br>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/people/Olivia-Arkema-Marketing-Web-Design/61564009298913/"><img src="facebook.png" alt="Facebook Logo" style="max-width: 30px; max-height: 30px;"></a>
-            <a href="https://www.pinterest.com/livarkema/"><img src="pinterest.png" alt="Pinterest Logo" style="max-width: 30px; max-height: 30px;"></a>
-            <a href="https://x.com/livlavonne"><img src="twitter.png" alt="Twitter Logo" style="max-width: 30px; max-height: 30px;"></a>
-            <a href="https://www.linkedin.com/in/oliviaarkema/"><img src="linked-in.png" alt="LinkedIn Logo" style="max-width: 30px; max-height: 30px;"></a>
-        </div>
-        <br><br>
-        <p>Email me:</p>
-        <p>livarkema@gmail.com</p>
-        <br>
-        <p>Give me a call:</p>
-        <p>970-672-6402</p>
-        <br>
-        <p>© Olivia Arkema 2025</p>
+  </header>
+
+  <main>
+    <article class="wrap letter">
+      <!-- Title & lede -->
+      <p class="meta">Web Design & Development</p>
+      <h1>Website Design & Development</h1>
+      <p class="lede">Many business owners avoid investing in a website because they think it’s too expensive, time-consuming, or complicated. Others feel their social media presence is enough, not realizing how much potential traffic and credibility they’re missing out on.</p>
+
+      <!-- Feature image -->
+      <figure>
+        <img src="website_design.jpg" alt="Website Development" />
+        <figcaption>Fast, credible, and easy to navigate—built around your goals.</figcaption>
+      </figure>
+
+      <div class="hr"></div>
+
+      <!-- Long-form content (from your page) -->
+      <section class="body">
+        <h2>What kind of website do you need for your business?</h2>
+        <p>The right website depends on your business goals. A simple, professional website works well for service-based businesses that need to showcase their expertise and provide contact information. If you sell products, an e-commerce site with a secure checkout is essential. For businesses focused on bookings or appointments, a scheduling-friendly website helps streamline customer interactions.</p>
+        <p>If your goal is to attract more traffic, a content-driven website with a blog and SEO-optimized pages can help. Need something highly customized? A fully tailored site with advanced features might be the best option.</p>
+        <p>Whatever your business needs, your website should be fast, mobile-friendly, and easy to navigate. Not sure what’s right for you? Let’s figure it out together.</p>
+
+        <p><a class="cta" href="/contact">Get in Touch</a></p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site">
+    <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <small>© <span id="year"></span> Olivia Arkema</small>
+      <div style="display:flex;gap:14px"><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div>
     </div>
-        </section>
-    </main>
-    <script>
-        document.querySelector(".hamburger-menu").addEventListener("click", function() {
-            document.querySelector(".dropdown-menu").classList.toggle("show");
-        });
-    </script>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('site-menu');
+    if (toggle && menu){
+      toggle.addEventListener('click', () => {
+        const isOpen = menu.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+    }
+  </script>
 </body>
 </html>
