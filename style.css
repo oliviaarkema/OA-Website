@@ -1,10 +1,454 @@
+/* Deduplicated merge: old rules loaded first, new overrides kept */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+.poiret-one-regular {font-family: "Poiret One", serif;
+  font-weight: 400;
+  font-style: normal;}
+
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Prata&display=swap');
+
+.prata-regular {font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;}
+
+/* Existing styles for body */
+body {font-family: 'Poiret One', sans-serif;
+    font-weight: 100;
+    color: var(--primary-color);
+    background: linear-gradient(to bottom, #c7baa8, #0d3921);
+    margin: 0; /* Ensure no default margin */
+    padding: 0; /* Ensure no default padding */}
+
+/* Remove contrast container */
+.contrast-container {background-color: transparent;
+    padding: 0;
+    border-radius: 0;}
+
+/* Add section backgrounds back */
+.section-1 {background-color: #917b69;
+    color: #ffffff;}
+
+.section-2 {background-color: #9caea4;
+    color: #113a22;}
+
+.section-3 {background-color: #c7baa8;
+    color: #0d3921;}
+
+.section-4 {background-color: #0d3921;
+    color: #ffffff;}
+
+.section-5 {background-color: #c7baa8;
+    color: #113a22;}
+
+.section-6 {background-color: #0d3921;
+    color: #ffffff;}
+
+.section-7 {background-color: #c7baa8;
+    color: #ffffff;}
+
+/* Ensure the hamburger menu is visible in the viewport */
+.hamburger-menu {display: block; /* Always display the hamburger menu */
+    color: #ffffff;
+    text-align: center;
+    width: 8vw; /* Dynamic width */
+    height: 8vw; /* Dynamic height */
+    max-width: 40px; /* Smaller max width */
+    max-height: 40px; /* Smaller max height */
+    position: absolute; /* Ensure it stays in the viewport */
+    top: 2vh; /* Adjust as necessary */
+    right: 4vw; /* Adjust as necessary */
+    z-index: 1001; /* Ensure it is above other elements */
+    cursor: pointer; /* Add a pointer cursor for better UX */}
+
+.dropdown-menu {display: none;
+    position: absolute;
+    top: 8vh; /* Dynamic top position */
+    right: 4vw; /* Dynamic right position */
+    background-color: #0d3921;
+    border: 0.2vh solid #ffffff; /* Dynamic border */
+    border-radius: 1vh; /* Dynamic border radius */
+    z-index: 1000;}
+
+.dropdown-menu.show {display: block;}
+
+.dropdown-menu ul {list-style-type: none;
+    padding: 0;
+    margin: 0;}
+
+.dropdown-menu ul li {padding: 2vh; /* Dynamic padding */
+    text-align: center;}
+
+.dropdown-menu ul li a {color: #ffffff;
+    text-decoration: none;}
+
+/* Add specific styles for the button in section 5 */
+.section-5-btn {color: #ffffff; /* Ensure the font color is white */}
+
+section.blog-preview .section-6-btn {background-color: #9caea4; /* Change blog grid item background color */
+    color: #0d3921; /* Ensure the font color is dark green */
+    border-radius: 1vh; /* Ensure the corners are rounded */}
+
+/* Add new styles for section title alignment */
+.section-4 .section-title {text-align: left;
+    width: 100%;
+    margin-bottom: 2vh; /* Dynamic margin-bottom */}
+
+/* Add the new class for the section 1 image */
+.section-1 .image-fit {width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without padding */
+    padding: 0; /* Remove any padding around the image */
+    margin: 0; /* Remove any margin around the image */
+    justify-content: center;
+    align-items: center;}
+
+/* Colors */
+:root {--primary-color: #0d3921;
+    --secondary-color: #ffffff;
+    --tertiary-color: #9caea4;
+    --accent-color-1: #b6d558;
+    --accent-color-2: #917b69;
+    --accent-color-3: #c7baa8;}
+
+/* Headings */
+h1 {font-family: 'Prata', serif; /* Ensure  One font is used */
+    font-size: 3rem; /* Larger desktop font size for better readability */}
+
+h2 {font-size: 10vw;}
+
+h3 {font-size: 9vw;}
+
+h4 {font-size: 4.5vw; /* Optimized font size */}
+
+/* Other Elements */
+p, blockquote, li {font-size: 1.25rem; /* Larger desktop font size for better readability */}
+
+button,
+.btn,
+.button {font-size: 1rem; /* Larger desktop font size for better readability */}
+
+/* Additional styles */
+a {color: var(--accent-color-1);}
+
+/* Update styles for buttons, etc. */
+button,
+.btn,
+.button {font-family: 'Poiret One', sans-serif;
+    font-weight: 100;
+    font-size: 1.25vw; /* Smaller dynamic font size */
+    border-radius: 1vh; /* Dynamic border radius */
+    padding: 2vh 4vw; /* Dynamic padding */
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;}
+
+footer {background-color: var(--accent-color-3);
+    color: var(--secondary-color);}
+
+/* Header Styles */
+header {background-color: #0d3921;
+    color: #ffffff;
+    height: 8vh; /* Dynamic height */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw; /* Dynamic padding */}
+
+/* Main Content Styles */
+main {margin-top: 8vh; /* Adjusted for fixed header */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Full width */}
+
+section {flex-direction: column;
+        height: auto; /* Dynamic height */}
+
+.two-columns {display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 4vw; /* Dynamic padding */}
+
+.two-columns > div {flex: 1;
+    margin: 0px 2vw; /* Add margin for spacing */}
+
+.three-columns {display: flex;
+    justify-content: space-between;}
+
+.three-columns > div {flex: 1;
+    margin: 2vw; /* Dynamic margin */
+    text-align: center;}
+
+.three-columns img {max-width: 90%; /* Smaller max width */
+    height: auto;}
+
+.blog-preview {height: auto;
+    width: 100vw; /* Ensure full width */
+    box-sizing: border-box;
+    padding: 0; /* Ensure no padding */
+    margin: 0; /* Remove any margin */}
+
+.centered-image {display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%; /* Smaller width */
+    height: 90%; /* Smaller height */}
+
+/* Add scrolling for the right column in section 5 */
+.section-5 .right-column {max-height: 80vh; /* Adjust this value as needed */
+    overflow-y: auto; /* Enable vertical scrolling */}
+
+.full-width-image img {width: 90%; /* Smaller width */
+    height: auto;
+    display: block;}
+
+/* Form Container */
+.form-container {display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4vw; /* Dynamic padding */
+    background-color: #c7baa8;
+    margin-top: 8vh; /* Adjust for fixed header height */
+    border-radius: 1vh; /* Dynamic border radius */}
+
+.form-container form {max-width: 90vw; /* Increase max-width for mobile */}
+
+.form-container label,
+.form-container input,
+.form-container textarea,
+.form-container button {width: 100%;
+    margin-bottom: 2vh; /* Dynamic margin-bottom */}
+
+.form-container input,
+.form-container textarea {padding: 2vh; /* Dynamic padding */
+    border-radius: 1vh; /* Dynamic border radius */
+    border: 0.2vh solid #ccc; /* Dynamic border */}
+
+.form-container button {padding: 2vh; /* Adjust padding for mobile */
+        font-size: 4vw; /* Adjust font size for mobile */}
+
+.form-container button:hover {background-color: #0a2d18;}
+
+body.full-page-background {background-color: #c7baa8;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;}
+
+.form-container,
+.text-container {flex: 1;
+    padding: 4vw; /* Dynamic padding */}
+
+.text-container {display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;}
+
+.two-columns,
+    .three-columns {flex-direction: column;}
+
+.two-columns > div,
+    .three-columns > div {width: 100%;
+        margin: 0 0 2vw 0; /* Adjust margin for spacing */}
+
+/* Adjust text size for mobile */
+    h1 {font-family: 'Prata', serif; /* Ensure  One font is used */
+        font-size: 8vw; /* Optimized font size */}
+
+p, blockquote, li {font-size: 4vw; /* Optimized font size */}
+
+button,
+    .btn,
+    .button {font-size: 4vw;
+        padding: 4vh 6vw; /* Adjust padding for better touch targets */
+        display: block;
+        margin: 0 auto; /* Center buttons */}
+
+/* Adjust image size for mobile */
+    .three-columns img,
+    .full-width-image img {width: 100%;
+        max-width: none;}
+
+/* Update the colors for the blog page */
+/* Blog Home Page Grid */
+.blog-grid {display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust alignment */
+    align-items: flex-start; /* Align items to the start */
+    padding: 0vw; /* Dynamic padding */
+    gap: 2vw; /* Add gap between items */
+    max-width: calc(2 * (30% + 2vw)); /* Ensure max width of 2 grid items */}
+
+/* Blog Grid Items */
+.blog-grid-item {background-color: var(--tertiary-color); /* Change blog grid item background color */
+    color: var(--primary-color); /* Ensure text color contrasts well */
+    border-radius: 1vh; /* Dynamic border radius */
+    padding: 2vw; /* Dynamic padding */
+    flex: 1 1 calc(30% - 4vw); /* Flex-grow, flex-shrink, and base width */
+    max-width: calc(50% - 2vw); /* Ensure max width of 2 grid items */
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 2vw; /* Add margin-bottom for spacing */}
+
+.blog-grid-item:hover {transform: scale(1.05); /* Slightly expand on hover */}
+
+.blog-grid-item img {width: 100%;
+    border-radius: 1vh 1vh 0 0; /* Round top corners */}
+
+.blog-grid-item h3 {font-size: 2vw; /* Dynamic font size */
+    margin: 1vw 0; /* Dynamic margin */}
+
+.blog-grid-item .date-posted {font-size: 1.5vw; /* Dynamic font size */
+    color: #ffffff; /* Change date color */}
+
+/* Ensure section height is auto to fit content */
+section.blog-preview {height: auto;}
+
+.blog-grid {max-width: 100%; /* Ensure full width on mobile */}
+
+.blog-grid-item {max-width: 100%; /* Ensure full width on mobile */}
+
+.dynamic-line {width: 80%; /* Dynamic width */
+    height: 2.5px; /* Dynamic height */
+    background-color: var(--primary-color); /* Primary color */
+    margin: 0 auto; /* Center the line */
+    margin-top: 20px; /* Space above the line */
+    margin-bottom: 20px; /* Space above the line */}
+
+/* Individual Blog Page Styles */
+.blog-page {display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4vw; /* Dynamic padding */
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    height: auto; /* Dynamic height */
+    min-height: 100vh; /* Ensure it takes at least the full viewport height */}
+
+.blog-page h1 {font-family: 'Prata', serif;
+    font-size: 5vw; /* Dynamic font size */
+    text-align: center;
+    margin-bottom: 2vh; /* Dynamic margin */}
+
+/* Update styles for blog page elements */
+.blog-page h2,
+.blog-page p,
+.blog-page .subheading {font-family: 'Poiret One', sans-serif;
+    font-weight: 100;
+    font-size: 2.5vw; /* Dynamic font size */
+    text-align: center;
+    margin: 2vh 0; /* Dynamic margin */}
+
+.blog-page .content {max-width: 80vw; /* Dynamic max width */
+    margin: 0 auto; /* Center the content */}
+
+/* New styles for the reworked section 1 */
+.section-1.single-column {display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('journal-hero.jpg') no-repeat center center;
+    background-size: cover;
+    height: 80vh; /* Retain the existing height */
+    position: relative;}
+
+.section-1.single-column .content {background: rgba(13, 57, 33, 0.5); /* Add a semi-transparent background for better text readability */
+    padding: 20px;
+    border-radius: 10px;}
+
+.section-1.single-column h1,
+.section-1.single-column h2,
+.section-1.single-column h3 {color: #ffffff; /* Ensure the text is readable against the background image */
+    margin: 10px 0;}
+
+.section-1.single-column .button {margin-top: 20px;}
+
+.form-container {padding: 2vw; /* Adjust padding for mobile */}
+
+.form-container label,
+    .form-container input,
+    .form-container textarea,
+    .form-container button {font-size: 4vw; /* Adjust font size for mobile */
+        margin-bottom: 1vh; /* Adjust margin for mobile */}
+
+.form-container input,
+    .form-container textarea {padding: 1.5vh; /* Adjust padding for mobile */
+        border-radius: 0.5vh; /* Adjust border radius for mobile */}
+
+/* Existing styles for logo container grid */
+.logo-grid {display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Set maximum 2 items per row */
+    gap: 20px;
+    padding: 20px;}
+
+.logo-grid-item {width: 100%; /* Ensure full width on mobile */
+        max-width: 100%; /* Ensure full width on mobile */}
+
+.logo-grid {grid-template-columns: 1fr; /* Single column on mobile */}
+
+.logo-grid-item img {width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease; /* Ensure smooth scrolling */}
+
+.logo-grid-item:hover {transform: scale(1.1);}
+
+.logo-grid-item:hover img {transform: translateY(-30px); /* Move the image up to reveal the description */}
+
+.logo-grid-item .description {display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(13, 57, 33, 0.7);
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 3px;
+    white-space: nowrap;
+    max-width: 250px; /* Ensures the description stays within the grid item */
+    overflow: hidden; /* Prevents overflow */
+    text-overflow: ellipsis; /* Adds ellipsis if text overflows */
+    text-align: center; /* Center the text */
+    opacity: 0; /* Hide description initially */
+    transition: opacity 0.3s ease; /* Smooth transition for the description */}
+
+.logo-grid-item:hover .description {opacity: 1; /* Show description on hover */}
+
+.email-input {width: 80%; /* Make the input box wider */
+    padding: 10px; /* Add padding inside the input box */
+    margin-bottom: 20px; /* Add padding below the box */}
+
+/* Adjust text size for mobile */
+    h1, h2, h3, h4 {text-align: center; /* Center headers */}
+
+h1 {font-size: 14vw;}
+
+p, blockquote, li, .blog-page p {font-size: 8vw; /* Increase font size */}
+
+.section-1.single-column h3 {font-weight: 100; /* Set font-weight to 100 for a lighter appearance */}
+
 /* ================================
    Olivia Arkema — Global Styles
    ================================ */
 
 /* Color System */
-:root{
-  --ink: #393831;
+:root {--ink: #393831;
   --stone: #9e9383;
   --moss: #929673;
   --parchment: #ebe3db;
@@ -14,332 +458,281 @@
   --white: #fefefe;
 
   --shadow-sm: 0 8px 32px rgba(57,56,49,.08);
-  --shadow-md: 0 20px 40px rgba(0,0,0,.10);
-}
+  --shadow-md: 0 20px 40px rgba(0,0,0,.10);}
 
 /* Base */
 *,
 *::before,
-*::after { box-sizing: border-box; }
+*::after {box-sizing: border-box;}
 
-html, body {
-  height: 100%;
-  scroll-behavior: smooth;
-}
+html, body {scroll-behavior: auto;}
 
-body{
-  font-family: 'Noto Serif', serif;
+body {font-family: 'Noto Serif', serif;
   color: var(--ink);
   background-color: var(--parchment);
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  -moz-osx-font-smoothing: grayscale;}
 
-h1,h2,h3,h4,h5,h6,.heading-font{
-  font-family: 'Noto Serif', serif;
+h1,h2,h3,h4,h5,h6,.heading-font {font-family: 'Noto Serif', serif;
   letter-spacing: .02em;
-  color: var(--ink);
-}
+  color: var(--ink);}
 
 /* Accessibility */
-.sr-only{
-  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
-  overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
-}
+.sr-only {position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;}
 
 /* Utility Tokens mirrored from inline styles */
-.hero-bg{ background-color: var(--night); }
-.elegant-border{ border: 2px solid var(--accent); }
-.subtle-shadow{ box-shadow: var(--shadow-sm); }
-.text-accent{ color: var(--accent); }
-.bg-accent{ background-color: var(--accent); }
-.divider{ height:1px; background-color: var(--stone); opacity:.3; }
-.card-hover{ transition: transform .3s ease, box-shadow .3s ease; }
-.card-hover:hover{ transform: translateY(-5px); box-shadow: var(--shadow-md); }
+.hero-bg {background-color: var(--night);}
+
+.elegant-border {border: 2px solid var(--accent);}
+
+.subtle-shadow {box-shadow: var(--shadow-sm);}
+
+.text-accent {color: var(--accent);}
+
+.bg-accent {background: var(--accent);}
+
+.divider {height:1px; background-color: var(--stone); opacity:.3;}
+
+.card-hover {transition: transform .3s ease, box-shadow .3s ease;}
+
+.card-hover:hover {transform: translateY(-5px); box-shadow: var(--shadow-md);}
 
 /* Fade-in + stagger */
-.fade-in{ opacity:0; animation: fadeIn .8s ease-in forwards; }
-@keyframes fadeIn{ to{ opacity:1; } }
-.stagger-1{ animation-delay: .1s; }
-.stagger-2{ animation-delay: .2s; }
-.stagger-3{ animation-delay: .3s; }
-.stagger-4{ animation-delay: .4s; }
+.fade-in {opacity:0; animation: fadeIn .8s ease-in forwards;}
 
-/* Respect reduced motion */
-@media (prefers-reduced-motion: reduce){
-  html, body { scroll-behavior: auto; }
-  .fade-in, .card-hover { animation: none !important; transition: none !important; }
-}
+to {opacity:1;}
+
+.stagger-1 {animation-delay: .1s;}
+
+.stagger-2 {animation-delay: .2s;}
+
+.stagger-3 {animation-delay: .3s;}
+
+.stagger-4 {animation-delay: .4s;}
+
+.fade-in, .card-hover {animation: none !important; transition: none !important;}
 
 /* ================================
    Navigation
    ================================ */
-#navbar{
-  position: fixed; inset-inline: 0; top: 0;
+#navbar {position: fixed; inset-inline: 0; top: 0;
   z-index: 50;
   background-color: rgba(254,254,254,.9);
   backdrop-filter: blur(12px);
   box-shadow: 0 1px 2px rgba(0,0,0,.04);
-  transition: transform .3s ease;
-}
+  transition: transform .3s ease;}
 
-.nav-brand{
-  font-size: 1.875rem; /* ~text-3xl */
-  font-weight: 700;
-  color: var(--ink);
-}
+.nav-brand {font-size: 1.5rem;}
 
-.nav-links a{
-  color: var(--stone);
-  transition: color .2s ease, opacity .2s ease;
-}
+.nav-links a {color: var(--stone);
+  transition: color .2s ease, opacity .2s ease;}
+
 .nav-links a:hover,
-.nav-links a:focus{
-  color: var(--accent);
-  outline: none;
-}
+.nav-links a:focus {color: var(--accent);
+  outline: none;}
 
 /* Mobile menu */
-#mobile-menu a{
-  color: var(--stone);
-  transition: color .2s ease;
-}
+#mobile-menu a {color: var(--stone);
+  transition: color .2s ease;}
+
 #mobile-menu a:hover,
-#mobile-menu a:focus{
-  color: var(--accent);
-}
+#mobile-menu a:focus {color: var(--accent);}
 
 /* ================================
    Buttons
    ================================ */
-.btn{
-  display: inline-block;
+.btn {display: inline-block;
   padding: 1rem 2.5rem;
   font-weight: 600;
   border-radius: .75rem; /* rounded-xl */
   transition: all .2s ease;
-  cursor: pointer;
-}
+  cursor: pointer;}
 
 /* Outline button on dark bg */
-.btn-outline{
-  background: transparent;
+.btn-outline {background: transparent;
   color: var(--white);
-  border: 2px solid var(--accent);
-}
+  border: 2px solid var(--accent);}
+
 .btn-outline:hover,
-.btn-outline:focus{
-  background: var(--accent);
+.btn-outline:focus {background: var(--accent);
   color: var(--white);
-  outline: none;
-}
+  outline: none;}
 
 /* Solid accent button */
-.btn-accent{
-  background: var(--accent);
+.btn-accent {background: var(--accent);
   color: var(--white);
-  border: 2px solid var(--accent);
-}
+  border: 2px solid var(--accent);}
+
 .btn-accent:hover,
-.btn-accent:focus{
-  background: transparent;
+.btn-accent:focus {background: transparent;
   color: var(--accent);
-  outline: none;
-}
+  outline: none;}
 
 /* Light outline (for Contact section) */
-.btn-outline-light{
-  background: transparent;
+.btn-outline-light {background: transparent;
   color: var(--mist);
-  border: 2px solid var(--mist);
-}
+  border: 2px solid var(--mist);}
+
 .btn-outline-light:hover,
-.btn-outline-light:focus{
-  background: var(--mist);
+.btn-outline-light:focus {background: var(--mist);
   color: var(--night);
-  outline: none;
-}
+  outline: none;}
 
 /* ================================
    Hero section details
    ================================ */
 .hero-kicker,
-.hero-rule{
-  background-color: var(--accent);
-}
-.hero-title{
-  color: var(--white);
-  text-shadow: 0 2px 4px rgba(0,0,0,.3);
-}
+.hero-rule {background-color: var(--accent);}
+
+.hero-title {line-height: 1.05;}
 
 /* ================================
    Clients
    ================================ */
-.client-card{
-  background-color: var(--white);
+.client-card {background-color: var(--white);
   border-radius: .75rem;
   padding: 2rem;
-  text-align: center;
-}
-.client-card .caption{
-  color: var(--moss);
-  font-size: .875rem;
-}
-.logo-img{ max-width:150px; max-height:150px; width:auto; height:auto; }
+  text-align: center;}
+
+.client-card .caption {color: var(--moss);
+  font-size: .875rem;}
+
+.logo-img {max-width:150px; max-height:150px; width:auto; height:auto;}
 
 /* ================================
    Services
    ================================ */
-.service-card{
-  background: var(--mist);
+.service-card {background: var(--mist);
   border-radius: 1rem; /* rounded-2xl */
   padding: 2rem;
-  text-align: center;
-}
-.service-icon{
-  width: 4rem; height: 4rem;
+  text-align: center;}
+
+.service-icon {width: 4rem; height: 4rem;
   margin-inline: auto;
   margin-bottom: 1.5rem;
   border-radius: 9999px;
   display: grid; place-items: center;
-  background: color-mix(in srgb, var(--accent) 20%, transparent);
-}
-.service-icon svg{ color: var(--accent); }
+  background: color-mix(in srgb, var(--accent) 20%, transparent);}
+
+.service-icon svg {color: var(--accent);}
 
 /* ================================
    Featured Work
    ================================ */
-#featuredwork{ background: var(--white); }
+#featuredwork {background: var(--white);}
 
-.filter-bar{
-  display: inline-flex;
+.filter-bar {display: inline-flex;
   gap: .25rem;
   padding: .25rem;
   border-radius: 9999px;
-  background: var(--mist);
-}
+  background: var(--mist);}
 
-.filter-btn{
-  padding: .5rem 1.5rem;
+.filter-btn {padding: .5rem 1.5rem;
   border-radius: 9999px;
   font-weight: 500;
   color: var(--ink);
   background: transparent;
   border: 0;
   cursor: pointer;
-  transition: background-color .2s ease, color .2s ease, box-shadow .2s ease;
-}
+  transition: background-color .2s ease, color .2s ease, box-shadow .2s ease;}
+
 .filter-btn:hover,
-.filter-btn:focus{ background: rgba(95,132,156,.12); outline: none; }
+.filter-btn:focus {background: rgba(95,132,156,.12); outline: none;}
 
-.filter-btn.active{
-  background: var(--accent);
+.filter-btn.active {background: var(--accent);
   color: var(--white);
-  box-shadow: 0 4px 16px rgba(95,132,156,.28);
-}
+  box-shadow: 0 4px 16px rgba(95,132,156,.28);}
 
-.work-item{
-  background: var(--white);
+.work-item {background: var(--white);
   border-radius: .75rem;
   min-height: 400px;
   display: flex; flex-direction: column;
   border: 2px solid var(--accent);
-  box-shadow: var(--shadow-sm);
-}
+  box-shadow: var(--shadow-sm);}
 
-.work-thumb{
-  height: 12rem; /* h-48 */
+.work-thumb {height: 12rem; /* h-48 */
   display: grid; place-items: center;
   border-top-left-radius: .75rem;
-  border-top-right-radius: .75rem;
-}
+  border-top-right-radius: .75rem;}
 
-.work-meta{
-  padding: 1.5rem;
+.work-meta {padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  flex: 1 1 auto;
-}
+  flex: 1 1 auto;}
 
-.work-meta .badge{
-  margin-top: auto;
+.work-meta .badge {margin-top: auto;
   font-size: .75rem;
   letter-spacing: .04em;
   font-weight: 600;
-  color: var(--moss);
-}
+  color: var(--moss);}
 
-.work-meta .divider{ margin-block: 1rem; }
+.work-meta .divider {margin-block: 1rem;}
 
 /* Link styling inside cards */
 .card-title,
-.card-title a{
-  color: var(--ink);
+.card-title a {color: var(--ink);
   text-decoration: none;
-  font-weight: 600;
-}
+  font-weight: 600;}
+
 .card-title a:hover,
-.card-title a:focus{
-  color: var(--accent);
-  outline: none;
-}
+.card-title a:focus {color: var(--accent);
+  outline: none;}
 
 /* ================================
    Contact Section
    ================================ */
-#contact{
-  background: var(--night);
+#contact {background: var(--night);
   color: var(--mist);
-  text-align: center;
-}
-#contact .kicker{ background: var(--accent); height: 4px; width: 6rem; margin: 0 auto 2rem; }
+  text-align: center;}
+
+#contact .kicker {background: var(--accent); height: 4px; width: 6rem; margin: 0 auto 2rem;}
 
 /* ================================
    Footer
    ================================ */
-footer{
-  background: var(--ink);
-  color: var(--stone);
-}
-footer .brand{ color: var(--white); }
+footer {background: var(--ink);
+  color: var(--stone);}
+
+footer .brand {color: var(--white);}
+
 footer .quick-links a,
-footer .connect a{
-  color: var(--stone);
+footer .connect a {color: var(--stone);
   text-decoration: none;
-  transition: color .2s ease;
-}
+  transition: color .2s ease;}
+
 footer .quick-links a:hover,
-footer .connect a:hover{ color: var(--mist); }
-footer .rule{ width: 3rem; height: 4px; background: var(--accent); margin-top: 1rem; }
+footer .connect a:hover {color: var(--mist);}
+
+footer .rule {width: 3rem; height: 4px; background: var(--accent); margin-top: 1rem;}
 
 /* ================================
    Generic helpers
    ================================ */
-.hidden{ display: none !important; }
-.text-center{ text-align: center; } /* in case you remove Tailwind later */
+.hidden {display: none !important;}
+
+.text-center {text-align: center;}
+
+/* in case you remove Tailwind later */
 
 /* ================================
    Optional: replace inline bg chips
    ================================ */
-.bg-night{ background: var(--night); }
-.bg-stone{ background: var(--stone); }
-.bg-accent{ background: var(--accent); }
-.bg-ink{ background: var(--ink); }
-.bg-mist{ background: var(--mist); }
-.bg-white{ background: var(--white); }
-.text-stone{ color: var(--stone); }
-.text-ink{ color: var(--ink); }
-.text-white{ color: var(--white); }
+.bg-night {background: var(--night);}
 
-/* ================================
-   Responsive tweaks
-   ================================ */
-@media (max-width: 767px){
-  .nav-links{ display: none; }
-  .nav-brand{ font-size: 1.5rem; }
-}
+.bg-stone {background: var(--stone);}
 
-/* Larger displays */
-@media (min-width: 1024px){
-  .hero-title{ line-height: 1.05; }
-}
+.bg-ink {background: var(--ink);}
+
+.bg-mist {background: var(--mist);}
+
+.bg-white {background: var(--white);}
+
+.text-stone {color: var(--stone);}
+
+.text-ink {color: var(--ink);}
+
+.text-white {color: var(--white);}
+
+.nav-links {display: none;}
+
