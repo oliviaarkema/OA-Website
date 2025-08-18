@@ -3,11 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Small Business Website Checklist </title>
     <meta name="description" content="Does your business really need a website?">
-    <title>Small Business Website Checklist</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="keywords" content="web design, digital design, brand identity, UX design, creative portfolio, web development, design consulting, marketing, social media, content creation">
+    <meta name="author" content="Olivia Arkema">
+    <meta name="robots" content="index, follow">
     <link rel="icon" href="green_bow.png" type="image/png">
+    <link rel="canonical" href="https://oliviaarkema.com">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Olivia Arkema | Marketing & Web Design">
+    <meta property="og:description" content="Helping small business owners grow with simple, effective marketing and website solutions. 
+        From strategy to design, I make it easy to connect with your audience and drive results. Get in touch or check out my free guides and resources for small businesses.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://oliviaarkema.com">
+    <meta property="og:image" content="https://oliviaarkema.com/green_bow.png">
+    <meta property="og:site_name" content="Olivia Arkema Portfolio">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Olivia Arkema | Marketing & Web Design">
+    <meta name="twitter:description" content="Helping small business owners grow with simple, effective marketing and website solutions. 
+        From strategy to design, I make it easy to connect with your audience and drive results. Get in touch or check out my free guides and resources for small businesses.">
+    <meta name="twitter:image" content="https://oliviaarkema.com/profile_pic_with_circle.png">
+    <meta name="twitter:creator" content="@liv.arkema">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/green_bow.png">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Olivia Arkema",
+      "jobTitle": "Marketing Professional & Website Designer/Developer",
+      "description": "Helping small business owners grow with simple, effective marketing and website solutions. 
+        From strategy to design, I make it easy to connect with your audience and drive results. Get in touch or check out my free guides and resources for small businesses.",
+      "url": "https://oliviaarkema.com",
+      "sameAs": [
+        "https://linkedin.com/in/oliviaarkema",
+        "https://twitter.com/livarkema"
+      ],
+      "knowsAbout": ["Web Design", "Brand Identity", "UX Design", "Digital Strategy"],
+      "hasOccupation": {
+        "@type": "Marketing & Data Operations",
+        "name": "Operations Director",
+        "occupationLocation": {
+          "@type": "City",
+          "name": "Ludington"
+        }
+      }
+    }
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+        body { font-family: 'Noto Serif', serif; }
+        h1, h2, h3, h4, h5, h6, .heading-font { font-family: 'Noto Serif', serif; letter-spacing: 0.02em; }
+        .hero-bg { background-color: #23424c; }
+        .elegant-border { border: 2px solid #5f849c; }
+        .subtle-shadow { box-shadow: 0 8px 32px rgba(57, 56, 49, 0.1); }
+        .text-accent { color: #5f849c; }
+        .bg-accent { background-color: #5f849c; }
+        .divider { height: 1px; background-color: #9e9383; opacity: 0.3; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .fade-in { opacity: 0; animation: fadeIn 0.8s ease-in forwards; }
+        @keyframes fadeIn { to { opacity: 1; } }
+        .stagger-1 { animation-delay: 0.1s; }
+        .stagger-2 { animation-delay: 0.2s; }
+        .stagger-3 { animation-delay: 0.3s; }
+        .stagger-4 { animation-delay: 0.4s; }
+        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+    </style>
 </head>
+
+
 <body>
     <header>
         <div class="logo">
