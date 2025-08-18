@@ -7,6 +7,8 @@
   <title><!-- 60–65 chars -->Blog Post Title | Olivia Arkema</title>
   <meta name="description" content="One-sentence summary of this post for search and social." />
   <link rel="canonical" href="https://oliviaarkema.com/blog/your-post-slug" />
+  <link rel="icon" href="green_bow.png" type="image/png">
+
 
   <!-- Open Graph -->
   <meta property="og:type" content="article" />
