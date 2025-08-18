@@ -137,10 +137,6 @@
     </nav>
   </div>
 </header>
-
-  <!-- Spacer for fixed nav -->
-  <div class="h-20 md:h-24"></div>
-
   <main>
     <article class="wrap letter">
       <!-- Title & lede -->
