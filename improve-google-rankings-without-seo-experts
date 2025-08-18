@@ -145,7 +145,7 @@
           <span class="px-3 py-1 rounded-full text-sm" style="background:#dae4eb; color:#23424c;">Small Business</span>
         </div>
         <div class="text-sm" style="color:#9e9383;">
-          <a href="#" class="underline">Share</a>
+        <a id="shareCopy" class="underline" href="#" aria-label="Copy link to clipboard">Share</a>
         </div>
       </section>
     </article>
@@ -184,6 +184,15 @@
     </div>
   </footer>
 
+
+<div id="copyToast" role="status" aria-live="polite" hidden
+     style="position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(8px);
+            background:#5f849c;color:#fff;padding:.6rem .9rem;border-radius:9999px;
+            box-shadow:0 8px 24px rgba(0,0,0,.12);font-size:.95rem;
+            opacity:0;transition:opacity .2s ease, transform .2s ease;z-index:60;">
+  Link copied
+</div>
+
   <!-- ===== Minimal JS (mirrors homepage behavior) ===== -->
   <script>
     // Nav hide/show on scroll (optional; matches homepage pattern)
@@ -207,6 +216,63 @@
 
     // Footer year
     document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+
+(function () {
+  const btn = document.getElementById('shareCopy');
+  const toast = document.getElementById('copyToast');
+  if (!btn || !toast) return;
+
+  function pageUrl() {
+    const fromDataAttr = btn.getAttribute('data-url');
+    if (fromDataAttr) return fromDataAttr;
+    const canonical = document.querySelector('link[rel="canonical"]');
+    return (canonical && canonical.href) || window.location.href;
+  }
+
+  async function copyText(text) {
+    try {
+      await navigator.clipboard.writeText(text);
+      return true;
+    } catch (e) {
+      // Fallback for older browsers/insecure origins
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.top = '-9999px';
+      document.body.appendChild(ta);
+      ta.focus();
+      ta.select();
+      let ok = false;
+      try { ok = document.execCommand('copy'); } catch {}
+      document.body.removeChild(ta);
+      return ok;
+    }
+  }
+
+  let hideTimer;
+  function showToast() {
+    clearTimeout(hideTimer);
+    toast.hidden = false;
+    requestAnimationFrame(() => {
+      toast.style.opacity = '1';
+      toast.style.transform = 'translateX(-50%) translateY(0)';
+    });
+    hideTimer = setTimeout(() => {
+      toast.style.opacity = '0';
+      toast.style.transform = 'translateX(-50%) translateY(8px)';
+      setTimeout(() => { toast.hidden = true; }, 220);
+    }, 1500);
+  }
+
+  btn.addEventListener('click', async (e) => {
+    e.preventDefault();
+    const url = pageUrl();
+    const ok = await copyText(url);
+    if (ok) showToast();
+  });
+})();
+</script>
+
+
 </body>
 </html>
