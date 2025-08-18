@@ -1,94 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Boost your Google rankings with these 10 simple, actionable tips-no SEO expert needed! 
-                Learn how to optimize your website, create quality content, 
-                improve local SEO, and more to drive traffic and grow your business.">
-    <title>Work With Liv</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="green_bow.png" type="image/png">
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <meta
+    name="description"
+    content="Boost your Google rankings with these 10 simple, actionable tips—no SEO expert needed! Learn how to optimize your website, create quality content, improve local SEO, and more to drive traffic and grow your business."
+  />
+  <title>10 Ways to Improve Your Google Rankings | Olivia Arkema</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="green_bow.png" type="image/png" />
+
+  <!-- Noto Serif to match new style -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Your stylesheet with new globals/palette -->
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="white_bow2.png" alt="Olivia Arkema Logo" style="max-width: 30px;max-height: 30px;">
-            </a>        
+
+<body style="background-color: var(--parchment);">
+  <!-- Site Nav (matches new index navbar) -->
+  <nav id="navbar" class="fixed w-full z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4">
+      <div class="flex justify-between items-center" style="display:flex;align-items:center;justify-content:space-between;">
+        <!-- Brand -->
+        <a href="index.html" class="nav-brand heading-font" style="text-decoration:none;">
+          <span class="sr-only">Olivia Arkema</span>
+          <span class="heading-font" style="font-weight:700;">OA</span>
+        </a>
+
+        <!-- Desktop links -->
+        <div class="nav-links" style="display:none;gap:2rem;">
+          <a href="index.html" class="transition-colors" style="text-decoration:none;">Home</a>
+          <a href="blog" class="transition-colors" style="text-decoration:none;">Blog</a>
+          <a href="contact" class="transition-colors" style="text-decoration:none;">Contact</a>
         </div>
-        <div class="hamburger-menu">&#9776;</div>
-        <nav class="dropdown-menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog">Blog</a></li>
-                <li><a href="contact">Get in Touch</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="blog-page">
-            <img src="orange-grove-growing.jpg" alt="Website and SEO Rankings Growth - Orange Grove" style="width:100%; max-width:600px; margin-bottom:20px;">
-            <h1>10 Ways to Improve Your Google Rankings</h1>
-            <p>Improving your rankings on Google can feel overwhelming, but you don’t need to hire an SEO expert to make meaningful changes. With the right approach, you can boost your visibility and attract more traffic to your website and ultimately increase sales and engagement. Here are 10 actionable strategies to get started (no experts required):</p>
 
-            <h2 class="subheading">Understanding Google Rankings</h2>
-            <p>Google's ranking algorithm considers numerous factors when ranking websites. These include website content, backlinks, mobile-friendliness, and page speed. Understanding these elements is crucial for improving your site's visibility.</p>
+        <!-- Mobile toggle -->
+        <button aria-label="Toggle menu" class="md:hidden" style="background:none;border:0;color:var(--stone);" onclick="toggleMenu()">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
 
-            <h2 class="subheading">1. Create Quality Content</h2>
-            <p>Content is the foundation of your website’s success. Write original, informative, and engaging material tailored to your target audience. Address their pain points, answer their questions, and provide value they can’t find elsewhere. Consider creating guides, directories, or other helpful content that will attract traffic for years to come.</p>
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="hidden mt-4 space-y-2">
+        <a href="index.html" class="block py-2 transition-colors" style="text-decoration:none;">Home</a>
+        <a href="blog" class="block py-2 transition-colors" style="text-decoration:none;">Blog</a>
+        <a href="contact" class="block py-2 transition-colors" style="text-decoration:none;">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-            <h2 class="subheading">2. Use Relevant Keywords Strategically</h2>
-            <p>Keywords help search engines understand your content. Research terms your audience searches for using tools like Google Keyword Planner, and incorporate them naturally into titles and headings, meta descriptions, alt-text for images, and your website's body text.</p>
+  <main>
+    <!-- Article header strip (subtle top divider like homepage) -->
+    <section class="hero-bg" role="banner" style="padding-top:96px;padding-bottom:24px;">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <div class="w-24 h-1 mx-auto" style="background-color: var(--accent);"></div>
+        <div class="w-full h-px mt-6" style="background-color: var(--accent); opacity:.3;"></div>
+      </div>
+    </section>
 
-            <h2 class="subheading">3. Mention Your Business "ABCs" (Address, Phone, Etc.)</h2>
-            <p>Make sure your website includes essential business details including your address, phone number, and business email. This builds trust and improves local search visibility.</p>
+    <!-- Article -->
+    <article class="max-w-3xl mx-auto px-6" style="padding-top:2rem;padding-bottom:4rem;">
+      <!-- Lead image -->
+      <figure class="elegant-border subtle-shadow" style="border-radius:12px;overflow:hidden;background:var(--white);">
+        <img
+          src="orange-grove-growing.jpg"
+          alt="Website and SEO Rankings Growth - Orange Grove"
+          style="display:block;width:100%;max-width:100%;height:auto;"
+        />
+      </figure>
 
-            <h2 class="subheading">4. Optimize and Link Your Google Business Profile</h2>
-            <p>Claim and complete your Google Business Profile to improve your local search presence. Optimize it by adding your address, phone number, and website, uploading high-quality photos, and collecting and responding to reviews.</p>
-      
-            <h2 class="subheading">5. Build Backlinks</h2>
-            <p>Backlinks from reputable websites signal to Google that your site is trustworthy. Earn backlinks by writing guest posts for blogs in your industry, sharing your content on social media, and networking with local businesses or influencers.</p>
-      
-            <h2 class="subheading">6. Improve Your On-Page SEO</h2>
-            <p>On-page SEO ensures every page of your website is search-engine friendly. Focus on creating descriptive, keyword-rich titles and meta descriptions, structuring your content with clear headings (H1, H2, H3), and adding internal links to guide visitors through your site.</p>
-      
-            <h2 class="subheading">7. Leverage Local SEO</h2>
-            <p>If you serve a specific area, local SEO can boost your visibility in searches. Use location-specific keywords (e.g., “coffee shop in Seattle”), list your business in local directories, and encourage customers to leave reviews.</p>
-      
-            <h2 class="subheading">8. Regularly Update and Refresh Content</h2>
-            <p>Keep your website fresh by updating outdated information, adding new blog posts or pages, and revisiting old content to improve keywords, links, and readability.</p>
-            
-            <h2 class="subheading">9. Add Engaging Visuals</h2>
-            <p>Visual content like images, videos, and infographics can boost engagement and keep visitors on your site longer. Ensure visuals are relevant to your content, optimized for fast loading, and properly labeled with descriptive alt text for SEO.</p>
-            
-            <h2 class="subheading">10. Monitor and Adjust with Analytics</h2>
-            <p>Track your website’s performance using tools like Google Analytics and Search Console. Analyze metrics such as organic traffic, bounce rate, and keyword rankings. Use this data to refine your strategy and improve results over time.</p>
-            
-            <h2 class="subheading">Conclusion</h2>
-            <p>Improving your Google rankings doesn’t have to be complicated. By focusing on these steps, you can drive more traffic, connect with your audience, and grow your business—all without the need for a professional SEO expert.</p>
-        </section>
+      <!-- Title -->
+      <header class="heading-font" style="margin-top:1.5rem;">
+        <h1 class="heading-font hero-title" style="color:var(--ink);font-size:2.25rem;line-height:1.2;margin:0 0 .5rem 0;">
+          10 Ways to Improve Your Google Rankings
+        </h1>
+        <div class="divider" style="margin:1rem 0;"></div>
+      </header>
 
-        <section class="two-columns section-7">
-            <div>
-                <h2>Let's collaborate.</h2>
-            </div>
-            <div>
-                <a href="contact" class="button">Work with Me</a>
-                </br>
-                </br>
-                <p>Email me:</p>
-                <p>livarkema@gmail.com</p>
-                 </br>
-                <p>Give me a call:</p>
-                <p>970-672-6402</p>
-            </div>
-        </section>
-    </main>
-    <script>
-        document.querySelector(".hamburger-menu").addEventListener("click", function() {
-            document.querySelector(".dropdown-menu").classList.toggle("show");
-        });
-    </script>
-</body>
-</html>
+      <!-- Body copy -->
+      <div class="prose" style="color:var(--stone);font-size:1.125rem;line-height:1.8;">
+        <p>
+          Improving your rankings on Google can feel overwhelming, but you don’t need to hire an SEO expert to make meaningful changes.
+          With the right approach, you can boost your visibility and attract more traffic to your website and ultimatel
