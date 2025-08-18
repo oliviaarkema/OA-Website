@@ -212,132 +212,133 @@ for Small Businesses"</span>
         </div>
     </section>
 
-    <!-- Work Section -->
-    <section id="featuredwork" class="py-20" style="background-color: #fefefe;" aria-labelledby="work-heading">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="text-center mb-16 fade-in">
-                <h2 id="work-heading" class="text-5xl font-bold mb-4" style="color: #393831;">Featured Work</h2>
-                <p class="text-xl" style="color: #9e9383;">A collection of projects, writings, and creative explorations</p>
+<!-- Work Section -->
+<section id="featuredwork" class="py-20" style="background-color: #fefefe;" aria-labelledby="work-heading">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16 fade-in">
+            <h2 id="work-heading" class="text-5xl font-bold mb-4" style="color: #393831;">Featured Work</h2>
+            <p class="text-xl" style="color: #9e9383;">A collection of projects, writings, and creative explorations</p>
+        </div>
+        
+        <!-- Filter Tabs -->
+        <nav class="flex justify-center mb-12" aria-label="Portfolio filter navigation">
+            <div class="p-1 rounded-full" style="background-color: #dae4eb;" role="tablist">
+                <button onclick="filterWork('all')" class="filter-btn active px-6 py-2 rounded-full font-medium transition-colors" style="color: #393831;" role="tab" aria-selected="true" aria-controls="work-grid">All</button>
+                <button onclick="filterWork('projects')" class="filter-btn px-6 py-2 rounded-full font-medium transition-colors" style="color: #393831;" role="tab" aria-selected="false" aria-controls="work-grid">Projects</button>
+                <button onclick="filterWork('blog')" class="filter-btn px-6 py-2 rounded-full font-medium transition-colors" style="color: #393831;" role="tab" aria-selected="false" aria-controls="work-grid">Blog</button>
+                <button onclick="filterWork('writings')" class="filter-btn px-6 py-2 rounded-full font-medium transition-colors" style="color: #393831;" role="tab" aria-selected="false" aria-controls="work-grid">Writings</button>
             </div>
-            
-            <!-- Filter Tabs -->
-            <nav class="flex justify-center mb-12" aria-label="Portfolio filter navigation">
-                <div class="p-1 rounded-full" style="background-color: #dae4eb;" role="tablist">
-                    <button onclick="filterWork('all')" class="filter-btn active px-6 py-2 rounded-full font-medium transition-colors" style="color: #393831;" role="tab" aria-selected="true" aria-controls="work-grid">All</button>
-                    <button onclick="filterWork('projects')" class="filter-btn px-6 py-2 rounded-full font-medium transition-colors" style="color: #393831;" role="tab" aria-selected="false" aria-controls="work-grid">Projects</button>
-                    <button onclick="filterWork('blog')" class="filter-btn px-6 py-2 rounded-full font-medium transition-colors" style="color: #393831;" role="tab" aria-selected="false" aria-controls="work-grid">Blog</button>
-                    <button onclick="filterWork('writings')" class="filter-btn px-6 py-2 rounded-full font-medium transition-colors" style="color: #393831;" role="tab" aria-selected="false" aria-controls="work-grid">Writings</button>
-                </div>
-            </nav>
+        </nav>
 
-            <!-- Work Grid -->
-            <div id="work-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" role="tabpanel">
-                <!-- Project Items -->
-                <div class="work-item projects card-hover elegant-border subtle-shadow fade-in stagger-1 rounded-xl" style="background-color: #fefefe;">
-                    <div class="h-48 flex items-center justify-center relative rounded-t-xl" style="background-color: #23424c;">
-                        <svg class="w-16 h-16" style="color: #dae4eb;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                        </svg>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-3">
-                            <a href="improve-google-rankings-without-seo-experts" h3 class="text-xl font-semibold" style="color: #393831; font-family: 'Inter', sans-serif;">10 Ways to Improve Your Google Rankings Without Hiring an SEO Expert</h3>
-                            <div class="w-4 h-4" style="background-color: #5f849c;"></div>
-                        </div>
-                        <p class="mb-4 text-sm leading-relaxed" style="color: #9e9383;">actionable strategies for individuals to enhance their website's Google search rankings independently, without the need for professional SEO services.</p>
-                        <div class="divider mb-4"></div>
-                        <span class="text-xs font-medium tracking-wide" style="color: #929673;">BLOG</span>
-                    </div>
+        <!-- Work Grid -->
+        <div id="work-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch" role="tabpanel">
+            <!-- Project Items -->
+            <div class="work-item projects card-hover elegant-border subtle-shadow fade-in stagger-1 rounded-xl h-full flex flex-col" style="background-color: #fefefe; min-height: 400px;">
+                <div class="h-48 flex items-center justify-center relative rounded-t-xl" style="background-color: #23424c;">
+                    <svg class="w-16 h-16" style="color: #dae4eb;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
                 </div>
-
-                <div class="work-item blog card-hover elegant-border subtle-shadow fade-in stagger-2 rounded-xl" style="background-color: #fefefe;">
-                    <div class="h-48 flex items-center justify-center relative rounded-t-xl" style="background-color: #929673;">
-                        <svg class="w-16 h-16" style="color: #fefefe;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
-                        </svg>
+                <div class="p-6 flex-1 flex flex-col">
+                    <div class="flex justify-between items-start mb-3">
+                        <a href="improve-google-rankings-without-seo-experts" class="text-xl font-semibold" style="color: #393831; font-family: 'Inter', sans-serif;">10 Ways to Improve Your Google Rankings Without SEO Experts</a>
+                        <div class="w-4 h-4 ml-2" style="background-color: #5f849c;"></div>
                     </div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-3">
-                            <a href="paid-advertising-mistakes-small-businesses" h3 class="text-xl font-semibold" style="color: #393831; font-family: 'Inter', sans-serif;">5 Common Paid Advertising Mistakes Small Businesses Make (And How to Fix Them)</h3>
-                            <div class="w-4 h-4" style="background-color: #929673;"></div>
-                        </div>
-                        <p class="mb-4 text-sm leading-relaxed" style="color: #9e9383;">Stop Wasting Your Ad Spend! Are you pouring money into paid ads with little to show for it?</p>
-                        <div class="divider mb-4"></div>
-                        <span class="text-xs font-medium tracking-wide" style="color: #929673;">BLOG</span>
-                    </div>
+                    <p class="mb-4 text-sm leading-relaxed" style="color: #9e9383;">actionable strategies for individuals to enhance their website's Google search rankings independently, without the need for experts.</p>
+                    <div class="divider mb-4"></div>
+                    <span class="text-xs font-medium tracking-wide mt-auto" style="color: #929673;">BLOG</span>
                 </div>
+            </div>
 
-                <div class="work-item projects card-hover elegant-border subtle-shadow fade-in stagger-3 rounded-xl" style="background-color: #fefefe;">
-                    <div class="h-48 flex items-center justify-center relative rounded-t-xl" style="background-color: #5f849c;">
-                        <svg class="w-16 h-16" style="color: #fefefe;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
-                        </svg>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-semibold" style="color: #393831; font-family: 'Inter', sans-serif;">Mobile App Design</h3>
-                            <div class="w-4 h-4" style="background-color: #5f849c;"></div>
-                        </div>
-                        <p class="mb-4 text-sm leading-relaxed" style="color: #9e9383;">Native mobile application design for a fintech startup, focusing on security and user trust.</p>
-                        <div class="divider mb-4"></div>
-                        <span class="text-xs font-medium tracking-wide" style="color: #929673;">PROJECT</span>
-                    </div>
+            <div class="work-item blog card-hover elegant-border subtle-shadow fade-in stagger-2 rounded-xl h-full flex flex-col" style="background-color: #fefefe; min-height: 400px;">
+                <div class="h-48 flex items-center justify-center relative rounded-t-xl" style="background-color: #929673;">
+                    <svg class="w-16 h-16" style="color: #fefefe;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
+                    </svg>
                 </div>
-
-                <div class="work-item writings card-hover elegant-border subtle-shadow fade-in stagger-1 rounded-xl" style="background-color: #fefefe;">
-                    <div class="h-48 flex items-center justify-center relative rounded-t-xl" style="background-color: #393831;">
-                        <svg class="w-16 h-16" style="color: #ebe3db;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                        </svg>
+                <div class="p-6 flex-1 flex flex-col">
+                    <div class="flex justify-between items-start mb-3">
+                        <a href="paid-advertising-mistakes-small-businesses" class="text-xl font-semibold" style="color: #393831; font-family: 'Inter', sans-serif;">5 Common Paid Advertising Mistakes</a>
+                        <div class="w-4 h-4 ml-2" style="background-color: #929673;"></div>
                     </div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-semibold" style="color: #393831; font-family: 'Inter', sans-serif;">Design Systems Guide</h3>
-                            <div class="w-4 h-4" style="background-color: #9e9383;"></div>
-                        </div>
-                        <p class="mb-4 text-sm leading-relaxed" style="color: #9e9383;">Comprehensive guide on building and maintaining design systems for scalable product development.</p>
-                        <div class="divider mb-4"></div>
-                        <span class="text-xs font-medium tracking-wide" style="color: #929673;">WRITING</span>
-                    </div>
+                    <p class="mb-4 text-sm leading-relaxed" style="color: #9e9383;">Stop Wasting Your Ad Spend! Are you pouring money into paid ads with little to show for it?</p>
+                    <div class="divider mb-4"></div>
+                    <span class="text-xs font-medium tracking-wide mt-auto" style="color: #929673;">BLOG</span>
                 </div>
+            </div>
 
-                <div class="work-item blog card-hover elegant-border subtle-shadow fade-in stagger-2 rounded-xl" style="background-color: #fefefe;">
-                    <div class="h-48 flex items-center justify-center relative rounded-t-xl" style="background-color: #23424c;">
-                        <svg class="w-16 h-16" style="color: #dae4eb;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-                        </svg>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-semibold" style="color: #393831; font-family: 'Inter', sans-serif;">UX Metrics That Matter</h3>
-                            <div class="w-4 h-4" style="background-color: #23424c;"></div>
-                        </div>
-                        <p class="mb-4 text-sm leading-relaxed" style="color: #9e9383;">Deep dive into measuring user experience success and the metrics that actually drive business value.</p>
-                        <div class="divider mb-4"></div>
-                        <span class="text-xs font-medium tracking-wide" style="color: #929673;">BLOG</span>
-                    </div>
+            <div class="work-item projects card-hover elegant-border subtle-shadow fade-in stagger-3 rounded-xl h-full flex flex-col" style="background-color: #fefefe; min-height: 400px;">
+                <div class="h-48 flex items-center justify-center relative rounded-t-xl" style="background-color: #5f849c;">
+                    <svg class="w-16 h-16" style="color: #fefefe;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                    </svg>
                 </div>
+                <div class="p-6 flex-1 flex flex-col">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-semibold" style="color: #393831; font-family: 'Inter', sans-serif;">Mobile App Design</h3>
+                        <div class="w-4 h-4 ml-2" style="background-color: #5f849c;"></div>
+                    </div>
+                    <p class="mb-4 text-sm leading-relaxed" style="color: #9e9383;">Native mobile application design for a fintech startup, focusing on security and user trust.</p>
+                    <div class="divider mb-4"></div>
+                    <span class="text-xs font-medium tracking-wide mt-auto" style="color: #929673;">PROJECT</span>
+                </div>
+            </div>
 
-                <div class="work-item writings card-hover elegant-border subtle-shadow fade-in stagger-3 rounded-xl" style="background-color: #fefefe;">
-                    <div class="h-48 flex items-center justify-center relative rounded-t-xl" style="background-color: #9e9383;">
-                        <svg class="w-16 h-16" style="color: #fefefe;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
-                        </svg>
+            <div class="work-item writings card-hover elegant-border subtle-shadow fade-in stagger-1 rounded-xl h-full flex flex-col" style="background-color: #fefefe; min-height: 400px;">
+                <div class="h-48 flex items-center justify-center relative rounded-t-xl" style="background-color: #393831;">
+                    <svg class="w-16 h-16" style="color: #ebe3db;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18s-3.332.477-4.5 1.253"></path>
+                    </svg>
+                </div>
+                <div class="p-6 flex-1 flex flex-col">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-semibold" style="color: #393831; font-family: 'Inter', sans-serif;">Design Systems Guide</h3>
+                        <div class="w-4 h-4 ml-2" style="background-color: #9e9383;"></div>
                     </div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-semibold" style="color: #393831; font-family: 'Inter', sans-serif;">Creative Process</h3>
-                            <div class="w-4 h-4" style="background-color: #9e9383;"></div>
-                        </div>
-                        <p class="mb-4 text-sm leading-relaxed" style="color: #9e9383;">Personal reflections on creativity, inspiration, and the iterative process of bringing ideas to life.</p>
-                        <div class="divider mb-4"></div>
-                        <span class="text-xs font-medium tracking-wide" style="color: #929673;">WRITING</span>
+                    <p class="mb-4 text-sm leading-relaxed" style="color: #9e9383;">Comprehensive guide on building and maintaining design systems for scalable product development.</p>
+                    <div class="divider mb-4"></div>
+                    <span class="text-xs font-medium tracking-wide mt-auto" style="color: #929673;">WRITING</span>
+                </div>
+            </div>
+
+            <div class="work-item blog card-hover elegant-border subtle-shadow fade-in stagger-2 rounded-xl h-full flex flex-col" style="background-color: #fefefe; min-height: 400px;">
+                <div class="h-48 flex items-center justify-center relative rounded-t-xl" style="background-color: #23424c;">
+                    <svg class="w-16 h-16" style="color: #dae4eb;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                    </svg>
+                </div>
+                <div class="p-6 flex-1 flex flex-col">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-semibold" style="color: #393831; font-family: 'Inter', sans-serif;">UX Metrics That Matter</h3>
+                        <div class="w-4 h-4 ml-2" style="background-color: #23424c;"></div>
                     </div>
+                    <p class="mb-4 text-sm leading-relaxed" style="color: #9e9383;">Deep dive into measuring user experience success and the metrics that actually drive business value.</p>
+                    <div class="divider mb-4"></div>
+                    <span class="text-xs font-medium tracking-wide mt-auto" style="color: #929673;">BLOG</span>
+                </div>
+            </div>
+
+            <div class="work-item writings card-hover elegant-border subtle-shadow fade-in stagger-3 rounded-xl h-full flex flex-col" style="background-color: #fefefe; min-height: 400px;">
+                <div class="h-48 flex items-center justify-center relative rounded-t-xl" style="background-color: #9e9383;">
+                    <svg class="w-16 h-16" style="color: #fefefe;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v3h3v-2.828l7.414-7.414a2 2 0 00-2.828-2.828z"></path>
+                    </svg>
+                </div>
+                <div class="p-6 flex-1 flex flex-col">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-semibold" style="color: #393831; font-family: 'Inter', sans-serif;">Creative Process</h3>
+                        <div class="w-4 h-4 ml-2" style="background-color: #9e9383;"></div>
+                    </div>
+                    <p class="mb-4 text-sm leading-relaxed" style="color: #9e9383;">Personal reflections on creativity, inspiration, and the iterative process of bringing ideas to life.</p>
+                    <div class="divider mb-4"></div>
+                    <span class="text-xs font-medium tracking-wide mt-auto" style="color: #929673;">WRITING</span>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
+        
     </main>
     
     <!-- Contact Section -->
