@@ -1,166 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Boost your Google rankings with these 10 simple, actionable tips—no SEO expert needed! 
-                Learn how to optimize your website, create quality content, 
-                improve local SEO, and more to drive traffic and grow your business.">
+  <!-- ===== SEO (edit these) ===== -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>10 Ways to Improve Your Google Rankings | Olivia Arkema</title>
+  <meta name="description" content="Boost your Google rankings with these 10 simple, actionable tips—no SEO expert needed! Learn how to optimize your website, create quality content, improve local SEO, and more to drive traffic and grow your business." />
+  <link rel="canonical" href="https://oliviaarkema.com/blog/improve-google-rankings" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="green_bow.png" type="image/png" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="10 Ways to Improve Your Google Rankings | Olivia Arkema" />
+  <meta property="og:description" content="Boost your Google rankings with these 10 simple, actionable tips—no SEO expert needed! Learn how to optimize your website, create quality content, improve local SEO, and more to drive traffic and grow your business." />
+  <meta property="og:url" content="https://oliviaarkema.com/blog/improve-google-rankings" />
+  <meta property="og:image" content="https://oliviaarkema.com/assets/orange-grove-growing.jpg" />
 
-  <!-- Noto Serif to match your new style -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="10 Ways to Improve Your Google Rankings | Olivia Arkema" />
+  <meta name="twitter:description" content="Boost your Google rankings with these 10 simple, actionable tips—no SEO expert needed! Learn how to optimize your website, create quality content, improve local SEO, and more to drive traffic and grow your business." />
+  <meta name="twitter:image" content="https://oliviaarkema.com/assets/orange-grove-growing.jpg" />
 
-  <!-- Your merged stylesheet where NEW globals win -->
-  <link rel="stylesheet" href="style.css" />
+  <!-- Tailwind + Typography -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+    body { font-family: 'Noto Serif', serif; background-color:#faf7f2; color:#393831; }
+    .heading-font { font-family: 'Noto Serif', serif; letter-spacing: .02em; }
+    .subtle-shadow { box-shadow: 0 8px 32px rgba(57,56,49,0.08); }
+    .elegant-border { border: 2px solid #5f849c; }
+    .text-accent { color:#5f849c; }
+    .bg-accent { background-color:#5f849c; }
+  </style>
 </head>
 
 <body>
-<header id="navbar" class="fixed w-full z-50">
-  <div class="max-w-6xl mx-auto px-6 py-4 nav-bar">
-    <!-- Brand -->
-    <a href="index.html" class="nav-brand heading-font" aria-label="Olivia Arkema home">
-      <img src="white_bow2.png" alt="" class="nav-logo" />
-      <span>OA</span>
-    </a>
+  <!-- ===== NAV (from homepage pattern) ===== -->
+  <nav id="navbar" class="fixed w-full z-50 shadow-sm transition-transform duration-300" style="background-color: rgba(254,254,254,0.9); backdrop-filter: blur(12px);">
+    <div class="max-w-6xl mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <a href="/" class="text-3xl font-bold heading-font" style="color:#393831;">OA</a>
 
-    <!-- Right side: links + toggle -->
-    <div class="nav-right">
-      <!-- Desktop links -->
-      <nav class="nav-links" aria-label="Primary">
-        <a href="index.html" class="transition-colors">Home</a>
-        <a href="blog" class="transition-colors">Blog</a>
-        <a href="contact" class="transition-colors">Contact</a>
-      </nav>
+        <!-- Desktop links -->
+        <div class="hidden md:flex space-x-8">
+          <a href="/#home" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Home</a>
+          <a href="/#services" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Services</a>
+          <a href="/#clients" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Clients</a>
+          <a href="/#featuredwork" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Featured Work</a>
+          <a href="/#contact" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Contact</a>
+        </div>
 
-      <!-- Mobile toggle -->
-      <button id="nav-toggle"
-              class="nav-toggle"
-              aria-label="Open menu"
-              aria-controls="mobile-menu"
-              aria-expanded="false">
-        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
-      </button>
+        <!-- Mobile hamburger -->
+        <button class="md:hidden" style="color:#9e9383;" aria-label="Open menu" onclick="toggleMenu()">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
     </div>
-  </div>
 
-  <!-- Mobile menu -->
-  <nav id="mobile-menu" class="mobile-menu hidden" aria-label="Mobile">
-    <a href="index.html" class="block">Home</a>
-    <a href="blog" class="block">Blog</a>
-    <a href="contact" class="block">Contact</a>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden">
+      <div class="px-6 pb-4 space-y-2">
+        <a href="/#home" class="block" style="color:#9e9383;">Home</a>
+        <a href="/#services" class="block" style="color:#9e9383;">Services</a>
+        <a href="/#clients" class="block" style="color:#9e9383;">Clients</a>
+        <a href="/#featuredwork" class="block" style="color:#9e9383;">Featured Work</a>
+        <a href="/#contact" class="block" style="color:#9e9383;">Contact</a>
+      </div>
+    </div>
   </nav>
-</header>
 
-  <main style="padding-top:92px;">
-    <section class="blog-page">
-      <img src="orange-grove-growing.jpg" alt="Website and SEO Rankings Growth - Orange Grove"
-           style="width:100%;max-width:800px;margin:0 auto 24px;display:block;border-radius:12px" />
-      <h1 class="heading-font" style="color:var(--ink);">10 Ways to Improve Your Google Rankings</h1>
-      <p style="color:var(--stone);">Improving your rankings on Google can feel overwhelming, but you don’t need to hire an SEO expert to make meaningful changes. With the right approach, you can boost your visibility and attract more traffic to your website and ultimately increase sales and engagement. Here are 10 actionable strategies to get started (no experts required):</p>
+  <!-- Spacer for fixed nav -->
+  <div class="h-20 md:h-24"></div>
 
-      <h2 class="heading-font subheading" style="color:var(--ink);">Understanding Google Rankings</h2>
-      <p style="color:var(--stone);">Google's ranking algorithm considers numerous factors when ranking websites. These include website content, backlinks, mobile-friendliness, and page speed. Understanding these elements is crucial for improving your site's visibility.</p>
+  <!-- ===== ARTICLE CARD (design-forward container) ===== -->
+  <main class="px-6">
+    <article class="max-w-3xl mx-auto bg-white rounded-xl subtle-shadow elegant-border px-6 sm:px-8 py-8 md:py-10">
+      <!-- Centered Title -->
+      <header class="mb-6 text-center">
+        <p class="uppercase tracking-wide text-sm" style="color:#9e9383;">SEO & Content</p>
+        <h1 class="heading-font text-3xl md:text-4xl font-bold mt-1" style="color:#23424c;">
+          10 Ways to Improve Your Google Rankings
+        </h1>
+        <div class="mt-3 text-sm flex items-center justify-center gap-2" style="color:#9e9383;">
+          <span>By Olivia Arkema</span><span>•</span>
+          <time datetime="2025-08-18">August 18, 2025</time>
+        </div>
+      </header>
 
-      <h2 class="heading-font subheading" style="color:var(--ink);">1. Create Quality Content</h2>
-      <p style="color:var(--stone);">Content is the foundation of your website’s success. Write original, informative, and engaging material tailored to your target audience. Address their pain points, answer their questions, and provide value they can’t find elsewhere. Consider creating guides, directories, or other helpful content that will attract traffic for years to come.</p>
+      <!-- Centered Featured Image -->
+      <figure class="my-6">
+        <img src="orange-grove-growing.jpg" alt="Website and SEO Rankings Growth - Orange Grove" class="rounded-lg border-2 mx-auto subtle-shadow" style="border-color:#5f849c;" />
+        <figcaption class="text-center mt-2 text-sm" style="color:#9e9383;"> </figcaption>
+      </figure>
 
-      <h2 class="heading-font subheading" style="color:var(--ink);">2. Use Relevant Keywords Strategically</h2>
-      <p style="color:var(--stone);">Keywords help search engines understand your content. Research terms your audience searches for using tools like Google Keyword Planner, and incorporate them naturally into titles and headings, meta descriptions, alt-text for images, and your website's body text.</p>
+      <!-- Body -->
+      <div class="prose max-w-none">
+        <p>Improving your rankings on Google can feel overwhelming, but you don’t need to hire an SEO expert to make meaningful changes. With the right approach, you can boost your visibility and attract more traffic to your website and ultimately increase sales and engagement. Here are 10 actionable strategies to get started (no experts required):</p>
 
-      <h2 class="heading-font subheading" style="color:var(--ink);">3. Mention Your Business "ABCs" (Address, Phone, Etc.)</h2>
-      <p style="color:var(--stone);">Make sure your website includes essential business details including your address, phone number, and business email. This builds trust and improves local search visibility.</p>
+        <h2>Understanding Google Rankings</h2>
+        <p>Google's ranking algorithm considers numerous factors when ranking websites. These include website content, backlinks, mobile-friendliness, and page speed. Understanding these elements is crucial for improving your site's visibility.</p>
 
-      <h2 class="heading-font subheading" style="color:var(--ink);">4. Optimize and Link Your Google Business Profile</h2>
-      <p style="color:var(--stone);">Claim and complete your Google Business Profile to improve your local search presence. Optimize it by adding your address, phone number, and website, uploading high-quality photos, and collecting and responding to reviews.</p>
+        <h2>1. Create Quality Content</h2>
+        <p>Content is the foundation of your website’s success. Write original, informative, and engaging material tailored to your target audience. Address their pain points, answer their questions, and provide value they can’t find elsewhere. Consider creating guides, directories, or other helpful content that will attract traffic for years to come.</p>
 
-      <h2 class="heading-font subheading" style="color:var(--ink);">5. Build Backlinks</h2>
-      <p style="color:var(--stone);">Backlinks from reputable websites signal to Google that your site is trustworthy. Earn backlinks by writing guest posts for blogs in your industry, sharing your content on social media, and networking with local businesses or influencers.</p>
+        <h2>2. Use Relevant Keywords Strategically</h2>
+        <p>Keywords help search engines understand your content. Research terms your audience searches for using tools like Google Keyword Planner, and incorporate them naturally into titles and headings, meta descriptions, alt-text for images, and your website's body text.</p>
 
-      <h2 class="heading-font subheading" style="color:var(--ink);">6. Improve Your On-Page SEO</h2>
-      <p style="color:var(--stone);">On-page SEO ensures every page of your website is search-engine friendly. Focus on creating descriptive, keyword-rich titles and meta descriptions, structuring your content with clear headings (H1, H2, H3), and adding internal links to guide visitors through your site.</p>
+        <h2>3. Mention Your Business “ABCs” (Address, Phone, Etc.)</h2>
+        <p>Make sure your website includes essential business details including your address, phone number, and business email. This builds trust and improves local search visibility.</p>
 
-      <h2 class="heading-font subheading" style="color:var(--ink);">7. Leverage Local SEO</h2>
-      <p style="color:var(--stone);">If you serve a specific area, local SEO can boost your visibility in searches. Use location-specific keywords (e.g., “coffee shop in Seattle”), list your business in local directories, and encourage customers to leave reviews.</p>
+        <h2>4. Optimize and Link Your Google Business Profile</h2>
+        <p>Claim and complete your Google Business Profile to improve your local search presence. Optimize it by adding your address, phone number, and website, uploading high-quality photos, and collecting and responding to reviews.</p>
 
-      <h2 class="heading-font subheading" style="color:var(--ink);">8. Regularly Update and Refresh Content</h2>
-      <p style="color:var(--stone);">Keep your website fresh by updating outdated information, adding new blog posts or pages, and revisiting old content to improve keywords, links, and readability.</p>
+        <h2>5. Build Backlinks</h2>
+        <p>Backlinks from reputable websites signal to Google that your site is trustworthy. Earn backlinks by writing guest posts for blogs in your industry, sharing your content on social media, and networking with local businesses or influencers.</p>
 
-      <h2 class="heading-font subheading" style="color:var(--ink);">9. Add Engaging Visuals</h2>
-      <p style="color:var(--stone);">Visual content like images, videos, and infographics can boost engagement and keep visitors on your site longer. Ensure visuals are relevant to your content, optimized for fast loading, and properly labeled with descriptive alt text for SEO.</p>
+        <h2>6. Improve Your On-Page SEO</h2>
+        <p>On-page SEO ensures every page of your website is search-engine friendly. Focus on creating descriptive, keyword-rich titles and meta descriptions, structuring your content with clear headings (H1, H2, H3), and adding internal links to guide visitors through your site.</p>
 
-      <h2 class="heading-font subheading" style="color:var(--ink);">10. Monitor and Adjust with Analytics</h2>
-      <p style="color:var(--stone);">Track your website’s performance using tools like Google Analytics and Search Console. Analyze metrics such as organic traffic, bounce rate, and keyword rankings. Use this data to refine your strategy and improve results over time.</p>
+        <h2>7. Leverage Local SEO</h2>
+        <p>If you serve a specific area, local SEO can boost your visibility in searches. Use location-specific keywords (e.g., “coffee shop in Seattle”), list your business in local directories, and encourage customers to leave reviews.</p>
 
-      <h2 class="heading-font subheading" style="color:var(--ink);">Conclusion</h2>
-      <p style="color:var(--stone);">Improving your Google rankings doesn’t have to be complicated. By focusing on these steps, you can drive more traffic, connect with your audience, and grow your business—all without the need for a professional SEO expert.</p>
-    </section>
+        <h2>8. Regularly Update and Refresh Content</h2>
+        <p>Keep your website fresh by updating outdated information, adding new blog posts or pages, and revisiting old content to improve keywords, links, and readability.</p>
 
-    <!-- CTA band (kept simple, matches palette + typography) -->
-    <section class="two-columns section-7" style="background:var(--mist);padding:2rem;border-radius:16px;margin:2rem auto;max-width:900px;">
-      <div>
-        <h2 class="heading-font" style="color:var(--ink);margin-top:0;">Let's collaborate.</h2>
+        <h2>9. Add Engaging Visuals</h2>
+        <p>Visual content like images, videos, and infographics can boost engagement and keep visitors on your site longer. Ensure visuals are relevant to your content, optimized for fast loading, and properly labeled with descriptive alt text for SEO.</p>
+
+        <h2>10. Monitor and Adjust with Analytics</h2>
+        <p>Track your website’s performance using tools like Google Analytics and Search Console. Analyze metrics such as organic traffic, bounce rate, and keyword rankings. Use this data to refine your strategy and improve results over time.</p>
+
+        <h2>Conclusion</h2>
+        <p>Improving your Google rankings doesn’t have to be complicated. By focusing on these steps, you can drive more traffic, connect with your audience, and grow your business—all without the need for a professional SEO expert.</p>
       </div>
-      <div>
-        <a href="contact" class="btn btn-accent" style="text-decoration:none;">Work with Me</a>
-        <br /><br />
-        <p class="text-ink" style="margin:.25rem 0;">Email me:</p>
-        <p><a href="mailto:livarkema@gmail.com" class="text-accent" style="text-decoration:none;">livarkema@gmail.com</a></p>
-        <br />
-        <p class="text-ink" style="margin:.25rem 0;">Give me a call:</p>
-        <p><a href="tel:+19706726402" class="text-accent" style="text-decoration:none;">970-672-6402</a></p>
-      </div>
-    </section>
+
+      <!-- Optional: Tags / Share (no prev/next) -->
+      <section class="mt-8 flex flex-wrap items-center justify-between gap-3">
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 rounded-full text-sm" style="background:#dae4eb; color:#23424c;">SEO</span>
+          <span class="px-3 py-1 rounded-full text-sm" style="background:#dae4eb; color:#23424c;">Small Business</span>
+        </div>
+        <div class="text-sm" style="color:#9e9383;">
+          <a href="#" class="underline">Share</a>
+        </div>
+      </section>
+    </article>
   </main>
 
-<script>
-  // Hide/show on scroll (same behavior as your new site)
-  let lastScrollTop = 0;
-  const navbar = document.getElementById('navbar');
-  window.addEventListener('scroll', () => {
-    const y = window.pageYOffset || document.documentElement.scrollTop;
-    if (y > lastScrollTop && y > 100) { navbar.style.transform = 'translateY(-100%)'; }
-    else { navbar.style.transform = 'translateY(0)'; }
-    lastScrollTop = y;
-  });
+  <!-- ===== FOOTER (matches homepage layout/colors) ===== -->
+  <footer class="py-16 mt-16" style="background-color:#393831;">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-12">
+        <div>
+          <div class="text-3xl font-bold mb-6 heading-font" style="color:#fefefe;">Olivia Arkema</div>
+          <p class="leading-relaxed" style="color:#9e9383;">Creative Marketing, Data Analysis, & Web Design for Small Businesses</p>
+          <div class="w-12 h-1 mt-4" style="background-color:#5f849c;"></div>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-6 heading-font" style="color:#fefefe;">Quick Links</h4>
+          <div class="space-y-3">
+            <a href="/#services" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Services</a>
+            <a href="/#featuredwork" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Work</a>
+            <a href="/#contact" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-6 heading-font" style="color:#fefefe;">Connect</h4>
+          <div class="space-y-3">
+            <a href="https://www.linkedin.com/in/oliviaarkema" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">LinkedIn</a>
+            <a href="https://x.com/livlavonne" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Twitter</a>
+            <a href="mailto:livarkema@gmail.com" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Email</a>
+          </div>
+        </div>
+      </div>
+      <div class="my-8 border-t" style="border-color:#5f849c;"></div>
+      <div class="text-center">
+        <p style="color:#9e9383;">&copy; <span id="year"></span> Olivia Arkema. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 
-  // Mobile menu toggle
-  const toggleBtn = document.getElementById('nav-toggle');
-  const mobileMenu = document.getElementById('mobile-menu');
+  <!-- ===== Minimal JS (mirrors homepage behavior) ===== -->
+  <script>
+    // Nav hide/show on scroll (optional; matches homepage pattern)
+    let lastScrollTop = 0;
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', function () {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > lastScrollTop && scrollTop > 100) {
+        navbar.style.transform = 'translateY(-100%)';
+      } else {
+        navbar.style.transform = 'translateY(0)';
+      }
+      lastScrollTop = scrollTop;
+    });
 
-  function closeMenu(){
-    mobileMenu.classList.add('hidden');
-    toggleBtn.setAttribute('aria-expanded','false');
-    toggleBtn.setAttribute('aria-label','Open menu');
-  }
-  function openMenu(){
-    mobileMenu.classList.remove('hidden');
-    toggleBtn.setAttribute('aria-expanded','true');
-    toggleBtn.setAttribute('aria-label','Close menu');
-  }
+    // Mobile menu toggle
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
 
-  toggleBtn.addEventListener('click', () => {
-    const expanded = toggleBtn.getAttribute('aria-expanded') === 'true';
-    expanded ? closeMenu() : openMenu();
-  });
-
-  // Close menu when clicking a link (mobile)
-  mobileMenu.addEventListener('click', (e) => {
-    if (e.target.tagName === 'A') closeMenu();
-  });
-
-  // Optional: close on ESC
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeMenu();
-  });
-</script>
-
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
