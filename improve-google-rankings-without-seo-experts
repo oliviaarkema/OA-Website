@@ -20,38 +20,41 @@
 </head>
 
 <body>
-  <!-- SINGLE NAVBAR (converted your header to match new site) -->
-  <header id="navbar" class="fixed w-full z-50">
-    <div class="max-w-6xl mx-auto px-6 py-4" style="display:flex;align-items:center;justify-content:space-between;">
-      <!-- Logo/brand -->
-      <a href="index.html" class="nav-brand heading-font" style="text-decoration:none;display:flex;align-items:center;gap:.5rem;">
-        <img src="white_bow2.png" alt="Olivia Arkema Logo" style="width:30px;height:30px" />
-        <span>OA</span>
-      </a>
+<header id="navbar" class="fixed w-full z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 nav-bar">
+    <!-- Brand -->
+    <a href="index.html" class="nav-brand heading-font" aria-label="Olivia Arkema home">
+      <img src="white_bow2.png" alt="" class="nav-logo" />
+      <span>OA</span>
+    </a>
 
-      <!-- Desktop links -->
-      <nav class="nav-links" style="display:none;gap:2rem;">
-        <a href="index.html" class="transition-colors" style="text-decoration:none;">Home</a>
-        <a href="blog" class="transition-colors" style="text-decoration:none;">Blog</a>
-        <a href="contact" class="transition-colors" style="text-decoration:none;">Contact</a>
-      </nav>
-
-      <!-- Mobile toggle (uses #mobile-menu like new site) -->
-      <button aria-label="Toggle menu" style="background:none;border:0;color:var(--stone);" onclick="toggleMenu()">
-        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
-      </button>
-    </div>
-
-    <!-- Mobile menu -->
-    <nav id="mobile-menu" class="hidden" style="padding:0 1.5rem 1rem;">
-      <a href="index.html" class="block py-2 transition-colors" style="text-decoration:none;">Home</a>
-      <a href="blog" class="block py-2 transition-colors" style="text-decoration:none;">Blog</a>
-      <a href="contact" class="block py-2 transition-colors" style="text-decoration:none;">Contact</a>
+    <!-- Desktop links -->
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html" class="transition-colors">Home</a>
+      <a href="blog" class="transition-colors">Blog</a>
+      <a href="contact" class="transition-colors">Contact</a>
     </nav>
-  </header>
+
+    <!-- Mobile toggle -->
+    <button id="nav-toggle"
+            class="nav-toggle"
+            aria-label="Open menu"
+            aria-controls="mobile-menu"
+            aria-expanded="false">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <nav id="mobile-menu" class="mobile-menu hidden" aria-label="Mobile">
+    <a href="index.html" class="block">Home</a>
+    <a href="blog" class="block">Blog</a>
+    <a href="contact" class="block">Contact</a>
+  </nav>
+</header>
 
   <main style="padding-top:92px;">
     <section class="blog-page">
