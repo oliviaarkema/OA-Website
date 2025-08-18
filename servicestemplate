@@ -87,18 +87,44 @@
   </style>
 </head>
 <body>
+  <!-- ===== NAV (from homepage pattern) ===== -->
+  <nav id="navbar" class="fixed w-full z-50 shadow-sm transition-transform duration-300" style="background-color: rgba(254,254,254,0.9); backdrop-filter: blur(12px);">
+    <div class="max-w-6xl mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <a href="/" class="text-3xl font-bold heading-font" style="color:#393831;">OA</a>
 
-  <!-- Simple header (keep nav light) -->
-  <header class="site">
-    <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:12px">
-      <a class="brand" href="/">OA</a>
-      <nav style="display:flex;gap:16px">
-        <a href="/#services">Services</a>
-        <a href="/#featuredwork">Work</a>
-        <a href="/#contact">Contact</a>
-      </nav>
+        <!-- Desktop links -->
+        <div class="hidden md:flex space-x-8">
+          <a href="/#home" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Home</a>
+          <a href="/#services" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Services</a>
+          <a href="/#clients" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Clients</a>
+          <a href="/#featuredwork" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Featured Work</a>
+          <a href="/#contact" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Contact</a>
+        </div>
+
+        <!-- Mobile hamburger -->
+        <button class="md:hidden" style="color:#9e9383;" aria-label="Open menu" onclick="toggleMenu()">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
     </div>
-  </header>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden">
+      <div class="px-6 pb-4 space-y-2">
+        <a href="/#home" class="block" style="color:#9e9383;">Home</a>
+        <a href="/#services" class="block" style="color:#9e9383;">Services</a>
+        <a href="/#clients" class="block" style="color:#9e9383;">Clients</a>
+        <a href="/#featuredwork" class="block" style="color:#9e9383;">Featured Work</a>
+        <a href="/#contact" class="block" style="color:#9e9383;">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Spacer for fixed nav -->
+  <div class="h-20 md:h-24"></div>
 
   <main>
     <article class="wrap letter">
