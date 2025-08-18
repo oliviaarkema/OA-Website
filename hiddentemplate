@@ -1,102 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- ===== Basic SEO ===== -->
+  <!-- ===== SEO Basics ===== -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title><!-- SEO: 60–65 chars -->Blog Post Title | Olivia Arkema</title>
+  <meta name="description" content="<!-- SEO: 150–160 char description for this post. -->" />
+  <link rel="canonical" href="https://oliviaarkema.com/blog/your-post-slug" />
 
-  <title><!-- SEO: Page Title (60–65 chars) -->Your Post Title | Site Name</title>
-  <meta name="description" content="<!-- SEO: 150–160 chars meta description for this post. -->" />
-  <link rel="canonical" href="https://example.com/blog/your-post-slug" />
-
-  <!-- ===== Open Graph ===== -->
+  <!-- Open Graph -->
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Your Post Title | Site Name" />
-  <meta property="og:description" content="<!-- Same as description or tailored for social. -->" />
-  <meta property="og:url" content="https://example.com/blog/your-post-slug" />
-  <meta property="og:image" content="https://example.com/path/to/featured-image.jpg" />
-  <meta property="og:site_name" content="Site Name" />
+  <meta property="og:title" content="Blog Post Title | Olivia Arkema" />
+  <meta property="og:description" content="Short social summary for this article." />
+  <meta property="og:url" content="https://oliviaarkema.com/blog/your-post-slug" />
+  <meta property="og:image" content="https://oliviaarkema.com/assets/featured.jpg" />
 
-  <!-- ===== Twitter Cards ===== -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Your Post Title | Site Name" />
-  <meta name="twitter:description" content="<!-- 200 chars works well on Twitter. -->" />
-  <meta name="twitter:image" content="https://example.com/path/to/featured-image.jpg" />
-  <meta name="twitter:site" content="@YourHandle" />
+  <meta name="twitter:title" content="Blog Post Title | Olivia Arkema" />
+  <meta name="twitter:description" content="Short social summary." />
+  <meta name="twitter:image" content="https://oliviaarkema.com/assets/featured.jpg" />
 
-  <!-- ===== Article Structured Data (JSON-LD) ===== -->
+  <!-- JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": "Your Post Title",
-    "description": "Short description (plain text).",
-    "image": ["https://example.com/path/to/featured-image.jpg"],
+    "headline": "Blog Post Title",
+    "description": "Plain-text description.",
+    "image": ["https://oliviaarkema.com/assets/featured.jpg"],
     "datePublished": "2025-08-18T12:00:00-04:00",
     "dateModified": "2025-08-18T12:00:00-04:00",
-    "author": { "@type": "Person", "name": "Author Name" },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Site/Brand Name",
-      "logo": { "@type": "ImageObject", "url": "https://example.com/path/to/logo.png" }
-    },
-    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://example.com/blog/your-post-slug" }
+    "author": { "@type": "Person", "name": "Olivia Arkema" },
+    "publisher": { "@type": "Organization", "name": "Olivia Arkema" },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://oliviaarkema.com/blog/your-post-slug" }
   }
   </script>
 
-  <!-- ===== Styles ===== -->
+  <!-- Styles -->
   <link rel="stylesheet" href="/style.css" />
   <style>
-    /* Page-specific helpers (kept minimal) */
-    .article-hero{ background: linear-gradient(180deg, rgba(35,66,76,.75), rgba(35,66,76,.55)), center/cover no-repeat var(--night); min-height: 48vh; display:grid; place-items:center; padding: 7rem 1.5rem 3rem; text-align:center; }
-    .article-wrap{ max-width: 980px; margin: 0 auto; padding: 2rem 1.25rem; }
-    .article-meta{ color: var(--moss); font-size: .9375rem; display:flex; gap: .75rem; justify-content:center; flex-wrap:wrap; }
-    .feature-img{ border: 2px solid var(--accent); border-radius: .75rem; overflow: hidden; box-shadow: var(--shadow-sm); }
-    .prose{ font-size: 1.125rem; line-height: 1.8; }
-    .prose h2, .prose h3{ margin-top: 2.25rem; }
-    .pull-quote{ font-size: 1.35rem; padding: 1.25rem 1.5rem; border-left: 4px solid var(--accent); background: var(--mist); border-radius: .5rem; margin: 2rem 0; }
-    .toc{ background: var(--white); border: 2px solid var(--accent); border-radius: .75rem; padding: 1rem 1.25rem; box-shadow: var(--shadow-sm); }
-    .tag{ display:inline-block; padding:.35rem .75rem; border-radius: 9999px; background: color-mix(in srgb, var(--accent) 18%, white); color: var(--ink); font-size:.875rem; }
-    .article-footer{ display:flex; gap:1rem; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-top: 2.5rem; }
-    .share a{ text-decoration:none; color: var(--stone); margin-right:.75rem; }
-    .newsletter{ background: var(--night); color: var(--mist); border-radius: 1rem; padding: 1.25rem; display:flex; gap:.75rem; flex-wrap:wrap; align-items:center; }
-    .newsletter input{ flex:1 1 260px; padding: .75rem 1rem; border-radius:.5rem; border:2px solid var(--mist); background: transparent; color: var(--mist); }
-    .prev-next{ display:flex; gap:1rem; flex-wrap:wrap; }
-    .prev-next a{ text-decoration:none; border:2px solid var(--accent); padding: .75rem 1rem; border-radius:.75rem; }
+    /* Minimal page-specific helpers (play nice with your style.css) */
+    .wrap{ max-width: 980px; margin: 0 auto; padding: 0 1.25rem; }
+    .article-hero{ background: linear-gradient(180deg, rgba(35,66,76,.75), rgba(35,66,76,.45)), center/cover no-repeat; min-height: 42vh; display:grid; place-items:center; text-align:center; padding: 7rem 1.25rem 3rem; }
     .hero-title{ color: var(--white); }
+    .article-meta{ color: var(--moss); font-size:.95rem; display:flex; gap:.75rem; justify-content:center; flex-wrap:wrap; }
+    /* Center the featured image perfectly */
+    .feature-img{ margin: -2.75rem auto 1.5rem; max-width: 980px; }
+    .feature-img img{ display:block; width:100%; height:auto; border-radius:.75rem; border:2px solid var(--accent); box-shadow: var(--shadow-sm); }
+    .prose{ max-width: 68ch; margin: 0 auto; font-size: 1.125rem; line-height: 1.8; }
+    .toc{ background: var(--white); border: 2px solid var(--accent); border-radius: .75rem; padding: 1rem 1.25rem; box-shadow: var(--shadow-sm); max-width: 68ch; margin: 1.5rem auto; }
+    .pull-quote{ font-size:1.25rem; padding:1rem 1.25rem; border-left:4px solid var(--accent); background: var(--mist); border-radius:.5rem; margin:2rem 0; }
+    /* Footer alignment helpers (use existing footer styles in your CSS) */
+    footer .footer-grid{ display:grid; gap:1.25rem; grid-template-columns: 1fr; }
+    @media (min-width: 768px){ footer .footer-grid{ grid-template-columns: 1.2fr .8fr .8fr; align-items:start; } }
+
+    /* NAV: keep it lean; use your existing classes and ensure right alignment */
+    #navbar .nav-bar{ gap: 1rem; }
+    #navbar .nav-right{ margin-left: auto; display:flex; align-items:center; gap: 1.25rem; }
+    #navbar .nav-links{ display:none; gap:2rem; }
+    #navbar .nav-toggle{ display:inline-flex; }
+    @media (min-width: 1024px){
+      #navbar .nav-links{ display:flex; }
+      #navbar .nav-toggle{ display:none; }
+    }
   </style>
 </head>
 
 <body>
-  <!-- ===== Site Header / Nav ===== -->
+  <!-- ===== Header / Clean Nav ===== -->
   <header id="navbar">
-    <div class="nav-bar article-wrap" style="padding: .75rem 1.25rem;">
+    <div class="nav-bar wrap" style="padding:.75rem 0;">
       <a class="nav-brand" href="/">
         <img class="nav-logo" src="/assets/logo.svg" alt="" />
-        Site Name
+        Olivia Arkema
       </a>
 
       <div class="nav-right">
         <nav class="nav-links" aria-label="Primary">
           <a href="/about">About</a>
-          <a href="/services">Services</a>
+          <a href="/work-with-me">Work with me</a>
           <a href="/blog" aria-current="page">Blog</a>
           <a href="/contact">Contact</a>
         </nav>
 
-        <!-- Mobile hamburger (right-aligned) -->
+        <!-- Right-aligned hamburger -->
         <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-          <!-- Simple icon -->
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
         </button>
       </div>
     </div>
 
-    <!-- Mobile menu -->
+    <!-- Mobile menu (hidden by default via .hidden in your CSS) -->
     <nav id="mobile-menu" class="mobile-menu hidden" aria-label="Mobile Primary">
-      <div class="article-wrap">
+      <div class="wrap" style="padding-bottom:1rem;">
         <a href="/about">About</a>
-        <a href="/services">Services</a>
+        <a href="/work-with-me">Work with me</a>
         <a href="/blog">Blog</a>
         <a href="/contact">Contact</a>
       </div>
@@ -104,119 +105,105 @@
   </header>
 
   <main>
-    <!-- ===== Article Hero (blue/white/green palette via --night, --mist, --white) ===== -->
+    <!-- ===== Hero ===== -->
     <section class="article-hero bg-night">
-      <div class="article-wrap">
-        <p class="hero-kicker sr-only"><!-- Optional small kicker/category --></p>
-        <h1 class="hero-title heading-font">
-          <!-- H1: Your Post Title -->
-          Gravel Riding in West Michigan: A Beginner’s Guide
-        </h1>
+      <div class="wrap">
+        <h1 class="hero-title heading-font">Blog Post Title That’s Clear & Compelling</h1>
         <div class="article-meta">
-          <span>By <a href="/about" class="text-accent">Author Name</a></span>
+          <span>By <a href="/about" class="text-accent">Olivia Arkema</a></span>
           <span>•</span>
           <time datetime="2025-08-18">August 18, 2025</time>
           <span>•</span>
-          <span class="tag">Gravel</span>
-          <span class="tag">Michigan</span>
-          <span class="tag">Guides</span>
+          <span>Category</span>
         </div>
       </div>
     </section>
 
-    <!-- ===== Featured Image ===== -->
-    <section class="article-wrap" style="margin-top: -3rem;">
-      <figure class="feature-img subtle-shadow">
-        <img src="https://placeholder.example/1600x900.jpg" alt="Descriptive alt text for featured image" style="width:100%; display:block;" />
-        <figcaption style="font-size:.9rem; color:var(--stone); padding:.5rem 1rem;">Optional caption crediting photographer/source.</figcaption>
-      </figure>
-    </section>
+    <!-- ===== Centered Featured Image ===== -->
+    <figure class="feature-img">
+      <img src="https://via.placeholder.com/1600x900" alt="Descriptive alt text for the featured image" />
+      <figcaption class="wrap" style="color:var(--stone); font-size:.9rem; padding:.5rem 0 0;">
+        Optional caption or photo credit.
+      </figcaption>
+    </figure>
 
     <!-- ===== Article Body ===== -->
-    <article class="article-wrap">
-      <!-- Table of Contents (auto-generate with JS if desired) -->
+    <article class="wrap">
       <aside class="toc" aria-labelledby="toc-title">
         <strong id="toc-title" class="heading-font">On this page</strong>
         <ol>
           <li><a href="#intro">Introduction</a></li>
-          <li><a href="#routes">Best Beginner Routes</a></li>
-          <li><a href="#gear">Essential Gear</a></li>
-          <li><a href="#tips">Safety & Etiquette</a></li>
+          <li><a href="#section-1">Key Section</a></li>
+          <li><a href="#section-2">Another Section</a></li>
         </ol>
       </aside>
 
-      <div class="divider" style="margin:1.5rem 0;"></div>
-
       <div class="prose">
         <h2 id="intro">Introduction</h2>
-        <p><!-- Body paragraph: compelling lede using your brand voice. -->Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus, nisi at fermentum mattis, lorem nisi gravida magna, at fringilla felis nisl ut nibh.</p>
+        <p><!-- Body lede -->Write an engaging first paragraph that sets the context and hooks the reader…</p>
 
-        <h2 id="routes">Best Beginner Routes</h2>
-        <p>Curate 3–5 routes with surface notes, elevation, and parking tips.</p>
-        <ul>
-          <li><strong>Route One:</strong> 12 miles, mostly hardpack; family-friendly.</li>
-          <li><strong>Route Two:</strong> 20 miles, rolling hills; scenic overlooks.</li>
-        </ul>
+        <h2 id="section-1">Key Section</h2>
+        <p>Blue / white / green palette comes through via your CSS variables and accents.</p>
 
-        <div class="pull-quote">“Design-forward doesn’t mean busy—let whitespace and typography breathe.”</div>
+        <div class="pull-quote">“Let whitespace and typography do the heavy lifting.”</div>
 
-        <h3 id="gear">Essential Gear</h3>
-        <p>Helmet, tubeless setup, handheld pump/CO₂, multi-tool, lights, and layered apparel for Michigan swings.</p>
-
-        <h3 id="tips">Safety & Etiquette</h3>
-        <p>Ride single file when cars approach, call passes, and leave no trace.</p>
+        <h3 id="section-2">Another Section</h3>
+        <p>Lists, images, and subheads keep scanning easy.</p>
       </div>
-
-      <!-- Inline share + tags -->
-      <footer class="article-footer">
-        <div class="share" aria-label="Share this article">
-          <span>Share:</span>
-          <a href="#" aria-label="Share on X/Twitter">X</a>
-          <a href="#" aria-label="Share on Facebook">Facebook</a>
-          <a href="#" aria-label="Share on LinkedIn">LinkedIn</a>
-          <a href="#" aria-label="Copy link">Copy Link</a>
-        </div>
-
-        <div class="prev-next">
-          <a href="/blog/previous-post" class="card-hover">← Previous</a>
-          <a href="/blog/next-post" class="card-hover">Next →</a>
-        </div>
-      </footer>
     </article>
-
-    <!-- ===== Newsletter CTA (blue/green on dark) ===== -->
-    <section class="article-wrap">
-      <div class="newsletter subtle-shadow">
-        <strong class="heading-font" style="font-size:1.25rem;">Get new posts in your inbox</strong>
-        <form action="/subscribe" method="post" class="nav-bar" style="gap:.75rem;">
-          <label for="email" class="sr-only">Email address</label>
-          <input id="email" type="email" name="email" placeholder="you@domain.com" required />
-          <button type="submit" class="btn btn-outline-light">Subscribe</button>
-        </form>
-      </div>
-    </section>
   </main>
 
-  <!-- ===== Global Footer ===== -->
+  <!-- ===== Footer (aligned with your homepage styles) ===== -->
   <footer>
-    <div class="article-wrap" style="padding:2rem 1.25rem;">
-      <div class="brand heading-font">Site Name</div>
-      <div class="rule"></div>
-      <p style="margin:.75rem 0 0;">© <span id="year"></span> Site Name. All rights reserved.</p>
+    <div class="wrap" style="padding:2rem 0;">
+      <div class="footer-grid">
+        <!-- Brand / Blurb -->
+        <div>
+          <div class="brand heading-font" style="font-size:1.25rem;">Olivia Arkema</div>
+          <div class="rule"></div>
+          <p style="margin:.75rem 0 0; max-width:48ch;">Writer • Maker • Outdoorsy data person. Field notes on gravel, running, and design-forward living.</p>
+        </div>
+
+        <!-- Quick links (matches .quick-links in your CSS) -->
+        <div class="quick-links">
+          <strong class="heading-font" style="display:block; margin-bottom:.5rem;">Quick Links</strong>
+          <nav>
+            <a href="/about">About</a><br/>
+            <a href="/work-with-me">Work with me</a><br/>
+            <a href="/blog">Blog</a><br/>
+            <a href="/contact">Contact</a>
+          </nav>
+        </div>
+
+        <!-- Social / Connect (matches .connect in your CSS) -->
+        <div class="connect">
+          <strong class="heading-font" style="display:block; margin-bottom:.5rem;">Connect</strong>
+          <nav>
+            <a href="https://instagram.com/yourhandle" rel="me">Instagram</a><br/>
+            <a href="https://www.linkedin.com/in/yourprofile/">LinkedIn</a><br/>
+            <a href="mailto:hello@oliviaarkema.com">hello@oliviaarkema.com</a>
+          </nav>
+        </div>
+      </div>
+
+      <div style="margin-top:1.25rem; display:flex; justify-content:space-between; gap:.75rem; flex-wrap:wrap; color:var(--stone);">
+        <small>© <span id="year"></span> Olivia Arkema. All rights reserved.</small>
+        <small><a href="/privacy" style="color:inherit; text-decoration:none;">Privacy</a> • <a href="/terms" style="color:inherit; text-decoration:none;">Terms</a></small>
+      </div>
     </div>
   </footer>
 
-  <!-- ===== Minimal JS for hamburger + year ===== -->
+  <!-- ===== Minimal JS ===== -->
   <script>
-    // Mobile menu toggle (matches .hidden utility in your CSS)
+    // Hamburger toggle (uses your .hidden utility)
     const toggle = document.getElementById('navToggle');
     const menu = document.getElementById('mobile-menu');
     toggle?.addEventListener('click', () => {
-      const isOpen = menu.classList.toggle('hidden') === false;
-      toggle.setAttribute('aria-expanded', String(isOpen));
+      const isHidden = menu.classList.toggle('hidden');
+      toggle.setAttribute('aria-expanded', String(!isHidden));
     });
 
-    // Current year in footer
+    // Dynamic year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
