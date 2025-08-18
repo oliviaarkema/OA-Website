@@ -153,45 +153,39 @@
     </article>
   </main>
 
-  <!-- ===== Footer (aligned with your homepage styles) ===== -->
-  <footer>
-    <div class="wrap" style="padding:2rem 0;">
-      <div class="footer-grid">
-        <!-- Brand / Blurb -->
-        <div>
-          <div class="brand heading-font" style="font-size:1.25rem;">Olivia Arkema</div>
-          <div class="rule"></div>
-          <p style="margin:.75rem 0 0; max-width:48ch;">Writer • Maker • Outdoorsy data person. Field notes on gravel, running, and design-forward living.</p>
+    <!-- Footer -->
+    <footer class="py-16" style="background-color: #393831;">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-12">
+                <div>
+                    <div class="text-3xl font-bold mb-6 heading-font" style="color: #fefefe;">Olivia Arkema</div>
+                    <p class="leading-relaxed" style="color: #9e9383;">Creative Marketing, Data Analysis, & Web Design
+for Small Businesses</p>
+                    <div class="w-12 h-1 mt-4" style="background-color: #5f849c;"></div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-6 heading-font" style="color: #fefefe;">Quick Links</h4>
+                    <div class="space-y-3">
+                        <a href="#services" class="block transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Services</a>
+                        <a href="#work" class="block transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Work</a>
+                        <a href="#contact" class="block transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-6 heading-font" style="color: #fefefe;">Connect</h4>
+                    <div class="space-y-3">
+                        <a href="https://www.linkedin.com/in/oliviaarkema/" class="block transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">LinkedIn</a>
+                        <a href="https://x.com/livlavonne" class="block transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Twitter</a>
+                        <a href="mailto:livarkema@gmail.com" class="block transition-colors" style="color: #9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Email</a>
+                    </div>
+                </div>
+            </div>
+            <div class="divider my-8"></div>
+            <div class="text-center">
+                <p style="color: #9e9383;">&copy; 2024 Portfolio. All rights reserved.</p>
+            </div>
         </div>
-
-        <!-- Quick links (matches .quick-links in your CSS) -->
-        <div class="quick-links">
-          <strong class="heading-font" style="display:block; margin-bottom:.5rem;">Quick Links</strong>
-          <nav>
-            <a href="/about">About</a><br/>
-            <a href="/work-with-me">Work with me</a><br/>
-            <a href="/blog">Blog</a><br/>
-            <a href="/contact">Contact</a>
-          </nav>
-        </div>
-
-        <!-- Social / Connect (matches .connect in your CSS) -->
-        <div class="connect">
-          <strong class="heading-font" style="display:block; margin-bottom:.5rem;">Connect</strong>
-          <nav>
-            <a href="https://instagram.com/yourhandle" rel="me">Instagram</a><br/>
-            <a href="https://www.linkedin.com/in/yourprofile/">LinkedIn</a><br/>
-            <a href="mailto:hello@oliviaarkema.com">hello@oliviaarkema.com</a>
-          </nav>
-        </div>
-      </div>
-
-      <div style="margin-top:1.25rem; display:flex; justify-content:space-between; gap:.75rem; flex-wrap:wrap; color:var(--stone);">
-        <small>© <span id="year"></span> Olivia Arkema. All rights reserved.</small>
-        <small><a href="/privacy" style="color:inherit; text-decoration:none;">Privacy</a> • <a href="/terms" style="color:inherit; text-decoration:none;">Terms</a></small>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
   <!-- ===== Minimal JS ===== -->
   <script>
