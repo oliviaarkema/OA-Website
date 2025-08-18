@@ -97,43 +97,43 @@
 
       <!-- Body -->
       <div class="prose max-w-none">
-        <p>Improving your rankings on Google can feel overwhelming, but you don’t need to hire an SEO expert to make meaningful changes. With the right approach, you can boost your visibility and attract more traffic to your website and ultimately increase sales and engagement. Here are 10 actionable strategies to get started (no experts required):</p>
+        <p class="mb-6">Improving your rankings on Google can feel overwhelming, but you don’t need to hire an SEO expert to make meaningful changes. With the right approach, you can boost your visibility and attract more traffic to your website and ultimately increase sales and engagement. Here are 10 actionable strategies to get started (no experts required):</p>
 
         <h2>Understanding Google Rankings</h2>
-        <p>Google's ranking algorithm considers numerous factors when ranking websites. These include website content, backlinks, mobile-friendliness, and page speed. Understanding these elements is crucial for improving your site's visibility.</p>
+        <p class="mb-6">Google's ranking algorithm considers numerous factors when ranking websites. These include website content, backlinks, mobile-friendliness, and page speed. Understanding these elements is crucial for improving your site's visibility.</p>
 
         <h2>1. Create Quality Content</h2>
-        <p>Content is the foundation of your website’s success. Write original, informative, and engaging material tailored to your target audience. Address their pain points, answer their questions, and provide value they can’t find elsewhere. Consider creating guides, directories, or other helpful content that will attract traffic for years to come.</p>
+        <p class="mb-6">Content is the foundation of your website’s success. Write original, informative, and engaging material tailored to your target audience. Address their pain points, answer their questions, and provide value they can’t find elsewhere. Consider creating guides, directories, or other helpful content that will attract traffic for years to come.</p>
 
         <h2>2. Use Relevant Keywords Strategically</h2>
-        <p>Keywords help search engines understand your content. Research terms your audience searches for using tools like Google Keyword Planner, and incorporate them naturally into titles and headings, meta descriptions, alt-text for images, and your website's body text.</p>
+        <p class="mb-6">Keywords help search engines understand your content. Research terms your audience searches for using tools like Google Keyword Planner, and incorporate them naturally into titles and headings, meta descriptions, alt-text for images, and your website's body text.</p>
 
         <h2>3. Mention Your Business “ABCs” (Address, Phone, Etc.)</h2>
-        <p>Make sure your website includes essential business details including your address, phone number, and business email. This builds trust and improves local search visibility.</p>
+        <p class="mb-6">Make sure your website includes essential business details including your address, phone number, and business email. This builds trust and improves local search visibility.</p>
 
         <h2>4. Optimize and Link Your Google Business Profile</h2>
-        <p>Claim and complete your Google Business Profile to improve your local search presence. Optimize it by adding your address, phone number, and website, uploading high-quality photos, and collecting and responding to reviews.</p>
+        <p class="mb-6">Claim and complete your Google Business Profile to improve your local search presence. Optimize it by adding your address, phone number, and website, uploading high-quality photos, and collecting and responding to reviews.</p>
 
         <h2>5. Build Backlinks</h2>
-        <p>Backlinks from reputable websites signal to Google that your site is trustworthy. Earn backlinks by writing guest posts for blogs in your industry, sharing your content on social media, and networking with local businesses or influencers.</p>
+        <p class="mb-6">Backlinks from reputable websites signal to Google that your site is trustworthy. Earn backlinks by writing guest posts for blogs in your industry, sharing your content on social media, and networking with local businesses or influencers.</p>
 
         <h2>6. Improve Your On-Page SEO</h2>
-        <p>On-page SEO ensures every page of your website is search-engine friendly. Focus on creating descriptive, keyword-rich titles and meta descriptions, structuring your content with clear headings (H1, H2, H3), and adding internal links to guide visitors through your site.</p>
+        <p class="mb-6">On-page SEO ensures every page of your website is search-engine friendly. Focus on creating descriptive, keyword-rich titles and meta descriptions, structuring your content with clear headings (H1, H2, H3), and adding internal links to guide visitors through your site.</p>
 
         <h2>7. Leverage Local SEO</h2>
-        <p>If you serve a specific area, local SEO can boost your visibility in searches. Use location-specific keywords (e.g., “coffee shop in Seattle”), list your business in local directories, and encourage customers to leave reviews.</p>
+        <p class="mb-6">If you serve a specific area, local SEO can boost your visibility in searches. Use location-specific keywords (e.g., “coffee shop in Seattle”), list your business in local directories, and encourage customers to leave reviews.</p>
 
         <h2>8. Regularly Update and Refresh Content</h2>
-        <p>Keep your website fresh by updating outdated information, adding new blog posts or pages, and revisiting old content to improve keywords, links, and readability.</p>
+        <p class="mb-6">Keep your website fresh by updating outdated information, adding new blog posts or pages, and revisiting old content to improve keywords, links, and readability.</p>
 
         <h2>9. Add Engaging Visuals</h2>
-        <p>Visual content like images, videos, and infographics can boost engagement and keep visitors on your site longer. Ensure visuals are relevant to your content, optimized for fast loading, and properly labeled with descriptive alt text for SEO.</p>
+        <p class="mb-6">Visual content like images, videos, and infographics can boost engagement and keep visitors on your site longer. Ensure visuals are relevant to your content, optimized for fast loading, and properly labeled with descriptive alt text for SEO.</p>
 
         <h2>10. Monitor and Adjust with Analytics</h2>
-        <p>Track your website’s performance using tools like Google Analytics and Search Console. Analyze metrics such as organic traffic, bounce rate, and keyword rankings. Use this data to refine your strategy and improve results over time.</p>
+        <p class="mb-6">Track your website’s performance using tools like Google Analytics and Search Console. Analyze metrics such as organic traffic, bounce rate, and keyword rankings. Use this data to refine your strategy and improve results over time.</p>
 
         <h2>Conclusion</h2>
-        <p>Improving your Google rankings doesn’t have to be complicated. By focusing on these steps, you can drive more traffic, connect with your audience, and grow your business—all without the need for a professional SEO expert.</p>
+        <p class="mb-6">Improving your Google rankings doesn’t have to be complicated. By focusing on these steps, you can drive more traffic, connect with your audience, and grow your business—all without the need for a professional SEO expert.</p>
       </div>
 
       <!-- Optional: Tags / Share (no prev/next) -->
