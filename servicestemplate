@@ -84,44 +84,59 @@
 
     footer.site{padding:28px 0; background:#393831; color:#9e9383}
     footer.site a{color:#9e9383}
+
+    /* Sticky, simple site header */
+    header.site{
+      position: sticky; top: 0; z-index: 10;
+      background: #fff; border-bottom: 1px solid #e8e4de; /* already defined in your CSS */
+    }
+    
+    /* Row + brand already look good; just layout */
+    .site-row{ display:flex; align-items:center; justify-content:space-between; gap:12px; }
+    
+    /* Desktop links */
+    .site-links{ display:flex; gap:16px; flex-wrap:wrap; }
+    
+    /* Mobile toggle hidden on wide screens */
+    .nav-toggle{ display:none; background:none; border:0; color:var(--muted); }
+    
+    /* Responsive behavior */
+    @media (max-width: 760px){
+      .nav-toggle{ display:inline-flex; }
+      .site-links{
+        display:none; position:absolute; right:20px; top:calc(100% + 8px);
+        background:#fff; border:1px solid #e8e4de; border-radius:12px; padding:10px;
+        box-shadow:0 12px 28px rgba(0,0,0,.08); width:calc(100% - 40px); max-width:440px;
+        flex-direction:column; gap:10px;
+      }
+      .site-links.open{ display:flex; }
+    }
+
+
   </style>
 </head>
 <body>
-  <!-- ===== NAV (from homepage pattern) ===== -->
-  <nav id="navbar" class="fixed w-full z-50 shadow-sm transition-transform duration-300" style="background-color: rgba(254,254,254,0.9); backdrop-filter: blur(12px);">
-    <div class="max-w-6xl mx-auto px-6 py-4">
-      <div class="flex justify-between items-center">
-        <a href="/" class="text-3xl font-bold heading-font" style="color:#393831;">OA</a>
+<header class="site">
+  <div class="wrap site-row">
+    <a class="brand" href="/">OA</a>
 
-        <!-- Desktop links -->
-        <div class="hidden md:flex space-x-8">
-          <a href="/#home" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Home</a>
-          <a href="/#services" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Services</a>
-          <a href="/#clients" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Clients</a>
-          <a href="/#featuredwork" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Featured Work</a>
-          <a href="/#contact" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Contact</a>
-        </div>
+    <!-- Mobile toggle -->
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
 
-        <!-- Mobile hamburger -->
-        <button class="md:hidden" style="color:#9e9383;" aria-label="Open menu" onclick="toggleMenu()">
-          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-        </button>
-      </div>
-    </div>
-
-    <!-- Mobile menu -->
-    <div id="mobile-menu" class="hidden md:hidden">
-      <div class="px-6 pb-4 space-y-2">
-        <a href="/#home" class="block" style="color:#9e9383;">Home</a>
-        <a href="/#services" class="block" style="color:#9e9383;">Services</a>
-        <a href="/#clients" class="block" style="color:#9e9383;">Clients</a>
-        <a href="/#featuredwork" class="block" style="color:#9e9383;">Featured Work</a>
-        <a href="/#contact" class="block" style="color:#9e9383;">Contact</a>
-      </div>
-    </div>
-  </nav>
+    <!-- Links -->
+    <nav id="site-menu" class="site-links">
+      <a href="/#home">Home</a>
+      <a href="/#services">Services</a>
+      <a href="/#clients">Clients</a>
+      <a href="/#featuredwork">Featured Work</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
   <!-- Spacer for fixed nav -->
   <div class="h-20 md:h-24"></div>
@@ -187,5 +202,15 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const menu = document.getElementById('site-menu');
+  if (toggle && menu){
+    toggle.addEventListener('click', () => {
+      const isOpen = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+  }
+</script>
 </body>
 </html>
