@@ -961,3 +961,38 @@ footer .rule{ width: 3rem; height: 4px; background: var(--accent); margin-top: 1
 
 /* Hidden utility (used by JS) */
 .hidden{ display:none !important; }
+
+/* Layout for bar */
+.nav-bar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* Brand stays left */
+.nav-brand{ display:flex; align-items:center; gap:.5rem; font-weight:700; color:var(--ink); text-decoration:none; }
+.nav-logo{ width:30px; height:30px; }
+
+/* New wrapper for right side */
+.nav-right{ display:flex; align-items:center; gap:2rem; margin-left:auto; }
+
+/* Links */
+.nav-links{ display:none; gap:2rem; }
+.nav-links a{ color:var(--stone); text-decoration:none; transition:color .2s ease; }
+.nav-links a:hover,.nav-links a:focus{ color:var(--accent); }
+
+/* Hamburger toggle */
+.nav-toggle{ background:none; border:0; color:var(--stone); display:inline-flex; align-items:center; }
+
+/* Mobile menu (drops below) */
+.mobile-menu{ padding:0 1.5rem 1rem; }
+.mobile-menu a{ display:block; padding:.5rem 0; color:var(--stone); text-decoration:none; }
+.mobile-menu a:hover{ color:var(--accent); }
+
+/* Breakpoint behavior */
+@media (min-width:768px){
+  .nav-links{ display:flex; }
+  .nav-toggle{ display:none; }
+  .mobile-menu{ display:none!important; }
+}
+
