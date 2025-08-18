@@ -16,34 +16,15 @@
   <meta property="og:url" content="https://oliviaarkema.com/services/service-slug" />
   <meta property="og:image" content="https://oliviaarkema.com/assets/service-hero.jpg" />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Service Name — Olivia Arkema" />
-  <meta name="twitter:description" content="A short, compelling summary of this service and the outcome it delivers." />
-  <meta name="twitter:image" content="https://oliviaarkema.com/assets/service-hero.jpg" />
-
-  <!-- JSON-LD: Service -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Service Name",
-    "description": "Medium-length description of the service and outcome.",
-    "areaServed": { "@type": "Place", "name": "United States" },
-    "provider": { "@type": "Person", "name": "Olivia Arkema" },
-    "serviceType": "Marketing & Web Services",
-    "url": "https://oliviaarkema.com/services/service-slug"
-  }
-  </script>
-
-  <!-- Tailwind + Typography -->
+  <!-- Tailwind (CDN) -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
     :root{
       --ink:#393831; --blue:#5f849c; --ink-2:#9e9383; --deep:#23424c; --bg:#faf7f2; --wash:#dae4eb;
     }
-    body{ font-family:'Noto Serif',serif; background:linear-gradient(180deg, #faf7f2 0%, #fbfaf8 100%); color:var(--ink); }
+    /* ==== Base ==== */
+    body{ font-family:'Noto Serif',serif; background:var(--bg); color:var(--ink); }
     .heading-font{ font-family:'Noto Serif',serif; letter-spacing:.02em; }
     .subtle-shadow{ box-shadow:0 8px 32px rgba(57,56,49,.08); }
     .glass{ background:rgba(255,255,255,.7); backdrop-filter: blur(10px); }
@@ -52,9 +33,16 @@
     .cta-btn:hover{ filter:brightness(0.95); }
     .accent-border{ border:2px solid var(--blue); }
     .accent-pill{ background:var(--wash); color:var(--deep); }
-    /* Emphasize headers, keep copy medium-length */
     h1{ color:var(--deep); letter-spacing:.01em; }
     .section h2{ color:var(--blue); }
+
+    /* Long-form columns: keep chunks intact when columnized */
+    @media (min-width: 1280px){
+      .column-content > *{ break-inside: avoid; }
+      .column-content{ column-fill: balance; }
+    }
+    /* Sticky aside behavior for functional layout */
+    .sticky-aside{ position: sticky; top: 6.5rem; }
   </style>
 </head>
 
@@ -90,47 +78,40 @@
   <!-- Spacer for fixed nav -->
   <div class="h-20 md:h-24"></div>
 
-  <!-- ===== HERO: Big header-first layout ===== -->
-  <header class="relative">
-    <!-- Decorative shape -->
-    <div class="absolute inset-0 -z-10">
-      <div class="h-72 md:h-80" style="background: radial-gradient(60% 60% at 30% 20%, rgba(95,132,156,.25), transparent 60%), radial-gradient(40% 40% at 80% 10%, rgba(218,228,235,.5), transparent 60%);"></div>
-    </div>
+  <!-- ===== HERO (no decorative gradients) ===== -->
+  <header class="max-w-6xl mx-auto px-6 pt-6 md:pt-10">
+    <div class="grid md:grid-cols-7 gap-8 items-end">
+      <!-- Big title & subhead -->
+      <div class="md:col-span-4">
+        <span class="inline-block badge rounded-full px-3 py-1 text-sm mb-4">Signature Service</span>
+        <h1 class="heading-font text-4xl md:text-5xl font-bold leading-tight">
+          Service Name That States the Outcome
+        </h1>
+        <p class="mt-4 text-lg" style="color:#6f685d;">
+          A concise, medium-length paragraph (2–4 sentences) framing the problem, your approach, and the outcome—without fluff.
+        </p>
 
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="grid md:grid-cols-7 gap-8 items-end pt-6 md:pt-10">
-        <!-- Big title & subhead -->
-        <div class="md:col-span-4">
-          <span class="inline-block badge rounded-full px-3 py-1 text-sm mb-4">Signature Service</span>
-          <h1 class="heading-font text-4xl md:text-5xl font-bold leading-tight">
-            Service Name That States the Outcome
-          </h1>
-          <p class="mt-4 text-lg" style="color:#6f685d;">
-            A tight, medium-length paragraph (2–4 sentences) that frames the problem, your approach, and the outcome—without fluff.
-          </p>
-
-          <div class="mt-6 flex flex-wrap items-center gap-3">
-            <a href="#inquiry" class="cta-btn px-5 py-3 rounded-lg subtle-shadow">Start a Project</a>
-            <a href="#packages" class="accent-pill px-4 py-2 rounded-full">See Packages</a>
-          </div>
+        <div class="mt-6 flex flex-wrap items-center gap-3">
+          <a href="#inquiry" class="cta-btn px-5 py-3 rounded-lg subtle-shadow">Start a Project</a>
+          <a href="#packages" class="accent-pill px-4 py-2 rounded-full">See Packages</a>
         </div>
+      </div>
 
-        <!-- Visual / Stats card -->
-        <div class="md:col-span-3">
-          <div class="glass accent-border rounded-xl p-5 subtle-shadow">
-            <img src="/assets/service-hero.jpg" alt="Service visual" class="rounded-lg w-full h-44 object-cover mb-4 accent-border">
-            <dl class="grid grid-cols-3 gap-3 text-center">
-              <div><dt class="text-2xl font-bold" style="color:#23424c;">+42%</dt><dd class="text-xs" style="color:#9e9383;">Leads</dd></div>
-              <div><dt class="text-2xl font-bold" style="color:#23424c;">3–6 mo</dt><dd class="text-xs" style="color:#9e9383;">Typical ROI</dd></div>
-              <div><dt class="text-2xl font-bold" style="color:#23424c;">A/B</dt><dd class="text-xs" style="color:#9e9383;">Optimization</dd></div>
-            </dl>
-          </div>
+      <!-- Visual / Stats card -->
+      <div class="md:col-span-3">
+        <div class="glass accent-border rounded-xl p-5 subtle-shadow">
+          <img src="/assets/service-hero.jpg" alt="Service visual" class="rounded-lg w-full h-44 object-cover mb-4 accent-border">
+          <dl class="grid grid-cols-3 gap-3 text-center">
+            <div><dt class="text-2xl font-bold" style="color:#23424c;">+42%</dt><dd class="text-xs" style="color:#9e9383;">Leads</dd></div>
+            <div><dt class="text-2xl font-bold" style="color:#23424c;">3–6 mo</dt><dd class="text-xs" style="color:#9e9383;">Typical ROI</dd></div>
+            <div><dt class="text-2xl font-bold" style="color:#23424c;">A/B</dt><dd class="text-xs" style="color:#9e9383;">Optimization</dd></div>
+          </dl>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- ===== VALUE: What you get / outcomes ===== -->
+  <!-- ===== VALUE ===== -->
   <section class="section max-w-6xl mx-auto px-6 mt-12">
     <div class="grid md:grid-cols-5 gap-8">
       <div class="md:col-span-2">
@@ -146,7 +127,7 @@
     </div>
   </section>
 
-  <!-- ===== PROCESS: 4-step ribbon ===== -->
+  <!-- ===== PROCESS ===== -->
   <section class="section max-w-6xl mx-auto px-6 mt-14">
     <h2 class="heading-font text-2xl md:text-3xl font-bold text-center">How It Works</h2>
     <p class="text-center mt-3" style="color:#6f685d;">Four simple steps. Medium-length overview.</p>
@@ -174,7 +155,65 @@
     </ol>
   </section>
 
-  <!-- ===== PACKAGES: asymmetrical cards ===== -->
+  <!-- ===== LONG-FORM SECTION ===== -->
+  <!-- Option B (default): Functional layout with sticky TOC/CTA + optional columns on XL -->
+  <section id="longform" class="section max-w-6xl mx-auto px-6 mt-16">
+    <div class="grid lg:grid-cols-12 gap-8">
+      <!-- Main long-form content -->
+      <article class="lg:col-span-8">
+        <h2 class="heading-font text-2xl md:text-3xl font-bold mb-4">Deep Dive: Method & Deliverables</h2>
+        <p class="mb-4" style="color:#6f685d;">Use this section for longer copy (case studies, methods, FAQs in prose). Keep paragraphs 2–4 sentences for rhythm.</p>
+
+        <!-- Two-column reading on XL screens, single column below -->
+        <div class="column-content prose max-w-none xl:columns-2 xl:gap-10">
+          <p>Opening paragraph of the long-form content…</p>
+          <p>Another paragraph with detail…</p>
+          <h3>Subsection Heading</h3>
+          <p>More content that benefits from the two-column reading layout on large screens.</p>
+          <p>Continue with as much text as you need. The layout balances columns and avoids awkward breaks.</p>
+          <h3>Results / Outcomes</h3>
+          <p>Summarize measurable outcomes, frameworks, or timelines.</p>
+          <p>Wrap-up paragraph with a lead-in to the CTA below.</p>
+        </div>
+      </article>
+
+      <!-- Sticky sidebar for TOC / Key points / CTA -->
+      <aside class="lg:col-span-4">
+        <div class="sticky-aside accent-border rounded-xl p-5 subtle-shadow bg-white">
+          <h3 class="heading-font text-xl font-bold" style="color:#23424c;">On this page</h3>
+          <nav class="mt-3 text-sm space-y-2" style="color:#6f685d;">
+            <a href="#longform" class="block underline">Deep Dive</a>
+            <a href="#packages" class="block underline">Packages</a>
+            <a href="#inquiry" class="block underline">Get Started</a>
+          </nav>
+
+          <div class="mt-6">
+            <h4 class="font-bold" style="color:#23424c;">Key Takeaways</h4>
+            <ul class="list-disc pl-5 mt-2 text-sm" style="color:#6f685d;">
+              <li>Outcome-focused approach</li>
+              <li>Clear deliverables & timeline</li>
+              <li>Ongoing optimization</li>
+            </ul>
+          </div>
+
+          <a href="#inquiry" class="mt-6 inline-block cta-btn px-5 py-3 rounded-lg w-full text-center">Start a Project</a>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Option A (alternate): Pure multi-column reader
+         Uncomment to use instead of the functional layout above
+    <article class="max-w-4xl mx-auto mt-10">
+      <h2 class="heading-font text-2xl md:text-3xl font-bold mb-4">Deep Dive (Column Reader)</h2>
+      <div class="column-content prose max-w-none md:columns-2 lg:columns-3 md:gap-10">
+        <p>Long-form text…</p>
+        ...
+      </div>
+    </article>
+    -->
+  </section>
+
+  <!-- ===== PACKAGES ===== -->
   <section id="packages" class="section max-w-6xl mx-auto px-6 mt-14">
     <div class="grid md:grid-cols-3 gap-6">
       <article class="rounded-2xl p-6 subtle-shadow accent-border glass">
@@ -186,7 +225,7 @@
         <a href="#inquiry" class="mt-5 inline-block cta-btn px-4 py-2 rounded-lg">Request Quote</a>
       </article>
 
-      <article class="rounded-2xl p-6 subtle-shadow accent-border" style="background:#fff;">
+      <article class="rounded-2xl p-6 subtle-shadow accent-border bg-white">
         <h3 class="heading-font text-xl font-bold" style="color:#23424c;">Growth</h3>
         <p class="mt-2" style="color:#6f685d;">Medium-length description of who this is for.</p>
         <ul class="mt-4 space-y-2 text-sm">
@@ -206,28 +245,9 @@
     </div>
   </section>
 
-  <!-- ===== FAQ: details/summary for clean scanning ===== -->
-  <section class="section max-w-3xl mx-auto px-6 mt-16">
-    <h2 class="heading-font text-2xl md:text-3xl font-bold text-center">FAQs</h2>
-    <div class="mt-6 space-y-3">
-      <details class="accent-border rounded-lg p-4">
-        <summary class="font-bold cursor-pointer" style="color:#23424c;">How long does a typical project take?</summary>
-        <p class="mt-2" style="color:#6f685d;">Medium-length answer with clear expectations.</p>
-      </details>
-      <details class="accent-border rounded-lg p-4">
-        <summary class="font-bold cursor-pointer" style="color:#23424c;">What do you need from me to start?</summary>
-        <p class="mt-2" style="color:#6f685d;">Medium-length answer explaining inputs and access.</p>
-      </details>
-      <details class="accent-border rounded-lg p-4">
-        <summary class="font-bold cursor-pointer" style="color:#23424c;">Do you offer ongoing support?</summary>
-        <p class="mt-2" style="color:#6f685d;">Medium-length answer on maintenance/retainers.</p>
-      </details>
-    </div>
-  </section>
-
   <!-- ===== CTA ===== -->
   <section id="inquiry" class="section max-w-6xl mx-auto px-6 mt-16 mb-20">
-    <div class="rounded-2xl subtle-shadow accent-border p-6 md:p-8 glass">
+    <div class="rounded-2xl subtle-shadow accent-border p-6 md:p-8 bg-white">
       <div class="grid md:grid-cols-3 gap-6 items-center">
         <div class="md:col-span-2">
           <h2 class="heading-font text-2xl md:text-3xl font-bold">Ready to get started?</h2>
