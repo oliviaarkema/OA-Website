@@ -1,314 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- ===== SEO (edit these) ===== -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title><!-- 60–65 chars -->Service Name — Olivia Arkema</title>
-  <meta name="description" content="A short, compelling summary of this service and the outcome it delivers." />
+  <title>Service Name — Olivia Arkema</title>
+  <meta name="description" content="Short, compelling summary of this service and the outcome it delivers." />
   <link rel="canonical" href="https://oliviaarkema.com/services/service-slug" />
-  <link rel="icon" href="green_bow.png" type="image/png" />
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Service Name — Olivia Arkema" />
-  <meta property="og:description" content="A short, compelling summary of this service and the outcome it delivers." />
-  <meta property="og:url" content="https://oliviaarkema.com/services/service-slug" />
-  <meta property="og:image" content="https://oliviaarkema.com/assets/service-hero.jpg" />
-
-  <!-- Tailwind (CDN) -->
-  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+    /* ==== Minimal design system ==== */
     :root{
-      --ink:#393831; --blue:#5f849c; --ink-2:#9e9383; --deep:#23424c; --bg:#faf7f2; --wash:#dae4eb;
+      --bg:#faf7f2; --ink:#393831; --muted:#9e9383; --blue:#5f849c; --deep:#23424c; --wash:#dae4eb;
+      --max:1100px;
     }
-    /* ==== Base ==== */
-    body{ font-family:'Noto Serif',serif; background:var(--bg); color:var(--ink); }
-    .heading-font{ font-family:'Noto Serif',serif; letter-spacing:.02em; }
-    .subtle-shadow{ box-shadow:0 8px 32px rgba(57,56,49,.08); }
-    .glass{ background:rgba(255,255,255,.7); backdrop-filter: blur(10px); }
-    .badge{ border:2px solid var(--blue); color:var(--deep); }
-    .cta-btn{ background:var(--blue); color:#fff; }
-    .cta-btn:hover{ filter:brightness(0.95); }
-    .accent-border{ border:2px solid var(--blue); }
-    .accent-pill{ background:var(--wash); color:var(--deep); }
-    h1{ color:var(--deep); letter-spacing:.01em; }
-    .section h2{ color:var(--blue); }
+    html,body{margin:0;padding:0}
+    body{background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif}
+    a{color:var(--deep);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+    .section{padding:40px 0}
+    h1,h2,h3{margin:0 0 .5rem}
+    h1{font-size:clamp(28px,4vw,44px);line-height:1.2;color:var(--deep)}
+    h2{font-size:clamp(20px,3vw,28px);color:var(--blue)}
+    h3{font-size:clamp(18px,2.3vw,22px);color:var(--deep)}
+    p{margin:0 0 1rem}
+    .btn{display:inline-block;background:var(--blue);color:#fff;border-radius:10px;padding:.7rem 1rem}
+    .btn:hover{filter:brightness(.95)}
+    .pill{display:inline-block;background:var(--wash);color:var(--deep);border-radius:9999px;padding:.35rem .7rem;font-size:.85rem}
+    .grid{display:grid;gap:16px}
+    .grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    @media (max-width:860px){.grid-2,.grid-3{grid-template-columns:1fr}}
+    .card{background:#fff;border:2px solid var(--blue);border-radius:14px;padding:18px}
+    .list{padding-left:1rem}
+    .list li{margin:.35rem 0}
+    /* Long-form: single column → two columns on wide screens */
+    .longform{column-gap:32px}
+    @media (min-width:1100px){
+      .longform{column-count:2}
+      .longform > *{break-inside:avoid}
+    }
 
-    /* Long-form columns: keep chunks intact when columnized */
-    @media (min-width: 1280px){
-      .column-content > *{ break-inside: avoid; }
-      .column-content{ column-fill: balance; }
-    }
-    /* Sticky aside behavior for functional layout */
-    .sticky-aside{ position: sticky; top: 6.5rem; }
+    /* Simple header/footer */
+    header.nav{position:sticky;top:0;background:#fff;border-bottom:1px solid #e8e4de;z-index:10}
+    .nav-row{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .nav-links{display:flex;gap:18px;flex-wrap:wrap}
+    footer{background:#393831;color:#9e9383}
+    footer a{color:#9e9383}
   </style>
 </head>
-
 <body>
-  <!-- ===== NAV (homepage pattern) ===== -->
-  <nav id="navbar" class="fixed w-full z-50 shadow-sm transition-transform duration-300" style="background-color:rgba(254,254,254,0.9);backdrop-filter:blur(12px);">
-    <div class="max-w-6xl mx-auto px-6 py-4">
-      <div class="flex justify-between items-center">
-        <a href="/" class="text-3xl font-bold heading-font" style="color:#393831;">OA</a>
-        <div class="hidden md:flex space-x-8">
-          <a href="/#home" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Home</a>
-          <a href="/#services" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Services</a>
-          <a href="/#clients" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Clients</a>
-          <a href="/#featuredwork" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Featured Work</a>
-          <a href="/#contact" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Contact</a>
-        </div>
-        <button class="md:hidden" style="color:#9e9383;" aria-label="Open menu" onclick="toggleMenu()">
-          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
-      </div>
-    </div>
-    <div id="mobile-menu" class="hidden md:hidden">
-      <div class="px-6 pb-4 space-y-2">
-        <a href="/#home" class="block" style="color:#9e9383;">Home</a>
-        <a href="/#services" class="block" style="color:#9e9383;">Services</a>
-        <a href="/#clients" class="block" style="color:#9e9383;">Clients</a>
-        <a href="/#featuredwork" class="block" style="color:#9e9383;">Featured Work</a>
-        <a href="/#contact" class="block" style="color:#9e9383;">Contact</a>
-      </div>
-    </div>
-  </nav>
 
-  <!-- Spacer for fixed nav -->
-  <div class="h-20 md:h-24"></div>
-
-  <!-- ===== HERO (no decorative gradients) ===== -->
-  <header class="max-w-6xl mx-auto px-6 pt-6 md:pt-10">
-    <div class="grid md:grid-cols-7 gap-8 items-end">
-      <!-- Big title & subhead -->
-      <div class="md:col-span-4">
-        <span class="inline-block badge rounded-full px-3 py-1 text-sm mb-4">Signature Service</span>
-        <h1 class="heading-font text-4xl md:text-5xl font-bold leading-tight">
-          Service Name That States the Outcome
-        </h1>
-        <p class="mt-4 text-lg" style="color:#6f685d;">
-          A concise, medium-length paragraph (2–4 sentences) framing the problem, your approach, and the outcome—without fluff.
-        </p>
-
-        <div class="mt-6 flex flex-wrap items-center gap-3">
-          <a href="#inquiry" class="cta-btn px-5 py-3 rounded-lg subtle-shadow">Start a Project</a>
-          <a href="#packages" class="accent-pill px-4 py-2 rounded-full">See Packages</a>
-        </div>
-      </div>
-
-      <!-- Visual / Stats card -->
-      <div class="md:col-span-3">
-        <div class="glass accent-border rounded-xl p-5 subtle-shadow">
-          <img src="/assets/service-hero.jpg" alt="Service visual" class="rounded-lg w-full h-44 object-cover mb-4 accent-border">
-          <dl class="grid grid-cols-3 gap-3 text-center">
-            <div><dt class="text-2xl font-bold" style="color:#23424c;">+42%</dt><dd class="text-xs" style="color:#9e9383;">Leads</dd></div>
-            <div><dt class="text-2xl font-bold" style="color:#23424c;">3–6 mo</dt><dd class="text-xs" style="color:#9e9383;">Typical ROI</dd></div>
-            <div><dt class="text-2xl font-bold" style="color:#23424c;">A/B</dt><dd class="text-xs" style="color:#9e9383;">Optimization</dd></div>
-          </dl>
-        </div>
-      </div>
+  <!-- Header (simple, no JS) -->
+  <header class="nav">
+    <div class="wrap nav-row">
+      <a href="/" style="font-weight:700;color:var(--deep);font-size:20px">OA</a>
+      <nav class="nav-links">
+        <a href="/#services">Services</a>
+        <a href="/#featuredwork">Work</a>
+        <a href="/#contact">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <!-- ===== VALUE ===== -->
-  <section class="section max-w-6xl mx-auto px-6 mt-12">
-    <div class="grid md:grid-cols-5 gap-8">
-      <div class="md:col-span-2">
-        <h2 class="heading-font text-2xl md:text-3xl font-bold">What You Get</h2>
-        <p class="mt-3" style="color:#6f685d;">Medium-length copy describing deliverables at a glance.</p>
+  <!-- HERO -->
+  <section class="section">
+    <div class="wrap">
+      <span class="pill">Signature Service</span>
+      <h1>Service Name That States the Outcome</h1>
+      <p style="max-width:70ch;color:var(--muted)">
+        A concise, medium-length paragraph (2–4 sentences) framing the problem, your approach,
+        and the outcome — without fluff.
+      </p>
+      <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+        <a href="#inquiry" class="btn">Start a Project</a>
+        <a href="#packages" class="pill">See Packages</a>
       </div>
-      <ul class="md:col-span-3 grid sm:grid-cols-2 gap-4">
-        <li class="accent-border rounded-lg p-4"><strong>Deliverable #1</strong><br/>Short detail explaining the value.</li>
-        <li class="accent-border rounded-lg p-4"><strong>Deliverable #2</strong><br/>Short detail explaining the value.</li>
-        <li class="accent-border rounded-lg p-4"><strong>Deliverable #3</strong><br/>Short detail explaining the value.</li>
-        <li class="accent-border rounded-lg p-4"><strong>Deliverable #4</strong><br/>Short detail explaining the value.</li>
-      </ul>
     </div>
   </section>
 
-  <!-- ===== PROCESS ===== -->
-  <section class="section max-w-6xl mx-auto px-6 mt-14">
-    <h2 class="heading-font text-2xl md:text-3xl font-bold text-center">How It Works</h2>
-    <p class="text-center mt-3" style="color:#6f685d;">Four simple steps. Medium-length overview.</p>
-    <ol class="mt-8 grid md:grid-cols-4 gap-4">
-      <li class="rounded-xl p-5 subtle-shadow glass accent-border">
-        <div class="text-sm uppercase tracking-wide accent-pill inline-block px-3 py-1 rounded-full mb-3">01</div>
-        <h3 class="font-bold" style="color:#23424c;">Discover</h3>
-        <p class="mt-2 text-sm" style="color:#6f685d;">Short description of the step.</p>
-      </li>
-      <li class="rounded-xl p-5 subtle-shadow glass accent-border">
-        <div class="text-sm uppercase tracking-wide accent-pill inline-block px-3 py-1 rounded-full mb-3">02</div>
-        <h3 class="font-bold" style="color:#23424c;">Design</h3>
-        <p class="mt-2 text-sm" style="color:#6f685d;">Short description of the step.</p>
-      </li>
-      <li class="rounded-xl p-5 subtle-shadow glass accent-border">
-        <div class="text-sm uppercase tracking-wide accent-pill inline-block px-3 py-1 rounded-full mb-3">03</div>
-        <h3 class="font-bold" style="color:#23424c;">Implement</h3>
-        <p class="mt-2 text-sm" style="color:#6f685d;">Short description of the step.</p>
-      </li>
-      <li class="rounded-xl p-5 subtle-shadow glass accent-border">
-        <div class="text-sm uppercase tracking-wide accent-pill inline-block px-3 py-1 rounded-full mb-3">04</div>
-        <h3 class="font-bold" style="color:#23424c;">Optimize</h3>
-        <p class="mt-2 text-sm" style="color:#6f685d;">Short description of the step.</p>
-      </li>
-    </ol>
-  </section>
-
-  <!-- ===== LONG-FORM SECTION ===== -->
-  <!-- Option B (default): Functional layout with sticky TOC/CTA + optional columns on XL -->
-  <section id="longform" class="section max-w-6xl mx-auto px-6 mt-16">
-    <div class="grid lg:grid-cols-12 gap-8">
-      <!-- Main long-form content -->
-      <article class="lg:col-span-8">
-        <h2 class="heading-font text-2xl md:text-3xl font-bold mb-4">Deep Dive: Method & Deliverables</h2>
-        <p class="mb-4" style="color:#6f685d;">Use this section for longer copy (case studies, methods, FAQs in prose). Keep paragraphs 2–4 sentences for rhythm.</p>
-
-        <!-- Two-column reading on XL screens, single column below -->
-        <div class="column-content prose max-w-none xl:columns-2 xl:gap-10">
-          <p>Opening paragraph of the long-form content…</p>
-          <p>Another paragraph with detail…</p>
-          <h3>Subsection Heading</h3>
-          <p>More content that benefits from the two-column reading layout on large screens.</p>
-          <p>Continue with as much text as you need. The layout balances columns and avoids awkward breaks.</p>
-          <h3>Results / Outcomes</h3>
-          <p>Summarize measurable outcomes, frameworks, or timelines.</p>
-          <p>Wrap-up paragraph with a lead-in to the CTA below.</p>
-        </div>
-      </article>
-
-      <!-- Sticky sidebar for TOC / Key points / CTA -->
-      <aside class="lg:col-span-4">
-        <div class="sticky-aside accent-border rounded-xl p-5 subtle-shadow bg-white">
-          <h3 class="heading-font text-xl font-bold" style="color:#23424c;">On this page</h3>
-          <nav class="mt-3 text-sm space-y-2" style="color:#6f685d;">
-            <a href="#longform" class="block underline">Deep Dive</a>
-            <a href="#packages" class="block underline">Packages</a>
-            <a href="#inquiry" class="block underline">Get Started</a>
-          </nav>
-
-          <div class="mt-6">
-            <h4 class="font-bold" style="color:#23424c;">Key Takeaways</h4>
-            <ul class="list-disc pl-5 mt-2 text-sm" style="color:#6f685d;">
-              <li>Outcome-focused approach</li>
-              <li>Clear deliverables & timeline</li>
-              <li>Ongoing optimization</li>
-            </ul>
-          </div>
-
-          <a href="#inquiry" class="mt-6 inline-block cta-btn px-5 py-3 rounded-lg w-full text-center">Start a Project</a>
-        </div>
-      </aside>
-    </div>
-
-    <!-- Option A (alternate): Pure multi-column reader
-         Uncomment to use instead of the functional layout above
-    <article class="max-w-4xl mx-auto mt-10">
-      <h2 class="heading-font text-2xl md:text-3xl font-bold mb-4">Deep Dive (Column Reader)</h2>
-      <div class="column-content prose max-w-none md:columns-2 lg:columns-3 md:gap-10">
-        <p>Long-form text…</p>
-        ...
+  <!-- VALUE (What you get) -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap grid grid-2">
+      <div>
+        <h2>What You Get</h2>
+        <p style="color:var(--muted)">Medium-length copy describing deliverables and outcomes at a glance.</p>
       </div>
-    </article>
-    -->
+      <div class="grid grid-2">
+        <div class="card"><strong>Deliverable #1</strong><br><span style="color:var(--muted)">Short value statement.</span></div>
+        <div class="card"><strong>Deliverable #2</strong><br><span style="color:var(--muted)">Short value statement.</span></div>
+        <div class="card"><strong>Deliverable #3</strong><br><span style="color:var(--muted)">Short value statement.</span></div>
+        <div class="card"><strong>Deliverable #4</strong><br><span style="color:var(--muted)">Short value statement.</span></div>
+      </div>
+    </div>
   </section>
 
-  <!-- ===== PACKAGES ===== -->
-  <section id="packages" class="section max-w-6xl mx-auto px-6 mt-14">
-    <div class="grid md:grid-cols-3 gap-6">
-      <article class="rounded-2xl p-6 subtle-shadow accent-border glass">
-        <h3 class="heading-font text-xl font-bold" style="color:#23424c;">Starter</h3>
-        <p class="mt-2" style="color:#6f685d;">Medium-length description of who this is for.</p>
-        <ul class="mt-4 space-y-2 text-sm">
-          <li>✓ Feature one</li><li>✓ Feature two</li><li>✓ Feature three</li>
+  <!-- PROCESS -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <h2>How It Works</h2>
+      <div class="grid grid-4" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px">
+        <div class="card"><h3>01 · Discover</h3><p style="color:var(--muted)">Short description.</p></div>
+        <div class="card"><h3>02 · Design</h3><p style="color:var(--muted)">Short description.</p></div>
+        <div class="card"><h3>03 · Implement</h3><p style="color:var(--muted)">Short description.</p></div>
+        <div class="card"><h3>04 · Optimize</h3><p style="color:var(--muted)">Short description.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LONG-FORM (lots of text; auto two columns on wide screens) -->
+  <section class="section" id="longform">
+    <div class="wrap">
+      <h2>Deep Dive</h2>
+      <div class="longform" style="max-width:85ch">
+        <p>Opening paragraph for long-form content…</p>
+        <p>More detail, context, and examples. Keep paragraphs tight and scannable.</p>
+        <h3>Subsection Heading</h3>
+        <p>Explain the method, timelines, or case study details here.</p>
+        <p>Continue with as much text as you need. On large screens this flows into two columns.</p>
+        <h3>Results / Outcomes</h3>
+        <ul class="list">
+          <li>Outcome 1 with a measurable stat.</li>
+          <li>Outcome 2 with a client-friendly phrasing.</li>
+          <li>Outcome 3 with timeline expectations.</li>
         </ul>
-        <a href="#inquiry" class="mt-5 inline-block cta-btn px-4 py-2 rounded-lg">Request Quote</a>
-      </article>
-
-      <article class="rounded-2xl p-6 subtle-shadow accent-border bg-white">
-        <h3 class="heading-font text-xl font-bold" style="color:#23424c;">Growth</h3>
-        <p class="mt-2" style="color:#6f685d;">Medium-length description of who this is for.</p>
-        <ul class="mt-4 space-y-2 text-sm">
-          <li>✓ Feature one</li><li>✓ Feature two</li><li>✓ Feature three</li>
-        </ul>
-        <a href="#inquiry" class="mt-5 inline-block cta-btn px-4 py-2 rounded-lg">Request Quote</a>
-      </article>
-
-      <article class="rounded-2xl p-6 subtle-shadow accent-border glass">
-        <h3 class="heading-font text-xl font-bold" style="color:#23424c;">Custom</h3>
-        <p class="mt-2" style="color:#6f685d;">Medium-length description of who this is for.</p>
-        <ul class="mt-4 space-y-2 text-sm">
-          <li>✓ Feature one</li><li>✓ Feature two</li><li>✓ Feature three</li>
-        </ul>
-        <a href="#inquiry" class="mt-5 inline-block cta-btn px-4 py-2 rounded-lg">Request Quote</a>
-      </article>
-    </div>
-  </section>
-
-  <!-- ===== CTA ===== -->
-  <section id="inquiry" class="section max-w-6xl mx-auto px-6 mt-16 mb-20">
-    <div class="rounded-2xl subtle-shadow accent-border p-6 md:p-8 bg-white">
-      <div class="grid md:grid-cols-3 gap-6 items-center">
-        <div class="md:col-span-2">
-          <h2 class="heading-font text-2xl md:text-3xl font-bold">Ready to get started?</h2>
-          <p class="mt-2" style="color:#6f685d;">Tell me about your goals, timeline, and budget. I’ll follow up with next steps.</p>
-        </div>
-        <div class="text-right">
-          <a href="mailto:hello@oliviaarkema.com?subject=Project%20Inquiry" class="cta-btn px-5 py-3 rounded-lg inline-block">Email Olivia</a>
-        </div>
+        <p>Wrap-up paragraph with a lead-in to the CTA below.</p>
       </div>
     </div>
   </section>
 
-  <!-- ===== FOOTER (homepage-aligned) ===== -->
-  <footer class="py-16" style="background-color:#393831;">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="grid md:grid-cols-3 gap-12">
-        <div>
-          <div class="text-3xl font-bold mb-6 heading-font" style="color:#fefefe;">Olivia Arkema</div>
-          <p class="leading-relaxed" style="color:#9e9383;">Creative Marketing, Data Analysis, & Web Design for Small Businesses</p>
-          <div class="w-12 h-1 mt-4" style="background-color:#5f849c;"></div>
-        </div>
-        <div>
-          <h4 class="font-semibold mb-6 heading-font" style="color:#fefefe;">Quick Links</h4>
-          <div class="space-y-3">
-            <a href="/#services" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Services</a>
-            <a href="/#featuredwork" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Work</a>
-            <a href="/#contact" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Contact</a>
-          </div>
-        </div>
-        <div>
-          <h4 class="font-semibold mb-6 heading-font" style="color:#fefefe;">Connect</h4>
-          <div class="space-y-3">
-            <a href="https://www.linkedin.com/in/oliviaarkema" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">LinkedIn</a>
-            <a href="https://x.com/livlavonne" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Twitter</a>
-            <a href="mailto:hello@oliviaarkema.com" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Email</a>
-          </div>
-        </div>
+  <!-- PACKAGES (optional) -->
+  <section class="section" id="packages">
+    <div class="wrap grid grid-3">
+      <div class="card">
+        <h3>Starter</h3>
+        <p style="color:var(--muted)">Who this is for + quick value.</p>
+        <a href="#inquiry" class="btn" style="margin-top:8px">Request Quote</a>
       </div>
-      <div class="my-8 border-t" style="border-color:#5f849c;"></div>
-      <div class="text-center">
-        <p style="color:#9e9383;">&copy; <span id="year"></span> Olivia Arkema. All rights reserved.</p>
+      <div class="card">
+        <h3>Growth</h3>
+        <p style="color:var(--muted)">Who this is for + quick value.</p>
+        <a href="#inquiry" class="btn" style="margin-top:8px">Request Quote</a>
       </div>
+      <div class="card">
+        <h3>Custom</h3>
+        <p style="color:var(--muted)">Who this is for + quick value.</p>
+        <a href="#inquiry" class="btn" style="margin-top:8px">Request Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" id="inquiry" style="padding-top:0">
+    <div class="wrap card" style="display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap">
+      <div>
+        <h2>Ready to get started?</h2>
+        <p style="color:var(--muted);max-width:60ch">Tell me about your goals, timeline, and budget. I’ll follow up with next steps.</p>
+      </div>
+      <a href="mailto:hello@oliviaarkema.com?subject=Project%20Inquiry" class="btn">Email Olivia</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="section" style="padding:28px 0">
+    <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
+      <small>© <span id="year"></span> Olivia Arkema</small>
+      <div style="display:flex;gap:14px"><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div>
     </div>
   </footer>
 
-  <!-- ===== Minimal JS ===== -->
   <script>
-    // Nav hide/show on scroll (optional)
-    let lastScrollTop = 0;
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', function () {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      if (scrollTop > lastScrollTop && scrollTop > 100) { navbar.style.transform = 'translateY(-100%)'; }
-      else { navbar.style.transform = 'translateY(0)'; }
-      lastScrollTop = scrollTop;
-    });
-
-    // Mobile menu toggle
-    function toggleMenu(){ document.getElementById('mobile-menu').classList.toggle('hidden'); }
-
-    // Footer year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
