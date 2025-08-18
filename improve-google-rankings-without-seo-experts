@@ -28,24 +28,27 @@
       <span>OA</span>
     </a>
 
-    <!-- Desktop links -->
-    <nav class="nav-links" aria-label="Primary">
-      <a href="index.html" class="transition-colors">Home</a>
-      <a href="blog" class="transition-colors">Blog</a>
-      <a href="contact" class="transition-colors">Contact</a>
-    </nav>
+    <!-- Right side: links + toggle -->
+    <div class="nav-right">
+      <!-- Desktop links -->
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html" class="transition-colors">Home</a>
+        <a href="blog" class="transition-colors">Blog</a>
+        <a href="contact" class="transition-colors">Contact</a>
+      </nav>
 
-    <!-- Mobile toggle -->
-    <button id="nav-toggle"
-            class="nav-toggle"
-            aria-label="Open menu"
-            aria-controls="mobile-menu"
-            aria-expanded="false">
-      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"/>
-      </svg>
-    </button>
+      <!-- Mobile toggle -->
+      <button id="nav-toggle"
+              class="nav-toggle"
+              aria-label="Open menu"
+              aria-controls="mobile-menu"
+              aria-expanded="false">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
   </div>
 
   <!-- Mobile menu -->
