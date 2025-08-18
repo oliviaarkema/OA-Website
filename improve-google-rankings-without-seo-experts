@@ -94,4 +94,133 @@
       <div class="prose" style="color:var(--stone);font-size:1.125rem;line-height:1.8;">
         <p>
           Improving your rankings on Google can feel overwhelming, but you don’t need to hire an SEO expert to make meaningful changes.
-          With the right approach, you can boost your visibility and attract more traffic to your website and ultimatel
+          With the right approach, you can boost your visibility and attract more traffic to your website and ultimately increase sales
+          and engagement. Here are 10 actionable strategies to get started (no experts required):
+        </p>
+
+        <h2 class="heading-font" style="color:var(--ink);font-size:1.5rem;margin-top:2rem;">Understanding Google Rankings</h2>
+        <p>
+          Google's ranking algorithm considers numerous factors when ranking websites. These include website content, backlinks,
+          mobile-friendliness, and page speed. Understanding these elements is crucial for improving your site's visibility.
+        </p>
+
+        <h2 class="heading-font" style="color:var(--ink);font-size:1.5rem;margin-top:2rem;">1. Create Quality Content</h2>
+        <p>
+          Content is the foundation of your website’s success. Write original, informative, and engaging material tailored to your
+          target audience. Address their pain points, answer their questions, and provide value they can’t find elsewhere. Consider
+          creating guides, directories, or other helpful content that will attract traffic for years to come.
+        </p>
+
+        <h2 class="heading-font" style="color:var(--ink);font-size:1.5rem;margin-top:2rem;">2. Use Relevant Keywords Strategically</h2>
+        <p>
+          Keywords help search engines understand your content. Research terms your audience searches for using tools like Google
+          Keyword Planner, and incorporate them naturally into titles and headings, meta descriptions, alt-text for images, and your
+          website's body text.
+        </p>
+
+        <h2 class="heading-font" style="color:var(--ink);font-size:1.5rem;margin-top:2rem;">3. Mention Your Business “ABCs”</h2>
+        <p>
+          Make sure your website includes essential business details including your address, phone number, and business email. This
+          builds trust and improves local search visibility.
+        </p>
+
+        <h2 class="heading-font" style="color:var(--ink);font-size:1.5rem;margin-top:2rem;">4. Optimize and Link Your Google Business Profile</h2>
+        <p>
+          Claim and complete your Google Business Profile to improve your local search presence. Optimize it by adding your address,
+          phone number, and website, uploading high-quality photos, and collecting and responding to reviews.
+        </p>
+
+        <h2 class="heading-font" style="color:var(--ink);font-size:1.5rem;margin-top:2rem;">5. Build Backlinks</h2>
+        <p>
+          Backlinks from reputable websites signal to Google that your site is trustworthy. Earn backlinks by writing guest posts,
+          sharing your content on social media, and networking with local businesses or influencers.
+        </p>
+
+        <h2 class="heading-font" style="color:var(--ink);font-size:1.5rem;margin-top:2rem;">6. Improve Your On-Page SEO</h2>
+        <p>
+          Focus on descriptive, keyword-rich titles and meta descriptions, structure content with clear headings (H1, H2, H3), and add
+          internal links to guide visitors.
+        </p>
+
+        <h2 class="heading-font" style="color:var(--ink);font-size:1.5rem;margin-top:2rem;">7. Leverage Local SEO</h2>
+        <p>
+          If you serve a specific area, use location-specific keywords, list your business in local directories, and encourage
+          reviews.
+        </p>
+
+        <h2 class="heading-font" style="color:var(--ink);font-size:1.5rem;margin-top:2rem;">8. Regularly Update and Refresh Content</h2>
+        <p>
+          Keep your website fresh by updating outdated information, adding new posts or pages, and revisiting old content to improve
+          keywords, links, and readability.
+        </p>
+
+        <h2 class="heading-font" style="color:var(--ink);font-size:1.5rem;margin-top:2rem;">9. Add Engaging Visuals</h2>
+        <p>
+          Use images, videos, and infographics to boost engagement. Optimize assets and include descriptive alt text.
+        </p>
+
+        <h2 class="heading-font" style="color:var(--ink);font-size:1.5rem;margin-top:2rem;">10. Monitor and Adjust with Analytics</h2>
+        <p>
+          Track performance in Google Analytics and Search Console (organic traffic, bounce rate, keyword rankings) and refine your
+          approach over time.
+        </p>
+
+        <h2 class="heading-font" style="color:var(--ink);font-size:1.5rem;margin-top:2rem;">Conclusion</h2>
+        <p>
+          Improving your Google rankings doesn’t have to be complicated. Focus on these steps to drive more traffic, connect with your
+          audience, and grow your business—no expert required.
+        </p>
+      </div>
+    </article>
+
+    <!-- CTA band (styled like your site) -->
+    <section class="py-20" style="background: var(--white);padding:3rem 0;">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="elegant-border subtle-shadow" style="border-radius:16px;padding:2rem;background:var(--mist);">
+          <div class="two-columns" style="display:grid;grid-template-columns:1fr;gap:1.25rem;">
+            <div>
+              <h2 class="heading-font" style="color:var(--ink);font-size:1.75rem;margin:0;">Let’s collaborate.</h2>
+            </div>
+            <div>
+              <a href="contact" class="btn btn-accent" style="text-decoration:none;">Work with Me</a>
+              <div class="divider" style="margin:1rem 0;"></div>
+              <p class="text-ink" style="margin:.25rem 0;">Email me: <a href="mailto:livarkema@gmail.com" class="text-accent" style="text-decoration:none;">livarkema@gmail.com</a></p>
+              <p class="text-ink" style="margin:.25rem 0;">Call: <a href="tel:+19706726402" class="text-accent" style="text-decoration:none;">970-672-6402</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Simple footer to match palette -->
+  <footer style="background: var(--ink);padding:2rem 0;">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <div class="heading-font" style="color:var(--white);font-weight:700;">Olivia Arkema</div>
+      <div class="w-12 h-1 mx-auto" style="background:var(--accent);margin-top:.75rem;"></div>
+      <p style="color:var(--stone);margin-top:1rem;">Creative Marketing, Data Analysis, &amp; Web Design for Small Businesses</p>
+    </div>
+  </footer>
+
+  <script>
+    // Hide/show navbar on scroll (same behavior as new site)
+    let lastScrollTop = 0;
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', function () {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > lastScrollTop && scrollTop > 100) {
+        navbar.style.transform = 'translateY(-100%)';
+      } else {
+        navbar.style.transform = 'translateY(0)';
+      }
+      lastScrollTop = scrollTop;
+    });
+
+    // Mobile menu toggle (new site uses #mobile-menu + .hidden)
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>
