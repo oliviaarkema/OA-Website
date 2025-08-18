@@ -114,18 +114,18 @@
     </main>
     
     <!-- Contact Section -->
-    <section id="contact" class="py-20 relative" style="background-color: #23424c;" aria-labelledby="contact-heading">
-        <div class="max-w-4xl mx-auto px-6 text-center relative">
-            <div class="fade-in">
-                <div class="w-24 h-1 mx-auto mb-8" style="background-color: #5f849c;" aria-hidden="true"></div>
-                <h2 id="contact-heading" class="text-4xl font-bold mb-6 heading-font" style="color: #fefefe;">Let's Create Something Amazing</h2>
-                <p class="text-xl mb-12 max-w-2xl mx-auto leading-relaxed" style="color: #dae4eb;">Ready to bring your vision to life? Let's discuss your project and explore how we can work together to create something meaningful.</p>
-                <div class="flex justify-center">
-                    <button onclick="openContact()" class="px-10 py-4 font-semibold transition-all elegant-border rounded-xl" style="background-color: transparent; color: #dae4eb; border-color: #dae4eb;" onmouseover="this.style.backgroundColor='#dae4eb'; this.style.color='#23424c'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#dae4eb'" aria-label="Send a general inquiry">Say Hello</button>
-                </div>
+<section id="contact" class="py-20 relative" style="background-color: #23424c;" aria-labelledby="contact-heading">
+    <div class="max-w-4xl mx-auto px-6 text-center relative">
+        <div class="fade-in">
+            <div class="w-24 h-1 mx-auto mb-8" style="background-color: #5f849c;" aria-hidden="true"></div>
+            <h2 id="contact-heading" class="text-4xl font-bold mb-6 heading-font" style="color: #fefefe;">Let's Create Something Amazing</h2>
+            <p class="text-xl mb-12 max-w-2xl mx-auto leading-relaxed" style="color: #dae4eb;">Ready to bring your vision to life? Let's discuss your project and explore how we can work together to create something meaningful.</p>
+            <div class="flex justify-center">
+                <a href="mailto:livarkema@gmail.com" class="px-10 py-4 font-semibold transition-all elegant-border rounded-xl" style="background-color: transparent; color: #dae4eb; border-color: #dae4eb;" onmouseover="this.style.backgroundColor='#dae4eb'; this.style.color='#23424c'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#dae4eb'" aria-label="Send a general inquiry">Say Hello</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="py-16" style="background-color: #393831;">
