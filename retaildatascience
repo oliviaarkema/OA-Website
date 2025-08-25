@@ -15,13 +15,13 @@
   <meta property="og:title" content="Retail Data Science: Basket Size, Composition and Co-Occurrence Patterns | Olivia Arkema" />
   <meta property="og:description" content="Market Basket Analysis & Splash Effect Modeling: Optimizing Retail Marketing ROI with Co-Occurrence Insights" />
   <meta property="og:url" content="https://oliviaarkema.com/retaildatascience" />
-  <meta property="og:image" content="https://oliviaarkema.com/assets/featured.jpg" />
+  <meta property="og:image" content="https://oliviaarkema.com/cart_image.jpg" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Blog Post Title | Olivia Arkema" />
-  <meta name="twitter:description" content="Social-friendly summary." />
-  <meta name="twitter:image" content="https://oliviaarkema.com/assets/featured.jpg" />
+  <meta name="twitter:title" content="Retail Data Science: Basket Size, Composition and Co-Occurrence Patterns | Olivia Arkema" />
+  <meta name="twitter:description" content="Market Basket Analysis & Splash Effect Modeling: Optimizing Retail Marketing ROI with Co-Occurrence Insights" />
+  <meta name="twitter:image" content="https://oliviaarkema.com/cart_image.jpg" />
 
   <!-- Tailwind + Typography -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -128,6 +128,105 @@
         </div>
       </section>
     </article>
+    <h1>Project Summary: Shopping Basket &ldquo;Splash&rdquo; &amp; Composition Analysis</h1>
+
+    <section>
+      <h2>Quick Summary</h2>
+      <p>
+        This project explores <strong>basket composition</strong> and <strong>&ldquo;splash effects&rdquo;</strong> in retail shopping data. The goal is to determine which products act as
+        &ldquo;anchors&rdquo; &mdash; items that, when purchased, are associated with larger baskets or higher-value co-purchases. By identifying these anchors, marketing recruitment dollars can be allocated more efficiently toward customers or product categories that generate higher ROI through expanded basket depth.
+      </p>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Methodology</h2>
+
+      <h3>1. Data Sourcing</h3>
+      <ul>
+        <li>Open datasets such as <strong>Instacart Online Grocery Shopping</strong>, <strong>UCI Online Retail</strong>, or <strong>synthetic basket data</strong> are used.</li>
+        <li>Transaction-level data includes <strong>Transaction ID, Customer ID, Product ID/Category, Quantity, and Price</strong>.</li>
+      </ul>
+
+      <h3>2. Data Preparation</h3>
+      <ul>
+        <li>Transform raw transactions into <strong>basket-level views</strong> (one row per transaction).</li>
+        <li>Encode product presence using binary flags (1 = purchased, 0 = not purchased).</li>
+        <li>Aggregate product sales frequencies to identify candidate anchors.</li>
+      </ul>
+
+      <h3>3. Anchor Selection</h3>
+      <p>Anchors are chosen using a hybrid approach:</p>
+      <ul>
+        <li><strong>Frequency-based:</strong> Top N most common items/categories.</li>
+        <li><strong>Value-based:</strong> High-revenue or high-margin products.</li>
+        <li><strong>Association-based:</strong> Items with strong co-occurrence patterns (high lift/support).</li>
+      </ul>
+
+      <h3>4. Basket Composition Analysis</h3>
+      <p>For each anchor:</p>
+      <ul>
+        <li>Calculate <strong>average basket size</strong> (number of distinct items).</li>
+        <li>Calculate <strong>average basket value</strong> (sum of prices).</li>
+        <li>Compare across anchors to see which lead to larger or more valuable baskets.</li>
+      </ul>
+
+      <h3>5. Splash (Co-Occurrence) Analysis</h3>
+      <ul>
+        <li>Build a <strong>co-occurrence matrix</strong> of anchor products vs. secondary products.</li>
+        <li>Compute <strong>probability of co-purchase</strong> and <strong>lift ratios</strong>.</li>
+        <li>Visualize with <strong>heatmaps</strong> or network graphs to show strongest splash effects.</li>
+      </ul>
+
+      <h3>6. Targeting Framework</h3>
+      <ul>
+        <li>
+          Define <strong>Expected Value (EV)</strong> per anchor product:
+          <br />
+          <code>EV = P(purchase) × Avg Basket Value − Acquisition Cost</code>
+        </li>
+        <li>Rank products/customers by EV to prioritize recruitment or promotions.</li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Results (Placeholders)</h2>
+
+      <h3>Top Anchors Identified</h3>
+      <ul>
+        <li>Example: Milk, Bread, Diapers, Wine.</li>
+      </ul>
+
+      <h3>Basket Composition Metrics</h3>
+      <ul>
+        <li>Milk &rarr; Avg basket size = <em>X</em>, Avg basket value = &dollar;<em>Y</em>.</li>
+        <li>Wine &rarr; Avg basket size = <em>X</em>, Avg basket value = &dollar;<em>Y</em>.</li>
+      </ul>
+
+      <h3>Splash Insights</h3>
+      <ul>
+        <li>P(Bread | Milk) = <em>__</em>%.</li>
+        <li>P(Baby Wipes | Diapers) = <em>__</em>%.</li>
+        <li>P(Cheese | Wine) = <em>__</em>%.</li>
+      </ul>
+
+      <h3>Targeting Recommendations</h3>
+      <ul>
+        <li>Focus marketing on <em>___</em>, as they lead to the highest splash-adjusted ROI.</li>
+        <li>Deprioritize <em>___</em>, as they produce smaller standalone baskets.</li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section>
+      <p>
+        Would you like me to make this into a <strong>ready-to-run project template</strong> (e.g., Jupyter Notebook with placeholders for data + code), so you can directly plug in one of the open datasets and generate the results section?
+      </p>
+    </section>
   </main>
 
   <!-- ===== FOOTER (matches homepage layout/colors) ===== -->
