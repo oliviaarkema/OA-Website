@@ -104,10 +104,10 @@
           “Let whitespace and typography do the heavy lifting.”
         </blockquote>
 
-        <h1>Shopping Basket &ldquo;Splash&rdquo; &amp; Composition Analysis</h1>
+        <h1><strong>Shopping Basket &ldquo;Splash&rdquo; &amp; Composition Analysis</strong></h1>
         <br>
         <section>
-          <h2>Quick Summary</h2>
+          <h2><strong>Quick Summary</strong></h2>
           <p>
             This project explores <strong>basket composition</strong> and <strong>&ldquo;splash effects&rdquo;</strong> in retail shopping data. The goal is to determine which products act as
             &ldquo;anchors&rdquo; &mdash; items that, when purchased, are associated with larger baskets or higher-value co-purchases. By identifying these anchors, marketing recruitment dollars can be allocated more efficiently toward customers or product categories that generate higher ROI through expanded basket depth.
