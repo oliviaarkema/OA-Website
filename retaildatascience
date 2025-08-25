@@ -81,19 +81,19 @@
     <article class="max-w-3xl mx-auto bg-white rounded-xl subtle-shadow elegant-border px-6 sm:px-8 py-8 md:py-10">
       <!-- Centered Title -->
       <header class="mb-6 text-center">
-        <p class="uppercase tracking-wide text-sm" style="color:#9e9383;">Category Name</p>
+        <p class="uppercase tracking-wide text-sm" style="color:#9e9383;">DATA SCIENCE</p>
         <h1 class="heading-font text-3xl md:text-4xl font-bold mt-1" style="color:#23424c;">
-          Blog Post Title That’s Clear & Compelling
+          Retail Data Science: Basket Size, Composition and Co-Occurrence Patterns
         </h1>
         <div class="mt-3 text-sm flex items-center justify-center gap-2" style="color:#9e9383;">
           <span>By Olivia Arkema</span><span>•</span>
-          <time datetime="2025-08-18">August 18, 2025</time>
+          <time datetime="2025-08-25">August 25, 2025</time>
         </div>
       </header>
 
       <!-- Centered Featured Image -->
       <figure class="my-6">
-        <img src="https://via.placeholder.com/1600x900" alt="Describe the featured image" class="rounded-lg border-2 mx-auto subtle-shadow" style="border-color:#5f849c;" />
+        <img href="cart_image.jpg" alt="Shopping Basket Composition Analysis (Instacart Dataset)" class="rounded-lg border-2 mx-auto subtle-shadow" style="border-color:#5f849c;" />
         <figcaption class="text-center mt-2 text-sm" style="color:#9e9383;">Image by <a href="https://pixabay.com/users/alexas_fotos-686414/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1080836">Alexa</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1080836">Pixabay</a></figcaption>
       </figure>
 
