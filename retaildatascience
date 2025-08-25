@@ -182,12 +182,14 @@
           <ul>
             <li>Example: Milk, Bread, Diapers, Wine.</li>
           </ul>
-    
+          <br>
+
           <h3>Basket Composition Metrics</h3>
           <ul>
             <li>Milk &rarr; Avg basket size = <em>X</em>, Avg basket value = &dollar;<em>Y</em>.</li>
             <li>Wine &rarr; Avg basket size = <em>X</em>, Avg basket value = &dollar;<em>Y</em>.</li>
           </ul>
+          <br>
     
           <h3>Splash Insights</h3>
           <ul>
@@ -195,6 +197,7 @@
             <li>P(Baby Wipes | Diapers) = <em>__</em>%.</li>
             <li>P(Cheese | Wine) = <em>__</em>%.</li>
           </ul>
+          <br>
     
           <h3>Targeting Recommendations</h3>
           <ul>
@@ -204,21 +207,13 @@
         </section>
     
         <hr />
-    
-        <section>
-          <p>
-            Would you like me to make this into a <strong>ready-to-run project template</strong> (e.g., Jupyter Notebook with placeholders for data + code), so you can directly plug in one of the open datasets and generate the results section?
-          </p>
-        </section>
-
-
       </div>
 
       <!-- Optional: Tags / Share (no prev/next) -->
       <section class="mt-8 flex flex-wrap items-center justify-between gap-3">
         <div class="flex flex-wrap gap-2">
-          <span class="px-3 py-1 rounded-full text-sm" style="background:#dae4eb; color:#23424c;">Tag One</span>
-          <span class="px-3 py-1 rounded-full text-sm" style="background:#dae4eb; color:#23424c;">Tag Two</span>
+          <span class="px-3 py-1 rounded-full text-sm" style="background:#dae4eb; color:#23424c;">Data Analysis</span>
+          <span class="px-3 py-1 rounded-full text-sm" style="background:#dae4eb; color:#23424c;">Projects</span>
         </div>
         <div class="text-sm" style="color:#9e9383;">
         <a id="shareCopy" class="underline" href="#" aria-label="Copy link to clipboard">Share</a>
