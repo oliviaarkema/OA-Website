@@ -100,9 +100,7 @@
       <!-- Body -->
       <div class="prose max-w-none">
 
-        <blockquote class="my-6 border-l-4 pl-4 italic" style="border-color:#5f849c; color:#5f849c;">
-          “Let whitespace and typography do the heavy lifting.”
-        </blockquote>
+
 
         <h1><strong>Shopping Basket &ldquo;Splash&rdquo; &amp; Composition Analysis</strong></h1>
         <br>
@@ -114,9 +112,14 @@
           </p>
           <br>
         </section>
-    
         <hr />
-    
+
+        <blockquote class="my-6 border-l-4 pl-4 italic" style="border-color:#5f849c; color:#5f849c;">
+          “The secret of successful retailing is to give your customers what they want. And really, if you think about it from your point of view as a customer, you want everything: a wide assortment of good quality merchandise; the lowest possible prices; guaranteed satisfaction with what you buy; friendly, knowledgeable service; convenient hours; free parking; a pleasant shopping experience.”
+       -Sam Walton
+        </blockquote>
+
+
         <section>
           <h2>Methodology</h2>
     
