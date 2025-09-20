@@ -12,14 +12,14 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Retail Data Science: Basket Size, Composition and Co-Occurrence Patterns | Olivia Arkema" />
+  <meta property="og:title" content="Instacart Data Science: Basket Size, Composition and Co-Occurrence Patterns | Olivia Arkema" />
   <meta property="og:description" content="Market Basket Analysis & Splash Effect Modeling: Optimizing Retail Marketing ROI with Co-Occurrence Insights" />
   <meta property="og:url" content="https://oliviaarkema.com/retaildatascience" />
   <meta property="og:image" content="https://oliviaarkema.com/cart_image.jpg" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Retail Data Science: Basket Size, Composition and Co-Occurrence Patterns | Olivia Arkema" />
+  <meta name="twitter:title" content="Instacart Data Science: Basket Size, Composition and Co-Occurrence Patterns | Olivia Arkema" />
   <meta name="twitter:description" content="Market Basket Analysis & Splash Effect Modeling: Optimizing Retail Marketing ROI with Co-Occurrence Insights" />
   <meta name="twitter:image" content="https://oliviaarkema.com/cart_image.jpg" />
 
@@ -88,7 +88,7 @@
       <header class="mb-6 text-center">
         <p class="uppercase tracking-wide text-sm" style="color:#9e9383;">DATA SCIENCE</p>
         <h1 class="heading-font text-3xl md:text-4xl font-bold mt-1" style="color:#23424c;">
-          Retail Data Science: Basket Size, Composition and Co-Occurrence Patterns
+          Instacart Data Science: Basket Size, Composition and Co-Occurrence Patterns
         </h1>
         <div class="mt-3 text-sm flex items-center justify-center gap-2" style="color:#9e9383;">
           <span>By Olivia Arkema</span><span>•</span>
@@ -178,16 +178,6 @@
             <li>Visualize with <strong>heatmaps</strong> or network graphs to show strongest splash effects.</li>
           </ul>
           <br>
-    
-          <h3>6. Targeting Framework</h3>
-          <ul>
-            <li>
-              Define <strong>Expected Value (EV)</strong> per anchor product:
-              <br />
-              <code>EV = P(purchase) × Avg Basket Value − Acquisition Cost</code>
-            </li>
-            <li>Rank products/customers by EV to prioritize recruitment or promotions.</li>
-          </ul>
           <br>
         </section>
     
@@ -196,7 +186,7 @@
         <!-- ============ RESULTS (FINAL) ============ -->
         <section id="results">
           <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-            <h2 class="m-0">Results</h2>
+            <h2 class="m-0" style="border-color:#5f849c; color:#5f849c;">Results</h2>
             <!-- R script download (update href to your file path) -->
             <a href="retail_basket_analysis.R" download
                class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm bg-accent text-white subtle-shadow hover:opacity-90"
@@ -243,6 +233,7 @@
 
           <!-- Product & assortment -->
           <h3 class="mt-8">Product &amp; Assortment Strategy</h3>
+          <br>
           <div class="overflow-x-auto rounded-lg border subtle-shadow mb-3" style="border-color:#dae4eb;">
             <table class="min-w-full text-sm">
               <thead>
@@ -261,7 +252,7 @@
               </tbody>
             </table>
           </div>
-          <p class="mt-2"><strong>Concentration:</strong> Top 20 products drive <strong>10.3%</strong> of line items; top 100 capture <strong>23.1%</strong> of total volume. <br/><strong>Recommendation:</strong> Feature hero SKUs in search banners and guarantee availability &mdash; these products are basket drivers. Maintain depth in high-frequency SKUs.</p>
+          <p class="mt-2"><strong>Concentration:</strong> Top 20 products drive <strong>10.3%</strong> of line items; top 100 capture <strong>23.1%</strong> of total volume. <br/><br><strong>Recommendation:</strong> Feature hero SKUs in search banners and guarantee availability &mdash; these products are basket drivers. Maintain depth in high-frequency SKUs.</p>
 
           <!-- Cross-sell & bundling -->
           <h3 class="mt-8">Cross-Sell &amp; Bundling</h3>
@@ -276,6 +267,7 @@
             <li><strong>By Lift:</strong> Yellow Onions &rarr; Original Lager (Lift &asymp; 44)</li>
             <li><strong>By Confidence:</strong> Yellow Onions &rarr; Banana (29%), Large Lemon (14.7%), Organic Baby Spinach (13.8%)</li>
           </ul>
+          <br>
           <p class="mt-2"><strong>Recommendation:</strong> Bundle fresh produce (bananas, spinach, lemons) with staple onions in recipe kits; explore discovery bundles (e.g., produce + beverages) based on high-lift but niche pairs.</p>
 
           <!-- Category & department -->
