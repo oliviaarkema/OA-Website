@@ -122,11 +122,21 @@
 
         <section>
           <h2>Methodology</h2>
-    
           <h3>1. Data Sourcing</h3>
+          
           <ul>
-            <li>Open datasets such as <strong>Instacart Online Grocery Shopping</strong>, <strong>UCI Online Retail</strong>, or <strong>synthetic basket data</strong> are used.</li>
-            <li>Transaction-level data includes <strong>Transaction ID, Customer ID, Product ID/Category, Quantity, and Price</strong>.</li>
+            <li>
+              The dataset used is 
+              <strong>
+                <a href="https://www.kaggle.com/datasets/psparks/instacart-market-basket-analysis?resource=download" target="_blank">
+                  Instacart Market Basket Analysis
+                </a>
+              </strong>, along with optional synthetic basket data or UCI Online Retail for comparison if needed.
+            </li>
+            <li>
+              Transaction-level records include 
+              <strong>Transaction ID, Customer ID, Product ID/Category, Quantity, and Price</strong>.
+            </li>
           </ul>
           <br>
     
