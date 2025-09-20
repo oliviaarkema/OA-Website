@@ -136,7 +136,7 @@
                 <a href="https://www.kaggle.com/datasets/psparks/instacart-market-basket-analysis?resource=download" target="_blank">
                   Instacart Market Basket Analysis
                 </a>
-              </strong>, along with optional synthetic basket data or UCI Online Retail for comparison if needed.
+              </strong> from Kaggle, a Google-owned data science community with example datasets. The data sourced and utilized for this analysis is purely experimental and does not reflect real data.
             </li>
             <li>
               Transaction-level records include 
