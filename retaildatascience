@@ -33,6 +33,11 @@
     .elegant-border { border: 2px solid #5f849c; }
     .text-accent { color:#5f849c; }
     .bg-accent { background-color:#5f849c; }
+    /* Placeholder skeletons for charts/images */
+    .ph-skeleton {
+      background: repeating-linear-gradient(90deg, #f2eee7, #f2eee7 12px, #ece7de 12px, #ece7de 24px);
+      border: 1px dashed #c9c0b3;
+    }
   </style>
 </head>
 
@@ -187,38 +192,154 @@
         </section>
     
         <hr />
-    
-        <section>
-          <h2>Results (Placeholders)</h2>
-    
-          <h3>Top Anchors Identified</h3>
-          <ul>
-            <li>Example: Milk, Bread, Diapers, Wine.</li>
-          </ul>
-          <br>
 
-          <h3>Basket Composition Metrics</h3>
-          <ul>
-            <li>Milk &rarr; Avg basket size = <em>X</em>, Avg basket value = &dollar;<em>Y</em>.</li>
-            <li>Wine &rarr; Avg basket size = <em>X</em>, Avg basket value = &dollar;<em>Y</em>.</li>
+        <!-- ============ RESULTS (FINAL) ============ -->
+        <section id="results">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <h2 class="m-0">Results</h2>
+            <!-- R script download (update href to your file path) -->
+            <a href="retail_basket_analysis.R" download
+               class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm bg-accent text-white subtle-shadow hover:opacity-90"
+               aria-label="Download full R script for this analysis">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1M12 12v9m0-9l-3 3m3-3l3 3M12 3v9"/>
+              </svg>
+              Download R Script
+            </a>
+          </div>
+
+          <!-- Headline metrics -->
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+            <div class="rounded-lg border p-4 subtle-shadow" style="border-color:#dae4eb;">
+              <div class="text-xs uppercase tracking-wide" style="color:#9e9383;">Scale</div>
+              <div class="text-2xl font-semibold mt-1" style="color:#23424c;">3.2M</div>
+              <div class="text-sm mt-1" style="color:#9e9383;">Prior orders analyzed</div>
+            </div>
+            <div class="rounded-lg border p-4 subtle-shadow" style="border-color:#dae4eb;">
+              <div class="text-xs uppercase tracking-wide" style="color:#9e9383;">Users / Products</div>
+              <div class="text-2xl font-semibold mt-1" style="color:#23424c;">206K / 49.7K</div>
+              <div class="text-sm mt-1" style="color:#9e9383;">Unique users / products</div>
+            </div>
+            <div class="rounded-lg border p-4 subtle-shadow" style="border-color:#dae4eb;">
+              <div class="text-xs uppercase tracking-wide" style="color:#9e9383;">Avg Basket Size</div>
+              <div class="text-2xl font-semibold mt-1" style="color:#23424c;">10.1</div>
+              <div class="text-sm mt-1" style="color:#9e9383;">Median 8; 4.9% single-item</div>
+            </div>
+            <div class="rounded-lg border p-4 subtle-shadow" style="border-color:#dae4eb;">
+              <div class="text-xs uppercase tracking-wide" style="color:#9e9383;">Reorder Behavior</div>
+              <div class="text-2xl font-semibold mt-1" style="color:#23424c;">59%</div>
+              <div class="text-sm mt-1" style="color:#9e9383;">Median cycle 7 days (avg 10.7)</div>
+            </div>
+          </div>
+
+          <!-- Timing & engagement -->
+          <h3 class="mt-8">Timing &amp; Engagement</h3>
+          <ul class="list-disc pl-6">
+            <li><strong>Peak Day:</strong> Sunday (17.3% of orders)</li>
+            <li><strong>Lowest Day:</strong> Thursday (12.5% of orders)</li>
+            <li><strong>Peak Hour:</strong> 10 AM (8.5% of orders)</li>
           </ul>
-          <br>
-    
-          <h3>Splash Insights</h3>
-          <ul>
-            <li>P(Bread | Milk) = <em>__</em>%.</li>
-            <li>P(Baby Wipes | Diapers) = <em>__</em>%.</li>
-            <li>P(Cheese | Wine) = <em>__</em>%.</li>
+          <p class="mt-2"><strong>Recommendation:</strong> Schedule push notifications and promotions on <strong>Sunday mornings</strong> and reinforce mid-week traffic with <strong>Thursday specials</strong>.</p>
+
+          <!-- Product & assortment -->
+          <h3 class="mt-8">Product &amp; Assortment Strategy</h3>
+          <div class="overflow-x-auto rounded-lg border subtle-shadow mb-3" style="border-color:#dae4eb;">
+            <table class="min-w-full text-sm">
+              <thead>
+                <tr style="background:#f6f2ec; color:#23424c;">
+                  <th class="text-left px-4 py-3">Top Products</th>
+                  <th class="text-left px-4 py-3">Order Count</th>
+                  <th class="text-left px-4 py-3">Role</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-t" style="border-color:#efe9df;"><td class="px-4 py-3">Banana</td><td class="px-4 py-3">472K</td><td class="px-4 py-3">Basket driver</td></tr>
+                <tr class="border-t" style="border-color:#efe9df;"><td class="px-4 py-3">Bag of Organic Bananas</td><td class="px-4 py-3">379K</td><td class="px-4 py-3">Basket driver</td></tr>
+                <tr class="border-t" style="border-color:#efe9df;"><td class="px-4 py-3">Organic Strawberries</td><td class="px-4 py-3">265K</td><td class="px-4 py-3">Basket driver</td></tr>
+                <tr class="border-t" style="border-color:#efe9df;"><td class="px-4 py-3">Organic Baby Spinach</td><td class="px-4 py-3">242K</td><td class="px-4 py-3">Basket driver</td></tr>
+                <tr class="border-t" style="border-color:#efe9df;"><td class="px-4 py-3">Organic Hass Avocado</td><td class="px-4 py-3">214K</td><td class="px-4 py-3">Basket driver</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="mt-2"><strong>Concentration:</strong> Top 20 products drive <strong>10.3%</strong> of line items; top 100 capture <strong>23.1%</strong> of total volume. <br/><strong>Recommendation:</strong> Feature hero SKUs in search banners and guarantee availability &mdash; these products are basket drivers. Maintain depth in high-frequency SKUs.</p>
+
+          <!-- Cross-sell & bundling -->
+          <h3 class="mt-8">Cross-Sell &amp; Bundling</h3>
+          <p class="mb-2"><strong>High-Lift Pairs</strong> (from <em>top_pairs_by_lift.csv</em>):</p>
+          <ul class="list-disc pl-6">
+            <li>Blueberries &harr; Regular Sliced Bacon (Lift &asymp; 57)</li>
+            <li>Blueberries &harr; Jamaican Allspice (Lift &asymp; 57)</li>
+            <li>Blueberries &harr; Orange Liqueur (Lift &asymp; 57)</li>
           </ul>
-          <br>
-    
-          <h3>Targeting Recommendations</h3>
-          <ul>
-            <li>Focus marketing on <em>___</em>, as they lead to the highest splash-adjusted ROI.</li>
-            <li>Deprioritize <em>___</em>, as they produce smaller standalone baskets.</li>
+          <p class="mt-3"><strong>Anchor Recommendations:</strong></p>
+          <ul class="list-disc pl-6">
+            <li><strong>By Lift:</strong> Yellow Onions &rarr; Original Lager (Lift &asymp; 44)</li>
+            <li><strong>By Confidence:</strong> Yellow Onions &rarr; Banana (29%), Large Lemon (14.7%), Organic Baby Spinach (13.8%)</li>
           </ul>
+          <p class="mt-2"><strong>Recommendation:</strong> Bundle fresh produce (bananas, spinach, lemons) with staple onions in recipe kits; explore discovery bundles (e.g., produce + beverages) based on high-lift but niche pairs.</p>
+
+          <!-- Category & department -->
+          <h3 class="mt-8">Category &amp; Department Insights</h3>
+          <ul class="list-disc pl-6">
+            <li><strong>Department Penetration:</strong> Produce (75%), Dairy &amp; Eggs (68%), Beverages (45%)</li>
+            <li><strong>Cross-Department Synergy:</strong> Alcohol + Other (Lift &asymp; 3.1), Alcohol + Pets (Lift &asymp; 2.5)</li>
+            <li><strong>Aisle Hotspots:</strong> Fresh Fruits (56%), Fresh Vegetables (44%), Packaged Vegetables &amp; Fruits (37%)</li>
+          </ul>
+          <p class="mt-2"><strong>Recommendation:</strong> Promote Produce + Dairy pairings (e.g., fruit + yogurt). Leverage alcohol cross-sell potential with pet or “other” categories for curated lifestyle bundles.</p>
+
+          <!-- Loyalty & reorder -->
+          <h3 class="mt-8">Loyalty &amp; Reorder Programs</h3>
+          <p><strong>Replenishment:</strong> With a <strong>59%</strong> reorder rate and top SKUs (bananas, spinach, strawberries) recurring heavily, there’s strong scope for auto-replenishment.</p>
+          <p class="mt-2"><strong>Recommendation:</strong> Offer subscription boxes or reorder reminders for high-frequency fresh items; trigger nudges around the <strong>7–10 day</strong> median cycle.</p>
+
+          <!-- Implementation roadmap -->
+          <h3 class="mt-8">Implementation Roadmap</h3>
+          <div class="grid md:grid-cols-3 gap-4">
+            <div class="rounded-lg border p-4 subtle-shadow" style="border-color:#dae4eb;">
+              <h4 class="m-0" style="color:#23424c;">Quick Wins (0–1 month)</h4>
+              <ul class="list-disc pl-6 mt-2">
+                <li>Launch “Frequently Bought Together” widgets (Blueberries + Bacon, Onions + Bananas).</li>
+                <li>Target push notifications for <strong>Sunday 10 AM</strong>.</li>
+              </ul>
+            </div>
+            <div class="rounded-lg border p-4 subtle-shadow" style="border-color:#dae4eb;">
+              <h4 class="m-0" style="color:#23424c;">Mid-Term (1–3 months)</h4>
+              <ul class="list-disc pl-6 mt-2">
+                <li>Homepage redesign: feature <strong>Produce &amp; Dairy</strong>.</li>
+                <li>Introduce produce–dairy recipe bundles and discovery promos around unusual high-lift pairs.</li>
+              </ul>
+            </div>
+            <div class="rounded-lg border p-4 subtle-shadow" style="border-color:#dae4eb;">
+              <h4 class="m-0" style="color:#23424c;">Long-Term (3–6 months)</h4>
+              <ul class="list-disc pl-6 mt-2">
+                <li>Subscription program for high-reorder fresh items.</li>
+                <li>Category-level recommender leveraging co-occurrence matrix.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Visualizations (placeholders) -->
+          <h3 class="mt-8">Visualizations</h3>
+          <div class="grid md:grid-cols-2 gap-4">
+            <figure class="rounded-lg ph-skeleton h-56 flex items-center justify-center text-center text-sm italic subtle-shadow">
+              <span>Chart Placeholder: Co-occurrence Heatmap (Top 20 Products)</span>
+            </figure>
+            <figure class="rounded-lg ph-skeleton h-56 flex items-center justify-center text-center text-sm italic subtle-shadow">
+              <span>Chart Placeholder: Network Graph (Anchor → Secondary Links)</span>
+            </figure>
+            <figure class="rounded-lg ph-skeleton h-56 flex items-center justify-center text-center text-sm italic subtle-shadow">
+              <span>Chart Placeholder: Orders by Day/Hour (Sunday &amp; 10 AM peaks)</span>
+            </figure>
+            <figure class="rounded-lg ph-skeleton h-56 flex items-center justify-center text-center text-sm italic subtle-shadow">
+              <span>Chart Placeholder: Department Penetration (Produce, Dairy &amp; Eggs, Beverages)</span>
+            </figure>
+            <figure class="rounded-lg ph-skeleton h-56 flex items-center justify-center text-center text-sm italic subtle-shadow md:col-span-2">
+              <span>Chart Placeholder: Coverage Curve (Top 20 = 10.3%, Top 100 = 23.1%)</span>
+            </figure>
+          </div>
         </section>
-    
+        <!-- ============ /RESULTS ============ -->
+
         <hr />
       </div>
 
@@ -297,7 +418,7 @@
      style="position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(8px);
             background:#5f849c;color:#fff;padding:.6rem .9rem;border-radius:9999px;
             box-shadow:0 8px 24px rgba(0,0,0,.12);font-size:.95rem;
-            opacity:0;transition:opacity .2s ease, transform .2s ease;z-index:60;">
+            opacity:0;transition:opacity .2s ease, transform .2s ease;z-index:60%;">
   Link copied
 </div>
 <script>
