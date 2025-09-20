@@ -96,11 +96,20 @@
         </div>
       </header>
 
-      <!-- Centered Featured Image -->
-      <figure class="my-6">
-        <img src="cart_image.jpg" alt="Shopping Basket Composition Analysis (Instacart Dataset)" class="rounded-lg border-2 mx-auto subtle-shadow" style="border-color:#5f849c;" />
-        <figcaption class="text-center mt-2 text-sm" style="color:#9e9383;">Image by <a href="https://pixabay.com/users/alexas_fotos-686414/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1080836">Alexa</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1080836">Pixabay</a></figcaption>
-      </figure>
+<!-- Centered Featured Image -->
+<figure class="my-6">
+  <img
+    src="cart_image.jpg"
+    alt="Shopping Basket Composition Analysis (Instacart Dataset)"
+    class="rounded-lg border-2 mx-auto subtle-shadow grayscale hover:grayscale-0 transition"
+    style="border-color:#5f849c;"
+  />
+  <figcaption class="text-center mt-2 text-sm" style="color:#9e9383;">
+    Image by <a href="https://pixabay.com/users/alexas_fotos-686414/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1080836">Alexa</a>
+    from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1080836">Pixabay</a>
+  </figcaption>
+</figure>
+
 
       <!-- Body -->
       <div class="prose max-w-none">
