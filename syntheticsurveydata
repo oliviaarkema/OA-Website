@@ -4,7 +4,7 @@
   <!-- ===== SEO (edit these) ===== -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title><!-- 60–65 chars -->The Next Frontier or Fool’s Gold? The Future of Synthetic Survey Data | Olivia Arkema</title>
+  <title>The Next Frontier or Fool’s Gold? The Future of Synthetic Survey Data | Olivia Arkema</title>
   <meta name="description" content="In an era obsessed with authenticity, the hottest new trend in research is—ironically—completely fake." />
   <link rel="canonical" href="https://oliviaarkema.com/syntheticsurveydata" />
   <link rel="icon" href="green_bow.png" type="image/png">
@@ -93,7 +93,7 @@
 
       <!-- Centered Featured Image -->
       <figure class="my-6">
-        <img src="synthetic.png" alt="Synthetic Survey Data is a Mystery" class="rounded-lg border-2 mx-auto subtle-shadow" style="border-color:#5f849c;" />
+        <img href="synthetic.png" alt="Synthetic Survey Data is a Mystery" class="rounded-lg border-2 mx-auto subtle-shadow" style="border-color:#5f849c;" />
       </figure>
 
       <!-- Body -->
