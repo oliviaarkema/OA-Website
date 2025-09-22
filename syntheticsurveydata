@@ -15,13 +15,13 @@
   <meta property="og:title" content="The Next Frontier or Fool’s Gold? The Future of Synthetic Survey Data | Olivia Arkema" />
   <meta property="og:description" content="In an era obsessed with authenticity, the hottest new trend in research is—ironically—completely fake." />
   <meta property="og:url" content="https://oliviaarkema.com/blog/your-post-slug" />
-  <meta property="og:image" content="synthetic1.png" />
+  <meta property="og:image" content="synthetic1.jpg" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="The Next Frontier or Fool’s Gold? The Future of Synthetic Survey Data | Olivia Arkema" />
   <meta name="twitter:description" content="In an era obsessed with authenticity, the hottest new trend in research is—ironically—completely fake." />
-  <meta name="twitter:image" content="synthetic1.png" />
+  <meta name="twitter:image" content="synthetic1.jpg" />
 
   <!-- Tailwind + Typography -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -93,7 +93,7 @@
 
       <!-- Centered Featured Image -->
       <figure class="my-6">
-        <img src="web_design_layout.jpg" alt="Is a Facebook Page Enough? Why Your Small Business Needs a Website" class="rounded-lg border-2 mx-auto subtle-shadow" style="border-color:#5f849c;" />
+        <img src="synthetic1.jpg" alt="Fools Gold: Synthetic Survey Data" class="rounded-lg border-2 mx-auto subtle-shadow" style="border-color:#5f849c;" />
         <figcaption class="text-center mt-2 text-sm" style="color:#9e9383;"></figcaption>
       </figure>
 
