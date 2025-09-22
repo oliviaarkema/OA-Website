@@ -93,7 +93,8 @@
 
       <!-- Centered Featured Image -->
       <figure class="my-6">
-        <img src="synthetic1.png" alt="Synthetic Survey Data is a Mystery" class="rounded-lg border-2 mx-auto subtle-shadow" style="border-color:#5f849c;" />
+        <img src="web_design_layout.jpg" alt="Is a Facebook Page Enough? Why Your Small Business Needs a Website" class="rounded-lg border-2 mx-auto subtle-shadow" style="border-color:#5f849c;" />
+        <figcaption class="text-center mt-2 text-sm" style="color:#9e9383;"></figcaption>
       </figure>
 
       <!-- Body -->
