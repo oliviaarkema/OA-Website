@@ -94,7 +94,7 @@
       <!-- Centered Featured Image -->
       <figure class="my-6">
         <img src="synthetic1.jpg" alt="Fools Gold: Synthetic Survey Data" class="rounded-lg border-2 mx-auto subtle-shadow" style="border-color:#5f849c;" />
-        <figcaption class="text-center mt-2 text-sm" style="color:#9e9383;">test</figcaption>
+        <figcaption class="text-center mt-2 text-sm" style="color:#9e9383;"></figcaption>
       </figure>
 
       <!-- Body -->
