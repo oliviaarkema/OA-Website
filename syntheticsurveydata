@@ -202,6 +202,83 @@
         </p>
       </div>
 
+<section id="sources">
+  <h2>Sources & Further Reading</h2>
+  <ul>
+    <li>
+      Rubin, D. B. (1996). 
+      <em>Multiple Imputation After 18+ Years</em>. 
+      Journal of the American Statistical Association.
+      <a href="https://www.jstor.org/stable/2291635" target="_blank" rel="noopener noreferrer">
+        https://www.jstor.org/stable/2291635
+      </a>
+    </li>
+
+    <li>
+      Little, R. J. A., & Rubin, D. B. (2019).
+      <em>Statistical Analysis with Missing Data</em> (3rd ed.).
+      Wiley.
+      <a href="https://www.wiley.com/en-us/Statistical+Analysis+with+Missing+Data%2C+3rd+Edition-p-9780470526798" target="_blank" rel="noopener noreferrer">
+        Publisher Link
+      </a>
+    </li>
+
+    <li>
+      Abowd, J. M., & Schmutte, I. M. (2019).
+      <em>An Economic Analysis of Privacy Protection and Statistical Accuracy</em>.
+      American Economic Review.
+      <a href="https://www.aeaweb.org/articles?id=10.1257/aer.20170627" target="_blank" rel="noopener noreferrer">
+        https://www.aeaweb.org/articles?id=10.1257/aer.20170627
+      </a>
+    </li>
+
+    <li>
+      Xu, L., Skoularidou, M., Cuesta-Infante, A., & Veeramachaneni, K. (2019).
+      <em>Modeling Tabular Data using Conditional GANs</em>.
+      NeurIPS.
+      <a href="https://arxiv.org/abs/1907.00503" target="_blank" rel="noopener noreferrer">
+        https://arxiv.org/abs/1907.00503
+      </a>
+    </li>
+
+    <li>
+      Dwork, C., & Roth, A. (2014).
+      <em>The Algorithmic Foundations of Differential Privacy</em>.
+      Foundations and Trends in Theoretical Computer Science.
+      <a href="https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf" target="_blank" rel="noopener noreferrer">
+        https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf
+      </a>
+    </li>
+
+    <li>
+      AAPOR (2023).
+      <em>Transparency and Data Quality in Survey Research</em>.
+      American Association for Public Opinion Research.
+      <a href="https://www.aapor.org/Standards-Ethics/AAPOR-Code-of-Ethics.aspx" target="_blank" rel="noopener noreferrer">
+        https://www.aapor.org/Standards-Ethics/AAPOR-Code-of-Ethics.aspx
+      </a>
+    </li>
+
+    <li>
+      Office for National Statistics (UK).
+      <em>Guidance on the Use of Synthetic Data</em>.
+      <a href="https://www.ons.gov.uk/aboutus/transparencyandgovernance/datastrategy/syntheticdata" target="_blank" rel="noopener noreferrer">
+        https://www.ons.gov.uk/aboutus/transparencyandgovernance/datastrategy/syntheticdata
+      </a>
+    </li>
+
+    <li>
+      OECD (2021).
+      <em>Enhancing Access to and Sharing of Data</em>.
+      Organisation for Economic Co-operation and Development.
+      <a href="https://www.oecd.org/digital/data/enhancing-access-to-and-sharing-of-data.htm" target="_blank" rel="noopener noreferrer">
+        https://www.oecd.org/digital/data/enhancing-access-to-and-sharing-of-data.htm
+      </a>
+    </li>
+  </ul>
+</section>
+
+
       <section class="mt-8 flex flex-wrap items-center justify-between gap-3">
         <div class="flex flex-wrap gap-2">
           <span class="px-3 py-1 rounded-full text-sm" style="background:#dae4eb; color:#23424c;">Market Research</span>
