@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta http-equiv="refresh" content="0; url=https://oliviaarkema.com/">
+  
+  <title>Redirecting to Olivia Arkema</title>
+  <link rel="icon" href="green_bow.png" type="image/png">
+
+  <script type="text/javascript">
+    // JavaScript backup redirect
+    window.location.href = "https://oliviaarkema.com/";
+  </script>
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; text-align: center; padding-top: 50px; color: #333; }
+    a { color: #5a7d5a; text-decoration: none; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <p>Redirecting you to <a href="https://oliviaarkema.com/">oliviaarkema.com</a>...</p>
+  <p>If you are not redirected automatically, please click the link above.</p>
+</body>
+</html>
