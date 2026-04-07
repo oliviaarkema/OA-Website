@@ -25,11 +25,13 @@ h1,h2,h3 { font-family: 'Noto Serif', serif; }
 <!-- NAV -->
 <nav class="fixed w-full bg-white/90 backdrop-blur z-50">
   <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between">
-    <a href="/" class="font-bold text-xl">OA</a>
+    <div class="font-bold text-xl">OA</div>
     <div class="hidden md:flex space-x-8 text-sm">
-      <a href="/#services">Work</a>
-      <a href="/#featuredwork">Work</a>
-      <a href="/#contact">Contact</a>
+      <a href="#home">Home</a>
+      <a href="#services">Work</a>
+      <a href="#clients">Projects</a>
+      <a href="#featuredwork">Writing</a>
+      <a href="#contact">Contact</a>
     </div>
   </div>
 </nav>
