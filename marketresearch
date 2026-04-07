@@ -111,19 +111,34 @@
   <div class="wrap site-row">
     <a class="brand" href="/">OA</a>
 
-    <!-- Mobile toggle -->
-    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu">
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-      </svg>
-    </button>
-
-    <!-- Links -->
 <!-- NAV -->
 <nav class="fixed w-full bg-white/90 backdrop-blur z-50">
-  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <!-- Logo -->
     <div class="font-bold text-xl">OA</div>
+
+    <!-- Desktop Nav -->
     <div class="hidden md:flex space-x-8 text-sm">
+      <a href="#home">Home</a>
+      <a href="#services">Work</a>
+      <a href="#clients">Projects</a>
+      <a href="#featuredwork">Writing</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hamburger -->
+    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-8 h-8">
+      <span class="block w-5 h-[2px] bg-black mb-1"></span>
+      <span class="block w-5 h-[2px] bg-black mb-1"></span>
+      <span class="block w-5 h-[2px] bg-black"></span>
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden px-6 pb-4">
+    <div class="flex flex-col space-y-4 text-sm">
       <a href="#home">Home</a>
       <a href="#services">Work</a>
       <a href="#clients">Projects</a>
@@ -132,6 +147,15 @@
     </div>
   </div>
 </nav>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});
+</script>
   </div>
 </header>
 
