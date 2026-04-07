@@ -26,16 +26,16 @@ h1,h2,h3 { font-family: 'Noto Serif', serif; }
 <nav class="fixed w-full bg-white/90 backdrop-blur z-50">
   <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 
-    <!-- Logo -->
-    <div class="font-bold text-xl">OA</div>
+    <!-- Logo (goes home) -->
+    <a href="/" class="font-bold text-xl">OA</a>
 
     <!-- Desktop Nav -->
     <div class="hidden md:flex space-x-8 text-sm">
-      <a href="#home">Home</a>
-      <a href="#services">Work</a>
-      <a href="#clients">Projects</a>
-      <a href="#featuredwork">Writing</a>
-      <a href="#contact">Contact</a>
+      <a href="/#home">Home</a>
+      <a href="/#services">Work</a>
+      <a href="/#clients">Projects</a>
+      <a href="/#featuredwork">Writing</a>
+      <a href="/#contact">Contact</a>
     </div>
 
     <!-- Hamburger -->
@@ -48,13 +48,13 @@ h1,h2,h3 { font-family: 'Noto Serif', serif; }
   </div>
 
   <!-- Mobile Menu -->
-  <div id="mobileMenu" class="hidden md:hidden px-6 pb-4">
-    <div class="flex flex-col space-y-4 text-sm">
-      <a href="#home">Home</a>
-      <a href="#services">Work</a>
-      <a href="#clients">Projects</a>
-      <a href="#featuredwork">Writing</a>
-      <a href="#contact">Contact</a>
+  <div id="mobileMenu" class="hidden md:hidden px-6 pb-4 border-t border-[#e6dfd7]">
+    <div class="flex flex-col space-y-4 text-sm pt-4">
+      <a href="/#home">Home</a>
+      <a href="/#services">Work</a>
+      <a href="/#clients">Projects</a>
+      <a href="/#featuredwork">Writing</a>
+      <a href="/#contact">Contact</a>
     </div>
   </div>
 </nav>
