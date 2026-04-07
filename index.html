@@ -6,26 +6,29 @@
 
 <title>Olivia Arkema | Web Design, Data & Research</title>
 
-<meta name="description" content="Web design, data analysis, and research-driven digital projects. I build clean, effective websites and help turn data into clear decisions.">
+<meta name="description" content="Web design, data analysis, and research-driven digital projects. Clean, effective websites for small businesses.">
 
-<meta name="keywords" content="web design, web developer, small business website design, UX, data analysis, market research, portfolio, Michigan web designer">
+<meta name="keywords" content="web design, web developer, small business website, UX, data analysis, market research, portfolio">
 
-<meta name="author" content="Olivia Arkema">
-<meta name="robots" content="index, follow">
+<link rel="icon" href="green_bow.png">
 
-<link rel="icon" href="green_bow.png" type="image/png">
-<link rel="canonical" href="https://oliviaarkema.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+body { font-family: 'Inter', sans-serif; background:#ebe3db; }
+h1,h2,h3 { font-family: 'Noto Serif', serif; }
+</style>
 </head>
 
-<body class="bg-[#ebe3db]">
+<body>
 
 <!-- NAV -->
-<nav class="fixed w-full z-50 bg-white/90 backdrop-blur">
+<nav class="fixed w-full bg-white/90 backdrop-blur z-50">
   <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between">
-    <div class="font-bold text-2xl">OA</div>
-    <div class="hidden md:flex space-x-6 text-sm">
+    <div class="font-bold text-xl">OA</div>
+    <div class="hidden md:flex space-x-8 text-sm">
       <a href="#home">Home</a>
       <a href="#services">Work</a>
       <a href="#clients">Projects</a>
@@ -38,13 +41,13 @@
 <!-- HERO -->
 <section id="home" class="min-h-screen flex items-center bg-[#23424c] text-white text-center">
   <div class="max-w-4xl mx-auto px-6">
-    
+
     <h1 class="text-5xl md:text-7xl font-bold mb-6">
       Make it clear. Make it useful.
     </h1>
 
-    <p class="text-lg md:text-xl text-[#dae4eb] mb-10 max-w-2xl mx-auto">
-      Web design, data, and research-driven work focused on clarity, usability, and real outcomes.
+    <p class="text-lg text-[#dae4eb] mb-10 max-w-xl mx-auto">
+      Web design, data, and research-driven work focused on clarity and real outcomes.
     </p>
 
     <div class="flex flex-col md:flex-row gap-4 justify-center">
@@ -64,16 +67,16 @@
   </div>
 </section>
 
-<!-- PROJECTS / CLIENTS -->
-<section id="clients" class="py-20">
+<!-- PROJECTS -->
+<section id="clients" class="py-24">
   <div class="max-w-6xl mx-auto px-6 text-center">
-    
-    <h2 class="text-4xl font-bold mb-4">Selected Projects</h2>
-    <p class="text-[#9e9383] mb-12">
+
+    <h2 class="text-4xl mb-4">Selected Projects</h2>
+    <p class="text-[#8a8175] mb-12">
       Websites and digital work for small businesses and independent projects.
     </p>
 
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
 
       <a href="https://www.sdgprecisionag.com">
         <img src="SDG_logo.png" class="mx-auto max-h-20">
@@ -100,38 +103,32 @@
 </section>
 
 <!-- WORK -->
-<section id="services" class="py-20 bg-white">
-  <div class="max-w-6xl mx-auto px-6 text-center">
+<section id="services" class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
 
-    <h2 class="text-4xl font-bold mb-10">What I Do</h2>
+    <h2 class="text-4xl text-center mb-16">What I Do</h2>
 
-    <div class="grid md:grid-cols-3 gap-8 text-left">
+    <div class="grid md:grid-cols-3 gap-12">
 
       <a href="webdev">
-        <div>
-          <h3 class="font-semibold mb-2">Web Design & Development</h3>
-          <p class="text-[#9e9383]">
-            Fast, simple websites built to convert and be easy to maintain.
-          </p>
-        </div>
+        <h3 class="text-xl mb-2">Web Design & Development</h3>
+        <p class="text-[#8a8175]">
+          Fast, simple websites built to convert and be easy to maintain.
+        </p>
       </a>
 
       <a href="marketresearch">
-        <div>
-          <h3 class="font-semibold mb-2">Research & Data</h3>
-          <p class="text-[#9e9383]">
-            Survey design, analysis, and insight generation.
-          </p>
-        </div>
+        <h3 class="text-xl mb-2">Research & Data</h3>
+        <p class="text-[#8a8175]">
+          Survey design, data analysis, and insight generation.
+        </p>
       </a>
 
       <a href="marketing">
-        <div>
-          <h3 class="font-semibold mb-2">Strategy</h3>
-          <p class="text-[#9e9383]">
-            Positioning, messaging, and practical execution.
-          </p>
-        </div>
+        <h3 class="text-xl mb-2">Strategy</h3>
+        <p class="text-[#8a8175]">
+          Positioning, messaging, and practical execution.
+        </p>
       </a>
 
     </div>
@@ -139,27 +136,70 @@
 </section>
 
 <!-- FEATURED WORK -->
-<section id="featuredwork" class="py-20">
-  <div class="max-w-6xl mx-auto px-6 text-center">
+<section id="featuredwork" class="py-28 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
 
-    <h2 class="text-4xl font-bold mb-4">Work & Writing</h2>
-    <p class="text-[#9e9383] mb-12">
-      Projects, analysis, and ideas.
-    </p>
+    <div class="mb-16 text-center">
+      <h2 class="text-4xl mb-4">Work & Writing</h2>
+      <p class="text-[#8a8175]">
+        A mix of research, digital work, and ideas.
+      </p>
+    </div>
 
-    <!-- keep your existing grid here unchanged -->
-    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+
+      <a href="improve-google-rankings-without-seo-experts" class="group">
+        <p class="text-xs mb-2 text-[#8a8175]">BLOG</p>
+        <h3 class="mb-2 group-hover:opacity-70">
+          10 Ways to Improve Your Google Rankings
+        </h3>
+      </a>
+
+      <a href="paid-advertising-mistakes-small-businesses" class="group">
+        <p class="text-xs mb-2 text-[#8a8175]">BLOG</p>
+        <h3 class="mb-2 group-hover:opacity-70">
+          5 Common Paid Advertising Mistakes
+        </h3>
+      </a>
+
+      <a href="retaildatascience" class="group">
+        <p class="text-xs mb-2 text-[#8a8175]">PROJECT</p>
+        <h3 class="mb-2 group-hover:opacity-70">
+          Retail Data Science Project
+        </h3>
+      </a>
+
+      <a href="syntheticsurveydata" class="group">
+        <p class="text-xs mb-2 text-[#8a8175]">WRITING</p>
+        <h3 class="mb-2 group-hover:opacity-70">
+          Synthetic Survey Data
+        </h3>
+      </a>
+
+      <div>
+        <p class="text-xs mb-2 text-[#8a8175]">BLOG</p>
+        <h3>UX Metrics That Matter</h3>
+      </div>
+
+      <a href="socialdesirabilityandai" class="group">
+        <p class="text-xs mb-2 text-[#8a8175]">WRITING</p>
+        <h3 class="group-hover:opacity-70">
+          Social Desirability and AI
+        </h3>
+      </a>
+
+    </div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="py-20 bg-[#23424c] text-white text-center">
-  <div class="max-w-3xl mx-auto px-6">
+<section id="contact" class="py-24 bg-[#23424c] text-white text-center">
+  <div class="max-w-2xl mx-auto px-6">
 
-    <h2 class="text-3xl font-bold mb-6">Get in touch</h2>
+    <h2 class="text-3xl mb-6">Get in touch</h2>
 
     <p class="text-[#dae4eb] mb-10">
-      Working on something and need help with a website or data? Reach out.
+      Need a website or help making sense of data? Reach out.
     </p>
 
     <a href="mailto:livarkema@gmail.com" class="px-8 py-3 border border-white">
