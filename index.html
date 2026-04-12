@@ -6,25 +6,19 @@
 
 <title>Olivia Arkema | Web Design, Data & Research</title>
 
-<meta name="description" content="Web design, data analysis, and research-driven digital projects.">
-
 <link rel="icon" href="green_bow.png">
 
-<!-- Tailwind (layout only) -->
 <script src="https://cdn.tailwindcss.com"></script>
-
-<!-- Your CSS -->
 <link rel="stylesheet" href="style.css">
 
-<!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Prata&display=swap" rel="stylesheet">
 
 </head>
 
-<body class="font-[Inter]">
+<body class="font-[Inter] bg-[#f4efe9] text-[#2f2f2f]">
 
 <!-- NAV -->
-<header id="navbar" class="fixed w-full z-50">
+<header id="navbar" class="fixed w-full z-50 bg-white/90 backdrop-blur border-b border-[#e6dfd7]">
   <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 
     <div class="text-xl font-bold">OA</div>
@@ -41,8 +35,8 @@
 
   </div>
 
-  <div id="mobileMenu" class="hidden px-6 pb-4">
-    <div class="flex flex-col space-y-4 text-sm">
+  <div id="mobileMenu" class="hidden px-6 pb-4 bg-white border-t border-[#e6dfd7]">
+    <div class="flex flex-col space-y-4 text-sm pt-4">
       <a href="#home">Home</a>
       <a href="#services">Work</a>
       <a href="#clients">Projects</a>
@@ -59,7 +53,7 @@ menuBtn.addEventListener("click", () => {
 </script>
 
 <!-- HERO -->
-<section id="home" class="section-1 min-h-screen flex items-center text-center">
+<section id="home" class="min-h-screen flex items-center text-center bg-[#0d3921] text-white">
   <div class="max-w-4xl mx-auto px-6">
 
     <h1 class="text-5xl md:text-7xl mb-6 font-[Prata]">
@@ -71,16 +65,16 @@ menuBtn.addEventListener("click", () => {
     </p>
 
     <div class="flex flex-col md:flex-row gap-4 justify-center">
-      <button class="button">View Work</button>
-      <button class="button">Contact</button>
-      <a href="OliviaArkemaResume2026.pdf" class="button">Resume</a>
+      <button class="px-8 py-3 rounded-lg border border-white">View Work</button>
+      <button class="px-8 py-3 rounded-lg bg-[#c6d86d] text-[#0d3921] font-medium">Contact</button>
+      <a href="OliviaArkemaResume2026.pdf" class="px-8 py-3 rounded-lg border border-white/70">Resume</a>
     </div>
 
   </div>
 </section>
 
 <!-- CLIENTS -->
-<section id="clients" class="section-3 py-20">
+<section id="clients" class="py-20 bg-[#f4efe9]">
   <div class="max-w-6xl mx-auto px-6 text-center">
 
     <h2 class="text-4xl mb-4 font-[Prata]">Selected Projects</h2>
@@ -97,14 +91,14 @@ menuBtn.addEventListener("click", () => {
       <div class="logo-grid-item">Better People Care</div>
       <div class="logo-grid-item">Papa’s Place</div>
 
-      <div class="logo-grid-item opacity-40">Next</div>
+      <div class="logo-grid-item opacity-40 border border-dashed p-4 rounded-lg">Next</div>
 
     </div>
   </div>
 </section>
 
 <!-- SERVICES -->
-<section id="services" class="section-5 py-24">
+<section id="services" class="py-24 bg-white">
   <div class="max-w-6xl mx-auto px-6 text-center">
 
     <h2 class="text-4xl mb-6 font-[Prata]">What I Do</h2>
@@ -115,17 +109,17 @@ menuBtn.addEventListener("click", () => {
 
     <div class="grid md:grid-cols-3 gap-8">
 
-      <a href="webdev" class="card p-8 text-left">
+      <a href="webdev" class="card p-8 rounded-xl text-left">
         <h3 class="mb-3">Web Design & Development</h3>
         <p>Clean, fast websites designed to convert.</p>
       </a>
 
-      <a href="marketresearch" class="card p-8 text-left">
+      <a href="marketresearch" class="card p-8 rounded-xl text-left">
         <h3 class="mb-3">Research & Data</h3>
         <p>Insights that lead to better decisions.</p>
       </a>
 
-      <a href="marketing" class="card p-8 text-left">
+      <a href="marketing" class="card p-8 rounded-xl text-left">
         <h3 class="mb-3">Marketing Strategy</h3>
         <p>Clear positioning and messaging.</p>
       </a>
@@ -136,24 +130,24 @@ menuBtn.addEventListener("click", () => {
 </section>
 
 <!-- FEATURED -->
-<section id="featuredwork" class="section-3 py-24">
+<section id="featuredwork" class="py-24 bg-[#f4efe9]">
   <div class="max-w-6xl mx-auto px-6 text-center">
 
     <h2 class="text-4xl mb-10 font-[Prata]">Work & Writing</h2>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      <div class="blog-grid-item p-6 text-left">
+      <div class="blog-grid-item p-6 rounded-xl text-left">
         <p class="date-posted">BLOG</p>
         <h3>10 Ways to Improve Your Google Rankings</h3>
       </div>
 
-      <div class="blog-grid-item p-6 text-left">
+      <div class="blog-grid-item p-6 rounded-xl text-left">
         <p class="date-posted">BLOG</p>
         <h3>5 Common Paid Advertising Mistakes</h3>
       </div>
 
-      <div class="blog-grid-item p-6 text-left">
+      <div class="blog-grid-item p-6 rounded-xl text-left">
         <p class="date-posted">PROJECT</p>
         <h3>Retail Data Science Project</h3>
       </div>
@@ -164,7 +158,7 @@ menuBtn.addEventListener("click", () => {
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section-4 py-20 text-center">
+<section id="contact" class="py-20 bg-[#1f3a4a] text-white text-center">
   <div class="max-w-2xl mx-auto px-6">
 
     <h2 class="text-3xl mb-6 font-[Prata]">Get in touch</h2>
@@ -173,18 +167,12 @@ menuBtn.addEventListener("click", () => {
       Need a website or help making sense of data?
     </p>
 
-    <a href="mailto:livarkema@gmail.com" class="button">
+    <a href="mailto:livarkema@gmail.com" class="px-8 py-3 rounded-lg bg-[#c6d86d] text-[#0d3921] font-medium">
       Email me
     </a>
 
   </div>
 </section>
-
-<script>
-function scrollToSection(id){
-  document.getElementById(id).scrollIntoView({behavior:'smooth'});
-}
-</script>
 
 </body>
 </html>
