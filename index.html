@@ -12,7 +12,6 @@
 <link rel="stylesheet" href="style.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Prata&display=swap" rel="stylesheet">
-
 </head>
 
 <body class="font-[Inter] bg-[#f4efe9] text-[#2f2f2f]">
@@ -21,7 +20,7 @@
 <header id="navbar" class="fixed w-full z-50 bg-white/90 backdrop-blur border-b border-[#e6dfd7]">
   <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 
-    <div class="text-xl font-bold">OA</div>
+    <a href="#home" class="text-xl font-bold">OA</a>
 
     <nav class="hidden md:flex space-x-8 text-sm">
       <a href="#home">Home</a>
@@ -65,9 +64,17 @@ menuBtn.addEventListener("click", () => {
     </p>
 
     <div class="flex flex-col md:flex-row gap-4 justify-center">
-      <button class="px-8 py-3 rounded-lg border border-white">View Work</button>
-      <button class="px-8 py-3 rounded-lg bg-[#c6d86d] text-[#0d3921] font-medium">Contact</button>
-      <a href="OliviaArkemaResume2026.pdf" class="px-8 py-3 rounded-lg border border-white/70">Resume</a>
+      <button onclick="scrollToSection('featuredwork')" class="px-8 py-3 rounded-lg border border-white">
+        View Work
+      </button>
+
+      <button onclick="scrollToSection('contact')" class="px-8 py-3 rounded-lg bg-[#c6d86d] text-[#0d3921] font-medium">
+        Contact
+      </button>
+
+      <a href="OliviaArkemaResume2026.pdf" target="_blank" class="px-8 py-3 rounded-lg border border-white/70">
+        Resume
+      </a>
     </div>
 
   </div>
@@ -83,15 +90,31 @@ menuBtn.addEventListener("click", () => {
       Websites and digital work for small businesses and independent projects.
     </p>
 
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
 
-      <div class="logo-grid-item">SDG</div>
-      <div class="logo-grid-item">DAWN</div>
-      <div class="logo-grid-item">Country Dairy</div>
-      <div class="logo-grid-item">Better People Care</div>
-      <div class="logo-grid-item">Papa’s Place</div>
+      <a href="https://www.sdgprecisionag.com" class="logo-grid-item">
+        <img src="SDG_logo.png" class="max-h-14 mx-auto">
+      </a>
 
-      <div class="logo-grid-item opacity-40 border border-dashed p-4 rounded-lg">Next</div>
+      <a href="https://www.thedawnmethod.com" class="logo-grid-item">
+        <img src="dawn.png" class="max-h-14 mx-auto">
+      </a>
+
+      <a href="https://www.countrydairy.com" class="logo-grid-item">
+        <img src="cd-logo.png" class="max-h-14 mx-auto">
+      </a>
+
+      <a href="https://www.betterpeoplecare.com" class="logo-grid-item">
+        <img src="bpc.png" class="max-h-14 mx-auto">
+      </a>
+
+      <a href="https://www.papasplaceloveland.com" class="logo-grid-item">
+        <img src="green_bow.png" class="max-h-14 mx-auto">
+      </a>
+
+      <div class="opacity-40 border border-dashed p-4 rounded-lg">
+        Next Project
+      </div>
 
     </div>
   </div>
@@ -137,20 +160,35 @@ menuBtn.addEventListener("click", () => {
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      <div class="blog-grid-item p-6 rounded-xl text-left">
+      <a href="improve-google-rankings-without-seo-experts" class="blog-grid-item p-6 rounded-xl text-left">
         <p class="date-posted">BLOG</p>
         <h3>10 Ways to Improve Your Google Rankings</h3>
-      </div>
+      </a>
+
+      <a href="paid-advertising-mistakes-small-businesses" class="blog-grid-item p-6 rounded-xl text-left">
+        <p class="date-posted">BLOG</p>
+        <h3>5 Common Paid Advertising Mistakes</h3>
+      </a>
+
+      <a href="retaildatascience" class="blog-grid-item p-6 rounded-xl text-left">
+        <p class="date-posted">PROJECT</p>
+        <h3>Retail Data Science Project</h3>
+      </a>
+
+      <a href="syntheticsurveydata" class="blog-grid-item p-6 rounded-xl text-left">
+        <p class="date-posted">WRITING</p>
+        <h3>Synthetic Survey Data</h3>
+      </a>
 
       <div class="blog-grid-item p-6 rounded-xl text-left">
         <p class="date-posted">BLOG</p>
-        <h3>5 Common Paid Advertising Mistakes</h3>
+        <h3>UX Metrics That Matter</h3>
       </div>
 
-      <div class="blog-grid-item p-6 rounded-xl text-left">
-        <p class="date-posted">PROJECT</p>
-        <h3>Retail Data Science Project</h3>
-      </div>
+      <a href="socialdesirabilityandai" class="blog-grid-item p-6 rounded-xl text-left">
+        <p class="date-posted">WRITING</p>
+        <h3>Social Desirability and AI</h3>
+      </a>
 
     </div>
 
@@ -173,6 +211,12 @@ menuBtn.addEventListener("click", () => {
 
   </div>
 </section>
+
+<script>
+function scrollToSection(id){
+  document.getElementById(id).scrollIntoView({behavior:'smooth'});
+}
+</script>
 
 </body>
 </html>
