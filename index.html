@@ -8,58 +8,46 @@
 
 <meta name="description" content="Web design, data analysis, and research-driven digital projects. Clean, effective websites for small businesses.">
 
-<meta name="keywords" content="web design, web developer, small business website, UX, data analysis, market research, portfolio">
-
 <link rel="icon" href="green_bow.png">
 
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
-<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Prata&display=swap" rel="stylesheet">
 
-<style>
-body { font-family: 'Inter', sans-serif; background:#ebe3db; }
-h1,h2,h3 { font-family: 'Noto Serif', serif; }
-</style>
 </head>
 
 <body>
 
 <!-- NAV -->
-<nav class="fixed w-full bg-white/90 backdrop-blur z-50">
+<header id="navbar">
   <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 
-    <!-- Logo -->
     <div class="font-bold text-xl">OA</div>
 
-    <!-- Desktop Nav -->
-    <div class="hidden md:flex space-x-8 text-sm">
+    <nav class="hidden md:flex space-x-8 text-sm">
       <a href="#home">Home</a>
       <a href="#services">Work</a>
       <a href="#clients">Projects</a>
       <a href="#featuredwork">Writing</a>
       <a href="#contact">Contact</a>
-    </div>
+    </nav>
 
-    <!-- Hamburger -->
-    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-8 h-8">
-      <span class="block w-5 h-[2px] bg-black mb-1"></span>
-      <span class="block w-5 h-[2px] bg-black mb-1"></span>
-      <span class="block w-5 h-[2px] bg-black"></span>
-    </button>
+    <div id="menuBtn" class="hamburger-menu md:hidden">
+      ☰
+    </div>
 
   </div>
 
-  <!-- Mobile Menu -->
-  <div id="mobileMenu" class="hidden md:hidden px-6 pb-4">
-    <div class="flex flex-col space-y-4 text-sm">
-      <a href="#home">Home</a>
-      <a href="#services">Work</a>
-      <a href="#clients">Projects</a>
-      <a href="#featuredwork">Writing</a>
-      <a href="#contact">Contact</a>
-    </div>
+  <div id="mobileMenu" class="dropdown-menu hidden">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Work</a></li>
+      <li><a href="#clients">Projects</a></li>
+      <li><a href="#featuredwork">Writing</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </div>
-</nav>
+</header>
 
 <script>
 const menuBtn = document.getElementById("menuBtn");
@@ -71,27 +59,25 @@ menuBtn.addEventListener("click", () => {
 </script>
 
 <!-- HERO -->
-<section id="home" class="min-h-screen flex items-center bg-[#23424c] text-white text-center">
-  <div class="max-w-4xl mx-auto px-6">
+<section id="home" class="section-1 single-column">
+  <div class="content text-center">
 
-    <h1 class="text-5xl md:text-7xl font-bold mb-6">
-      Make it clear. Make it useful.
-    </h1>
+    <h1>Make it clear. Make it useful.</h1>
 
-    <p class="text-lg text-[#dae4eb] mb-10 max-w-xl mx-auto">
+    <p>
       Web design, data, and research-driven work focused on clarity and real outcomes.
     </p>
 
-    <div class="flex flex-col md:flex-row gap-4 justify-center">
-      <button onclick="scrollToSection('featuredwork')" class="px-8 py-3 border border-white">
+    <div>
+      <button class="button" onclick="scrollToSection('featuredwork')">
         View Work
       </button>
 
-      <button onclick="scrollToSection('contact')" class="px-8 py-3 bg-[#5f849c]">
+      <button class="button" onclick="scrollToSection('contact')">
         Contact
       </button>
 
-      <a href="OliviaArkemaResume2026.pdf" target="_blank" class="px-8 py-3 border border-[#dae4eb]">
+      <a href="OliviaArkemaResume2026.pdf" target="_blank" class="button">
         Resume
       </a>
     </div>
@@ -99,270 +85,133 @@ menuBtn.addEventListener("click", () => {
   </div>
 </section>
 
-<section id="clients" class="py-24">
-  <div class="max-w-6xl mx-auto px-6 text-center">
+<!-- CLIENTS -->
+<section id="clients" class="section-3">
+  <div class="content text-center">
 
-    <h2 class="text-4xl mb-4" style="font-family: 'Noto Serif', serif;">
-      Selected Projects
-    </h2>
+    <h2>Selected Projects</h2>
 
-    <p class="text-[#8a8175] mb-16 max-w-xl mx-auto">
+    <p>
       Websites and digital work for small businesses and independent projects.
     </p>
 
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10 items-start">
+    <div class="logo-grid">
 
-      <!-- CLIENT -->
-      <a href="https://www.sdgprecisionag.com" class="group">
-        <div class="h-20 flex items-center justify-center mb-4">
-          <img src="SDG_logo.png" alt="SDG Precision Agriculture" class="max-h-16 mx-auto">
-        </div>
-        <p class="text-sm text-[#5f5a52] group-hover:opacity-70">
-          SDG Precision Agriculture
-        </p>
-      </a>
+      <div class="logo-grid-item">
+        <a href="https://www.sdgprecisionag.com">SDG Precision Agriculture</a>
+      </div>
 
-      <!-- CLIENT -->
-      <a href="https://www.thedawnmethod.com" class="group">
-        <div class="h-20 flex items-center justify-center mb-4">
-          <img src="dawn.png" alt="The DAWN Method" class="max-h-16 mx-auto">
-        </div>
-        <p class="text-sm text-[#5f5a52] group-hover:opacity-70">
-          The DAWN Method
-        </p>
-      </a>
+      <div class="logo-grid-item">
+        <a href="https://www.thedawnmethod.com">The DAWN Method</a>
+      </div>
 
-      <!-- CLIENT -->
-      <a href="https://www.countrydairy.com" class="group">
-        <div class="h-20 flex items-center justify-center mb-4">
-          <img src="cd-logo.png" alt="Country Dairy" class="max-h-16 mx-auto">
-        </div>
-        <p class="text-sm text-[#5f5a52] group-hover:opacity-70">
-          Country Dairy
-        </p>
-      </a>
+      <div class="logo-grid-item">
+        <a href="https://www.countrydairy.com">Country Dairy</a>
+      </div>
 
-      <!-- CLIENT -->
-      <a href="https://www.betterpeoplecare.com" class="group">
-        <div class="h-20 flex items-center justify-center mb-4">
-          <img src="bpc.png" alt="Better People Care" class="max-h-16 mx-auto">
-        </div>
-        <p class="text-sm text-[#5f5a52] group-hover:opacity-70">
-          Better People Care
-        </p>
-      </a>
+      <div class="logo-grid-item">
+        <a href="https://www.betterpeoplecare.com">Better People Care</a>
+      </div>
 
-      <!-- CLIENT -->
-      <a href="https://www.papasplaceloveland.com" class="group">
-        <div class="h-20 flex items-center justify-center mb-4">
-          <img src="green_bow.png" alt="Papa's Place Loveland" class="max-h-16 mx-auto">
-        </div>
-        <p class="text-sm text-[#5f5a52] group-hover:opacity-70">
-          Papa’s Place (Coming Soon)
-        </p>
-      </a>
+      <div class="logo-grid-item">
+        <a href="https://www.papasplaceloveland.com">Papa’s Place</a>
+      </div>
 
-      <!-- PLACEHOLDER -->
-      <div class="opacity-40">
-        <div class="h-20 flex items-center justify-center mb-4 border border-dashed border-[#cfc7bd]">
-          <span class="text-xs text-[#8a8175]">Your logo</span>
-        </div>
-        <p class="text-sm text-[#8a8175]">
-          Next Project
-        </p>
+      <div class="logo-grid-item">
+        Next Project
       </div>
 
     </div>
+
   </div>
 </section>
 
-<section id="services" class="py-28 bg-white">
-  <div class="max-w-6xl mx-auto px-6">
+<!-- SERVICES -->
+<section id="services" class="section-5">
+  <div class="content text-center">
 
-    <!-- Header -->
-    <div class="text-center mb-20">
-      <h2 class="text-4xl md:text-5xl mb-4" style="font-family: 'Noto Serif', serif;">
-        What I Do
-      </h2>
-      <p class="text-[#8a8175] max-w-xl mx-auto">
-        Clear, practical work across web, data, and strategy.
-      </p>
-    </div>
+    <h2>What I Do</h2>
 
-    <!-- Cards -->
-    <div class="grid md:grid-cols-3 gap-10">
+    <p>
+      Clear, practical work across web, data, and strategy.
+    </p>
 
-      <!-- WEB -->
-      <a href="webdev" class="group">
-        <div class="h-full bg-[#faf8f6] border border-[#e6dfd7] rounded-xl p-8 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-md">
+    <div class="blog-grid">
 
-          <div class="h-1 w-10 bg-[#5f849c] mb-6"></div>
-
-          <h3 class="text-xl mb-3 group-hover:opacity-80">
-            Web Design & Development
-          </h3>
-
-          <p class="text-[#8a8175] leading-relaxed mb-6">
-            Clean, fast websites designed to convert and easy to maintain.
-          </p>
-
-          <span class="text-sm text-[#5f849c]">
-            See more →
-          </span>
-
-        </div>
+      <a href="webdev" class="blog-grid-item">
+        <h3>Web Design & Development</h3>
+        <p>Clean, fast websites designed to convert.</p>
       </a>
 
-      <!-- DATA -->
-      <a href="marketresearch" class="group">
-        <div class="h-full bg-[#faf8f6] border border-[#e6dfd7] rounded-xl p-8 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-md">
-
-          <div class="h-1 w-10 bg-[#5f849c] mb-6"></div>
-
-          <h3 class="text-xl mb-3 group-hover:opacity-80">
-            Research & Data
-          </h3>
-
-          <p class="text-[#8a8175] leading-relaxed mb-6">
-            Survey design, data analysis, and insights that lead to better decisions.
-          </p>
-
-          <span class="text-sm text-[#5f849c]">
-            Learn more →
-          </span>
-
-        </div>
+      <a href="marketresearch" class="blog-grid-item">
+        <h3>Research & Data</h3>
+        <p>Insights that lead to better decisions.</p>
       </a>
 
-      <!-- STRATEGY -->
-      <a href="marketing" class="group">
-        <div class="h-full bg-[#faf8f6] border border-[#e6dfd7] rounded-xl p-8 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-md">
-
-          <div class="h-1 w-10 bg-[#5f849c] mb-6"></div>
-
-          <h3 class="text-xl mb-3 group-hover:opacity-80">
-            Marketing Strategy
-          </h3>
-
-          <p class="text-[#8a8175] leading-relaxed mb-6">
-            Clear positioning and messaging that helps ideas gain traction.
-          </p>
-
-          <span class="text-sm text-[#5f849c]">
-            See approach →
-          </span>
-
-        </div>
+      <a href="marketing" class="blog-grid-item">
+        <h3>Marketing Strategy</h3>
+        <p>Clear positioning and messaging.</p>
       </a>
 
     </div>
+
   </div>
 </section>
 
-<section id="featuredwork" class="py-28 bg-white">
-  <div class="max-w-6xl mx-auto px-6">
+<!-- FEATURED WORK -->
+<section id="featuredwork" class="section-3">
+  <div class="content text-center">
 
-    <div class="mb-20 text-center">
-      <h2 class="text-4xl mb-4" style="font-family: 'Noto Serif', serif;">
-        Work & Writing
-      </h2>
-      <p class="text-[#8a8175]">
-        A mix of research, digital work, and ideas.
-      </p>
-    </div>
+    <h2>Work & Writing</h2>
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+    <div class="blog-grid">
 
-      <!-- CARD -->
-      <a href="improve-google-rankings-without-seo-experts" class="group">
-        <div class="bg-[#faf8f6] border border-[#e6dfd7] rounded-xl p-6 h-full transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-md">
-          <p class="text-xs tracking-widest text-[#8a8175] mb-3">BLOG</p>
-          <h3 class="text-lg leading-snug mb-3 group-hover:opacity-80">
-            10 Ways to Improve Your Google Rankings
-          </h3>
-          <p class="text-sm text-[#8a8175]">
-            Practical ways to improve search visibility without relying on experts.
-          </p>
-        </div>
+      <a href="improve-google-rankings-without-seo-experts" class="blog-grid-item">
+        <p class="date-posted">BLOG</p>
+        <h3>10 Ways to Improve Your Google Rankings</h3>
       </a>
 
-      <!-- CARD -->
-      <a href="paid-advertising-mistakes-small-businesses" class="group">
-        <div class="bg-[#faf8f6] border border-[#e6dfd7] rounded-xl p-6 h-full transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-md">
-          <p class="text-xs tracking-widest text-[#8a8175] mb-3">BLOG</p>
-          <h3 class="text-lg leading-snug mb-3 group-hover:opacity-80">
-            5 Common Paid Advertising Mistakes
-          </h3>
-          <p class="text-sm text-[#8a8175]">
-            Where small businesses waste money — and how to fix it.
-          </p>
-        </div>
+      <a href="paid-advertising-mistakes-small-businesses" class="blog-grid-item">
+        <p class="date-posted">BLOG</p>
+        <h3>5 Common Paid Advertising Mistakes</h3>
       </a>
 
-      <!-- CARD -->
-      <a href="retaildatascience" class="group">
-        <div class="bg-[#faf8f6] border border-[#e6dfd7] rounded-xl p-6 h-full transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-md">
-          <p class="text-xs tracking-widest text-[#8a8175] mb-3">PROJECT</p>
-          <h3 class="text-lg leading-snug mb-3 group-hover:opacity-80">
-            Retail Data Science Project
-          </h3>
-          <p class="text-sm text-[#8a8175]">
-            Using data to inform product strategy and customer behavior.
-          </p>
-        </div>
+      <a href="retaildatascience" class="blog-grid-item">
+        <p class="date-posted">PROJECT</p>
+        <h3>Retail Data Science Project</h3>
       </a>
 
-      <!-- CARD -->
-      <a href="syntheticsurveydata" class="group">
-        <div class="bg-[#faf8f6] border border-[#e6dfd7] rounded-xl p-6 h-full transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-md">
-          <p class="text-xs tracking-widest text-[#8a8175] mb-3">WRITING</p>
-          <h3 class="text-lg leading-snug mb-3 group-hover:opacity-80">
-            Synthetic Survey Data
-          </h3>
-          <p class="text-sm text-[#8a8175]">
-            Exploring the tension between authenticity and artificial data.
-          </p>
-        </div>
+      <a href="syntheticsurveydata" class="blog-grid-item">
+        <p class="date-posted">WRITING</p>
+        <h3>Synthetic Survey Data</h3>
       </a>
 
-      <!-- CARD (no link) -->
-      <div class="bg-[#faf8f6] border border-[#e6dfd7] rounded-xl p-6 h-full">
-        <p class="text-xs tracking-widest text-[#8a8175] mb-3">BLOG</p>
-        <h3 class="text-lg leading-snug mb-3">
-          UX Metrics That Matter
-        </h3>
-        <p class="text-sm text-[#8a8175]">
-          Which metrics actually reflect real user experience.
-        </p>
+      <div class="blog-grid-item">
+        <p class="date-posted">BLOG</p>
+        <h3>UX Metrics That Matter</h3>
       </div>
 
-      <!-- CARD -->
-        <div class="bg-[#faf8f6] border border-[#e6dfd7] rounded-xl p-6 h-full transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-md">
-          <p class="text-xs tracking-widest text-[#8a8175] mb-3">WRITING</p>
-          <h3 class="text-lg leading-snug mb-3 group-hover:opacity-80">
-            Social Desirability and AI
-          </h3>
-          <p class="text-sm text-[#8a8175]">
-            Reflections on bias, behavior, and artificial intelligence.
-          </p>
-        </div>
-      </a>
+      <div class="blog-grid-item">
+        <p class="date-posted">WRITING</p>
+        <h3>Social Desirability and AI</h3>
+      </div>
 
     </div>
+
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="py-24 bg-[#23424c] text-white text-center">
-  <div class="max-w-2xl mx-auto px-6">
+<section id="contact" class="section-4">
+  <div class="content text-center">
 
-    <h2 class="text-3xl mb-6">Get in touch</h2>
+    <h2>Get in touch</h2>
 
-    <p class="text-[#dae4eb] mb-10">
+    <p>
       Need a website or help making sense of data? Reach out.
     </p>
 
-    <a href="mailto:livarkema@gmail.com" class="px-8 py-3 border border-white">
+    <a href="mailto:livarkema@gmail.com" class="button">
       Email me
     </a>
 
