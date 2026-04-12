@@ -6,23 +6,28 @@
 
 <title>Olivia Arkema | Web Design, Data & Research</title>
 
-<meta name="description" content="Web design, data analysis, and research-driven digital projects. Clean, effective websites for small businesses.">
+<meta name="description" content="Web design, data analysis, and research-driven digital projects.">
 
 <link rel="icon" href="green_bow.png">
 
+<!-- Tailwind (layout only) -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Your CSS -->
 <link rel="stylesheet" href="style.css">
 
+<!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Prata&display=swap" rel="stylesheet">
 
 </head>
 
-<body>
+<body class="font-[Inter]">
 
 <!-- NAV -->
-<header id="navbar">
+<header id="navbar" class="fixed w-full z-50">
   <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 
-    <div class="font-bold text-xl">OA</div>
+    <div class="text-xl font-bold">OA</div>
 
     <nav class="hidden md:flex space-x-8 text-sm">
       <a href="#home">Home</a>
@@ -32,124 +37,96 @@
       <a href="#contact">Contact</a>
     </nav>
 
-    <div id="menuBtn" class="hamburger-menu md:hidden">
-      ☰
-    </div>
+    <button id="menuBtn" class="md:hidden text-2xl">☰</button>
 
   </div>
 
-  <div id="mobileMenu" class="dropdown-menu hidden">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#services">Work</a></li>
-      <li><a href="#clients">Projects</a></li>
-      <li><a href="#featuredwork">Writing</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <div id="mobileMenu" class="hidden px-6 pb-4">
+    <div class="flex flex-col space-y-4 text-sm">
+      <a href="#home">Home</a>
+      <a href="#services">Work</a>
+      <a href="#clients">Projects</a>
+      <a href="#featuredwork">Writing</a>
+      <a href="#contact">Contact</a>
+    </div>
   </div>
 </header>
 
 <script>
-const menuBtn = document.getElementById("menuBtn");
-const mobileMenu = document.getElementById("mobileMenu");
-
 menuBtn.addEventListener("click", () => {
   mobileMenu.classList.toggle("hidden");
 });
 </script>
 
 <!-- HERO -->
-<section id="home" class="section-1 single-column">
-  <div class="content text-center">
+<section id="home" class="section-1 min-h-screen flex items-center text-center">
+  <div class="max-w-4xl mx-auto px-6">
 
-    <h1>Make it clear. Make it useful.</h1>
+    <h1 class="text-5xl md:text-7xl mb-6 font-[Prata]">
+      Make it clear. Make it useful.
+    </h1>
 
-    <p>
+    <p class="mb-10 max-w-xl mx-auto text-white/80">
       Web design, data, and research-driven work focused on clarity and real outcomes.
     </p>
 
-    <div>
-      <button class="button" onclick="scrollToSection('featuredwork')">
-        View Work
-      </button>
-
-      <button class="button" onclick="scrollToSection('contact')">
-        Contact
-      </button>
-
-      <a href="OliviaArkemaResume2026.pdf" target="_blank" class="button">
-        Resume
-      </a>
+    <div class="flex flex-col md:flex-row gap-4 justify-center">
+      <button class="button">View Work</button>
+      <button class="button">Contact</button>
+      <a href="OliviaArkemaResume2026.pdf" class="button">Resume</a>
     </div>
 
   </div>
 </section>
 
 <!-- CLIENTS -->
-<section id="clients" class="section-3">
-  <div class="content text-center">
+<section id="clients" class="section-3 py-20">
+  <div class="max-w-6xl mx-auto px-6 text-center">
 
-    <h2>Selected Projects</h2>
+    <h2 class="text-4xl mb-4 font-[Prata]">Selected Projects</h2>
 
-    <p>
+    <p class="mb-12 max-w-xl mx-auto text-[#6f6a5f]">
       Websites and digital work for small businesses and independent projects.
     </p>
 
-    <div class="logo-grid">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
 
-      <div class="logo-grid-item">
-        <a href="https://www.sdgprecisionag.com">SDG Precision Agriculture</a>
-      </div>
+      <div class="logo-grid-item">SDG</div>
+      <div class="logo-grid-item">DAWN</div>
+      <div class="logo-grid-item">Country Dairy</div>
+      <div class="logo-grid-item">Better People Care</div>
+      <div class="logo-grid-item">Papa’s Place</div>
 
-      <div class="logo-grid-item">
-        <a href="https://www.thedawnmethod.com">The DAWN Method</a>
-      </div>
-
-      <div class="logo-grid-item">
-        <a href="https://www.countrydairy.com">Country Dairy</a>
-      </div>
-
-      <div class="logo-grid-item">
-        <a href="https://www.betterpeoplecare.com">Better People Care</a>
-      </div>
-
-      <div class="logo-grid-item">
-        <a href="https://www.papasplaceloveland.com">Papa’s Place</a>
-      </div>
-
-      <div class="logo-grid-item">
-        Next Project
-      </div>
+      <div class="logo-grid-item opacity-40">Next</div>
 
     </div>
-
   </div>
 </section>
 
 <!-- SERVICES -->
-<section id="services" class="section-5">
-  <div class="content text-center">
+<section id="services" class="section-5 py-24">
+  <div class="max-w-6xl mx-auto px-6 text-center">
 
-    <h2>What I Do</h2>
+    <h2 class="text-4xl mb-6 font-[Prata]">What I Do</h2>
 
-    <p>
+    <p class="mb-12 max-w-xl mx-auto text-[#6f6a5f]">
       Clear, practical work across web, data, and strategy.
     </p>
 
-    <div class="blog-grid">
+    <div class="grid md:grid-cols-3 gap-8">
 
-      <a href="webdev" class="blog-grid-item">
-        <h3>Web Design & Development</h3>
+      <a href="webdev" class="card p-8 text-left">
+        <h3 class="mb-3">Web Design & Development</h3>
         <p>Clean, fast websites designed to convert.</p>
       </a>
 
-      <a href="marketresearch" class="blog-grid-item">
-        <h3>Research & Data</h3>
+      <a href="marketresearch" class="card p-8 text-left">
+        <h3 class="mb-3">Research & Data</h3>
         <p>Insights that lead to better decisions.</p>
       </a>
 
-      <a href="marketing" class="blog-grid-item">
-        <h3>Marketing Strategy</h3>
+      <a href="marketing" class="card p-8 text-left">
+        <h3 class="mb-3">Marketing Strategy</h3>
         <p>Clear positioning and messaging.</p>
       </a>
 
@@ -158,42 +135,27 @@ menuBtn.addEventListener("click", () => {
   </div>
 </section>
 
-<!-- FEATURED WORK -->
-<section id="featuredwork" class="section-3">
-  <div class="content text-center">
+<!-- FEATURED -->
+<section id="featuredwork" class="section-3 py-24">
+  <div class="max-w-6xl mx-auto px-6 text-center">
 
-    <h2>Work & Writing</h2>
+    <h2 class="text-4xl mb-10 font-[Prata]">Work & Writing</h2>
 
-    <div class="blog-grid">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      <a href="improve-google-rankings-without-seo-experts" class="blog-grid-item">
+      <div class="blog-grid-item p-6 text-left">
         <p class="date-posted">BLOG</p>
         <h3>10 Ways to Improve Your Google Rankings</h3>
-      </a>
-
-      <a href="paid-advertising-mistakes-small-businesses" class="blog-grid-item">
-        <p class="date-posted">BLOG</p>
-        <h3>5 Common Paid Advertising Mistakes</h3>
-      </a>
-
-      <a href="retaildatascience" class="blog-grid-item">
-        <p class="date-posted">PROJECT</p>
-        <h3>Retail Data Science Project</h3>
-      </a>
-
-      <a href="syntheticsurveydata" class="blog-grid-item">
-        <p class="date-posted">WRITING</p>
-        <h3>Synthetic Survey Data</h3>
-      </a>
-
-      <div class="blog-grid-item">
-        <p class="date-posted">BLOG</p>
-        <h3>UX Metrics That Matter</h3>
       </div>
 
-      <div class="blog-grid-item">
-        <p class="date-posted">WRITING</p>
-        <h3>Social Desirability and AI</h3>
+      <div class="blog-grid-item p-6 text-left">
+        <p class="date-posted">BLOG</p>
+        <h3>5 Common Paid Advertising Mistakes</h3>
+      </div>
+
+      <div class="blog-grid-item p-6 text-left">
+        <p class="date-posted">PROJECT</p>
+        <h3>Retail Data Science Project</h3>
       </div>
 
     </div>
@@ -202,13 +164,13 @@ menuBtn.addEventListener("click", () => {
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section-4">
-  <div class="content text-center">
+<section id="contact" class="section-4 py-20 text-center">
+  <div class="max-w-2xl mx-auto px-6">
 
-    <h2>Get in touch</h2>
+    <h2 class="text-3xl mb-6 font-[Prata]">Get in touch</h2>
 
-    <p>
-      Need a website or help making sense of data? Reach out.
+    <p class="mb-8 text-white/80">
+      Need a website or help making sense of data?
     </p>
 
     <a href="mailto:livarkema@gmail.com" class="button">
