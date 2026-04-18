@@ -123,19 +123,27 @@ menuBtn.addEventListener("click", () => {
 </main>
 
 <!-- CONTACT -->
-<section id="contact" class="py-20 bg-[#1f3a4a] text-white text-center">
+<section id="contact" class="py-20 text-white text-center" style="background: var(--secondary-color);">
   <div class="max-w-2xl mx-auto px-6">
 
-    <h2 class="text-3xl mb-6 font-[Prata]">Get in touch</h2>
+    <h2 class="text-3xl mb-6">Get in touch</h2>
 
-    <p class="mb-8 text-white/80">
+    <p class="mb-8" style="color: rgba(255,255,255,0.8);">
       Need a website or help making sense of data?
     </p>
 
-    <a href="mailto:livarkema@gmail.com" class="px-8 py-3 rounded-lg bg-[#c6d86d] text-[#0d3921] font-medium">
+    <a href="mailto:livarkema@gmail.com" class="button primary">
       Email me
     </a>
-  <p>&copy; <span id="year"></span> Olivia Arkema</p>
+
+    <!-- subtle divider -->
+    <div class="mt-12 mb-6" style="height:1px; background: rgba(255,255,255,0.2);"></div>
+
+    <!-- footer text -->
+    <p class="text-sm" style="color: rgba(255,255,255,0.7);">
+      &copy; <span id="year"></span> Olivia Arkema
+    </p>
+
   </div>
 </section>
 
