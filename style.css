@@ -1,16 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Prata&display=swap');
 
 /* ================================
-   COLOR SYSTEM (UPGRADED)
+   COLOR SYSTEM (UNCHANGED)
    ================================ */
 :root{
-  --primary-color: #0d3921;         /* dark green */
-  --secondary-color: #1f3a4a;       /* navy */
-  --tertiary-color: #f4efe9;        /* parchment */
-  --accent-color-1: #5f849c;        /* blue */
-  --accent-color-2: #c6d86d;        /* chartreuse */
-  --accent-color-3: #f2d6d6;        /* light pink */
+  --primary-color: #0d3921;
+  --secondary-color: #1f3a4a;
+  --tertiary-color: #f4efe9;
+  --accent-color-1: #5f849c;
+  --accent-color-2: #c6d86d;
+  --accent-color-3: #f2d6d6;
   --olive-color: #6f7f5f;
 
   --text-dark: #2f2f2f;
@@ -23,28 +24,45 @@
 }
 
 /* ================================
-   BASE
+   BASE (HYBRID TYPOGRAPHY)
    ================================ */
 body {
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(to bottom, #f4efe9, #ebe3db);
+  background-color: var(--tertiary-color);
   color: var(--text-dark);
 }
 
+/* Headings = serif personality */
 h1, h2, h3 {
-  font-family: 'Prata', serif;
+  font-family: 'Noto Serif', serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
 }
 
 /* ================================
-   SECTIONS (MORE CONTRAST)
+   TYPOGRAPHY DETAILS
+   ================================ */
+p, li {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.65;
+  color: var(--text-dark);
+}
+
+small, .text-sm {
+  color: var(--text-muted);
+}
+
+/* ================================
+   SECTIONS (SOLID COLORS)
    ================================ */
 .section-1 {
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background-color: var(--primary-color);
   color: var(--white);
 }
 
 .section-2 {
-  background-color: var(--accent-color-2); /* chartreuse */
+  background-color: var(--accent-color-2);
   color: var(--primary-color);
 }
 
@@ -54,27 +72,27 @@ h1, h2, h3 {
 }
 
 .section-4 {
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background-color: var(--secondary-color);
   color: var(--white);
 }
 
 .section-5 {
-  background-color: var(--tertiary-color);
+  background-color: var(--white);
   color: var(--primary-color);
 }
 
 .section-6 {
-  background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+  background-color: var(--secondary-color);
   color: var(--white);
 }
 
 .section-7 {
-  background-color: var(--accent-color-3); /* light pink */
+  background-color: var(--accent-color-3);
   color: var(--primary-color);
 }
 
 /* ================================
-   NAV + MENU
+   NAV
    ================================ */
 header {
   background-color: rgba(255,255,255,0.9);
@@ -83,30 +101,9 @@ header {
   border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
-.hamburger-menu {
-  color: var(--primary-color);
-}
-
-.dropdown-menu {
-  background-color: var(--primary-color);
-  border: 1px solid var(--accent-color-2);
-}
-
-.dropdown-menu ul li a {
-  color: var(--white);
-}
-
-.dropdown-menu ul li a:hover {
-  color: var(--accent-color-2);
-}
-
 /* ================================
-   TYPOGRAPHY
+   LINKS
    ================================ */
-p, blockquote, li {
-  color: var(--text-dark);
-}
-
 a {
   color: var(--accent-color-1);
   transition: color 0.2s ease;
@@ -117,129 +114,80 @@ a:hover {
 }
 
 /* ================================
-   BUTTONS (MAJOR UPGRADE)
+   BUTTONS (UI = sans serif)
    ================================ */
 button,
 .btn,
 .button {
-  font-family: 'Poiret One', sans-serif;
-  border-radius: 1vh;
-  padding: 2vh 4vw;
+  font-family: 'Inter', sans-serif;
+  border-radius: 10px;
+  padding: 12px 24px;
   transition: all 0.25s ease;
+  border: 1px solid var(--primary-color);
+  background: var(--white);
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+/* Primary CTA */
+.button.primary {
+  background: var(--accent-color-2);
+  color: var(--primary-color);
   border: none;
 }
 
-/* Primary */
-.button,
-.btn {
-  background: linear-gradient(135deg, var(--accent-color-1), var(--secondary-color));
-  color: var(--white);
-}
-
-.button:hover,
-.btn:hover {
+.button:hover {
   transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
-}
-
-/* Outline */
-.section-5-btn {
-  border: 2px solid var(--accent-color-2);
-  color: var(--primary-color);
-}
-
-.section-5-btn:hover {
-  background: var(--accent-color-2);
-}
-
-/* ================================
-   CARDS / GRID ITEMS
-   ================================ */
-.blog-grid-item {
-  background: linear-gradient(145deg, #ffffff, #f7f2ec);
-  border: 1px solid rgba(0,0,0,0.05);
   box-shadow: var(--shadow-sm);
-  transition: all 0.3s ease;
-}
-
-.blog-grid-item:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-md);
-}
-
-.blog-grid-item .date-posted {
-  color: var(--accent-color-1);
 }
 
 /* ================================
-   LOGO GRID
+   CARDS
+   ================================ */
+.card,
+.blog-grid-item {
+  background: var(--white);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.25s ease;
+}
+
+.card:hover,
+.blog-grid-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+/* ================================
+   LOGOS
    ================================ */
 .logo-grid-item {
   transition: transform 0.3s ease;
 }
 
 .logo-grid-item:hover {
-  transform: scale(1.08);
-}
-
-.logo-grid-item .description {
-  background-color: rgba(13,57,33,0.85);
-  color: var(--white);
+  transform: scale(1.05);
 }
 
 /* ================================
    FORMS
    ================================ */
-.form-container {
-  background-color: var(--tertiary-color);
-}
-
 .form-container input,
 .form-container textarea {
   border: 1px solid rgba(0,0,0,0.1);
+  padding: 10px;
 }
 
 .form-container button {
-  background: linear-gradient(135deg, var(--accent-color-1), var(--secondary-color));
-}
-
-.form-container button:hover {
-  filter: brightness(1.1);
-}
-
-/* ================================
-   DIVIDERS / DETAILS
-   ================================ */
-.dynamic-line {
-  background: linear-gradient(to right, transparent, var(--accent-color-1), transparent);
-}
-
-/* ================================
-   BLOG PAGE
-   ================================ */
-.blog-page {
-  background-color: var(--tertiary-color);
-}
-
-.blog-page h2 {
-  color: var(--secondary-color);
-}
-
-/* ================================
-   HERO IMAGE OVERLAY
-   ================================ */
-.section-1.single-column .content {
-  background: rgba(13, 57, 33, 0.6);
+  background: var(--accent-color-2);
+  color: var(--primary-color);
 }
 
 /* ================================
    MOBILE
    ================================ */
 @media (max-width: 768px) {
-
-  body {
-    background: #f4efe9;
-  }
 
   h1 { font-size: 10vw; }
   h2 { font-size: 8vw; }
@@ -249,10 +197,7 @@ button,
     font-size: 4.5vw;
   }
 
-  button,
-  .btn,
-  .button {
+  button {
     font-size: 4vw;
-    padding: 3vh 5vw;
   }
 }
