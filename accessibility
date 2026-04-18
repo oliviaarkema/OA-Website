@@ -1,45 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Discover actionable tips, guides, and insights to help small business owners succeed with marketing, websites, and digital strategies. Simple solutions for big growth!">
-  
-  <title>Marketing & Website Tips for Small Businesses | Insights & Guides</title>
+<title>Olivia Arkema | Web Design, Data & Research</title>
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="green_bow.png" type="image/png">
+<link rel="icon" href="green_bow.png">
 
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet">
 </head>
 
-<body style="background: var(--tertiary-color); color: var(--text-dark);">
+<body class="font-[Inter] bg-[#f4efe9] text-[#2f2f2f]">
 
-<!-- NAV (same as index) -->
-<header id="navbar" class="fixed w-full z-50 backdrop-blur border-b" style="background: rgba(255,255,255,0.9); border-color: rgba(0,0,0,0.05);">
+<!-- NAV -->
+<header id="navbar" class="fixed w-full z-50 bg-white/90 backdrop-blur border-b border-[#e6dfd7]">
   <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 
-    <a href="index.html" class="text-xl font-bold" style="color: var(--primary-color);">OA</a>
+    <a href="#home" class="text-xl font-bold">OA</a>
 
     <nav class="hidden md:flex space-x-8 text-sm">
-      <a href="index.html#home">Home</a>
-      <a href="index.html#services">Work</a>
-      <a href="index.html#clients">Projects</a>
-      <a href="index.html#featuredwork">Writing</a>
-      <a href="index.html#contact">Contact</a>
+      <a href="#home">Home</a>
+      <a href="#services">Work</a>
+      <a href="#clients">Projects</a>
+      <a href="#featuredwork">Writing</a>
+      <a href="#contact">Contact</a>
     </nav>
 
     <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+
   </div>
 
-  <div id="mobileMenu" class="hidden px-6 pb-4 bg-white border-t">
+  <div id="mobileMenu" class="hidden px-6 pb-4 bg-white border-t border-[#e6dfd7]">
     <div class="flex flex-col space-y-4 text-sm pt-4">
-      <a href="index.html#home">Home</a>
-      <a href="index.html#services">Work</a>
-      <a href="index.html#clients">Projects</a>
-      <a href="index.html#featuredwork">Writing</a>
-      <a href="index.html#contact">Contact</a>
+      <a href="#home">Home</a>
+      <a href="#services">Work</a>
+      <a href="#clients">Projects</a>
+      <a href="#featuredwork">Writing</a>
+      <a href="#contact">Contact</a>
     </div>
   </div>
 </header>
@@ -50,19 +51,31 @@ menuBtn.addEventListener("click", () => {
 });
 </script>
 
-<div class="h-24"></div>
+<!-- HERO -->
+<section id="home" class="min-h-screen flex items-center text-center bg-[#1f3a4a] text-white">
+  <div class="max-w-4xl mx-auto px-6">
 
-<!-- HEADER SECTION -->
-<section class="py-20 text-center">
-  <div class="max-w-3xl mx-auto px-6">
-
-    <h1 class="text-4xl mb-4" style="color: var(--primary-color);">
-      Accessibility
+    <h1 class="text-5xl md:text-7xl mb-6 font-[Prata]">
+      Make it clear. Make it useful.
     </h1>
 
-    <p style="color: var(--text-muted);">
-      We are dedicated to making our website and services accessible to everyone, regardless of ability.
+    <p class="mb-10 max-w-xl mx-auto text-white/80">
+      Web design, data, and research-driven work focused on clarity and real outcomes.
     </p>
+
+    <div class="flex flex-col md:flex-row gap-4 justify-center">
+      <button onclick="scrollToSection('featuredwork')" class="px-8 py-3 rounded-lg border border-white">
+        View Work
+      </button>
+
+      <button onclick="scrollToSection('contact')" class="px-8 py-3 rounded-lg bg-[#c6d86d] text-[#0d3921] font-medium">
+        Contact
+      </button>
+
+      <a href="OliviaArkemaResume2026.pdf" target="_blank" class="px-8 py-3 rounded-lg border border-white/70">
+        Resume
+      </a>
+    </div>
 
   </div>
 </section>
