@@ -144,11 +144,12 @@ menuBtn.addEventListener("click", () => {
          class="group border border-[#e6dfd7] p-6 rounded-xl text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
 
         <p class="text-xs mb-2 text-[#6f6a5f]">BEFORE</p>
+        <h3 class="mb-3">Outdated, hard to navigate</h3>
 
-        <h3 class="mb-3">Outdated, hard to navigate, no SEO.</h3>
-
-        <div class="mb-4 overflow-hidden rounded-lg">
-          <img src="sdg_before.png" class="w-full object-cover transition group-hover:scale-[1.02]">
+        <!-- fixed aspect container -->
+        <div class="mb-4 relative w-full aspect-[16/10] overflow-hidden rounded-lg bg-[#e6dfd7]">
+          <img src="sdg_before.png"
+               class="absolute inset-0 w-full h-full object-cover transition group-hover:scale-[1.02]">
         </div>
 
         <div class="flex items-center justify-between">
@@ -163,19 +164,18 @@ menuBtn.addEventListener("click", () => {
          class="group border border-[#e6dfd7] p-6 rounded-xl text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
 
         <p class="text-xs mb-2 text-[#6f6a5f]">AFTER</p>
+        <h3 class="mb-3">Clean, clear, and built to convert</h3>
 
-        <h3 class="mb-3">Clean, clear, searchable, and built to convert</h3>
+        <!-- same exact container -->
+        <div class="mb-4 relative w-full aspect-[16/10] overflow-hidden rounded-lg bg-[#e6dfd7]">
 
-        <div class="mb-4 relative overflow-hidden rounded-lg">
-
-          <!-- iframe (may be blocked) -->
           <iframe 
-            src="https://www.sdgprecisionag.com" 
-            class="w-full h-[220px] pointer-events-none border-0"
+            src="https://www.sdgprecisionag.com"
+            class="absolute inset-0 w-full h-full border-0 pointer-events-none"
           ></iframe>
 
-          <!-- overlay (ensures click works + fallback if iframe fails) -->
-          <div class="absolute inset-0 bg-transparent"></div>
+          <!-- click overlay -->
+          <div class="absolute inset-0"></div>
 
         </div>
 
