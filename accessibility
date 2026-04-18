@@ -16,7 +16,7 @@
 
 <body style="background: var(--tertiary-color); color: var(--text-dark);">
 
-<!-- NAV -->
+<!-- NAV (same as index) -->
 <header id="navbar" class="fixed w-full z-50 backdrop-blur border-b" style="background: rgba(255,255,255,0.9); border-color: rgba(0,0,0,0.05);">
   <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 
@@ -52,45 +52,45 @@ menuBtn.addEventListener("click", () => {
 
 <div class="h-24"></div>
 
-<!-- MAIN CONTENT -->
-<section class="py-20">
-  <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-16">
+<!-- HEADER SECTION -->
+<section class="py-20 text-center">
+  <div class="max-w-3xl mx-auto px-6">
 
-    <!-- LEFT -->
-    <div>
-      <h1 class="text-4xl mb-4" style="color: var(--primary-color);">
-        Accessibility
-      </h1>
-      <p style="color: var(--text-muted);">
-        We are dedicated to making our website and services accessible to everyone, regardless of ability.
-      </p>
+    <h1 class="text-4xl mb-4" style="color: var(--primary-color);">
+      Accessibility
+    </h1>
+
+    <p style="color: var(--text-muted);">
+      We are dedicated to making our website and services accessible to everyone, regardless of ability.
+    </p>
+
+  </div>
+</section>
+
+<!-- CONTENT -->
+<section class="pb-24">
+  <div class="max-w-3xl mx-auto px-6 space-y-8">
+
+    <div class="card p-6 md:p-8">
+      <h3 class="mb-2">Committed to Inclusion</h3>
+      <p>We are dedicated to making our website and services accessible to everyone, regardless of ability.</p>
     </div>
 
-    <!-- RIGHT -->
-    <div class="space-y-10">
+    <div class="card p-6 md:p-8">
+      <h3 class="mb-2">Accessibility Features</h3>
+      <p>Our website is designed to meet WCAG 2.1 AA standards.
+      We use clear navigation, alt text for images, and keyboard accessibility.</p>
+    </div>
 
-      <div>
-        <h3 class="mb-2">Committed to Inclusion</h3>
-        <p>We are dedicated to making our website and services accessible to everyone, regardless of ability.</p>
-      </div>
-
-      <div>
-        <h3 class="mb-2">Accessibility Features</h3>
-        <p>Our website is designed to meet WCAG 2.1 AA standards.
-        We use clear navigation, alt text for images, and keyboard accessibility.</p>
-      </div>
-
-      <div>
-        <p class="font-medium mb-2">Need Assistance?</p>
-        <p>If you encounter any barriers to accessing our website or services, please let us know by emailing hello@oliviaarkema.com. We’ll work to address the issue promptly. We continuously strive to enhance accessibility and welcome feedback to help us serve all users better.</p>
-      </div>
-
+    <div class="card p-6 md:p-8">
+      <p class="font-medium mb-2">Need Assistance?</p>
+      <p>If you encounter any barriers to accessing our website or services, please let us know by emailing hello@oliviaarkema.com. We’ll work to address the issue promptly. We continuously strive to enhance accessibility and welcome feedback to help us serve all users better.</p>
     </div>
 
   </div>
 </section>
 
-<!-- CONTACT / FOOTER -->
+<!-- CONTACT (same as index) -->
 <section id="contact" class="py-20 text-white text-center" style="background: var(--secondary-color);">
   <div class="max-w-2xl mx-auto px-6">
 
