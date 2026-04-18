@@ -58,16 +58,23 @@ menuBtn.addEventListener("click", () => {
   <article class="max-w-4xl mx-auto">
 
     <!-- HEADER -->
-    <header class="mb-10">
-      <p class="text-sm mb-2" style="color: var(--text-muted);">Data Science</p>
+    <header class="mb-12 max-w-3xl">
 
+      <p class="text-sm mb-3" style="color: var(--text-muted);">
+        Data Science Project
+      </p>
+    
       <h1 class="text-3xl md:text-4xl leading-tight mb-4 max-w-2xl" style="color: var(--primary-color);">
         Instacart Data Science: Basket Size, Composition and Co-Occurrence Patterns
       </h1>
-
-      <p class="text-sm" style="color: var(--text-muted);">
+    
+      <p class="text-sm mb-4" style="color: var(--text-muted);">
         By Olivia Arkema • August 25, 2025
       </p>
+    
+      <!-- subtle divider (this is the key upgrade) -->
+      <div style="height:1px; background: rgba(0,0,0,0.08); width:80px;"></div>
+    
     </header>
 
     <!-- IMAGE -->
