@@ -1,42 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- HOME -->
+  <url>
+    <loc>https://oliviaarkema.com/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- CORE PAGES -->
+  <url>
+    <loc>https://oliviaarkema.com/webdev</loc>
+  </url>
+
+  <url>
+    <loc>https://oliviaarkema.com/marketing</loc>
+  </url>
+
+  <url>
+    <loc>https://oliviaarkema.com/marketresearch</loc>
+  </url>
+
+  <!-- PROJECTS -->
+  <url>
+    <loc>https://oliviaarkema.com/retaildatascience</loc>
+  </url>
+
+  <url>
+    <loc>https://oliviaarkema.com/syntheticsurveydata</loc>
+  </url>
+
+  <!-- BLOG POSTS -->
+  <url>
+    <loc>https://oliviaarkema.com/improve-google-rankings-without-seo-experts</loc>
+  </url>
 
 <url>
-  <loc>https://oliviaarkema.com/</loc>
-  <lastmod>2025-01-21T13:56:04+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://oliviaarkema.com/index.html</loc>
-  <lastmod>2025-01-21T13:56:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://oliviaarkema.com/blog</loc>
-  <lastmod>2025-01-19T02:51:27+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://oliviaarkema.com/contact</loc>
-  <lastmod>2025-01-19T02:51:56+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://oliviaarkema.com/improve-google-rankings-without-seo-experts</loc>
-  <lastmod>2025-01-16T20:44:42+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://oliviaarkema.com/paid-advertising-mistakes-small-businesses</loc>
-  <lastmod>2025-01-17T13:52:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+    <loc>https://oliviaarkema.com/does-your-small-business-really-need-a-website</loc>
+  </url>
 
+  <url>
+    <loc>https://oliviaarkema.com/paid-advertising-mistakes-small-businesses</loc>
+  </url>
+
+  <url>
+    <loc>https://oliviaarkema.com/socialdesirabilityandai</loc>
+  </url>
+
+  <url>
+    <loc>https://oliviaarkema.com/small-business-website-checklist</loc>
+  </url>
+
+  <!-- CONTACT -->
+  <url>
+    <loc>https://oliviaarkema.com/contact</loc>
+  </url>
+
+  <!-- HIDDEN / LEGAL -->
+  <url>
+    <loc>https://oliviaarkema.com/accessibility</loc>
+  </url>
+
+  <url>
+    <loc>https://oliviaarkema.com/privacypolicy</loc>
+  </url>
 
 </urlset>
