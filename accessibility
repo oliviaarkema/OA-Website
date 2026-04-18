@@ -4,43 +4,43 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Olivia Arkema | Web Design, Data & Research</title>
+<title>Accessibility | Olivia Arkema</title>
+<meta name="description" content="Accessibility statement for Olivia Arkema. Learn about our commitment to inclusive design and how to get help if you encounter accessibility barriers.">
 
 <link rel="icon" href="green_bow.png">
 
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
-<body class="font-[Inter] bg-[#f4efe9] text-[#2f2f2f]">
+<body class="font-[Inter]" style="background: var(--tertiary-color); color: var(--text-dark);">
 
 <!-- NAV -->
-<header id="navbar" class="fixed w-full z-50 bg-white/90 backdrop-blur border-b border-[#e6dfd7]">
+<header id="navbar" class="fixed w-full z-50 bg-white/90 backdrop-blur border-b" style="border-color: rgba(0,0,0,0.08);">
   <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 
-    <a href="#home" class="text-xl font-bold">OA</a>
+    <a href="index.html" class="text-xl font-bold" style="color: var(--primary-color);">OA</a>
 
     <nav class="hidden md:flex space-x-8 text-sm">
-      <a href="#home">Home</a>
-      <a href="#services">Work</a>
-      <a href="#clients">Projects</a>
-      <a href="#featuredwork">Writing</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html#home">Home</a>
+      <a href="index.html#services">Work</a>
+      <a href="index.html#clients">Projects</a>
+      <a href="index.html#featuredwork">Writing</a>
+      <a href="index.html#contact">Contact</a>
     </nav>
 
-    <button id="menuBtn" class="md:hidden text-2xl">☰</button>
-
+    <button id="menuBtn" class="md:hidden text-2xl" aria-label="Open menu">☰</button>
   </div>
 
-  <div id="mobileMenu" class="hidden px-6 pb-4 bg-white border-t border-[#e6dfd7]">
+  <div id="mobileMenu" class="hidden px-6 pb-4 bg-white border-t">
     <div class="flex flex-col space-y-4 text-sm pt-4">
-      <a href="#home">Home</a>
-      <a href="#services">Work</a>
-      <a href="#clients">Projects</a>
-      <a href="#featuredwork">Writing</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html#home">Home</a>
+      <a href="index.html#services">Work</a>
+      <a href="index.html#clients">Projects</a>
+      <a href="index.html#featuredwork">Writing</a>
+      <a href="index.html#contact">Contact</a>
     </div>
   </div>
 </header>
@@ -51,59 +51,60 @@ menuBtn.addEventListener("click", () => {
 });
 </script>
 
-<!-- HERO -->
-<section id="home" class="min-h-screen flex items-center text-center bg-[#1f3a4a] text-white">
-  <div class="max-w-4xl mx-auto px-6">
+<div class="h-24"></div>
 
-    <h1 class="text-5xl md:text-7xl mb-6 font-[Prata]">
-      Make it clear. Make it useful.
+<!-- PAGE HEADER -->
+<section class="py-20 text-center">
+  <div class="max-w-3xl mx-auto px-6">
+
+    <h1 class="text-4xl mb-4" style="color: var(--primary-color);">
+      Accessibility
     </h1>
 
-    <p class="mb-10 max-w-xl mx-auto text-white/80">
-      Web design, data, and research-driven work focused on clarity and real outcomes.
+    <p style="color: var(--text-muted);">
+      We are committed to making our website and services accessible to everyone.
     </p>
-
-    <div class="flex flex-col md:flex-row gap-4 justify-center">
-      <button onclick="scrollToSection('featuredwork')" class="px-8 py-3 rounded-lg border border-white">
-        View Work
-      </button>
-
-      <button onclick="scrollToSection('contact')" class="px-8 py-3 rounded-lg bg-[#c6d86d] text-[#0d3921] font-medium">
-        Contact
-      </button>
-
-      <a href="OliviaArkemaResume2026.pdf" target="_blank" class="px-8 py-3 rounded-lg border border-white/70">
-        Resume
-      </a>
-    </div>
 
   </div>
 </section>
 
 <!-- CONTENT -->
-<section class="pb-24">
+<main class="pb-24" role="main">
   <div class="max-w-3xl mx-auto px-6 space-y-8">
 
-    <div class="card p-6 md:p-8">
-      <h3 class="mb-2">Committed to Inclusion</h3>
-      <p>We are dedicated to making our website and services accessible to everyone, regardless of ability.</p>
-    </div>
+    <section class="card p-6 md:p-8">
+      <h2 class="mb-2">Committed to Inclusion</h2>
+      <p>
+        We are dedicated to making our website and services accessible to everyone, regardless of ability. 
+        We aim to provide an inclusive and user-friendly experience for all visitors.
+      </p>
+    </section>
 
-    <div class="card p-6 md:p-8">
-      <h3 class="mb-2">Accessibility Features</h3>
-      <p>Our website is designed to meet WCAG 2.1 AA standards.
-      We use clear navigation, alt text for images, and keyboard accessibility.</p>
-    </div>
+    <section class="card p-6 md:p-8">
+      <h2 class="mb-2">Accessibility Features</h2>
+      <p>
+        Our website is designed to align with WCAG 2.1 AA standards where possible. 
+        We use clear navigation, descriptive alt text for images, and support keyboard accessibility.
+      </p>
+    </section>
 
-    <div class="card p-6 md:p-8">
-      <p class="font-medium mb-2">Need Assistance?</p>
-      <p>If you encounter any barriers to accessing our website or services, please let us know by emailing hello@oliviaarkema.com. We’ll work to address the issue promptly. We continuously strive to enhance accessibility and welcome feedback to help us serve all users better.</p>
-    </div>
+    <section class="card p-6 md:p-8">
+      <h2 class="mb-2">Need Assistance?</h2>
+      <p>
+        If you encounter any barriers while using our website, please let us know by emailing 
+        <a href="mailto:hello@oliviaarkema.com" style="color: var(--accent-color-1);">
+          hello@oliviaarkema.com
+        </a>.
+      </p>
+      <p class="mt-3">
+        We will work to address the issue as quickly as possible. We are continuously improving accessibility and welcome your feedback.
+      </p>
+    </section>
 
   </div>
-</section>
+</main>
 
-<!-- CONTACT (same as index) -->
+<!-- CONTACT / FOOTER -->
 <section id="contact" class="py-20 text-white text-center" style="background: var(--secondary-color);">
   <div class="max-w-2xl mx-auto px-6">
 
@@ -112,17 +113,17 @@ menuBtn.addEventListener("click", () => {
     <p class="mb-6">Follow me on Socials:</p>
 
     <div class="flex justify-center gap-6 mb-10">
-      <a href="https://www.facebook.com/people/Olivia-Arkema-Marketing-Web-Design/61564009298913/">
-        <img src="facebook.png" class="h-6">
+      <a href="https://www.facebook.com/people/Olivia-Arkema-Marketing-Web-Design/61564009298913/" aria-label="Facebook">
+        <img src="facebook.png" class="h-6" alt="Facebook logo">
       </a>
-      <a href="https://www.pinterest.com/livarkema/">
-        <img src="pinterest.png" class="h-6">
+      <a href="https://www.pinterest.com/livarkema/" aria-label="Pinterest">
+        <img src="pinterest.png" class="h-6" alt="Pinterest logo">
       </a>
-      <a href="https://x.com/livlavonne">
-        <img src="twitter.png" class="h-6">
+      <a href="https://x.com/livlavonne" aria-label="X (Twitter)">
+        <img src="twitter.png" class="h-6" alt="Twitter logo">
       </a>
-      <a href="https://www.linkedin.com/in/oliviaarkema/">
-        <img src="linked-in.png" class="h-6">
+      <a href="https://www.linkedin.com/in/oliviaarkema/" aria-label="LinkedIn">
+        <img src="linked-in.png" class="h-6" alt="LinkedIn logo">
       </a>
     </div>
 
@@ -135,7 +136,7 @@ menuBtn.addEventListener("click", () => {
     <div style="height:1px; background: rgba(255,255,255,0.2);" class="mb-6"></div>
 
     <p style="color: rgba(255,255,255,0.7);">
-      © Olivia Arkema 2025
+      © Olivia Arkema 2026
     </p>
 
   </div>
