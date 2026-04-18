@@ -18,7 +18,7 @@
 
 <body class="font-[Inter]" style="background: var(--tertiary-color); color: var(--text-dark);">
 
-<!-- NAV (DO NOT EDIT) -->
+<!-- NAV -->
 <header id="navbar" class="fixed w-full z-50 backdrop-blur border-b" style="background: rgba(255,255,255,0.9); border-color: rgba(0,0,0,0.05);">
   <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 
@@ -29,7 +29,7 @@
       <a href="/#services">Work</a>
       <a href="/#clients">Projects</a>
       <a href="/#featuredwork">Writing</a>
-      <a href="/contact">Contact</a>
+      <a href="/#contact">Contact</a>
     </nav>
 
     <button id="menuBtn" class="md:hidden text-2xl">☰</button>
@@ -41,7 +41,7 @@
       <a href="/#services">Work</a>
       <a href="/#clients">Projects</a>
       <a href="/#featuredwork">Writing</a>
-      <a href="/contact">Contact</a>
+      <a href="/#contact">Contact</a>
     </div>
   </div>
 </header>
@@ -52,82 +52,78 @@ menuBtn.addEventListener("click", () => {
 });
 </script>
 
-<!-- SPACER -->
-<div class="h-24"></div>
+<div class="h-20"></div>
 
 <!-- BLOG -->
-<main class="px-6 py-12">
-  <article class="max-w-3xl mx-auto">
+<main class="px-6 pb-16">
+  <article class="max-w-2xl mx-auto card p-6 md:p-8">
 
     <!-- HEADER -->
-    <header class="mb-12 text-center">
+    <header class="mb-6">
 
-      <p class="text-sm mb-2" style="color: var(--text-muted);">
-        Retail Data Science Project
+      <p class="text-xs mb-2 tracking-wide" style="color: var(--text-muted);">
+        DATA SCIENCE
       </p>
 
-      <h1 class="text-3xl md:text-4xl leading-tight mb-3 max-w-2xl mx-auto" style="color: var(--primary-color);">
+      <h1 class="text-2xl md:text-3xl leading-tight mb-3" style="color: var(--primary-color);">
         Instacart Data Science: Basket Size, Composition and Co-Occurrence Patterns
       </h1>
 
-      <p class="text-sm" style="color: var(--text-muted);">
+      <p class="text-xs" style="color: var(--text-muted);">
         By Olivia Arkema • August 25, 2025
       </p>
-
-      <div class="w-12 h-[1px] mx-auto mt-4" style="background: rgba(0,0,0,0.08);"></div>
 
     </header>
 
     <!-- IMAGE -->
-    <figure class="mb-10">
-      <img src="cart_image.jpg" alt="Retail shopping basket analysis visualization" class="rounded-lg mx-auto">
+    <figure class="mb-6">
+      <img src="cart_image.jpg" alt="Retail shopping basket analysis visualization" class="rounded-lg w-full">
     </figure>
 
     <!-- CONTENT -->
-    <div class="space-y-6 leading-relaxed">
+    <div class="space-y-5 leading-relaxed text-sm md:text-base">
 
       <p>This project explores basket composition and co-occurrence patterns using the Instacart dataset. The goal is to identify which products act as anchors—items that frequently appear in orders and influence the presence of other items.</p>
 
       <h2 style="color: var(--secondary-color);">Dataset Overview</h2>
-
       <p>The Instacart dataset includes over 3 million grocery orders from more than 200,000 users across nearly 50,000 products.</p>
 
       <h2 style="color: var(--secondary-color);">Key Metrics</h2>
 
-      <div class="grid sm:grid-cols-2 gap-4">
+      <div class="grid grid-cols-2 gap-3 my-4">
 
-        <div class="card p-5 text-center">
-          <div class="text-sm">Orders</div>
-          <div class="text-2xl font-semibold mt-1">3.2M</div>
+        <div class="border rounded-lg p-3 text-center">
+          <div class="text-xs">Orders</div>
+          <div class="text-lg font-semibold">3.2M</div>
         </div>
 
-        <div class="card p-5 text-center">
-          <div class="text-sm">Users</div>
-          <div class="text-2xl font-semibold mt-1">206K</div>
+        <div class="border rounded-lg p-3 text-center">
+          <div class="text-xs">Users</div>
+          <div class="text-lg font-semibold">206K</div>
         </div>
 
-        <div class="card p-5 text-center">
-          <div class="text-sm">Products</div>
-          <div class="text-2xl font-semibold mt-1">49.7K</div>
+        <div class="border rounded-lg p-3 text-center">
+          <div class="text-xs">Products</div>
+          <div class="text-lg font-semibold">49.7K</div>
         </div>
 
-        <div class="card p-5 text-center">
-          <div class="text-sm">Avg Basket Size</div>
-          <div class="text-2xl font-semibold mt-1">10.1</div>
+        <div class="border rounded-lg p-3 text-center">
+          <div class="text-xs">Avg Basket</div>
+          <div class="text-lg font-semibold">10.1</div>
         </div>
 
       </div>
 
       <h2 style="color: var(--secondary-color);">Visual Insights</h2>
 
-      <div class="grid md:grid-cols-2 gap-6">
+      <div class="space-y-4">
 
-        <div class="card p-4">
-          <img src="cooc.png" alt="Co-occurrence heatmap" class="rounded-lg">
+        <div>
+          <img src="cooc.png" alt="Co-occurrence heatmap" class="rounded-lg w-full">
         </div>
 
-        <div class="card p-4">
-          <img src="top50.png" alt="Top products frequency chart" class="rounded-lg">
+        <div>
+          <img src="top50.png" alt="Top products frequency chart" class="rounded-lg w-full">
         </div>
 
       </div>
@@ -141,13 +137,13 @@ menuBtn.addEventListener("click", () => {
   </article>
 </main>
 
-<!-- CONTACT / FOOTER (DO NOT EDIT) -->
-<section id="contact" class="py-20 text-white text-center" style="background: var(--secondary-color);">
-  <div class="max-w-2xl mx-auto px-6">
+<!-- FOOTER -->
+<section id="contact" class="py-16 text-white text-center" style="background: var(--secondary-color);">
+  <div class="max-w-xl mx-auto px-6">
 
-    <h2 class="text-3xl mb-6">Get in touch</h2>
+    <h2 class="text-2xl mb-4">Get in touch</h2>
 
-    <p class="mb-8" style="color: rgba(255,255,255,0.8);">
+    <p class="mb-6 text-sm" style="color: rgba(255,255,255,0.8);">
       Need a website or help making sense of data?
     </p>
 
@@ -155,10 +151,10 @@ menuBtn.addEventListener("click", () => {
       Email me
     </a>
 
-    <div class="mt-12 mb-6" style="height:1px; background: rgba(255,255,255,0.2);"></div>
+    <div class="mt-8 mb-4" style="height:1px; background: rgba(255,255,255,0.2);"></div>
 
-    <p class="text-sm" style="color: rgba(255,255,255,0.7);">
-      &copy; <span id="year"></span> Olivia Arkema
+    <p class="text-xs" style="color: rgba(255,255,255,0.7);">
+      © <span id="year"></span> Olivia Arkema
     </p>
 
   </div>
