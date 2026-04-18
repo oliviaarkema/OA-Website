@@ -105,12 +105,14 @@ menuBtn.addEventListener("click", () => {
 </main>
 
 <!-- CONTACT / FOOTER -->
-<section id="contact" class="py-20 text-white text-center" style="background: var(--secondary-color);">
+<section id="contact" class="py-20 text-center" style="background: var(--secondary-color); color: var(--white);">
   <div class="max-w-2xl mx-auto px-6">
 
     <h2 class="text-3xl mb-6">Let's collaborate.</h2>
 
-    <p class="mb-6">Follow me on Socials:</p>
+    <p class="mb-6" style="color: rgba(255,255,255,0.85);">
+      Follow me on Socials:
+    </p>
 
     <div class="flex justify-center gap-6 mb-10">
       <a href="https://www.facebook.com/people/Olivia-Arkema-Marketing-Web-Design/61564009298913/" aria-label="Facebook">
@@ -127,13 +129,13 @@ menuBtn.addEventListener("click", () => {
       </a>
     </div>
 
-    <p>Email me:</p>
+    <p style="color: rgba(255,255,255,0.85);">Email me:</p>
     <p class="mb-4">livarkema@gmail.com</p>
 
-    <p>Give me a call:</p>
+    <p style="color: rgba(255,255,255,0.85);">Give me a call:</p>
     <p class="mb-6">970-672-6402</p>
 
-    <div style="height:1px; background: rgba(255,255,255,0.2);" class="mb-6"></div>
+    <div style="height:1px; background: rgba(255,255,255,0.25);" class="mb-6"></div>
 
     <p style="color: rgba(255,255,255,0.7);">
       © Olivia Arkema 2026
