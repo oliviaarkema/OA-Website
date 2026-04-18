@@ -105,39 +105,47 @@ menuBtn.addEventListener("click", () => {
 </main>
 
 <!-- CONTACT / FOOTER -->
-<section id="contact" class="py-20 text-center" style="background: var(--secondary-color); color: var(--white);">
-  <div class="max-w-2xl mx-auto px-6">
+<section id="contact" class="py-14 text-center" style="background: var(--secondary-color); color: var(--white);">
+  <div class="max-w-xl mx-auto px-6">
 
-    <h2 class="text-3xl mb-6">Let's collaborate.</h2>
+    <h2 class="text-2xl mb-4">Let's collaborate.</h2>
 
-    <p class="mb-6" style="color: rgba(255,255,255,0.85);">
-      Follow me on Socials:
-    </p>
+    <!-- CTA BUTTONS -->
+    <div class="flex flex-col sm:flex-row justify-center gap-3 mb-6">
 
-    <div class="flex justify-center gap-6 mb-10">
+      <a href="mailto:livarkema@gmail.com" 
+         class="px-6 py-2 rounded-lg border border-white text-white text-sm hover:bg-white hover:text-[#1f3a4a] transition">
+        Email me
+      </a>
+
+      <a href="tel:19706726402" 
+         class="px-6 py-2 rounded-lg bg-[#c6d86d] text-[#0d3921] text-sm font-medium hover:opacity-90 transition">
+        Call me
+      </a>
+
+    </div>
+
+    <!-- SOCIALS -->
+    <div class="flex justify-center gap-5 mb-6">
       <a href="https://www.facebook.com/people/Olivia-Arkema-Marketing-Web-Design/61564009298913/" aria-label="Facebook">
-        <img src="facebook.png" class="h-6" alt="Facebook logo">
+        <img src="facebook.png" class="h-5" alt="Facebook logo">
       </a>
       <a href="https://www.pinterest.com/livarkema/" aria-label="Pinterest">
-        <img src="pinterest.png" class="h-6" alt="Pinterest logo">
+        <img src="pinterest.png" class="h-5" alt="Pinterest logo">
       </a>
       <a href="https://x.com/livlavonne" aria-label="X (Twitter)">
-        <img src="twitter.png" class="h-6" alt="Twitter logo">
+        <img src="twitter.png" class="h-5" alt="Twitter logo">
       </a>
       <a href="https://www.linkedin.com/in/oliviaarkema/" aria-label="LinkedIn">
-        <img src="linked-in.png" class="h-6" alt="LinkedIn logo">
+        <img src="linked-in.png" class="h-5" alt="LinkedIn logo">
       </a>
     </div>
 
-    <p style="color: rgba(255,255,255,0.85);">Email me:</p>
-    <p class="mb-4">livarkema@gmail.com</p>
+    <!-- DIVIDER -->
+    <div style="height:1px; background: rgba(255,255,255,0.25);" class="mb-4"></div>
 
-    <p style="color: rgba(255,255,255,0.85);">Give me a call:</p>
-    <p class="mb-6">970-672-6402</p>
-
-    <div style="height:1px; background: rgba(255,255,255,0.25);" class="mb-6"></div>
-
-    <p style="color: rgba(255,255,255,0.7);">
+    <!-- COPYRIGHT -->
+    <p class="text-xs" style="color: rgba(255,255,255,0.7);">
       © Olivia Arkema 2026
     </p>
 
