@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
-<body class="font-[Inter]" style="background: var(--tertiary-color); color: var(--text-dark);">
+<body style="background: var(--tertiary-color); color: var(--text-dark);">
 
 <!-- NAV -->
 <header id="navbar" class="fixed w-full z-50 backdrop-blur border-b" style="background: rgba(255,255,255,0.9); border-color: rgba(0,0,0,0.05);">
@@ -50,37 +50,45 @@ menuBtn.addEventListener("click", () => {
 });
 </script>
 
-<!-- SPACER -->
 <div class="h-24"></div>
 
-<!-- ACCESSIBILITY CONTENT -->
-<main class="px-6 py-12">
-  <section class="max-w-4xl mx-auto card p-8 md:p-10">
+<!-- MAIN CONTENT -->
+<section class="py-20">
+  <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-16">
 
-    <h2 class="text-3xl mb-6" style="color: var(--primary-color);">Accessibility</h2>
+    <!-- LEFT -->
+    <div>
+      <h1 class="text-4xl mb-4" style="color: var(--primary-color);">
+        Accessibility
+      </h1>
+      <p style="color: var(--text-muted);">
+        We are dedicated to making our website and services accessible to everyone, regardless of ability.
+      </p>
+    </div>
 
-    <div class="space-y-6">
+    <!-- RIGHT -->
+    <div class="space-y-10">
 
       <div>
-        <h3>Committed to Inclusion</h3>
+        <h3 class="mb-2">Committed to Inclusion</h3>
         <p>We are dedicated to making our website and services accessible to everyone, regardless of ability.</p>
       </div>
 
       <div>
-        <h3>Accessibility Features</h3>
+        <h3 class="mb-2">Accessibility Features</h3>
         <p>Our website is designed to meet WCAG 2.1 AA standards.
         We use clear navigation, alt text for images, and keyboard accessibility.</p>
       </div>
 
       <div>
-        <p>Need Assistance?</p>
+        <p class="font-medium mb-2">Need Assistance?</p>
         <p>If you encounter any barriers to accessing our website or services, please let us know by emailing hello@oliviaarkema.com. We’ll work to address the issue promptly. We continuously strive to enhance accessibility and welcome feedback to help us serve all users better.</p>
       </div>
 
     </div>
 
-  </section>
-</main>
+  </div>
+</section>
 
 <!-- CONTACT / FOOTER -->
 <section id="contact" class="py-20 text-white text-center" style="background: var(--secondary-color);">
@@ -92,16 +100,16 @@ menuBtn.addEventListener("click", () => {
 
     <div class="flex justify-center gap-6 mb-10">
       <a href="https://www.facebook.com/people/Olivia-Arkema-Marketing-Web-Design/61564009298913/">
-        <img src="facebook.png" alt="Facebook Logo" class="h-6">
+        <img src="facebook.png" class="h-6">
       </a>
       <a href="https://www.pinterest.com/livarkema/">
-        <img src="pinterest.png" alt="Pinterest Logo" class="h-6">
+        <img src="pinterest.png" class="h-6">
       </a>
       <a href="https://x.com/livlavonne">
-        <img src="twitter.png" alt="Twitter Logo" class="h-6">
+        <img src="twitter.png" class="h-6">
       </a>
       <a href="https://www.linkedin.com/in/oliviaarkema/">
-        <img src="linked-in.png" alt="LinkedIn Logo" class="h-6">
+        <img src="linked-in.png" class="h-6">
       </a>
     </div>
 
