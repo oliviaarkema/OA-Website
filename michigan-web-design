@@ -127,6 +127,61 @@ menuBtn.addEventListener("click", () => {
   </div>
 </section>
 
+<!-- BEFORE / AFTER -->
+<section class="py-24 bg-[#f4efe9]">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+
+    <h2 class="text-4xl mb-6 font-[Prata]">Real Results</h2>
+
+    <p class="mb-12 max-w-xl mx-auto text-[#6f6a5f]">
+      A recent redesign for a Michigan-based business.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- BEFORE -->
+      <a href="https://web.archive.org/web/20201101143613/https://www.sdgprecisionag.com/" target="_blank"
+         class="group border border-[#e6dfd7] p-6 rounded-xl text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+
+        <p class="text-xs mb-2 text-[#6f6a5f]">BEFORE</p>
+
+        <h3 class="mb-3">Outdated, hard to navigate</h3>
+
+        <div class="aspect-video bg-[#e6dfd7] rounded mb-4 flex items-center justify-center text-sm text-[#6f6a5f]">
+          View old site
+        </div>
+
+        <div class="flex items-center justify-between">
+          <span class="text-sm text-[#6f6a5f]">Open archive</span>
+          <span class="text-xl group-hover:translate-x-1 transition">→</span>
+        </div>
+
+      </a>
+
+      <!-- AFTER -->
+      <a href="https://www.sdgprecisionag.com" target="_blank"
+         class="group border border-[#e6dfd7] p-6 rounded-xl text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+
+        <p class="text-xs mb-2 text-[#6f6a5f]">AFTER</p>
+
+        <h3 class="mb-3">Clean, clear, and built to convert</h3>
+
+        <div class="aspect-video bg-[#e6dfd7] rounded mb-4 flex items-center justify-center text-sm text-[#6f6a5f]">
+          View new site
+        </div>
+
+        <div class="flex items-center justify-between">
+          <span class="text-sm text-[#6f6a5f]">Visit site</span>
+          <span class="text-xl group-hover:translate-x-1 transition">→</span>
+        </div>
+
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
 <!-- WHO IT'S FOR -->
 <section class="py-20 bg-white">
   <div class="max-w-3xl mx-auto px-6 text-center">
