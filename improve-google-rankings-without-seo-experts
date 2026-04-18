@@ -122,10 +122,22 @@ menuBtn.addEventListener("click", () => {
   </article>
 </main>
 
-<!-- FOOTER -->
-<footer class="py-16 mt-16 text-center" style="background: var(--secondary-color); color: var(--white);">
+<!-- CONTACT -->
+<section id="contact" class="py-20 bg-[#1f3a4a] text-white text-center">
+  <div class="max-w-2xl mx-auto px-6">
+
+    <h2 class="text-3xl mb-6 font-[Prata]">Get in touch</h2>
+
+    <p class="mb-8 text-white/80">
+      Need a website or help making sense of data?
+    </p>
+
+    <a href="mailto:livarkema@gmail.com" class="px-8 py-3 rounded-lg bg-[#c6d86d] text-[#0d3921] font-medium">
+      Email me
+    </a>
   <p>&copy; <span id="year"></span> Olivia Arkema</p>
-</footer>
+  </div>
+</section>
 
 <script>
 document.getElementById('year').textContent = new Date().getFullYear();
