@@ -1,262 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- ===== SEO (edit these) ===== -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>5 Common Paid Advertising Mistakes Small Businesses Make (And How to Fix Them) | Olivia Arkema</title>
-  <meta name="description" content="Avoid the most common paid advertising mistakes small businesses make. Learn how to set goals, target the right audience, improve landing pages, pace your budget, and optimize campaigns for better ROI." />
-  <link rel="canonical" href="https://oliviaarkema.com/blog/paid-advertising-mistakes-small-businesses" />
-  <link rel="icon" href="green_bow.png" type="image/png">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="5 Common Paid Advertising Mistakes Small Businesses Make (And How to Fix Them) | Olivia Arkema" />
-  <meta property="og:description" content="Avoid the most common paid advertising mistakes small businesses make. Learn how to set goals, target the right audience, improve landing pages, pace your budget, and optimize campaigns for better ROI." />
-  <meta property="og:url" content="https://oliviaarkema.com/blog/paid-advertising-mistakes-small-businesses" />
-  <meta property="og:image" content="https://oliviaarkema.com/lifestyle2.jpg" />
+<title>5 Common Paid Advertising Mistakes Small Businesses Make (And How to Fix Them) | Olivia Arkema</title>
+<meta name="description" content="Avoid the most common paid advertising mistakes small businesses make. Learn how to set goals, target the right audience, improve landing pages, pace your budget, and optimize campaigns for better ROI." />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="5 Common Paid Advertising Mistakes Small Businesses Make (And How to Fix Them) | Olivia Arkema" />
-  <meta name="twitter:description" content="Avoid the most common paid advertising mistakes small businesses make. Learn how to set goals, target the right audience, improve landing pages, pace your budget, and optimize campaigns for better ROI." />
-  <meta name="twitter:image" content="https://oliviaarkema.com/lifestyle2.jpg" />
+<link rel="canonical" href="https://oliviaarkema.com/blog/paid-advertising-mistakes-small-businesses" />
+<link rel="icon" href="green_bow.png">
 
-  <!-- Tailwind + Typography -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
-    body { font-family: 'Noto Serif', serif; background-color:#faf7f2; color:#393831; }
-    .heading-font { font-family: 'Noto Serif', serif; letter-spacing: .02em; }
-    .subtle-shadow { box-shadow: 0 8px 32px rgba(57,56,49,0.08); }
-    .elegant-border { border: 2px solid #5f849c; }
-    .text-accent { color:#5f849c; }
-    .bg-accent { background-color:#5f849c; }
-    /* Brand blue for H2s inside article */
-    .prose h2 { color:#5f849c; }
-  </style>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="../style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <!-- ===== NAV (homepage pattern) ===== -->
-  <nav id="navbar" class="fixed w-full z-50 shadow-sm transition-transform duration-300" style="background-color: rgba(254,254,254,0.9); backdrop-filter: blur(12px);">
-    <div class="max-w-6xl mx-auto px-6 py-4">
-      <div class="flex justify-between items-center">
-        <a href="/" class="text-3xl font-bold heading-font" style="color:#393831;">OA</a>
+<body class="font-[Inter]" style="background: var(--tertiary-color); color: var(--text-dark);">
 
-        <!-- Desktop links -->
-        <div class="hidden md:flex space-x-8">
-          <a href="/#home" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Home</a>
-          <a href="/#services" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Services</a>
-          <a href="/#clients" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Clients</a>
-          <a href="/#featuredwork" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Featured Work</a>
-          <a href="/#contact" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Contact</a>
-        </div>
+<!-- NAV -->
+<header id="navbar" class="fixed w-full z-50 bg-white/90 backdrop-blur border-b" style="border-color: rgba(0,0,0,0.08);">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="/" class="text-xl font-bold" style="color: var(--primary-color);">OA</a>
 
-        <!-- Mobile hamburger -->
-        <button class="md:hidden" style="color:#9e9383;" aria-label="Open menu" onclick="toggleMenu()">
-          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-        </button>
-      </div>
-    </div>
+    <nav class="hidden md:flex space-x-8 text-sm">
+      <a href="/#home">Home</a>
+      <a href="/#services">Work</a>
+      <a href="/#clients">Projects</a>
+      <a href="/#featuredwork">Writing</a>
+      <a href="/#contact">Contact</a>
+    </nav>
 
-    <!-- Mobile menu -->
-    <div id="mobile-menu" class="hidden md:hidden">
-      <div class="px-6 pb-4 space-y-2">
-        <a href="/#home" class="block" style="color:#9e9383;">Home</a>
-        <a href="/#services" class="block" style="color:#9e9383;">Services</a>
-        <a href="/#clients" class="block" style="color:#9e9383;">Clients</a>
-        <a href="/#featuredwork" class="block" style="color:#9e9383;">Featured Work</a>
-        <a href="/#contact" class="block" style="color:#9e9383;">Contact</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Spacer for fixed nav -->
-  <div class="h-20 md:h-24"></div>
-
-  <!-- ===== ARTICLE CARD (design-forward container) ===== -->
-  <main class="px-6">
-    <article class="max-w-3xl mx-auto bg-white rounded-xl subtle-shadow elegant-border px-6 sm:px-8 py-8 md:py-10">
-      <!-- Centered Title -->
-      <header class="mb-6 text-center">
-        <p class="uppercase tracking-wide text-sm" style="color:#9e9383;">Advertising & Growth</p>
-        <h1 class="heading-font text-3xl md:text-4xl font-bold mt-1" style="color:#23424c;">
-          5 Common Paid Advertising Mistakes Small Businesses Make (And How to Fix Them)
-        </h1>
-        <div class="mt-3 text-sm flex items-center justify-center gap-2" style="color:#9e9383;">
-          <span>By Olivia Arkema</span><span>•</span>
-          <time datetime="2025-08-18">August 18, 2025</time>
-        </div>
-      </header>
-
-      <!-- Centered Featured Image -->
-      <figure class="my-6">
-        <img src="lifestyle2.jpg" alt="Paid Advertising for Small Businesses" class="rounded-lg border-2 mx-auto subtle-shadow" style="border-color:#5f849c;" />
-        <figcaption class="text-center mt-2 text-sm" style="color:#9e9383;"></figcaption>
-      </figure>
-
-      <!-- Body -->
-      <div class="prose max-w-none">
-        <p class="mb-6">Paid advertising, when executed effectively, can be a powerful engine for small business growth. By strategically leveraging platforms like Meta (Facebook &amp; Instagram) and Google Ads, businesses can reach precisely targeted audiences, generate leads, drive sales, and ultimately boost their bottom line.</p>
-        <p class="mb-6">Essentially, paid advertising allows businesses to pay to have their ads displayed to specific groups of people online. This can take many forms, including Search Engine Marketing (SEM), where businesses appear at the top of search engine results pages (SERPs) when potential customers search for relevant keywords (e.g., “best Italian restaurant near me”). Another common form is Social Media Advertising, where ads are displayed on platforms like Facebook, Instagram, and others, targeting users based on demographics, interests, and behaviors. Display Advertising involves placing ads on websites and apps across the internet.</p>
-        <p class="mb-6">Paid advertising can be particularly valuable for launching new products or services, running special promotions and sales, generating leads for sales teams, increasing brand awareness and visibility, and reaching specific customer segments. However, many small businesses make critical mistakes that can significantly diminish the effectiveness of their paid advertising campaigns. Without further ado, here are five of the most common pitfalls and how to avoid them:</p>
-
-        <h2>1. Not Defining Clear Goals and Objectives</h2>
-        <p class="mb-6">One common mistake is that many businesses launch ad campaigns without clearly defining their goals. Are you aiming to increase website traffic, generate leads, drive sales, or build brand awareness? The choices you make in ad campaign setup really do affect the way your advertising dollars are spent and how effective they are.</p>
-
-        <h2>2. Targeting the Wrong Audience</h2>
-        <p class="mb-6">Another critical mistake is targeting the wrong audience. Targeting too broad or too narrow an audience can lead to wasted ad spend. If your ads are shown to people who are not interested in your products or services, they are unlikely to convert. Utilize detailed targeting options available on platforms like Meta and Google Ads. Leverage demographics, interests, behaviors, and even lookalike audiences to reach the most relevant customers.</p>
-
-        <h2>3. Ignoring Landing Page Quality</h2>
-        <p class="mb-6">Ignoring landing page quality is another common pitfall. Sending traffic to a generic homepage or a poorly designed landing page can significantly decrease conversion rates. Create dedicated landing pages for each of your ad campaigns. These pages should be relevant, with the content on the landing page directly aligning with the message and offer in your ad. They should also be clear and concise, using strong calls to action (CTAs) and minimizing distractions. Finally, ensure your landing pages are mobile-friendly, optimized for viewing on all devices.</p>
-
-        <h2>4. Lacking Patience</h2>
-        <p class="mb-6">Many businesses, eager to see immediate results, pour their entire advertising budget into a short burst, such as a week or a few days. This “firehose” approach often shocks the advertising algorithms, leading to suboptimal performance and wasted spend. Implement a gradual ramp-up and cool-down strategy for your ad spend. Start with a modest budget and gradually increase it over time. This allows the algorithms to learn and optimize your campaigns more effectively. Similarly, gradually reduce your spend before pausing or stopping a campaign to avoid sudden drops in performance.</p>
-
-        <h2>5. Neglecting Campaign Monitoring and Optimization</h2>
-        <p class="mb-6">Finally, setting up a campaign and then forgetting about it is a recipe for disaster. Regularly monitor key metrics such as click-through rates (CTR), conversion rates, cost per click (CPC), and return on ad spend (ROAS). Based on your data, make necessary adjustments to your campaigns, such as adjusting bids, refining targeting, and improving ad copy. Test different ad variations to see which ones perform best.</p>
-
-        <p class="mb-6">By avoiding these common mistakes and implementing the strategies outlined above, small businesses can significantly improve the effectiveness of their paid advertising campaigns and achieve a higher return on investment. Remember that paid advertising requires ongoing effort and optimization. Regularly review your campaigns and make data-driven decisions to maximize your results.</p>
-      </div>
-
-      <!-- Tags / Share -->
-      <section class="mt-8 flex flex-wrap items-center justify-between gap-3">
-        <div class="flex flex-wrap gap-2">
-          <span class="px-3 py-1 rounded-full text-sm" style="background:#dae4eb; color:#23424c;">Advertising</span>
-          <span class="px-3 py-1 rounded-full text-sm" style="background:#dae4eb; color:#23424c;">Small Business</span>
-        </div>
-        <div class="text-sm" style="color:#9e9383;">
-          <a id="shareCopy" class="underline" href="#" aria-label="Copy link to clipboard">Share</a>
-        </div>
-      </section>
-    </article>
-  </main>
-
-  <!-- ===== FOOTER (homepage-aligned) ===== -->
-  <footer class="py-16 mt-16" style="background-color:#393831;">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="grid md:grid-cols-3 gap-12">
-        <div>
-          <div class="text-3xl font-bold mb-6 heading-font" style="color:#fefefe;">Olivia Arkema</div>
-          <p class="leading-relaxed" style="color:#9e9383;">Creative Marketing, Data Analysis, & Web Design for Small Businesses</p>
-          <div class="w-12 h-1 mt-4" style="background-color:#5f849c;"></div>
-        </div>
-        <div>
-          <h4 class="font-semibold mb-6 heading-font" style="color:#fefefe;">Quick Links</h4>
-          <div class="space-y-3">
-            <a href="/#services" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Services</a>
-            <a href="/#featuredwork" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Work</a>
-            <a href="/#contact" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Contact</a>
-          </div>
-        </div>
-        <div>
-          <h4 class="font-semibold mb-6 heading-font" style="color:#fefefe;">Connect</h4>
-          <div class="space-y-3">
-            <a href="https://www.linkedin.com/in/oliviaarkema" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">LinkedIn</a>
-            <a href="https://x.com/livlavonne" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Twitter</a>
-            <a href="mailto:hello@oliviaarkema.com" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Email</a>
-          </div>
-        </div>
-      </div>
-      <div class="my-8 border-t" style="border-color:#5f849c;"></div>
-      <div class="text-center">
-        <p style="color:#9e9383;">&copy; <span id="year"></span> Olivia Arkema. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- ===== Minimal JS ===== -->
-  <script>
-    // Nav hide/show on scroll (optional)
-    let lastScrollTop = 0;
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', function () {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      if (scrollTop > lastScrollTop && scrollTop > 100) {
-        navbar.style.transform = 'translateY(-100%)';
-      } else {
-        navbar.style.transform = 'translateY(0)';
-      }
-      lastScrollTop = scrollTop;
-    });
-
-    // Mobile menu toggle
-    function toggleMenu() {
-      const menu = document.getElementById('mobile-menu');
-      menu.classList.toggle('hidden');
-    }
-
-    // Footer year
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-
-  <!-- Copy-to-clipboard toast -->
-  <div id="copyToast" role="status" aria-live="polite" hidden
-       style="position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(8px);
-              background:#5f849c;color:#fff;padding:.6rem .9rem;border-radius:9999px;
-              box-shadow:0 8px 24px rgba(0,0,0,.12);font-size:.95rem;
-              opacity:0;transition:opacity .2s ease, transform .2s ease;z-index:60;">
-    Link copied
+    <button id="menuBtn" class="md:hidden text-2xl">☰</button>
   </div>
-  <script>
-  (function () {
-    const btn = document.getElementById('shareCopy');
-    const toast = document.getElementById('copyToast');
-    if (!toast) return;
 
-    function pageUrl() {
-      const canonical = document.querySelector('link[rel="canonical"]');
-      return (canonical && canonical.href) || window.location.href;
-    }
+  <div id="mobileMenu" class="hidden px-6 pb-4 bg-white border-t">
+    <div class="flex flex-col space-y-4 text-sm pt-4">
+      <a href="/#home">Home</a>
+      <a href="/#services">Work</a>
+      <a href="/#clients">Projects</a>
+      <a href="/#featuredwork">Writing</a>
+      <a href="/#contact">Contact</a>
+    </div>
+  </div>
+</header>
 
-    async function copyText(text) {
-      try {
-        await navigator.clipboard.writeText(text);
-        return true;
-      } catch (e) {
-        const ta = document.createElement('textarea');
-        ta.value = text;
-        ta.style.position = 'fixed';
-        ta.style.top = '-9999px';
-        document.body.appendChild(ta);
-        ta.focus();
-        ta.select();
-        let ok = false;
-        try { ok = document.execCommand('copy'); } catch {}
-        document.body.removeChild(ta);
-        return ok;
-      }
-    }
+<script>
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});
+</script>
 
-    let hideTimer;
-    function showToast() {
-      clearTimeout(hideTimer);
-      toast.hidden = false;
-      requestAnimationFrame(() => {
-        toast.style.opacity = '1';
-        toast.style.transform = 'translateX(-50%) translateY(0)';
-      });
-      hideTimer = setTimeout(() => {
-        toast.style.opacity = '0';
-        toast.style.transform = 'translateX(-50%) translateY(8px)';
-        setTimeout(() => { toast.hidden = true; }, 220);
-      }, 1500);
-    }
+<div class="h-24"></div>
 
-    // Optional: attach to any element with id="shareCopy"
-    const shareLink = document.getElementById('shareCopy');
-    if (shareLink) {
-      shareLink.addEventListener('click', async (e) => {
-        e.preventDefault();
-        const url = pageUrl();
-        const ok = await copyText(url);
-        if (ok) showToast();
-      });
-    }
-  })();
-  </script>
+<!-- ARTICLE -->
+<main class="px-6 py-12">
+  <article class="max-w-2xl mx-auto">
+
+    <!-- HEADER -->
+    <header class="mb-10 text-center">
+      <p class="text-sm mb-2" style="color: var(--text-muted);">
+        Advertising & Growth
+      </p>
+
+      <h1 class="text-3xl md:text-4xl mb-4" style="color: var(--primary-color);">
+        5 Common Paid Advertising Mistakes Small Businesses Make (And How to Fix Them)
+      </h1>
+
+      <p class="text-sm" style="color: var(--text-muted);">
+        By Olivia Arkema • August 18, 2025
+      </p>
+    </header>
+
+    <!-- IMAGE -->
+    <figure class="mb-10">
+      <img src="lifestyle2.jpg" alt="Paid Advertising for Small Businesses" class="rounded-lg mx-auto">
+    </figure>
+
+    <!-- CONTENT -->
+    <div class="space-y-6 leading-relaxed">
+
+      <p class="mb-6">Paid advertising, when executed effectively, can be a powerful engine for small business growth. By strategically leveraging platforms like Meta (Facebook &amp; Instagram) and Google Ads, businesses can reach precisely targeted audiences, generate leads, drive sales, and ultimately boost their bottom line.</p>
+
+      <p class="mb-6">Essentially, paid advertising allows businesses to pay to have their ads displayed to specific groups of people online. This can take many forms, including Search Engine Marketing (SEM), where businesses appear at the top of search engine results pages (SERPs) when potential customers search for relevant keywords (e.g., “best Italian restaurant near me”). Another common form is Social Media Advertising, where ads are displayed on platforms like Facebook, Instagram, and others, targeting users based on demographics, interests, and behaviors. Display Advertising involves placing ads on websites and apps across the internet.</p>
+
+      <p class="mb-6">Paid advertising can be particularly valuable for launching new products or services, running special promotions and sales, generating leads for sales teams, increasing brand awareness and visibility, and reaching specific customer segments. However, many small businesses make critical mistakes that can significantly diminish the effectiveness of their paid advertising campaigns. Without further ado, here are five of the most common pitfalls and how to avoid them:</p>
+
+      <h2 style="color: var(--secondary-color);">1. Not Defining Clear Goals and Objectives</h2>
+      <p class="mb-6">One common mistake is that many businesses launch ad campaigns without clearly defining their goals. Are you aiming to increase website traffic, generate leads, drive sales, or build brand awareness? The choices you make in ad campaign setup really do affect the way your advertising dollars are spent and how effective they are.</p>
+
+      <h2 style="color: var(--secondary-color);">2. Targeting the Wrong Audience</h2>
+      <p class="mb-6">Another critical mistake is targeting the wrong audience. Targeting too broad or too narrow an audience can lead to wasted ad spend. If your ads are shown to people who are not interested in your products or services, they are unlikely to convert. Utilize detailed targeting options available on platforms like Meta and Google Ads. Leverage demographics, interests, behaviors, and even lookalike audiences to reach the most relevant customers.</p>
+
+      <h2 style="color: var(--secondary-color);">3. Ignoring Landing Page Quality</h2>
+      <p class="mb-6">Ignoring landing page quality is another common pitfall. Sending traffic to a generic homepage or a poorly designed landing page can significantly decrease conversion rates. Create dedicated landing pages for each of your ad campaigns. These pages should be relevant, with the content on the landing page directly aligning with the message and offer in your ad. They should also be clear and concise, using strong calls to action (CTAs) and minimizing distractions. Finally, ensure your landing pages are mobile-friendly, optimized for viewing on all devices.</p>
+
+      <h2 style="color: var(--secondary-color);">4. Lacking Patience</h2>
+      <p class="mb-6">Many businesses, eager to see immediate results, pour their entire advertising budget into a short burst, such as a week or a few days. This “firehose” approach often shocks the advertising algorithms, leading to suboptimal performance and wasted spend. Implement a gradual ramp-up and cool-down strategy for your ad spend. Start with a modest budget and gradually increase it over time. This allows the algorithms to learn and optimize your campaigns more effectively. Similarly, gradually reduce your spend before pausing or stopping a campaign to avoid sudden drops in performance.</p>
+
+      <h2 style="color: var(--secondary-color);">5. Neglecting Campaign Monitoring and Optimization</h2>
+      <p class="mb-6">Finally, setting up a campaign and then forgetting about it is a recipe for disaster. Regularly monitor key metrics such as click-through rates (CTR), conversion rates, cost per click (CPC), and return on ad spend (ROAS). Based on your data, make necessary adjustments to your campaigns, such as adjusting bids, refining targeting, and improving ad copy. Test different ad variations to see which ones perform best.</p>
+
+      <p class="mb-6">By avoiding these common mistakes and implementing the strategies outlined above, small businesses can significantly improve the effectiveness of their paid advertising campaigns and achieve a higher return on investment. Remember that paid advertising requires ongoing effort and optimization. Regularly review your campaigns and make data-driven decisions to maximize your results.</p>
+
+    </div>
+
+    <!-- TAGS -->
+    <section class="mt-10 flex gap-2">
+      <span class="px-3 py-1 rounded-full text-sm" style="background: var(--accent-color-2); color: var(--primary-color);">Advertising</span>
+      <span class="px-3 py-1 rounded-full text-sm" style="background: var(--accent-color-2); color: var(--primary-color);">Small Business</span>
+    </section>
+
+  </article>
+</main>
+
+<!-- FOOTER -->
+<section id="contact" class="py-14 text-center" style="background: var(--secondary-color); color: var(--white);">
+  <div class="max-w-xl mx-auto px-6">
+    <h2 class="text-2xl mb-4">Let's collaborate.</h2>
+
+    <div class="flex flex-col sm:flex-row justify-center gap-3 mb-6">
+      <a href="mailto:hello@oliviaarkema.com" class="px-6 py-2 rounded-lg border border-white text-white text-sm">
+        Email me
+      </a>
+      <a href="tel:19706726402" class="px-6 py-2 rounded-lg bg-[#c6d86d] text-[#0d3921] text-sm font-medium">
+        Call me
+      </a>
+    </div>
+
+    <div style="height:1px; background: rgba(255,255,255,0.25);" class="mb-4"></div>
+
+    <p class="text-xs" style="color: rgba(255,255,255,0.7);">
+      © Olivia Arkema 2026
+    </p>
+  </div>
+</section>
+
 </body>
 </html>
