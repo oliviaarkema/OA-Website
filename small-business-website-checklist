@@ -1,60 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Boost your Google rankings with these 10 simple, actionable tips-no SEO expert needed! 
-                Learn how to optimize your website, create quality content, 
-                improve local SEO, and more to drive traffic and grow your business.">
-    <title>Small Business Website Checklist</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="green_bow.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A free small business website checklist covering branding, mobile design, SEO, and more. Download the PDF to use it for your own site.">
+  <title>Small Business Website Checklist | Olivia Arkema</title>
+  <link rel="canonical" href="https://oliviaarkema.com/small-business-website-checklist">
+  <link rel="icon" href="green_bow.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="white_bow2.png" alt="Olivia Arkema Logo" style="max-width: 30px;max-height: 30px;">
-            </a>        
-        </div>
-        <div class="hamburger-menu">&#9776;</div>
-        <nav class="dropdown-menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog">Blog</a></li>
-                <li><a href="contact">Get in Touch</a></li>
-            </ul>
-        </nav>
+
+<body class="font-[Inter]" style="background: var(--tertiary-color); color: var(--text-dark);">
+
+<!-- NAV -->
+<header id="navbar" class="fixed w-full z-50 bg-white/90 backdrop-blur border-b" style="border-color: rgba(0,0,0,0.08);">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <a href="/" class="text-xl font-bold" style="color: var(--primary-color);">OA</a>
+
+    <nav class="hidden md:flex space-x-8 text-sm">
+      <a href="/#home">Home</a>
+      <a href="/#services">Work</a>
+      <a href="/#clients">Projects</a>
+      <a href="/#featuredwork">Writing</a>
+      <a href="/contact">Contact</a>
+    </nav>
+
+    <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+  </div>
+
+  <div id="mobileMenu" class="hidden px-6 pb-4 bg-white border-t">
+    <div class="flex flex-col space-y-4 text-sm pt-4">
+      <a href="/#home">Home</a>
+      <a href="/#services">Work</a>
+      <a href="/#clients">Projects</a>
+      <a href="/#featuredwork">Writing</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </div>
+</header>
+
+<script>
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});
+</script>
+
+<div class="h-24"></div>
+
+<!-- ARTICLE -->
+<main class="px-6 py-12">
+  <article class="max-w-3xl mx-auto card p-8 md:p-10">
+
+    <header class="mb-8 text-center">
+      <p class="text-sm mb-2" style="color: var(--text-muted);">WEBSITES</p>
+      <h1 class="text-3xl md:text-4xl mb-3" style="color: var(--primary-color);">
+        Small Business Website Checklist
+      </h1>
+      <p class="text-sm" style="color: var(--text-muted);">
+        By Olivia Arkema • January 23, 2025
+      </p>
     </header>
-    <main>
-        <section class="blog-page">
-            <img src="checklist.jpg" alt="Website Checklist for Small and Medium Businesses" style="width:100%; max-width:600px; margin-bottom:20px;">
-            <h1>Small Business Website Checklist </h1>
-            <p>Your website is one of your most important tools for growing your small business. It should make a great first impression, guide visitors seamlessly, and help turn them into customers. </p>
-            <p>Focus on clear branding, a mobile-friendly design, and simple navigation to create a user-friendly experience. Make sure your website loads quickly, features accurate contact details, and has strong calls-to-action like “Get a Quote” or “Shop Now.” Link to your Google Business Profile to improve local visibility, add social media links, and optimize your content with relevant keywords for SEO. Don’t forget to secure your site with an SSL certificate and use analytics tools to measure performance and refine your strategy. </p>
-            <p>A great website can make a big difference for your business. For the full checklist, click to download below.</p>
-            <a href="Small-Business-Website-Checklist.pdf" class="button">Download the free Website Checklist</a>
-        </section>
-        <section class="two-columns section-7">
-            <div>
-                <h2>Let's collaborate.</h2>
-            </div>
-            <div>
-                <a href="contact" class="button">Work with Me</a>
-                </br>
-                </br>
-                <p>Email me:</p>
-                <p>livarkema@gmail.com</p>
-                 </br>
-                <p>Give me a call:</p>
-                <p>970-672-6402</p>
-            </div>
-        </section>
-    </main>
-    <script>
-        document.querySelector(".hamburger-menu").addEventListener("click", function() {
-            document.querySelector(".dropdown-menu").classList.toggle("show");
-        });
-    </script>
+
+    <figure class="mb-8">
+      <img src="checklist.jpg" alt="Small Business Website Checklist" class="rounded-lg mx-auto">
+    </figure>
+
+    <div class="space-y-6 leading-relaxed">
+
+      <p>Your website is one of your most important tools for growing your small business. It should make a great first impression, guide visitors seamlessly, and help turn them into customers.</p>
+
+      <p>Focus on clear branding, a mobile-friendly design, and simple navigation to create a user-friendly experience. Make sure your website loads quickly, features accurate contact details, and has strong calls-to-action like "Get a Quote" or "Shop Now." Link to your Google Business Profile to improve local visibility, add social media links, and optimize your content with relevant keywords for SEO. Don't forget to secure your site with an SSL certificate and use analytics tools to measure performance and refine your strategy.</p>
+
+      <p>A great website can make a big difference for your business. For the full checklist, download it below.</p>
+
+      <div class="pt-2">
+        <a href="Small-Business-Website-Checklist.pdf"
+           class="inline-block px-8 py-3 rounded-lg font-medium"
+           style="background: var(--accent-color-2); color: var(--primary-color);">
+          Download the free Website Checklist
+        </a>
+      </div>
+
+    </div>
+
+  </article>
+</main>
+
+<!-- FOOTER -->
+<section class="py-14 text-center" style="background: var(--secondary-color); color: var(--white);">
+  <div class="max-w-xl mx-auto px-6">
+
+    <h2 class="text-2xl mb-4">Let's collaborate.</h2>
+
+    <div class="flex flex-col sm:flex-row justify-center gap-3 mb-6">
+      <a href="mailto:livarkema@gmail.com" class="px-6 py-2 rounded-lg border border-white text-white text-sm hover:bg-white hover:text-[#1f3a4a] transition">
+        Email me
+      </a>
+      <a href="tel:19706726402" class="px-6 py-2 rounded-lg bg-[#c6d86d] text-[#0d3921] text-sm font-medium">
+        Call me
+      </a>
+    </div>
+
+    <div class="flex justify-center gap-5 mb-6">
+      <a href="https://www.facebook.com/people/Olivia-Arkema-Marketing-Web-Design/61564009298913/"><img src="facebook.png" class="h-5" alt="Facebook"></a>
+      <a href="https://www.pinterest.com/livarkema/"><img src="pinterest.png" class="h-5" alt="Pinterest"></a>
+      <a href="https://x.com/livlavonne"><img src="twitter.png" class="h-5" alt="Twitter"></a>
+      <a href="https://www.linkedin.com/in/oliviaarkema/"><img src="linked-in.png" class="h-5" alt="LinkedIn"></a>
+    </div>
+
+    <div style="height:1px; background: rgba(255,255,255,0.25);" class="mb-4"></div>
+
+    <p class="text-xs" style="color: rgba(255,255,255,0.7);">
+      © Olivia Arkema 2026
+    </p>
+
+  </div>
+</section>
+
 </body>
 </html>
