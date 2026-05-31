@@ -117,6 +117,9 @@ menuBtn.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
        style="background:radial-gradient(circle, rgba(198,216,109,.18) 0%, transparent 70%); transform:translate(20%,-20%);"></div>
   <div class="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
        style="background:radial-gradient(circle, rgba(95,132,156,.25) 0%, transparent 70%); transform:translate(-30%,30%);"></div>
+  <!-- Paint texture overlay -->
+  <div class="absolute inset-0 pointer-events-none"
+       style="background-image:url('paint-texture.jpg');background-size:cover;background-position:center;opacity:.09;mix-blend-mode:overlay;"></div>
 
   <div class="max-w-6xl mx-auto px-6 w-full pt-28 pb-20">
     <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -267,8 +270,11 @@ menuBtn.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
 
 
 <!-- ═══════════════════════════ SERVICES ═══════════════════════════ -->
-<section id="services" class="py-24 bg-[#f4efe9]">
-  <div class="max-w-6xl mx-auto px-6">
+<section id="services" class="py-24 bg-[#f4efe9] relative overflow-hidden">
+  <!-- Paper texture overlay -->
+  <div class="absolute inset-0 pointer-events-none"
+       style="background-image:url('paper-texture.jpg');background-size:cover;background-position:center;opacity:.10;mix-blend-mode:multiply;"></div>
+  <div class="max-w-6xl mx-auto px-6 relative">
 
     <div class="mb-14">
       <p class="text-xs tracking-[.18em] uppercase mb-3" style="color:var(--accent-color-1)">What I Do</p>
@@ -442,6 +448,9 @@ menuBtn.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
        style="background:radial-gradient(circle, rgba(198,216,109,.12) 0%, transparent 70%); transform:translate(25%,-25%);"></div>
   <div class="absolute bottom-0 left-0 w-[350px] h-[350px] rounded-full pointer-events-none"
        style="background:radial-gradient(circle, rgba(95,132,156,.2) 0%, transparent 70%); transform:translate(-25%,25%);"></div>
+  <!-- Paint texture overlay -->
+  <div class="absolute inset-0 pointer-events-none"
+       style="background-image:url('paint-texture.jpg');background-size:cover;background-position:center;opacity:.09;mix-blend-mode:overlay;"></div>
 
   <div class="max-w-6xl mx-auto px-6 relative">
     <div class="grid md:grid-cols-2 gap-16 items-center">

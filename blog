@@ -66,6 +66,9 @@ menuBtn.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
 <section class="pt-40 pb-16 bg-[#1f3a4a] text-white text-center relative overflow-hidden">
   <div class="absolute inset-0 pointer-events-none"
        style="background:radial-gradient(ellipse at 70% 50%, rgba(198,216,109,.12) 0%, transparent 65%);"></div>
+  <!-- Paint texture overlay -->
+  <div class="absolute inset-0 pointer-events-none"
+       style="background-image:url('paint-texture.jpg');background-size:cover;background-position:center;opacity:.09;mix-blend-mode:overlay;"></div>
   <div class="max-w-3xl mx-auto px-6 relative">
     <p class="text-xs tracking-[.2em] uppercase mb-4 text-white/50">Insights & Writing</p>
     <h1 class="font-[Prata] text-5xl mb-4">Blog</h1>
