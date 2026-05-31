@@ -4,68 +4,143 @@
   <!-- HOME -->
   <url>
     <loc>https://oliviaarkema.com/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- CORE PAGES -->
   <url>
+    <loc>https://oliviaarkema.com/michigan-web-design</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
     <loc>https://oliviaarkema.com/webdev</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://oliviaarkema.com/marketing</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://oliviaarkema.com/marketresearch</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- SERVICE & LANDING PAGES -->
+  <url>
+    <loc>https://oliviaarkema.com/affordable-website-packages-small-businesses-michigan</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>  https://oliviaarkema.com/michigan-web-design</loc>
+    <loc>https://oliviaarkema.com/website-design-contractors-plumbers-electricians-michigan</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- BLOG INDEX -->
+  <url>
+    <loc>https://oliviaarkema.com/blog</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- BLOG POSTS -->
+  <url>
+    <loc>https://oliviaarkema.com/5-signs-your-small-business-website-needs-a-redesign</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://oliviaarkema.com/improve-google-rankings-without-seo-experts</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://oliviaarkema.com/does-your-small-business-really-need-a-website</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://oliviaarkema.com/paid-advertising-mistakes-small-businesses</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://oliviaarkema.com/small-business-website-checklist</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- WRITING & RESEARCH -->
+  <url>
+    <loc>https://oliviaarkema.com/syntheticsurveydata</loc>
+    <lastmod>2026-02-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://oliviaarkema.com/socialdesirabilityandai</loc>
+    <lastmod>2025-08-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url>
 
   <!-- PROJECTS -->
   <url>
     <loc>https://oliviaarkema.com/retaildatascience</loc>
-  </url>
-
-  <url>
-    <loc>https://oliviaarkema.com/syntheticsurveydata</loc>
-  </url>
-
-  <!-- BLOG POSTS -->
-  <url>
-    <loc>https://oliviaarkema.com/improve-google-rankings-without-seo-experts</loc>
-  </url>
-
-<url>
-    <loc>https://oliviaarkema.com/does-your-small-business-really-need-a-website</loc>
-  </url>
-
-  <url>
-    <loc>https://oliviaarkema.com/paid-advertising-mistakes-small-businesses</loc>
-  </url>
-
-  <url>
-    <loc>https://oliviaarkema.com/socialdesirabilityandai</loc>
-  </url>
-
-  <url>
-    <loc>https://oliviaarkema.com/small-business-website-checklist</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url>
 
   <!-- CONTACT -->
   <url>
     <loc>https://oliviaarkema.com/contact</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
   </url>
 
-  <!-- HIDDEN / LEGAL -->
+  <!-- LEGAL -->
   <url>
     <loc>https://oliviaarkema.com/accessibility</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 
   <url>
     <loc>https://oliviaarkema.com/privacypolicy</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 
 </urlset>
