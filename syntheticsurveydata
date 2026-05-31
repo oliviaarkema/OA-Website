@@ -107,7 +107,7 @@
         <a href="/" class="text-3xl font-bold heading-font" style="color:#393831;">OA</a>
 
         <!-- Desktop links -->
-        <div class="hidden md:flex space-x-8">
+        <div class="hidden md:flex space-x-8 text-[11px] tracking-[.14em] uppercase">
           <a href="/#home" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Home</a>
           <a href="/#services" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Services</a>
           <a href="/#clients" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Clients</a>
@@ -126,7 +126,7 @@
 
     <!-- Mobile menu -->
     <div id="mobile-menu" class="hidden md:hidden">
-      <div class="px-6 pb-4 space-y-2">
+      <div class="px-6 pb-4 space-y-2 text-[11px] tracking-[.14em] uppercase">
         <a href="/#home" class="block" style="color:#9e9383;">Home</a>
         <a href="/#services" class="block" style="color:#9e9383;">Services</a>
         <a href="/#clients" class="block" style="color:#9e9383;">Clients</a>

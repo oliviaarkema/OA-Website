@@ -20,7 +20,7 @@
 
     <a href="/" class="text-xl font-bold" style="color: var(--primary-color);">OA</a>
 
-    <nav class="hidden md:flex space-x-8 text-sm">
+    <nav class="hidden md:flex space-x-8 text-[11px] tracking-[.14em] uppercase">
       <a href="/#home">Home</a>
       <a href="/#services">Work</a>
       <a href="/#clients">Projects</a>
@@ -32,7 +32,7 @@
   </div>
 
   <div id="mobileMenu" class="hidden px-6 pb-4 bg-white border-t">
-    <div class="flex flex-col space-y-4 text-sm pt-4">
+    <div class="flex flex-col space-y-4 text-[11px] tracking-[.14em] uppercase pt-4">
       <a href="/#home">Home</a>
       <a href="/#services">Work</a>
       <a href="/#clients">Projects</a>
