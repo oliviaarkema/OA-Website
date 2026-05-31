@@ -14,14 +14,14 @@
 <meta property="og:title" content="Website Design for Contractors, Plumbers & Electricians in Michigan">
 <meta property="og:description" content="Professional website design for Michigan contractors, plumbers, electricians, and trades businesses. Generate more local leads with a site built for your trade.">
 <meta property="og:url" content="https://oliviaarkema.com/website-design-contractors-plumbers-electricians-michigan">
-<meta property="og:image" content="https://oliviaarkema.com/website-design-lifestyle.jpg">
+<meta property="og:image" content="https://oliviaarkema.com/working-laptop.jpg">
 <meta property="og:site_name" content="Olivia Arkema">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Website Design for Contractors, Plumbers & Electricians in Michigan">
 <meta name="twitter:description" content="Professional website design for Michigan contractors, plumbers, electricians, and trades businesses. Generate more local leads.">
-<meta name="twitter:image" content="https://oliviaarkema.com/website-design-lifestyle.jpg">
+<meta name="twitter:image" content="https://oliviaarkema.com/working-laptop.jpg">
 <meta name="twitter:creator" content="@livlavonne">
 
 <!-- JSON-LD -->
@@ -129,7 +129,7 @@ document.getElementById('menuBtn').addEventListener('click', () =>
 <!-- HERO IMAGE -->
 <div style="background:var(--secondary-color)">
   <div class="max-w-5xl mx-auto px-6 pb-0">
-    <img src="website-design-lifestyle.jpg" alt="Website design for Michigan contractors and trades businesses"
+    <img src="working-laptop.jpg" alt="Website design for Michigan contractors and trades businesses"
          class="w-full rounded-2xl object-cover" style="height:420px;box-shadow:0 16px 40px rgba(0,0,0,.25)">
   </div>
 </div>
