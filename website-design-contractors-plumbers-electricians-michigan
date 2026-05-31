@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Website Design for Contractors, Plumbers & Electricians in Michigan | Olivia Arkema</title>
+<meta name="description" content="Professional website design for Michigan contractors, plumbers, electricians, and trades businesses. Generate more local leads with a fast, mobile-friendly site built for your trade.">
+<meta name="keywords" content="website design for contractors Michigan, plumber website design Michigan, electrician website Michigan, trades business website, contractor website design, local lead generation Michigan">
+<meta name="author" content="Olivia Arkema">
+<link rel="canonical" href="https://oliviaarkema.com/website-design-contractors-plumbers-electricians-michigan">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Website Design for Contractors, Plumbers & Electricians in Michigan">
+<meta property="og:description" content="Professional website design for Michigan contractors, plumbers, electricians, and trades businesses. Generate more local leads with a site built for your trade.">
+<meta property="og:url" content="https://oliviaarkema.com/website-design-contractors-plumbers-electricians-michigan">
+<meta property="og:image" content="https://oliviaarkema.com/website-design-lifestyle.jpg">
+<meta property="og:site_name" content="Olivia Arkema">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Website Design for Contractors, Plumbers & Electricians in Michigan">
+<meta name="twitter:description" content="Professional website design for Michigan contractors, plumbers, electricians, and trades businesses. Generate more local leads.">
+<meta name="twitter:image" content="https://oliviaarkema.com/website-design-lifestyle.jpg">
+<meta name="twitter:creator" content="@livlavonne">
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Website Design for Contractors, Plumbers, Electricians & Trades Businesses in Michigan",
+  "description": "Professional website design for Michigan contractors, plumbers, electricians, and trades businesses. Built to generate local leads, rank in Google, and work on mobile.",
+  "provider": {
+    "@type": "Person",
+    "name": "Olivia Arkema",
+    "url": "https://oliviaarkema.com"
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Michigan"
+  },
+  "url": "https://oliviaarkema.com/website-design-contractors-plumbers-electricians-michigan",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Contractors, Plumbers, Electricians, Landscapers, HVAC companies, Painters, Builders, Handymen"
+  }
+}
+</script>
+
+<link rel="icon" href="green_bow.png">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Noto+Serif:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+.nav-link { position:relative; transition:color .2s; }
+.nav-link::after { content:''; position:absolute; bottom:-3px; left:0; width:0; height:2px; background:var(--accent-color-2); border-radius:2px; transition:width .25s ease; }
+.nav-link:hover::after { width:100%; }
+.nav-link:hover { color:var(--secondary-color); }
+
+.feature-check::before { content:'✓'; margin-right:.5rem; font-weight:700; color:var(--accent-color-2); }
+
+.search-pill {
+  display:inline-flex; align-items:center; gap:.4rem;
+  background:#fff; border:1px solid #e6dfd7;
+  border-radius:9999px; padding:.35rem 1rem;
+  font-size:.8125rem; color:var(--secondary-color);
+  box-shadow:0 1px 4px rgba(0,0,0,.06);
+}
+.search-pill::before { content:'🔍'; font-size:.75rem; }
+</style>
+</head>
+
+<body class="font-[Inter] bg-[#f4efe9] text-[#2f2f2f]">
+
+<!-- NAV -->
+<header class="fixed w-full z-50 bg-white/90 backdrop-blur border-b border-[#e6dfd7]">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="/" class="text-xl font-bold font-[Prata]" style="color:var(--secondary-color)">OA</a>
+    <nav class="hidden md:flex space-x-8 text-[11px] tracking-[.14em] uppercase">
+      <a href="/#home" class="nav-link">Home</a>
+      <a href="/#services" class="nav-link">Work</a>
+      <a href="/#clients" class="nav-link">Projects</a>
+      <a href="/#featuredwork" class="nav-link">Writing</a>
+      <a href="/contact" class="nav-link">Contact</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+  </div>
+  <div id="mobileMenu" class="hidden px-6 pb-4 bg-white border-t border-[#e6dfd7]">
+    <div class="flex flex-col space-y-4 text-[11px] tracking-[.14em] uppercase pt-4">
+      <a href="/#home">Home</a>
+      <a href="/#services">Work</a>
+      <a href="/#clients">Projects</a>
+      <a href="/#featuredwork">Writing</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </div>
+</header>
+<script>
+document.getElementById('menuBtn').addEventListener('click', () =>
+  document.getElementById('mobileMenu').classList.toggle('hidden'));
+</script>
+
+<!-- HERO -->
+<section class="pt-40 pb-20 relative overflow-hidden" style="background:var(--secondary-color)">
+  <div class="absolute inset-0 pointer-events-none"
+       style="background-image:url('paint-texture.jpg');background-size:cover;opacity:.07;mix-blend-mode:overlay;"></div>
+  <div class="max-w-4xl mx-auto px-6 relative">
+    <div class="mb-5">
+      <span class="text-[10px] tracking-widest uppercase font-medium px-2.5 py-1 rounded-full" style="background:var(--accent-color-2);color:var(--secondary-color)">Web Design · Michigan Trades</span>
+    </div>
+    <h1 class="font-[Prata] text-4xl md:text-5xl leading-tight mb-6 text-white max-w-3xl">
+      Website Design for Contractors, Plumbers, Electricians &amp; Trades Businesses
+    </h1>
+    <p class="text-lg mb-10 max-w-xl" style="color:rgba(255,255,255,.75)">
+      You're busy running jobs. I'll handle the website.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4">
+      <a href="/contact" class="inline-block px-8 py-3 rounded-lg font-medium text-sm transition hover:opacity-90 text-center" style="background:var(--accent-color-2);color:var(--secondary-color)">
+        Get a Free Consultation
+      </a>
+      <a href="/affordable-website-packages-small-businesses-michigan" class="inline-block px-8 py-3 rounded-lg font-medium text-sm transition hover:bg-white/10 text-center border border-white/40 text-white">
+        View Website Packages
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- HERO IMAGE -->
+<div style="background:var(--secondary-color)">
+  <div class="max-w-5xl mx-auto px-6 pb-0">
+    <img src="website-design-lifestyle.jpg" alt="Website design for Michigan contractors and trades businesses"
+         class="w-full rounded-2xl object-cover" style="height:420px;box-shadow:0 16px 40px rgba(0,0,0,.25)">
+  </div>
+</div>
+
+<!-- INTRO -->
+<section class="py-20 bg-white">
+  <div class="max-w-2xl mx-auto px-6" style="font-size:1.0625rem;line-height:1.85;color:var(--text-dark)">
+
+    <p>Most contractors don't have time to think about websites.</p>
+
+    <p class="mt-5">You're answering calls, meeting customers, managing crews, ordering materials, and trying to keep projects moving.</p>
+
+    <p class="mt-5">The last thing you need is another complicated technology project on your plate.</p>
+
+    <p class="mt-5">That's where I can help.</p>
+
+    <p class="mt-5">I'm Olivia Arkema, a <a href="/michigan-web-design" class="underline underline-offset-2 transition hover:opacity-70" style="color:var(--accent-color-1)">Michigan-based website designer and marketing consultant</a> who helps trade professionals build simple, professional websites that generate more local leads.</p>
+
+  </div>
+</section>
+
+<!-- WHY IT MATTERS -->
+<section class="py-20 relative overflow-hidden" style="background:var(--tertiary-color)">
+  <div class="absolute inset-0 pointer-events-none"
+       style="background-image:url('paper-texture.jpg');background-size:cover;opacity:.08;mix-blend-mode:multiply;"></div>
+  <div class="max-w-4xl mx-auto px-6 relative">
+
+    <div class="text-center mb-12">
+      <p class="text-xs tracking-[.18em] uppercase mb-3" style="color:var(--accent-color-1)">The Reality</p>
+      <h2 class="font-[Prata] text-3xl md:text-4xl mb-5" style="color:var(--secondary-color)">Why Your Website Matters</h2>
+      <p class="max-w-xl mx-auto" style="font-size:1.0625rem;line-height:1.75;color:var(--text-dark)">
+        When homeowners need a plumber, electrician, landscaper, roofer, or contractor—they usually start with Google.
+      </p>
+    </div>
+
+    <!-- Search queries -->
+    <div class="flex flex-wrap justify-center gap-3 mb-12">
+      <span class="search-pill">"Electrician near me"</span>
+      <span class="search-pill">"Plumber in my area"</span>
+      <span class="search-pill">"Landscaping company near me"</span>
+      <span class="search-pill">"Roof repair in Michigan"</span>
+      <span class="search-pill">"HVAC contractor Grand Rapids"</span>
+      <span class="search-pill">"Handyman near me"</span>
+    </div>
+
+    <div class="bg-white rounded-2xl p-8 md:p-10 text-center max-w-2xl mx-auto" style="box-shadow:0 4px 24px rgba(0,0,0,.07)">
+      <p class="font-[Prata] text-xl mb-3" style="color:var(--secondary-color)">If your business isn't showing up—or your website looks outdated—you could be losing jobs to competitors.</p>
+      <p style="color:var(--text-muted);font-size:.9375rem">A professional website isn't a luxury. For a trades business, it's a lead generation tool.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHAT MAKES A GOOD TRADES WEBSITE -->
+<section class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <div class="text-center mb-14">
+      <p class="text-xs tracking-[.18em] uppercase mb-3" style="color:var(--accent-color-1)">What to Look For</p>
+      <h2 class="font-[Prata] text-3xl md:text-4xl" style="color:var(--secondary-color)">What Makes a Good Trades Website?</h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <div class="rounded-2xl p-8 border border-[#e6dfd7] hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-5 text-lg" style="background:var(--accent-color-2)">📍</div>
+        <h3 class="font-[Prata] text-xl mb-3" style="color:var(--secondary-color)">It Shows Up in Google</h3>
+        <p style="color:var(--text-muted);line-height:1.7;font-size:.9375rem">A well-built website helps Google understand who you are, what services you offer, and where you work—so local customers can find you when it counts.</p>
+      </div>
+
+      <div class="rounded-2xl p-8 border border-[#e6dfd7] hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-5 text-lg" style="background:var(--accent-color-2)">⭐</div>
+        <h3 class="font-[Prata] text-xl mb-3" style="color:var(--secondary-color)">It Looks Professional</h3>
+        <p style="color:var(--text-muted);line-height:1.7;font-size:.9375rem">Potential customers often decide within seconds whether they trust a business. A clean, professional website builds confidence before they ever pick up the phone.</p>
+      </div>
+
+      <div class="rounded-2xl p-8 border border-[#e6dfd7] hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-5 text-lg" style="background:var(--accent-color-2)">📱</div>
+        <h3 class="font-[Prata] text-xl mb-3" style="color:var(--secondary-color)">It Works on Mobile</h3>
+        <p style="color:var(--text-muted);line-height:1.7;font-size:.9375rem">Most people searching for contractors are doing it from their phones. Your website needs to look great and work smoothly on every device.</p>
+      </div>
+
+      <div class="rounded-2xl p-8 border border-[#e6dfd7] hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-5 text-lg" style="background:var(--accent-color-2)">📞</div>
+        <h3 class="font-[Prata] text-xl mb-3" style="color:var(--secondary-color)">It Makes Contact Easy</h3>
+        <p style="color:var(--text-muted);line-height:1.7;font-size:.9375rem">If customers have to hunt for your phone number, they'll often move on to the next company. A good website makes it easy to call, request a quote, or submit a form.</p>
+      </div>
+
+    </div>
+
+    <p class="text-center mt-10 text-sm" style="color:var(--text-muted)">
+      Not sure if your current site checks these boxes? <a href="/5-signs-your-small-business-website-needs-a-redesign" class="underline underline-offset-2 transition hover:opacity-70" style="color:var(--accent-color-1)">Read: 5 Signs Your Website Needs a Redesign →</a>
+    </p>
+
+  </div>
+</section>
+
+<!-- DONE FOR YOU -->
+<section class="py-20 relative overflow-hidden" style="background:var(--secondary-color)">
+  <div class="absolute inset-0 pointer-events-none"
+       style="background-image:url('paint-texture.jpg');background-size:cover;opacity:.07;mix-blend-mode:overlay;"></div>
+  <div class="max-w-5xl mx-auto px-6 relative">
+
+    <div class="md:grid md:grid-cols-2 gap-16 items-center">
+
+      <div>
+        <p class="text-xs tracking-[.18em] uppercase mb-3" style="color:var(--accent-color-2)">Full Service</p>
+        <h2 class="font-[Prata] text-3xl md:text-4xl mb-6 text-white">Done-For-You Website Design</h2>
+        <p class="mb-8" style="color:rgba(255,255,255,.75);font-size:1.0625rem;line-height:1.75">
+          I handle the entire process from start to launch. You focus on your business—I'll take care of the website.
+        </p>
+        <a href="/contact" class="inline-block px-8 py-3 rounded-lg font-medium text-sm transition hover:opacity-90" style="background:var(--accent-color-2);color:var(--secondary-color)">
+          Let's Get Started
+        </a>
+      </div>
+
+      <div class="mt-10 md:mt-0">
+        <ul class="space-y-3">
+          <li class="flex items-center gap-4 rounded-xl px-6 py-4" style="background:rgba(255,255,255,.07)">
+            <span style="color:var(--accent-color-2);font-size:1.1rem">✓</span>
+            <span class="text-white text-sm">Website design &amp; development</span>
+          </li>
+          <li class="flex items-center gap-4 rounded-xl px-6 py-4" style="background:rgba(255,255,255,.07)">
+            <span style="color:var(--accent-color-2);font-size:1.1rem">✓</span>
+            <span class="text-white text-sm">Mobile optimization</span>
+          </li>
+          <li class="flex items-center gap-4 rounded-xl px-6 py-4" style="background:rgba(255,255,255,.07)">
+            <span style="color:var(--accent-color-2);font-size:1.1rem">✓</span>
+            <span class="text-white text-sm">Basic SEO setup</span>
+          </li>
+          <li class="flex items-center gap-4 rounded-xl px-6 py-4" style="background:rgba(255,255,255,.07)">
+            <span style="color:var(--accent-color-2);font-size:1.1rem">✓</span>
+            <span class="text-white text-sm">Contact forms &amp; quote requests</span>
+          </li>
+          <li class="flex items-center gap-4 rounded-xl px-6 py-4" style="background:rgba(255,255,255,.07)">
+            <span style="color:var(--accent-color-2);font-size:1.1rem">✓</span>
+            <span class="text-white text-sm">Service pages</span>
+          </li>
+          <li class="flex items-center gap-4 rounded-xl px-6 py-4" style="background:rgba(255,255,255,.07)">
+            <span style="color:var(--accent-color-2);font-size:1.1rem">✓</span>
+            <span class="text-white text-sm">Photo galleries</span>
+          </li>
+          <li class="flex items-center gap-4 rounded-xl px-6 py-4" style="background:rgba(255,255,255,.07)">
+            <span style="color:var(--accent-color-2);font-size:1.1rem">✓</span>
+            <span class="text-white text-sm">Google Business Profile guidance</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TRADES GRID -->
+<section class="py-20" style="background:var(--tertiary-color)">
+  <div class="max-w-5xl mx-auto px-6">
+
+    <div class="text-center mb-14">
+      <p class="text-xs tracking-[.18em] uppercase mb-3" style="color:var(--accent-color-1)">Who I Work With</p>
+      <h2 class="font-[Prata] text-3xl md:text-4xl mb-5" style="color:var(--secondary-color)">Built for Local Lead Generation</h2>
+      <p class="max-w-xl mx-auto" style="font-size:1.0625rem;line-height:1.75;color:var(--text-dark)">
+        The goal isn't just to have a website. The goal is to help more local customers find you, trust you, and contact you.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mb-12">
+
+      <div class="bg-white rounded-2xl p-6 text-center hover:shadow-md transition-all duration-300 hover:-translate-y-1" style="border:1px solid #e6dfd7">
+        <div class="text-2xl mb-3">🔨</div>
+        <p class="font-medium text-sm" style="color:var(--secondary-color)">Contractors</p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 text-center hover:shadow-md transition-all duration-300 hover:-translate-y-1" style="border:1px solid #e6dfd7">
+        <div class="text-2xl mb-3">⚡</div>
+        <p class="font-medium text-sm" style="color:var(--secondary-color)">Electricians</p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 text-center hover:shadow-md transition-all duration-300 hover:-translate-y-1" style="border:1px solid #e6dfd7">
+        <div class="text-2xl mb-3">🔧</div>
+        <p class="font-medium text-sm" style="color:var(--secondary-color)">Plumbers</p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 text-center hover:shadow-md transition-all duration-300 hover:-translate-y-1" style="border:1px solid #e6dfd7">
+        <div class="text-2xl mb-3">🌿</div>
+        <p class="font-medium text-sm" style="color:var(--secondary-color)">Landscapers</p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 text-center hover:shadow-md transition-all duration-300 hover:-translate-y-1" style="border:1px solid #e6dfd7">
+        <div class="text-2xl mb-3">❄️</div>
+        <p class="font-medium text-sm" style="color:var(--secondary-color)">HVAC Companies</p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 text-center hover:shadow-md transition-all duration-300 hover:-translate-y-1" style="border:1px solid #e6dfd7">
+        <div class="text-2xl mb-3">🖌️</div>
+        <p class="font-medium text-sm" style="color:var(--secondary-color)">Painters</p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 text-center hover:shadow-md transition-all duration-300 hover:-translate-y-1" style="border:1px solid #e6dfd7">
+        <div class="text-2xl mb-3">🏗️</div>
+        <p class="font-medium text-sm" style="color:var(--secondary-color)">Builders</p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 text-center hover:shadow-md transition-all duration-300 hover:-translate-y-1" style="border:1px solid #e6dfd7">
+        <div class="text-2xl mb-3">🚜</div>
+        <p class="font-medium text-sm" style="color:var(--secondary-color)">Excavators</p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 text-center hover:shadow-md transition-all duration-300 hover:-translate-y-1 col-span-2 sm:col-span-1 md:col-span-2" style="border:1px solid #e6dfd7">
+        <div class="text-2xl mb-3">🛠️</div>
+        <p class="font-medium text-sm" style="color:var(--secondary-color)">Handymen</p>
+      </div>
+
+    </div>
+
+    <p class="text-center text-sm" style="color:var(--text-muted)">Don't see your trade? <a href="/contact" class="underline underline-offset-2 transition hover:opacity-70" style="color:var(--accent-color-1)">Get in touch</a> — I work with all types of trades and service businesses.</p>
+
+  </div>
+</section>
+
+<!-- CROSSLINKS -->
+<section class="py-16 bg-white">
+  <div class="max-w-5xl mx-auto px-6">
+
+    <div class="text-center mb-10">
+      <p class="text-xs tracking-[.18em] uppercase mb-2" style="color:var(--accent-color-1)">Helpful Resources</p>
+      <h2 class="font-[Prata] text-2xl" style="color:var(--secondary-color)">More From Olivia</h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <a href="/affordable-website-packages-small-businesses-michigan"
+         class="group rounded-2xl p-6 border border-[#e6dfd7] hover:shadow-md transition-all duration-300 hover:-translate-y-1 block" style="text-decoration:none">
+        <p class="text-[10px] tracking-widest uppercase font-medium mb-3" style="color:var(--accent-color-1)">Pricing</p>
+        <h3 class="font-[Prata] text-lg mb-2 group-hover:underline" style="color:var(--secondary-color)">Affordable Website Packages</h3>
+        <p class="text-sm" style="color:var(--text-muted)">View Starter, Growth, and Custom options with transparent pricing—no hidden fees.</p>
+        <p class="text-sm mt-4 font-medium" style="color:var(--accent-color-1)">See packages →</p>
+      </a>
+
+      <a href="/michigan-web-design"
+         class="group rounded-2xl p-6 border border-[#e6dfd7] hover:shadow-md transition-all duration-300 hover:-translate-y-1 block" style="text-decoration:none">
+        <p class="text-[10px] tracking-widest uppercase font-medium mb-3" style="color:var(--accent-color-1)">Services</p>
+        <h3 class="font-[Prata] text-lg mb-2 group-hover:underline" style="color:var(--secondary-color)">Michigan Web Design</h3>
+        <p class="text-sm" style="color:var(--text-muted)">Simple, fast websites built specifically for Michigan small businesses.</p>
+        <p class="text-sm mt-4 font-medium" style="color:var(--accent-color-1)">Learn more →</p>
+      </a>
+
+      <a href="/5-signs-your-small-business-website-needs-a-redesign"
+         class="group rounded-2xl p-6 border border-[#e6dfd7] hover:shadow-md transition-all duration-300 hover:-translate-y-1 block" style="text-decoration:none">
+        <p class="text-[10px] tracking-widest uppercase font-medium mb-3" style="color:var(--accent-color-1)">Article</p>
+        <h3 class="font-[Prata] text-lg mb-2 group-hover:underline" style="color:var(--secondary-color)">5 Signs Your Website Needs a Redesign</h3>
+        <p class="text-sm" style="color:var(--text-muted)">Not sure if your current site is hurting your business? Start here.</p>
+        <p class="text-sm mt-4 font-medium" style="color:var(--accent-color-1)">Read the article →</p>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-20 text-center relative overflow-hidden" style="background:var(--secondary-color)">
+  <div class="absolute inset-0 pointer-events-none"
+       style="background-image:url('paint-texture.jpg');background-size:cover;opacity:.09;mix-blend-mode:overlay;"></div>
+  <div class="max-w-2xl mx-auto px-6 relative">
+    <h2 class="font-[Prata] text-3xl mb-5 text-white">Get a Free Consultation</h2>
+    <p class="mb-8" style="color:rgba(255,255,255,.75);font-size:1.0625rem;line-height:1.75">
+      Ready for a website that actually generates leads? Let's talk. We'll discuss your business, your service area, and what kind of website makes sense for your goals.
+    </p>
+    <p class="mb-8 text-sm" style="color:rgba(255,255,255,.55)">No pressure. No technical jargon. Just practical advice and a clear plan forward.</p>
+    <a href="/contact" class="inline-block px-8 py-3 rounded-lg font-medium text-sm transition hover:opacity-90" style="background:var(--accent-color-2);color:var(--secondary-color)">
+      Book Your Free Consultation
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<section class="py-14 text-center relative overflow-hidden" style="background:var(--secondary-color);color:var(--white);border-top:1px solid rgba(255,255,255,.1)">
+  <div class="absolute inset-0 pointer-events-none"
+       style="background-image:url('paint-texture.jpg');background-size:cover;opacity:.09;mix-blend-mode:overlay;"></div>
+  <div class="max-w-xl mx-auto px-6 relative">
+    <h2 class="font-[Prata] text-2xl mb-4">Let's collaborate.</h2>
+    <div class="flex flex-col sm:flex-row justify-center gap-3 mb-6">
+      <a href="mailto:livarkema@gmail.com" class="px-6 py-2 rounded-lg border border-white text-white text-sm hover:bg-white hover:text-[#1f3a4a] transition">Email me</a>
+      <a href="tel:19706726402" class="px-6 py-2 rounded-lg text-sm font-medium" style="background:var(--accent-color-2);color:var(--secondary-color)">Call me</a>
+    </div>
+    <div class="flex justify-center gap-5 mb-6">
+      <a href="https://www.facebook.com/people/Olivia-Arkema-Marketing-Web-Design/61564009298913/"><img src="facebook.png" class="h-5" alt="Facebook"></a>
+      <a href="https://www.pinterest.com/livarkema/"><img src="pinterest.png" class="h-5" alt="Pinterest"></a>
+      <a href="https://x.com/livlavonne"><img src="twitter.png" class="h-5" alt="Twitter"></a>
+      <a href="https://www.linkedin.com/in/oliviaarkema/"><img src="linked-in.png" class="h-5" alt="LinkedIn"></a>
+    </div>
+    <div class="mb-4" style="height:1px;background:rgba(255,255,255,.2)"></div>
+    <p class="text-xs" style="color:rgba(255,255,255,.5)">© Olivia Arkema 2026</p>
+  </div>
+</section>
+
+</body>
+</html>

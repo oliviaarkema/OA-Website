@@ -30,6 +30,8 @@
 
   .pill-blog    { background: var(--accent-color-2); color: var(--primary-color); }
   .pill-writing { background: #e4ddd5; color: var(--text-dark); }
+  .pill-expert  { background: #dce8f0; color: var(--secondary-color); }
+  .pill-service { background: #e8ead8; color: #3a4a1f; }
   </style>
 </head>
 
@@ -147,6 +149,115 @@ menuBtn.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
 
     </div>
   </div>
+
+  <!-- EXPERT ADVICE -->
+  <div class="max-w-6xl mx-auto px-6 mt-20">
+    <div class="flex items-center gap-5 mb-10">
+      <div>
+        <p class="text-xs tracking-[.18em] uppercase mb-1" style="color:var(--accent-color-1)">Guides & Services</p>
+        <h2 class="font-[Prata] text-2xl" style="color:var(--primary-color)">Expert Advice</h2>
+      </div>
+      <div class="flex-1 h-px" style="background:#e6dfd7"></div>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <a href="5-signs-your-small-business-website-needs-a-redesign"
+         class="group rounded-2xl overflow-hidden bg-white hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+         style="text-decoration:none;">
+        <div class="h-48 overflow-hidden">
+          <img src="website-design-lifestyle.jpg" alt="Signs Your Website Needs a Redesign"
+               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        </div>
+        <div class="p-6">
+          <span class="pill-expert text-[10px] font-medium tracking-widest uppercase px-2.5 py-1 rounded-full">Web Design Tips</span>
+          <h3 class="mt-3 text-base leading-snug mb-2" style="color:var(--primary-color)">
+            5 Signs Your Small Business Website Needs a Redesign
+          </h3>
+          <p class="text-xs" style="color:var(--text-muted)">May 31, 2026</p>
+        </div>
+      </a>
+
+      <a href="affordable-website-packages-small-businesses-michigan"
+         class="group rounded-2xl overflow-hidden bg-white hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+         style="text-decoration:none;">
+        <div class="h-48 overflow-hidden">
+          <img src="web_layout.jpg" alt="Affordable Website Packages Michigan"
+               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        </div>
+        <div class="p-6">
+          <span class="pill-service text-[10px] font-medium tracking-widest uppercase px-2.5 py-1 rounded-full">Services</span>
+          <h3 class="mt-3 text-base leading-snug mb-2" style="color:var(--primary-color)">
+            Affordable Website Packages for Small Businesses in Michigan
+          </h3>
+          <p class="text-xs" style="color:var(--text-muted)">May 31, 2026</p>
+        </div>
+      </a>
+
+      <a href="website-design-contractors-plumbers-electricians-michigan"
+         class="group rounded-2xl overflow-hidden bg-white hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+         style="text-decoration:none;">
+        <div class="h-48 overflow-hidden">
+          <img src="web_design_layout.jpg" alt="Website Design for Contractors and Trades"
+               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        </div>
+        <div class="p-6">
+          <span class="pill-service text-[10px] font-medium tracking-widest uppercase px-2.5 py-1 rounded-full">Services</span>
+          <h3 class="mt-3 text-base leading-snug mb-2" style="color:var(--primary-color)">
+            Website Design for Contractors, Plumbers, Electricians &amp; Trades Businesses
+          </h3>
+          <p class="text-xs" style="color:var(--text-muted)">May 31, 2026</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- WRITING -->
+  <div class="max-w-6xl mx-auto px-6 mt-20 mb-4">
+    <div class="flex items-center gap-5 mb-10">
+      <div>
+        <p class="text-xs tracking-[.18em] uppercase mb-1" style="color:var(--accent-color-1)">Research & Essays</p>
+        <h2 class="font-[Prata] text-2xl" style="color:var(--primary-color)">Writing</h2>
+      </div>
+      <div class="flex-1 h-px" style="background:#e6dfd7"></div>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <a href="syntheticsurveydata"
+         class="group rounded-2xl overflow-hidden bg-white hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+         style="text-decoration:none;">
+        <div class="h-48 overflow-hidden">
+          <img src="gold.jpg" alt="Synthetic Survey Data"
+               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        </div>
+        <div class="p-6">
+          <span class="pill-writing text-[10px] font-medium tracking-widest uppercase px-2.5 py-1 rounded-full">Research</span>
+          <h3 class="mt-3 text-base leading-snug mb-2" style="color:var(--primary-color)">
+            The Next Frontier or Fool's Gold? The Future of Synthetic Survey Data
+          </h3>
+          <p class="text-xs" style="color:var(--text-muted)">February 1, 2026</p>
+        </div>
+      </a>
+
+      <a href="socialdesirabilityandai"
+         class="group rounded-2xl overflow-hidden bg-white hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+         style="text-decoration:none;">
+        <div class="h-48 overflow-hidden">
+          <img src="journal-hero.jpg" alt="Social Desirability and AI"
+               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        </div>
+        <div class="p-6">
+          <span class="pill-writing text-[10px] font-medium tracking-widest uppercase px-2.5 py-1 rounded-full">Research</span>
+          <h3 class="mt-3 text-base leading-snug mb-2" style="color:var(--primary-color)">
+            Social Desirability and AI
+          </h3>
+          <p class="text-xs" style="color:var(--text-muted)">August 18, 2025</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
 </main>
 
 <!-- FOOTER -->
