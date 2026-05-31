@@ -1,137 +1,126 @@
-<!-- Refactored from original -->
-<!-- Source: :contentReference[oaicite:0]{index=0} -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Is a Facebook Page Enough? Why Your Small Business Needs a Website | Olivia Arkema</title>
-<meta name="description" content="Does your business really need a website? Find out why every small business should have a professional website and how it can help you grow." />
-
-<link rel="canonical" href="https://oliviaarkema.com/blog/does-your-small-business-really-need-a-website" />
+<meta name="description" content="Does your business really need a website? Find out why every small business should have a professional website and how it can help you grow.">
+<link rel="canonical" href="https://oliviaarkema.com/blog/does-your-small-business-really-need-a-website">
 <link rel="icon" href="green_bow.png">
-
 <script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="../style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Noto+Serif:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+.nav-link { position:relative; transition:color .2s; }
+.nav-link::after { content:''; position:absolute; bottom:-3px; left:0; width:0; height:2px; background:var(--accent-color-2); border-radius:2px; transition:width .25s ease; }
+.nav-link:hover::after { width:100%; }
+.nav-link:hover { color:var(--primary-color); }
+</style>
 </head>
 
-<body class="font-[Inter]" style="background: var(--tertiary-color); color: var(--text-dark);">
+<body class="font-[Inter] bg-[#f4efe9] text-[#2f2f2f]">
 
 <!-- NAV -->
-<header id="navbar" class="fixed w-full z-50 bg-white/90 backdrop-blur border-b" style="border-color: rgba(0,0,0,0.08);">
+<header class="fixed w-full z-50 bg-white/90 backdrop-blur border-b border-[#e6dfd7]">
   <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-
-    <a href="/" class="text-xl font-bold" style="color: var(--primary-color);">OA</a>
-
+    <a href="/" class="text-xl font-bold font-[Prata]" style="color:var(--primary-color)">OA</a>
     <nav class="hidden md:flex space-x-8 text-[11px] tracking-[.14em] uppercase">
-      <a href="/#home">Home</a>
-      <a href="/#services">Work</a>
-      <a href="/#clients">Projects</a>
-      <a href="/#featuredwork">Writing</a>
-      <a href="/#contact">Contact</a>
+      <a href="/#home" class="nav-link">Home</a>
+      <a href="/#services" class="nav-link">Work</a>
+      <a href="/#clients" class="nav-link">Projects</a>
+      <a href="/#featuredwork" class="nav-link">Writing</a>
+      <a href="/contact" class="nav-link">Contact</a>
     </nav>
-
     <button id="menuBtn" class="md:hidden text-2xl">☰</button>
   </div>
-
-  <div id="mobileMenu" class="hidden px-6 pb-4 bg-white border-t">
+  <div id="mobileMenu" class="hidden px-6 pb-4 bg-white border-t border-[#e6dfd7]">
     <div class="flex flex-col space-y-4 text-[11px] tracking-[.14em] uppercase pt-4">
       <a href="/#home">Home</a>
       <a href="/#services">Work</a>
       <a href="/#clients">Projects</a>
       <a href="/#featuredwork">Writing</a>
-      <a href="/#contact">Contact</a>
+      <a href="/contact">Contact</a>
     </div>
   </div>
 </header>
-
 <script>
-menuBtn.addEventListener("click", () => {
-  mobileMenu.classList.toggle("hidden");
-});
+document.getElementById('menuBtn').addEventListener('click', () =>
+  document.getElementById('mobileMenu').classList.toggle('hidden'));
 </script>
 
-<div class="h-24"></div>
-
-<!-- ARTICLE -->
-<main class="px-6 py-12">
-  <article class="max-w-3xl mx-auto card p-8 md:p-10">
-
-    <!-- HEADER -->
-    <header class="mb-8 text-center">
-      <p class="text-sm mb-2" style="color: var(--text-muted);">Websites & Marketing</p>
-
-      <h1 class="text-3xl md:text-4xl mb-3" style="color: var(--primary-color);">
-        Is a Facebook Page Enough? Why Your Small Business Needs a Website
-      </h1>
-
-      <p class="text-sm" style="color: var(--text-muted);">
-        By Olivia Arkema • August 18, 2025
-      </p>
-    </header>
-
-    <!-- IMAGE -->
-    <figure class="mb-8">
-      <img src="web_design_layout.jpg" alt="Website layout and design example" class="rounded-lg mx-auto">
-    </figure>
-
-    <!-- CONTENT -->
-    <div class="space-y-6 leading-relaxed">
-
-      <p>The other day, I was talking to my husband about a friend of his. The friend has a small side business doing excavation, grading, and some other site prep work. We are looking to redo our driveway, so I wanted to check out his services. But when I searched for his business, I couldn’t find a website—just a Facebook page with limited info.</p>
-
-      <p>This got me thinking. I know so many people who think a Facebook or Instagram page is enough for their small business. I disagree! I believe every small business needs a website, even if it’s simple.</p>
-
-      <h2 style="color: var(--secondary-color);">Websites Build Credibility</h2>
-      <p>A website adds credibility to your business. In today's digital age, customers expect businesses to have a website. A well-designed website shows that you are a professional and established business.</p>
-
-      <h2 style="color: var(--secondary-color);">You’re in Control</h2>
-      <p>You have complete control over your website's content and design. Unlike social media platforms, you are not limited by their templates or rules. You can create a website that perfectly fits your brand and message.</p>
-
-      <h2 style="color: var(--secondary-color);">Reach More People</h2>
-      <p>A website can help you reach a wider audience. Search engines like Google can index your website, making it easier for potential customers to find you. You control ranking through SEO. Social media posts are limited to your followers.</p>
-
-      <h2 style="color: var(--secondary-color);">Marketing Powerhouse</h2>
-      <p>A website is a great way to market your business. You can show off your services, collect email addresses from interested customers, and build relationships. Imagine if Facebook or Instagram disappeared tomorrow—would your customers know how to reach you?</p>
-
-      <h2 style="color: var(--secondary-color);">24/7 Customer Service</h2>
-      <p>Your website can answer customer questions anytime, day or night. You can include a FAQ (Frequently Asked Questions) section, your contact information, and even a live chat feature. It’s always working for you.</p>
-
-      <h2 style="color: var(--secondary-color);">Know Your Audience</h2>
-      <p>Websites have tools that track how many people visit and what they look at. This helps you understand what your customers are interested in so you can improve your business. While social media has some analytics, a website gives you more detailed info.</p>
-
-      <p>I'm not saying you should get rid of your social media pages – they're still helpful! But a website and social media together are a super powerful combination. A website is a key tool for building trust and growing your business.</p>
-
+<!-- ARTICLE HEADER -->
+<section class="pt-36 pb-12 relative overflow-hidden" style="background:var(--tertiary-color)">
+  <div class="absolute inset-0 pointer-events-none"
+       style="background-image:url('paper-texture.jpg');background-size:cover;background-position:center;opacity:.10;mix-blend-mode:multiply;"></div>
+  <div class="max-w-3xl mx-auto px-6 relative">
+    <a href="blog" class="text-[11px] tracking-[.14em] uppercase inline-flex items-center gap-2 mb-8 transition-all hover:gap-3" style="color:var(--accent-color-1)">← All Posts</a>
+    <div class="mb-4">
+      <span class="text-[10px] tracking-widest uppercase font-medium px-2.5 py-1 rounded-full" style="background:var(--accent-color-2);color:var(--primary-color)">Websites & Marketing</span>
     </div>
+    <h1 class="font-[Prata] text-4xl md:text-5xl leading-tight mb-5" style="color:var(--primary-color)">
+      Is a Facebook Page Enough? Why Your Small Business Needs a Website
+    </h1>
+    <p class="text-sm" style="color:var(--text-muted)">By Olivia Arkema · August 18, 2025</p>
+  </div>
+</section>
+
+<!-- FEATURED IMAGE -->
+<div class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 pt-8">
+    <img src="web_design_layout.jpg" alt="Website layout and design example"
+         class="w-full rounded-2xl object-cover" style="height:400px;box-shadow:0 16px 40px rgba(0,0,0,.12)">
+  </div>
+</div>
+
+<!-- ARTICLE BODY -->
+<main class="bg-white pb-24">
+  <article class="max-w-2xl mx-auto px-6 pt-12" style="font-size:1.0625rem;line-height:1.8;color:var(--text-dark)">
+
+    <p>The other day, I was talking to my husband about a friend of his. The friend has a small side business doing excavation, grading, and some other site prep work. We are looking to redo our driveway, so I wanted to check out his services. But when I searched for his business, I couldn't find a website—just a Facebook page with limited info.</p>
+
+    <p class="mt-5">This got me thinking. I know so many people who think a Facebook or Instagram page is enough for their small business. I disagree! I believe every small business needs a website, even if it's simple.</p>
+
+    <h2 class="font-[Prata] text-[1.4rem] leading-snug mt-12 mb-3" style="color:var(--primary-color)">Websites Build Credibility</h2>
+    <p>A website adds credibility to your business. In today's digital age, customers expect businesses to have a website. A well-designed website shows that you are a professional and established business.</p>
+
+    <h2 class="font-[Prata] text-[1.4rem] leading-snug mt-12 mb-3" style="color:var(--primary-color)">You're in Control</h2>
+    <p>You have complete control over your website's content and design. Unlike social media platforms, you are not limited by their templates or rules. You can create a website that perfectly fits your brand and message.</p>
+
+    <h2 class="font-[Prata] text-[1.4rem] leading-snug mt-12 mb-3" style="color:var(--primary-color)">Reach More People</h2>
+    <p>A website can help you reach a wider audience. Search engines like Google can index your website, making it easier for potential customers to find you. You control ranking through SEO. Social media posts are limited to your followers.</p>
+
+    <h2 class="font-[Prata] text-[1.4rem] leading-snug mt-12 mb-3" style="color:var(--primary-color)">Marketing Powerhouse</h2>
+    <p>A website is a great way to market your business. You can show off your services, collect email addresses from interested customers, and build relationships. Imagine if Facebook or Instagram disappeared tomorrow—would your customers know how to reach you?</p>
+
+    <h2 class="font-[Prata] text-[1.4rem] leading-snug mt-12 mb-3" style="color:var(--primary-color)">24/7 Customer Service</h2>
+    <p>Your website can answer customer questions anytime, day or night. You can include a FAQ (Frequently Asked Questions) section, your contact information, and even a live chat feature. It's always working for you.</p>
+
+    <h2 class="font-[Prata] text-[1.4rem] leading-snug mt-12 mb-3" style="color:var(--primary-color)">Know Your Audience</h2>
+    <p>Websites have tools that track how many people visit and what they look at. This helps you understand what your customers are interested in so you can improve your business. While social media has some analytics, a website gives you more detailed info.</p>
+
+    <p class="mt-8">I'm not saying you should get rid of your social media pages – they're still helpful! But a website and social media together are a super powerful combination. A website is a key tool for building trust and growing your business.</p>
 
   </article>
 </main>
 
 <!-- FOOTER -->
-<section id="contact" class="py-14 text-center" style="background: var(--secondary-color); color: var(--white);">
-  <div class="max-w-xl mx-auto px-6">
-
-    <h2 class="text-2xl mb-4">Let's collaborate.</h2>
-
+<section class="py-14 text-center relative overflow-hidden" style="background:var(--secondary-color);color:var(--white)">
+  <div class="absolute inset-0 pointer-events-none"
+       style="background-image:url('paint-texture.jpg');background-size:cover;opacity:.09;mix-blend-mode:overlay;"></div>
+  <div class="max-w-xl mx-auto px-6 relative">
+    <h2 class="font-[Prata] text-2xl mb-4">Let's collaborate.</h2>
     <div class="flex flex-col sm:flex-row justify-center gap-3 mb-6">
-      <a href="mailto:hello@oliviaarkema.com" class="px-6 py-2 rounded-lg border border-white text-white text-sm">
-        Email me
-      </a>
-      <a href="tel:19706726402" class="px-6 py-2 rounded-lg bg-[#c6d86d] text-[#0d3921] text-sm font-medium">
-        Call me
-      </a>
+      <a href="mailto:livarkema@gmail.com" class="px-6 py-2 rounded-lg border border-white text-white text-sm hover:bg-white hover:text-[#1f3a4a] transition">Email me</a>
+      <a href="tel:19706726402" class="px-6 py-2 rounded-lg text-sm font-medium" style="background:var(--accent-color-2);color:var(--primary-color)">Call me</a>
     </div>
-
-    <div style="height:1px; background: rgba(255,255,255,0.25);" class="mb-4"></div>
-
-    <p class="text-xs" style="color: rgba(255,255,255,0.7);">
-      © Olivia Arkema 2026
-    </p>
-
+    <div class="flex justify-center gap-5 mb-6">
+      <a href="https://www.facebook.com/people/Olivia-Arkema-Marketing-Web-Design/61564009298913/"><img src="facebook.png" class="h-5" alt="Facebook"></a>
+      <a href="https://www.pinterest.com/livarkema/"><img src="pinterest.png" class="h-5" alt="Pinterest"></a>
+      <a href="https://x.com/livlavonne"><img src="twitter.png" class="h-5" alt="Twitter"></a>
+      <a href="https://www.linkedin.com/in/oliviaarkema/"><img src="linked-in.png" class="h-5" alt="LinkedIn"></a>
+    </div>
+    <div class="mb-4" style="height:1px;background:rgba(255,255,255,.2)"></div>
+    <p class="text-xs" style="color:rgba(255,255,255,.5)">© Olivia Arkema 2026</p>
   </div>
 </section>
 
