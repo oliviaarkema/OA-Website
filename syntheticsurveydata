@@ -1,417 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- ===== SEO (edit these) ===== -->
+  <!-- SEO -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Next Frontier or Fool’s Gold? The Future of Synthetic Survey Data | Olivia Arkema</title>
+  <title>The Next Frontier or Fool's Gold? The Future of Synthetic Survey Data | Olivia Arkema</title>
   <meta name="description" content="In an era obsessed with authenticity, the hottest new trend in research is—ironically—completely fake." />
   <link rel="canonical" href="https://oliviaarkema.com/syntheticsurveydata" />
   <link rel="icon" href="green_bow.png" type="image/png">
 
-
   <!-- Open Graph -->
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="The Next Frontier or Fool’s Gold? The Future of Synthetic Survey Data | Olivia Arkema" />
+  <meta property="og:title" content="The Next Frontier or Fool's Gold? The Future of Synthetic Survey Data | Olivia Arkema" />
   <meta property="og:description" content="In an era obsessed with authenticity, the hottest new trend in research is—ironically—completely fake." />
   <meta property="og:url" content="https://oliviaarkema.com/syntheticsurveydata" />
   <meta property="og:image" content="synthetic1.jpg" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="The Next Frontier or Fool’s Gold? The Future of Synthetic Survey Data | Olivia Arkema" />
+  <meta name="twitter:title" content="The Next Frontier or Fool's Gold? The Future of Synthetic Survey Data | Olivia Arkema" />
   <meta name="twitter:description" content="In an era obsessed with authenticity, the hottest new trend in research is—ironically—completely fake." />
   <meta name="twitter:image" content="synthetic1.jpg" />
 
-  <!-- Tailwind + Typography -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Prata&family=Noto+Serif:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
-    body { font-family: 'Noto Serif', serif; background-color:#faf7f2; color:#393831; }
-    .heading-font { font-family: 'Noto Serif', serif; letter-spacing: .02em; }
-    .subtle-shadow { box-shadow: 0 8px 32px rgba(57,56,49,0.08); }
-    .elegant-border { border: 2px solid #5f849c; }
-    .text-accent { color:#5f849c; }
-    .bg-accent { background-color:#5f849c; }
-  /* Article typography refinements */
-  .prose-article p {
-    margin-bottom: 1.4rem;
-    line-height: 1.75;
-    font-size: 1.05rem;
-  }
+    .nav-link { position:relative; transition:color .2s; }
+    .nav-link::after { content:''; position:absolute; bottom:-3px; left:0; width:0; height:2px; background:var(--accent-color-2); border-radius:2px; transition:width .25s ease; }
+    .nav-link:hover::after { width:100%; }
+    .nav-link:hover { color:var(--primary-color); }
 
-  .prose-article h2 {
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: #23424c;
-    letter-spacing: 0.02em;
-  }
+    .prose-article p { margin-bottom:1.4rem; line-height:1.8; font-size:1.0625rem; }
+    .prose-article ul { margin:1.25rem 0 1.75rem 1.5rem; list-style:disc; }
+    .prose-article li { margin-bottom:0.5rem; line-height:1.7; font-size:1.0625rem; }
+    .prose-article blockquote { margin:2rem 0; padding-left:1.25rem; border-left:4px solid var(--accent-color-1); color:var(--accent-color-1); font-style:italic; font-size:1.05rem; }
+    .prose-article .section-divider { margin:3rem 0; height:1px; background:linear-gradient(to right, transparent, #dae4eb, transparent); }
 
-  .prose-article ul {
-    margin: 1.5rem 0 2rem 1.25rem;
-  }
-
-  .prose-article li {
-    margin-bottom: 0.6rem;
-    line-height: 1.6;
-  }
-
-  .prose-article blockquote {
-    margin: 2.5rem 0;
-    padding-left: 1.25rem;
-    font-style: italic;
-    font-size: 1.05rem;
-  }
-
-  .section-divider {
-    margin: 3rem 0;
-    height: 1px;
-    background: linear-gradient(to right, transparent, #dae4eb, transparent);
-  }
-
-  /* Sources section */
-  #sources {
-    margin-top: 4rem;
-    padding-top: 2.5rem;
-    border-top: 2px solid #dae4eb;
-  }
-
-  #sources h2 {
-    font-size: 1.4rem;
-    margin-bottom: 1.25rem;
-  }
-
-  #sources li {
-    margin-bottom: 1.25rem;
-    line-height: 1.6;
-    font-size: 0.95rem;
-  }
-
-  #sources a {
-    display: inline-block;
-    margin-top: 0.25rem;
-    word-break: break-word;
-  }
-
+    #sources { margin-top:3rem; padding-top:2rem; border-top:1px solid #dae4eb; }
+    #sources li { margin-bottom:1.25rem; line-height:1.6; font-size:0.95rem; }
+    #sources a { display:inline-block; margin-top:0.2rem; word-break:break-word; color:var(--accent-color-1); }
+    #sources a:hover { text-decoration:underline; }
   </style>
 </head>
 
-<body>
+<body class="font-[Inter] bg-[#f4efe9] text-[#2f2f2f]">
 
-  <!-- ===== NAV (from homepage pattern) ===== -->
-  <nav id="navbar" class="fixed w-full z-50 shadow-sm transition-transform duration-300" style="background-color: rgba(254,254,254,0.9); backdrop-filter: blur(12px);">
-    <div class="max-w-6xl mx-auto px-6 py-4">
-      <div class="flex justify-between items-center">
-        <a href="/" class="text-3xl font-bold heading-font" style="color:#393831;">OA</a>
-
-        <!-- Desktop links -->
-        <div class="hidden md:flex space-x-8 text-[11px] tracking-[.14em] uppercase">
-          <a href="/#home" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Home</a>
-          <a href="/#services" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Services</a>
-          <a href="/#clients" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Clients</a>
-          <a href="/#featuredwork" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Featured Work</a>
-          <a href="/#contact" class="transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#5f849c'" onmouseout="this.style.color='#9e9383'">Contact</a>
-        </div>
-
-        <!-- Mobile hamburger -->
-        <button class="md:hidden" style="color:#9e9383;" aria-label="Open menu" onclick="toggleMenu()">
-          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-        </button>
-      </div>
+<!-- NAV -->
+<header class="fixed w-full z-50 bg-white/90 backdrop-blur border-b border-[#e6dfd7]">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="/" class="text-xl font-bold font-[Prata]" style="color:var(--primary-color)">OA</a>
+    <nav class="hidden md:flex space-x-8 text-[11px] tracking-[.14em] uppercase">
+      <a href="/#home" class="nav-link">Home</a>
+      <a href="/#services" class="nav-link">Work</a>
+      <a href="/#clients" class="nav-link">Projects</a>
+      <a href="/#featuredwork" class="nav-link">Writing</a>
+      <a href="/contact" class="nav-link">Contact</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+  </div>
+  <div id="mobileMenu" class="hidden px-6 pb-4 bg-white border-t border-[#e6dfd7]">
+    <div class="flex flex-col space-y-4 text-[11px] tracking-[.14em] uppercase pt-4">
+      <a href="/#home">Home</a>
+      <a href="/#services">Work</a>
+      <a href="/#clients">Projects</a>
+      <a href="/#featuredwork">Writing</a>
+      <a href="/contact">Contact</a>
     </div>
+  </div>
+</header>
+<script>
+document.getElementById('menuBtn').addEventListener('click', () =>
+  document.getElementById('mobileMenu').classList.toggle('hidden'));
+</script>
 
-    <!-- Mobile menu -->
-    <div id="mobile-menu" class="hidden md:hidden">
-      <div class="px-6 pb-4 space-y-2 text-[11px] tracking-[.14em] uppercase">
-        <a href="/#home" class="block" style="color:#9e9383;">Home</a>
-        <a href="/#services" class="block" style="color:#9e9383;">Services</a>
-        <a href="/#clients" class="block" style="color:#9e9383;">Clients</a>
-        <a href="/#featuredwork" class="block" style="color:#9e9383;">Featured Work</a>
-        <a href="/#contact" class="block" style="color:#9e9383;">Contact</a>
-      </div>
+<!-- ARTICLE HEADER -->
+<section class="pt-36 pb-12 relative overflow-hidden" style="background:var(--tertiary-color)">
+  <div class="absolute inset-0 pointer-events-none"
+       style="background-image:url('paper-texture.jpg');background-size:cover;background-position:center;opacity:.10;mix-blend-mode:multiply;"></div>
+  <div class="max-w-3xl mx-auto px-6 relative">
+    <a href="blog" class="text-[11px] tracking-[.14em] uppercase inline-flex items-center gap-2 mb-8 transition-all hover:gap-3" style="color:var(--accent-color-1)">← All Posts</a>
+    <div class="mb-4">
+      <span class="text-[10px] tracking-widest uppercase font-medium px-2.5 py-1 rounded-full" style="background:var(--accent-color-2);color:var(--primary-color)">Data Analysis</span>
     </div>
-  </nav>
-
-  <!-- Spacer for fixed nav -->
-  <div class="h-20 md:h-24"></div>
-
-  <!-- ===== ARTICLE CARD (design-forward container) ===== -->
-  <main class="px-6">
-    <article class="max-w-3xl mx-auto bg-white rounded-xl subtle-shadow elegant-border px-6 sm:px-8 py-8 md:py-10">
-      <!-- Centered Title -->
-      <header class="mb-6 text-center">
-        <p class="uppercase tracking-wide text-sm" style="color:#9e9383;">Data Analysis</p>
-        <h1 class="heading-font text-3xl md:text-4xl font-bold mt-1" style="color:#23424c;">
-          The Next Frontier or Fool’s Gold? The Future of Synthetic Survey Data
-        </h1>
-        <div class="mt-3 text-sm flex items-center justify-center gap-2" style="color:#9e9383;">
-          <span>By Olivia Arkema</span><span>•</span>
-          <time datetime="2025-08-18">February 1, 2026</time>
-        </div>
-      </header>
-
-      <!-- Centered Featured Image -->
-      <figure class="my-6">
-        <img src="gold.jpg" alt="Fools Gold: Synthetic Survey Data" class="rounded-lg border-2 mx-auto subtle-shadow" style="border-color:#5f849c;" />
-        <figcaption class="text-center mt-2 text-sm" style="color:#9e9383;"></figcaption>
-      </figure>
-
-<!-- Body -->
-<div class="prose-article">
-        <p>
-          Survey research is in a credibility crunch. Response rates are collapsing, panels are aging, 
-          and incentives are climbing while data quality quietly erodes. Into that tension steps a new promise:
-          synthetic survey data—fast, cheap, and frictionless.
-        </p>
-
-        <p>
-          Proponents frame it as the future of insight generation. Skeptics see something more dangerous:
-          conclusions without respondents. The truth sits uncomfortably between innovation and illusion.
-        </p>
-
-        <h2>What Is Synthetic Survey Data?</h2>
-        <p>
-          Synthetic survey data is artificially generated data designed to statistically resemble real survey responses.
-          Instead of collecting answers from people, models learn patterns from existing datasets and generate
-          new “respondents” that mirror those distributions.
-        </p>
-
-        <ul>
-          <li>Often built using generative models, Bayesian networks, or large language models</li>
-          <li>Derived from historical survey data, benchmarks, or demographic priors</li>
-          <li>Best understood as modeled inference—not observed behavior</li>
-        </ul>
-
-        <p>
-          <strong>Example:</strong> A research team missing Gen Z completes trains a model on older datasets
-          and demographic targets. The resulting data aligns perfectly with expectations—despite no Gen Z
-          respondents ever answering the survey.
-        </p>
-
-        <blockquote class="my-6 border-l-4 pl-4 italic" style="border-color:#5f849c; color:#5f849c;">
-          “Synthetic data can look cleaner than reality because reality is messy.”
-        </blockquote>
-
-        <h2>The Allure of Imputed Insights</h2>
-        <p>
-          Synthetic survey data promises speed and scale in an industry starved for both. No recruitment.
-          No drop-offs. No incentive inflation. For teams under pressure to deliver answers quickly,
-          it feels like an elegant solution.
-        </p>
-
-        <p>
-          But academic research shows synthetic data performs best only when patterns are stable
-          and well-understood. When attitudes are emerging, polarized, or emotionally charged,
-          models tend to smooth away the very signals researchers care about.
-        </p>
-        <div class="section-divider"></div>
-        <h2>The Current Trust Gap</h2>
-        <p>
-          The central problem with synthetic survey data is epistemic: you cannot validate what never occurred.
-          There are no respondents to recontact, no inconsistencies to probe, no lived experience to interrogate.
-        </p>
-
-        <p>
-          Studies from the OECD and Harvard Data Science Review warn that synthetic datasets can reproduce
-          historical bias with high fidelity—while obscuring uncertainty. The result is confidence without grounding.
-        </p>
-
-        <h2>When &amp; Where Synthetic Survey Data Is Applicable</h2>
-        <p>
-          Synthetic survey data is most useful as a supporting actor. It can help fill small gaps,
-          test assumptions, protect privacy, or simulate hypothetical scenarios.
-        </p>
-
-        <p>
-          The U.S. Census Bureau, for example, uses synthetic data primarily for disclosure avoidance—
-          not for discovering new truths. In these contexts, the goal is exploration, not measurement.
-        </p>
-
-        <h2>When &amp; Where Synthetic Survey Data Fails</h2>
-        <p>
-          Synthetic data breaks down when used to replace human voices rather than supplement them.
-          It struggles with novelty, moral judgment, emotional nuance, and minority perspectives.
-        </p>
-
-        <p>
-          Language-based models, in particular, regress toward consensus. They dampen disagreement,
-          erase outliers, and produce responses that feel plausible—but rarely surprising.
-        </p>
-
-        <h2>What Is the Future of Synthetic Survey Data?</h2>
-        <p>
-          The future is hybrid. Human-collected data will remain the ground truth,
-          while synthetic data plays a role in efficiency, augmentation, and experimentation.
-        </p>
-
-        <p>
-          Expect growing pressure for transparency: clearer labeling, uncertainty reporting,
-          and governance standards that distinguish observation from simulation.
-        </p>
-
-        <h2>Fool’s Gold or Frontier?</h2>
-        <p>
-          Synthetic survey data is neither a silver bullet nor a scam. It is a tool—
-          powerful in the right hands, misleading in the wrong ones.
-        </p>
-
-        <p>
-          The real risk is not that synthetic data exists, but that modeled plausibility
-          is mistaken for human truth. In an industry already struggling with trust,
-          knowing the difference matters more than ever.
-        </p>
-      </div>
-  <div class="section-divider"></div>
-<section id="sources">
-  <h2>Sources & Further Reading</h2>
-  <ul>
-    <li>
-      Rubin, D. B. (1996). 
-      <em>Multiple Imputation After 18+ Years</em>. 
-      Journal of the American Statistical Association.
-      <a href="https://www.jstor.org/stable/2291635" target="_blank" rel="noopener noreferrer">
-        https://www.jstor.org/stable/2291635
-      </a>
-    </li>
-
-    <li>
-      Little, R. J. A., & Rubin, D. B. (2019).
-      <em>Statistical Analysis with Missing Data</em> (3rd ed.).
-      Wiley.
-      <a href="https://www.wiley.com/en-us/Statistical+Analysis+with+Missing+Data%2C+3rd+Edition-p-9780470526798" target="_blank" rel="noopener noreferrer">
-        Publisher Link
-      </a>
-    </li>
-
-    <li>
-      Abowd, J. M., & Schmutte, I. M. (2019).
-      <em>An Economic Analysis of Privacy Protection and Statistical Accuracy</em>.
-      American Economic Review.
-      <a href="https://www.aeaweb.org/articles?id=10.1257/aer.20170627" target="_blank" rel="noopener noreferrer">
-        https://www.aeaweb.org/articles?id=10.1257/aer.20170627
-      </a>
-    </li>
-
-    <li>
-      Xu, L., Skoularidou, M., Cuesta-Infante, A., & Veeramachaneni, K. (2019).
-      <em>Modeling Tabular Data using Conditional GANs</em>.
-      NeurIPS.
-      <a href="https://arxiv.org/abs/1907.00503" target="_blank" rel="noopener noreferrer">
-        https://arxiv.org/abs/1907.00503
-      </a>
-    </li>
-
-    <li>
-      Dwork, C., & Roth, A. (2014).
-      <em>The Algorithmic Foundations of Differential Privacy</em>.
-      Foundations and Trends in Theoretical Computer Science.
-      <a href="https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf" target="_blank" rel="noopener noreferrer">
-        https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf
-      </a>
-    </li>
-
-    <li>
-      AAPOR (2023).
-      <em>Transparency and Data Quality in Survey Research</em>.
-      American Association for Public Opinion Research.
-      <a href="https://www.aapor.org/Standards-Ethics/AAPOR-Code-of-Ethics.aspx" target="_blank" rel="noopener noreferrer">
-        https://www.aapor.org/Standards-Ethics/AAPOR-Code-of-Ethics.aspx
-      </a>
-    </li>
-
-    <li>
-      Office for National Statistics (UK).
-      <em>Guidance on the Use of Synthetic Data</em>.
-      <a href="https://www.ons.gov.uk/aboutus/transparencyandgovernance/datastrategy/syntheticdata" target="_blank" rel="noopener noreferrer">
-        https://www.ons.gov.uk/aboutus/transparencyandgovernance/datastrategy/syntheticdata
-      </a>
-    </li>
-
-    <li>
-      OECD (2021).
-      <em>Enhancing Access to and Sharing of Data</em>.
-      Organisation for Economic Co-operation and Development.
-      <a href="https://www.oecd.org/digital/data/enhancing-access-to-and-sharing-of-data.htm" target="_blank" rel="noopener noreferrer">
-        https://www.oecd.org/digital/data/enhancing-access-to-and-sharing-of-data.htm
-      </a>
-    </li>
-  </ul>
+    <h1 class="font-[Prata] text-4xl md:text-5xl leading-tight mb-5" style="color:var(--primary-color)">
+      The Next Frontier or Fool's Gold? The Future of Synthetic Survey Data
+    </h1>
+    <p class="text-sm" style="color:var(--text-muted)">By Olivia Arkema · February 1, 2026</p>
+  </div>
 </section>
 
+<!-- FEATURED IMAGE -->
+<div class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 pt-8">
+    <img src="gold.jpg" alt="Fool's Gold: Synthetic Survey Data"
+         class="w-full rounded-2xl object-cover" style="height:400px;box-shadow:0 16px 40px rgba(0,0,0,.12)">
+  </div>
+</div>
 
-      <section class="mt-8 flex flex-wrap items-center justify-between gap-3">
-        <div class="flex flex-wrap gap-2">
-          <span class="px-3 py-1 rounded-full text-sm" style="background:#dae4eb; color:#23424c;">Market Research</span>
-          <span class="px-3 py-1 rounded-full text-sm" style="background:#dae4eb; color:#23424c;">Data Analysis</span>
-        </div>
-        <div class="text-sm" style="color:#9e9383;">
-          <a id="shareCopy" class="underline" href="#">Share</a>
-        </div>
-      </section>
-    </article>
-  </main>
-  <!-- ===== FOOTER (matches homepage layout/colors) ===== -->
-  <footer class="py-16 mt-16" style="background-color:#393831;">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="grid md:grid-cols-3 gap-12">
-        <div>
-          <div class="text-3xl font-bold mb-6 heading-font" style="color:#fefefe;">Olivia Arkema</div>
-          <p class="leading-relaxed" style="color:#9e9383;">Creative Marketing, Data Analysis, & Web Design for Small Businesses</p>
-          <div class="w-12 h-1 mt-4" style="background-color:#5f849c;"></div>
-        </div>
-        <div>
-          <h4 class="font-semibold mb-6 heading-font" style="color:#fefefe;">Quick Links</h4>
-          <div class="space-y-3">
-            <a href="/#services" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Services</a>
-            <a href="/#featuredwork" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Work</a>
-            <a href="/#contact" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Contact</a>
-          </div>
-        </div>
-        <div>
-          <h4 class="font-semibold mb-6 heading-font" style="color:#fefefe;">Connect</h4>
-          <div class="space-y-3">
-            <a href="https://www.linkedin.com/in/oliviaarkema" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">LinkedIn</a>
-            <a href="https://x.com/livlavonne" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Twitter</a>
-            <a href="mailto:hello@oliviaarkema.com" class="block transition-colors" style="color:#9e9383;" onmouseover="this.style.color='#dae4eb'" onmouseout="this.style.color='#9e9383'">Email</a>
-          </div>
-        </div>
+<!-- ARTICLE BODY -->
+<main class="bg-white pb-24">
+  <article class="max-w-2xl mx-auto px-6 pt-12 prose-article" style="color:var(--text-dark)">
+
+    <p>
+      Survey research is in a credibility crunch. Response rates are collapsing, panels are aging,
+      and incentives are climbing while data quality quietly erodes. Into that tension steps a new promise:
+      synthetic survey data—fast, cheap, and frictionless.
+    </p>
+
+    <p>
+      Proponents frame it as the future of insight generation. Skeptics see something more dangerous:
+      conclusions without respondents. The truth sits uncomfortably between innovation and illusion.
+    </p>
+
+    <h2 class="font-[Prata] text-[1.4rem] leading-snug mt-12 mb-3" style="color:var(--primary-color)">What Is Synthetic Survey Data?</h2>
+    <p>
+      Synthetic survey data is artificially generated data designed to statistically resemble real survey responses.
+      Instead of collecting answers from people, models learn patterns from existing datasets and generate
+      new "respondents" that mirror those distributions.
+    </p>
+
+    <ul>
+      <li>Often built using generative models, Bayesian networks, or large language models</li>
+      <li>Derived from historical survey data, benchmarks, or demographic priors</li>
+      <li>Best understood as modeled inference—not observed behavior</li>
+    </ul>
+
+    <p>
+      <strong>Example:</strong> A research team missing Gen Z trains a model on older datasets
+      and demographic targets. The resulting data aligns perfectly with expectations—despite no Gen Z
+      respondents ever answering the survey.
+    </p>
+
+    <blockquote>
+      "Synthetic data can look cleaner than reality because reality is messy."
+    </blockquote>
+
+    <h2 class="font-[Prata] text-[1.4rem] leading-snug mt-12 mb-3" style="color:var(--primary-color)">The Allure of Imputed Insights</h2>
+    <p>
+      Synthetic survey data promises speed and scale in an industry starved for both. No recruitment.
+      No drop-offs. No incentive inflation. For teams under pressure to deliver answers quickly,
+      it feels like an elegant solution.
+    </p>
+
+    <p>
+      But academic research shows synthetic data performs best only when patterns are stable
+      and well-understood. When attitudes are emerging, polarized, or emotionally charged,
+      models tend to smooth away the very signals researchers care about.
+    </p>
+
+    <div class="section-divider"></div>
+
+    <h2 class="font-[Prata] text-[1.4rem] leading-snug mt-12 mb-3" style="color:var(--primary-color)">The Current Trust Gap</h2>
+    <p>
+      The central problem with synthetic survey data is epistemic: you cannot validate what never occurred.
+      There are no respondents to recontact, no inconsistencies to probe, no lived experience to interrogate.
+    </p>
+
+    <p>
+      Studies from the OECD and Harvard Data Science Review warn that synthetic datasets can reproduce
+      historical bias with high fidelity—while obscuring uncertainty. The result is confidence without grounding.
+    </p>
+
+    <h2 class="font-[Prata] text-[1.4rem] leading-snug mt-12 mb-3" style="color:var(--primary-color)">When &amp; Where Synthetic Survey Data Is Applicable</h2>
+    <p>
+      Synthetic survey data is most useful as a supporting actor. It can help fill small gaps,
+      test assumptions, protect privacy, or simulate hypothetical scenarios.
+    </p>
+
+    <p>
+      The U.S. Census Bureau, for example, uses synthetic data primarily for disclosure avoidance—
+      not for discovering new truths. In these contexts, the goal is exploration, not measurement.
+    </p>
+
+    <h2 class="font-[Prata] text-[1.4rem] leading-snug mt-12 mb-3" style="color:var(--primary-color)">When &amp; Where Synthetic Survey Data Fails</h2>
+    <p>
+      Synthetic data breaks down when used to replace human voices rather than supplement them.
+      It struggles with novelty, moral judgment, emotional nuance, and minority perspectives.
+    </p>
+
+    <p>
+      Language-based models, in particular, regress toward consensus. They dampen disagreement,
+      erase outliers, and produce responses that feel plausible—but rarely surprising.
+    </p>
+
+    <h2 class="font-[Prata] text-[1.4rem] leading-snug mt-12 mb-3" style="color:var(--primary-color)">What Is the Future of Synthetic Survey Data?</h2>
+    <p>
+      The future is hybrid. Human-collected data will remain the ground truth,
+      while synthetic data plays a role in efficiency, augmentation, and experimentation.
+    </p>
+
+    <p>
+      Expect growing pressure for transparency: clearer labeling, uncertainty reporting,
+      and governance standards that distinguish observation from simulation.
+    </p>
+
+    <h2 class="font-[Prata] text-[1.4rem] leading-snug mt-12 mb-3" style="color:var(--primary-color)">Fool's Gold or Frontier?</h2>
+    <p>
+      Synthetic survey data is neither a silver bullet nor a scam. It is a tool—
+      powerful in the right hands, misleading in the wrong ones.
+    </p>
+
+    <p>
+      The real risk is not that synthetic data exists, but that modeled plausibility
+      is mistaken for human truth. In an industry already struggling with trust,
+      knowing the difference matters more than ever.
+    </p>
+
+    <div class="section-divider"></div>
+
+    <section id="sources">
+      <h2 class="font-[Prata] text-[1.4rem] leading-snug mb-4" style="color:var(--primary-color)">Sources &amp; Further Reading</h2>
+      <ul style="list-style:none;padding-left:0;margin-left:0;">
+        <li>
+          Rubin, D. B. (1996).
+          <em>Multiple Imputation After 18+ Years</em>.
+          Journal of the American Statistical Association.
+          <a href="https://www.jstor.org/stable/2291635" target="_blank" rel="noopener noreferrer">
+            https://www.jstor.org/stable/2291635
+          </a>
+        </li>
+        <li>
+          Little, R. J. A., &amp; Rubin, D. B. (2019).
+          <em>Statistical Analysis with Missing Data</em> (3rd ed.).
+          Wiley.
+          <a href="https://www.wiley.com/en-us/Statistical+Analysis+with+Missing+Data%2C+3rd+Edition-p-9780470526798" target="_blank" rel="noopener noreferrer">
+            Publisher Link
+          </a>
+        </li>
+        <li>
+          Abowd, J. M., &amp; Schmutte, I. M. (2019).
+          <em>An Economic Analysis of Privacy Protection and Statistical Accuracy</em>.
+          American Economic Review.
+          <a href="https://www.aeaweb.org/articles?id=10.1257/aer.20170627" target="_blank" rel="noopener noreferrer">
+            https://www.aeaweb.org/articles?id=10.1257/aer.20170627
+          </a>
+        </li>
+        <li>
+          Xu, L., Skoularidou, M., Cuesta-Infante, A., &amp; Veeramachaneni, K. (2019).
+          <em>Modeling Tabular Data using Conditional GANs</em>.
+          NeurIPS.
+          <a href="https://arxiv.org/abs/1907.00503" target="_blank" rel="noopener noreferrer">
+            https://arxiv.org/abs/1907.00503
+          </a>
+        </li>
+        <li>
+          Dwork, C., &amp; Roth, A. (2014).
+          <em>The Algorithmic Foundations of Differential Privacy</em>.
+          Foundations and Trends in Theoretical Computer Science.
+          <a href="https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf" target="_blank" rel="noopener noreferrer">
+            https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf
+          </a>
+        </li>
+        <li>
+          AAPOR (2023).
+          <em>Transparency and Data Quality in Survey Research</em>.
+          American Association for Public Opinion Research.
+          <a href="https://www.aapor.org/Standards-Ethics/AAPOR-Code-of-Ethics.aspx" target="_blank" rel="noopener noreferrer">
+            https://www.aapor.org/Standards-Ethics/AAPOR-Code-of-Ethics.aspx
+          </a>
+        </li>
+        <li>
+          Office for National Statistics (UK).
+          <em>Guidance on the Use of Synthetic Data</em>.
+          <a href="https://www.ons.gov.uk/aboutus/transparencyandgovernance/datastrategy/syntheticdata" target="_blank" rel="noopener noreferrer">
+            https://www.ons.gov.uk/aboutus/transparencyandgovernance/datastrategy/syntheticdata
+          </a>
+        </li>
+        <li>
+          OECD (2021).
+          <em>Enhancing Access to and Sharing of Data</em>.
+          Organisation for Economic Co-operation and Development.
+          <a href="https://www.oecd.org/digital/data/enhancing-access-to-and-sharing-of-data.htm" target="_blank" rel="noopener noreferrer">
+            https://www.oecd.org/digital/data/enhancing-access-to-and-sharing-of-data.htm
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Tags / Share -->
+    <section class="mt-10 flex flex-wrap items-center justify-between gap-3">
+      <div class="flex flex-wrap gap-2">
+        <span class="px-3 py-1 rounded-full text-sm font-medium" style="background:var(--accent-color-2);color:var(--primary-color)">Market Research</span>
+        <span class="px-3 py-1 rounded-full text-sm font-medium" style="background:var(--accent-color-2);color:var(--primary-color)">Data Analysis</span>
       </div>
-      <div class="my-8 border-t" style="border-color:#5f849c;"></div>
-      <div class="text-center">
-        <p style="color:#9e9383;">&copy; <span id="year"></span> Olivia Arkema. All rights reserved.</p>
+      <div class="text-sm" style="color:var(--text-muted)">
+        <a id="shareCopy" class="underline" href="#">Share</a>
       </div>
+    </section>
+
+  </article>
+</main>
+
+<!-- FOOTER -->
+<section class="py-14 text-center relative overflow-hidden" style="background:var(--secondary-color);color:var(--white)">
+  <div class="absolute inset-0 pointer-events-none"
+       style="background-image:url('paint-texture.jpg');background-size:cover;opacity:.09;mix-blend-mode:overlay;"></div>
+  <div class="max-w-xl mx-auto px-6 relative">
+    <h2 class="font-[Prata] text-2xl mb-4">Let's collaborate.</h2>
+    <div class="flex flex-col sm:flex-row justify-center gap-3 mb-6">
+      <a href="mailto:livarkema@gmail.com" class="px-6 py-2 rounded-lg border border-white text-white text-sm hover:bg-white hover:text-[#1f3a4a] transition">Email me</a>
+      <a href="tel:19706726402" class="px-6 py-2 rounded-lg text-sm font-medium" style="background:var(--accent-color-2);color:var(--primary-color)">Call me</a>
     </div>
-  </footer>
+    <div class="flex justify-center gap-5 mb-6">
+      <a href="https://www.facebook.com/people/Olivia-Arkema-Marketing-Web-Design/61564009298913/"><img src="facebook.png" class="h-5" alt="Facebook"></a>
+      <a href="https://www.pinterest.com/livarkema/"><img src="pinterest.png" class="h-5" alt="Pinterest"></a>
+      <a href="https://x.com/livlavonne"><img src="twitter.png" class="h-5" alt="Twitter"></a>
+      <a href="https://www.linkedin.com/in/oliviaarkema/"><img src="linked-in.png" class="h-5" alt="LinkedIn"></a>
+    </div>
+    <div class="mb-4" style="height:1px;background:rgba(255,255,255,.2)"></div>
+    <p class="text-xs" style="color:rgba(255,255,255,.5)">© Olivia Arkema 2026</p>
+  </div>
+</section>
 
-  <!-- ===== Minimal JS (mirrors homepage behavior) ===== -->
-  <script>
-    // Nav hide/show on scroll (optional; matches homepage pattern)
-    let lastScrollTop = 0;
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', function () {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      if (scrollTop > lastScrollTop && scrollTop > 100) {
-        navbar.style.transform = 'translateY(-100%)';
-      } else {
-        navbar.style.transform = 'translateY(0)';
-      }
-      lastScrollTop = scrollTop;
-    });
-
-    // Mobile menu toggle
-    function toggleMenu() {
-      const menu = document.getElementById('mobile-menu');
-      menu.classList.toggle('hidden');
-    }
-
-    // Footer year
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-
+<!-- Copy Toast -->
 <div id="copyToast" role="status" aria-live="polite" hidden
      style="position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(8px);
             background:#5f849c;color:#fff;padding:.6rem .9rem;border-radius:9999px;
@@ -437,7 +339,6 @@
       await navigator.clipboard.writeText(text);
       return true;
     } catch (e) {
-      // Fallback for older browsers/insecure origins
       const ta = document.createElement('textarea');
       ta.value = text;
       ta.style.position = 'fixed';
