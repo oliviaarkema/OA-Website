@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Marketing, website, and digital strategy insights for small businesses.">
   <title>Blog | Olivia Arkema</title>
+  <link rel="canonical" href="https://oliviaarkema.com/blog">
   <link rel="icon" href="green_bow.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
