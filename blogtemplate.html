@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- CHANGE -->
+<title>[BLOG TITLE] | Olivia Arkema</title>
+<meta name="description" content="[META DESCRIPTION]" />
+
+<link rel="canonical" href="[CANONICAL URL]" />
+<link rel="icon" href="green_bow.png">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="../style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-[Inter]" style="background: var(--tertiary-color); color: var(--text-dark);">
+
+<!-- NAV (DO NOT EDIT) -->
+<header id="navbar" class="fixed w-full z-50 backdrop-blur border-b" style="background: rgba(255,255,255,0.9); border-color: rgba(0,0,0,0.05);">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <a href="/" class="text-xl font-bold" style="color: var(--primary-color);">OA</a>
+
+    <nav class="hidden md:flex space-x-8 text-[11px] tracking-[.14em] uppercase">
+      <a href="/#home">Home</a>
+      <a href="/#services">Work</a>
+      <a href="/#clients">Projects</a>
+      <a href="/#featuredwork">Writing</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+
+    <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+  </div>
+
+  <div id="mobileMenu" class="hidden px-6 pb-4 bg-white border-t">
+    <div class="flex flex-col space-y-4 text-[11px] tracking-[.14em] uppercase pt-4">
+      <a href="/#home">Home</a>
+      <a href="/#services">Work</a>
+      <a href="/#clients">Projects</a>
+      <a href="/#featuredwork">Writing</a>
+      <a href="/#contact">Contact</a>
+    </div>
+  </div>
+</header>
+
+<script>
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});
+</script>
+
+<!-- SPACER -->
+<div class="h-24"></div>
+
+<!-- BLOG -->
+<main class="px-6 py-12">
+  <article class="max-w-3xl mx-auto card p-8 md:p-10">
+
+    <!-- HEADER -->
+    <header class="mb-8 text-center">
+      <p class="text-sm mb-2" style="color: var(--text-muted);">[CATEGORY]</p>
+
+      <h1 class="text-3xl md:text-4xl mb-3" style="color: var(--primary-color);">
+        [BLOG TITLE]
+      </h1>
+
+      <p class="text-sm" style="color: var(--text-muted);">
+        By Olivia Arkema • [DATE]
+      </p>
+    </header>
+
+    <!-- IMAGE -->
+    <figure class="mb-8">
+      <img src="[IMAGE PATH]" alt="[IMAGE ALT]" class="rounded-lg mx-auto">
+    </figure>
+
+    <!-- CONTENT (PASTE BLOG HERE — DO NOT STYLE) -->
+    <div class="space-y-6 leading-relaxed">
+
+      <!-- START BLOG CONTENT -->
+
+      <p>Your content goes here...</p>
+
+      <h2 style="color: var(--secondary-color);">Section Heading</h2>
+
+      <p>More content...</p>
+
+      <!-- END BLOG CONTENT -->
+
+    </div>
+
+  </article>
+</main>
+
+<!-- CONTACT / FOOTER (DO NOT EDIT) -->
+<section id="contact" class="py-20 text-white text-center" style="background: var(--secondary-color);">
+  <div class="max-w-2xl mx-auto px-6">
+
+    <h2 class="text-3xl mb-6">Get in touch</h2>
+
+    <p class="mb-8" style="color: rgba(255,255,255,0.8);">
+      Need a website or help making sense of data?
+    </p>
+
+    <a href="mailto:livarkema@gmail.com" class="button primary">
+      Email me
+    </a>
+
+    <div class="mt-12 mb-6" style="height:1px; background: rgba(255,255,255,0.2);"></div>
+
+    <p class="text-sm" style="color: rgba(255,255,255,0.7);">
+      &copy; <span id="year"></span> Olivia Arkema
+    </p>
+
+  </div>
+</section>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

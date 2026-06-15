@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Marketing, website, and digital strategy insights for small businesses.">
+  <title>Blog | Olivia Arkema</title>
+  <link rel="canonical" href="https://oliviaarkema.com/blog">
+  <link rel="icon" href="green_bow.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Prata&family=Noto+Serif:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+  .nav-link {
+    position: relative;
+    color: var(--text-dark);
+    transition: color .2s;
+  }
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -3px; left: 0;
+    width: 0; height: 2px;
+    background: var(--accent-color-2);
+    border-radius: 2px;
+    transition: width .25s ease;
+  }
+  .nav-link:hover::after { width: 100%; }
+  .nav-link:hover { color: var(--primary-color); }
+
+  .pill-blog    { background: var(--accent-color-2); color: var(--primary-color); }
+  .pill-writing { background: #e4ddd5; color: var(--text-dark); }
+  .pill-expert  { background: #dce8f0; color: var(--secondary-color); }
+  .pill-service { background: #e8ead8; color: #3a4a1f; }
+  </style>
+</head>
+
+<body class="font-[Inter]" style="background:var(--tertiary-color); color:var(--text-dark);">
+
+<!-- NAV -->
+<header id="navbar" class="fixed w-full z-50 bg-white/90 backdrop-blur border-b border-[#e6dfd7]">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="/" class="text-xl font-bold font-[Prata]" style="color:var(--primary-color)">OA</a>
+    <nav class="hidden md:flex space-x-8 text-[11px] tracking-[.14em] uppercase">
+      <a href="/#home"         class="nav-link">Home</a>
+      <a href="/#services"     class="nav-link">Work</a>
+      <a href="/#clients"      class="nav-link">Projects</a>
+      <a href="/#featuredwork" class="nav-link">Writing</a>
+      <a href="/contact"       class="nav-link">Contact</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+  </div>
+  <div id="mobileMenu" class="hidden px-6 pb-4 bg-white border-t border-[#e6dfd7]">
+    <div class="flex flex-col space-y-4 text-[11px] tracking-[.14em] uppercase pt-4">
+      <a href="/#home">Home</a>
+      <a href="/#services">Work</a>
+      <a href="/#clients">Projects</a>
+      <a href="/#featuredwork">Writing</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </div>
+</header>
+<script>
+menuBtn.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
+</script>
+
+<!-- PAGE HEADER -->
+<section class="pt-40 pb-16 bg-[#1f3a4a] text-white text-center relative overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none"
+       style="background:radial-gradient(ellipse at 70% 50%, rgba(198,216,109,.12) 0%, transparent 65%);"></div>
+  <!-- Paint texture overlay -->
+  <div class="absolute inset-0 pointer-events-none"
+       style="background-image:url('paint-texture.jpg');background-size:cover;background-position:center;opacity:.09;mix-blend-mode:overlay;"></div>
+  <div class="max-w-3xl mx-auto px-6 relative">
+    <p class="text-xs tracking-[.2em] uppercase mb-4 text-white/50">Insights & Writing</p>
+    <h1 class="font-[Prata] text-5xl mb-4">Blog</h1>
+    <p class="text-white/65 text-lg">Marketing, website, and digital strategy for small businesses.</p>
+  </div>
+</section>
+
+<!-- GRID -->
+<main class="py-20">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <a href="does-your-small-business-really-need-a-website.html"
+         class="group rounded-2xl overflow-hidden bg-white hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+         style="text-decoration:none;">
+        <div class="h-48 overflow-hidden">
+          <img src="web_design_layout.jpg" alt="Website Design Layout"
+               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        </div>
+        <div class="p-6">
+          <span class="pill-blog text-[10px] font-medium tracking-widest uppercase px-2.5 py-1 rounded-full">Websites & Marketing</span>
+          <h3 class="mt-3 text-base leading-snug mb-2" style="color:var(--primary-color)">
+            Is a Facebook Page Enough? Why Your Business Needs a Website
+          </h3>
+          <p class="text-xs" style="color:var(--text-muted)">February 7, 2025</p>
+        </div>
+      </a>
+
+      <a href="improve-google-rankings-without-seo-experts.html"
+         class="group rounded-2xl overflow-hidden bg-white hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+         style="text-decoration:none;">
+        <div class="h-48 overflow-hidden">
+          <img src="orange-grove-growing.jpg" alt="Website Growth and SEO"
+               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        </div>
+        <div class="p-6">
+          <span class="pill-blog text-[10px] font-medium tracking-widest uppercase px-2.5 py-1 rounded-full">SEO & Content</span>
+          <h3 class="mt-3 text-base leading-snug mb-2" style="color:var(--primary-color)">
+            10 Ways to Improve Your Google Rankings Without Hiring an SEO Expert
+          </h3>
+          <p class="text-xs" style="color:var(--text-muted)">January 16, 2025</p>
+        </div>
+      </a>
+
+      <a href="paid-advertising-mistakes-small-businesses.html"
+         class="group rounded-2xl overflow-hidden bg-white hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+         style="text-decoration:none;">
+        <div class="h-48 overflow-hidden">
+          <img src="lifestyle2.jpg" alt="Paid Advertising for Small Businesses"
+               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        </div>
+        <div class="p-6">
+          <span class="pill-blog text-[10px] font-medium tracking-widest uppercase px-2.5 py-1 rounded-full">Advertising & Growth</span>
+          <h3 class="mt-3 text-base leading-snug mb-2" style="color:var(--primary-color)">
+            5 Common Paid Advertising Mistakes Small Businesses Make
+          </h3>
+          <p class="text-xs" style="color:var(--text-muted)">January 16, 2025</p>
+        </div>
+      </a>
+
+      <a href="small-business-website-checklist.html"
+         class="group rounded-2xl overflow-hidden bg-white hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+         style="text-decoration:none;">
+        <div class="h-48 overflow-hidden">
+          <img src="checklist.jpg" alt="Small Business Website Checklist"
+               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        </div>
+        <div class="p-6">
+          <span class="pill-blog text-[10px] font-medium tracking-widest uppercase px-2.5 py-1 rounded-full">Websites</span>
+          <h3 class="mt-3 text-base leading-snug mb-2" style="color:var(--primary-color)">
+            Small Business Website Checklist
+          </h3>
+          <p class="text-xs" style="color:var(--text-muted)">January 23, 2025</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- EXPERT ADVICE -->
+  <div class="max-w-6xl mx-auto px-6 mt-20">
+    <div class="flex items-center gap-5 mb-10">
+      <div>
+        <p class="text-xs tracking-[.18em] uppercase mb-1" style="color:var(--accent-color-1)">Guides & Services</p>
+        <h2 class="font-[Prata] text-2xl" style="color:var(--primary-color)">Expert Advice</h2>
+      </div>
+      <div class="flex-1 h-px" style="background:#e6dfd7"></div>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <a href="5-signs-your-small-business-website-needs-a-redesign.html"
+         class="group rounded-2xl overflow-hidden bg-white hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+         style="text-decoration:none;">
+        <div class="h-48 overflow-hidden">
+          <img src="laptop-water.jpg" alt="Signs Your Website Needs a Redesign"
+               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        </div>
+        <div class="p-6">
+          <span class="pill-expert text-[10px] font-medium tracking-widest uppercase px-2.5 py-1 rounded-full">Web Design Tips</span>
+          <h3 class="mt-3 text-base leading-snug mb-2" style="color:var(--primary-color)">
+            5 Signs Your Small Business Website Needs a Redesign
+          </h3>
+          <p class="text-xs" style="color:var(--text-muted)">May 31, 2026</p>
+        </div>
+      </a>
+
+      <a href="affordable-website-packages-small-businesses-michigan.html"
+         class="group rounded-2xl overflow-hidden bg-white hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+         style="text-decoration:none;">
+        <div class="h-48 overflow-hidden">
+          <img src="laptop-plant.jpg" alt="Affordable Website Packages Michigan"
+               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        </div>
+        <div class="p-6">
+          <span class="pill-service text-[10px] font-medium tracking-widest uppercase px-2.5 py-1 rounded-full">Services</span>
+          <h3 class="mt-3 text-base leading-snug mb-2" style="color:var(--primary-color)">
+            Affordable Website Packages for Small Businesses in Michigan
+          </h3>
+          <p class="text-xs" style="color:var(--text-muted)">May 31, 2026</p>
+        </div>
+      </a>
+
+      <a href="website-design-contractors-plumbers-electricians-michigan.html"
+         class="group rounded-2xl overflow-hidden bg-white hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+         style="text-decoration:none;">
+        <div class="h-48 overflow-hidden">
+          <img src="working-laptop.jpg" alt="Website Design for Contractors and Trades"
+               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        </div>
+        <div class="p-6">
+          <span class="pill-service text-[10px] font-medium tracking-widest uppercase px-2.5 py-1 rounded-full">Services</span>
+          <h3 class="mt-3 text-base leading-snug mb-2" style="color:var(--primary-color)">
+            Website Design for Contractors, Plumbers, Electricians &amp; Trades Businesses
+          </h3>
+          <p class="text-xs" style="color:var(--text-muted)">May 31, 2026</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- WRITING -->
+  <div class="max-w-6xl mx-auto px-6 mt-20 mb-4">
+    <div class="flex items-center gap-5 mb-10">
+      <div>
+        <p class="text-xs tracking-[.18em] uppercase mb-1" style="color:var(--accent-color-1)">Research & Essays</p>
+        <h2 class="font-[Prata] text-2xl" style="color:var(--primary-color)">Writing</h2>
+      </div>
+      <div class="flex-1 h-px" style="background:#e6dfd7"></div>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <a href="syntheticsurveydata.html"
+         class="group rounded-2xl overflow-hidden bg-white hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+         style="text-decoration:none;">
+        <div class="h-48 overflow-hidden">
+          <img src="gold.jpg" alt="Synthetic Survey Data"
+               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        </div>
+        <div class="p-6">
+          <span class="pill-writing text-[10px] font-medium tracking-widest uppercase px-2.5 py-1 rounded-full">Research</span>
+          <h3 class="mt-3 text-base leading-snug mb-2" style="color:var(--primary-color)">
+            The Next Frontier or Fool's Gold? The Future of Synthetic Survey Data
+          </h3>
+          <p class="text-xs" style="color:var(--text-muted)">February 1, 2026</p>
+        </div>
+      </a>
+
+      <a href="socialdesirabilityandai.html"
+         class="group rounded-2xl overflow-hidden bg-white hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+         style="text-decoration:none;">
+        <div class="h-48 overflow-hidden">
+          <img src="journal-hero.jpg" alt="Social Desirability and AI"
+               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        </div>
+        <div class="p-6">
+          <span class="pill-writing text-[10px] font-medium tracking-widest uppercase px-2.5 py-1 rounded-full">Research</span>
+          <h3 class="mt-3 text-base leading-snug mb-2" style="color:var(--primary-color)">
+            Social Desirability and AI
+          </h3>
+          <p class="text-xs" style="color:var(--text-muted)">August 18, 2025</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<section class="py-14 text-center relative overflow-hidden" style="background:var(--secondary-color); color:var(--white);">
+  <div class="absolute inset-0 pointer-events-none"
+       style="background:radial-gradient(circle at 80% 50%, rgba(198,216,109,.08) 0%, transparent 60%);"></div>
+  <div class="max-w-xl mx-auto px-6 relative">
+    <h2 class="font-[Prata] text-2xl mb-4">Let's collaborate.</h2>
+    <div class="flex flex-col sm:flex-row justify-center gap-3 mb-6">
+      <a href="mailto:livarkema@gmail.com"
+         class="px-6 py-2 rounded-lg border border-white text-white text-sm hover:bg-white hover:text-[#1f3a4a] transition">
+        Email me
+      </a>
+      <a href="tel:19706726402"
+         class="px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition"
+         style="background:var(--accent-color-2); color:var(--primary-color);">
+        Call me
+      </a>
+    </div>
+    <div class="flex justify-center gap-5 mb-6">
+      <a href="https://www.facebook.com/people/Olivia-Arkema-Marketing-Web-Design/61564009298913/"><img src="facebook.png" class="h-5" alt="Facebook"></a>
+      <a href="https://www.pinterest.com/livarkema/"><img src="pinterest.png" class="h-5" alt="Pinterest"></a>
+      <a href="https://x.com/livlavonne"><img src="twitter.png" class="h-5" alt="Twitter"></a>
+      <a href="https://www.linkedin.com/in/oliviaarkema/"><img src="linked-in.png" class="h-5" alt="LinkedIn"></a>
+    </div>
+    <div class="mb-4" style="height:1px; background:rgba(255,255,255,0.2);"></div>
+    <p class="text-xs" style="color:rgba(255,255,255,0.5);">© Olivia Arkema 2026</p>
+  </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Accessibility | Olivia Arkema</title>
+<link rel="canonical" href="https://oliviaarkema.com/accessibility">
+<meta name="description" content="Accessibility statement for Olivia Arkema. Learn about our commitment to inclusive design and how to get help if you encounter accessibility barriers.">
+
+<link rel="icon" href="green_bow.png">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-[Inter]" style="background: var(--tertiary-color); color: var(--text-dark);">
+
+<!-- NAV -->
+<header id="navbar" class="fixed w-full z-50 bg-white/90 backdrop-blur border-b" style="border-color: rgba(0,0,0,0.08);">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <a href="index.html" class="text-xl font-bold" style="color: var(--primary-color);">OA</a>
+
+    <nav class="hidden md:flex space-x-8 text-[11px] tracking-[.14em] uppercase">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#services">Work</a>
+      <a href="index.html#clients">Projects</a>
+      <a href="index.html#featuredwork">Writing</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <button id="menuBtn" class="md:hidden text-2xl" aria-label="Open menu">☰</button>
+  </div>
+
+  <div id="mobileMenu" class="hidden px-6 pb-4 bg-white border-t">
+    <div class="flex flex-col space-y-4 text-[11px] tracking-[.14em] uppercase pt-4">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#services">Work</a>
+      <a href="index.html#clients">Projects</a>
+      <a href="index.html#featuredwork">Writing</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </div>
+</header>
+
+<script>
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});
+</script>
+
+<div class="h-24"></div>
+
+<!-- PAGE HEADER -->
+<section class="py-20 text-center">
+  <div class="max-w-3xl mx-auto px-6">
+
+    <h1 class="text-4xl mb-4" style="color: var(--primary-color);">
+      Accessibility
+    </h1>
+
+    <p style="color: var(--text-muted);">
+      We are committed to making our website and services accessible to everyone.
+    </p>
+
+  </div>
+</section>
+
+<!-- CONTENT -->
+<main class="pb-24" role="main">
+  <div class="max-w-3xl mx-auto px-6 space-y-8">
+
+    <section class="card p-6 md:p-8">
+      <h2 class="mb-2">Committed to Inclusion</h2>
+      <p>
+        We are dedicated to making our website and services accessible to everyone, regardless of ability. 
+        We aim to provide an inclusive and user-friendly experience for all visitors.
+      </p>
+    </section>
+
+    <section class="card p-6 md:p-8">
+      <h2 class="mb-2">Accessibility Features</h2>
+      <p>
+        Our website is designed to align with WCAG 2.1 AA standards where possible. 
+        We use clear navigation, descriptive alt text for images, and support keyboard accessibility.
+      </p>
+    </section>
+
+    <section class="card p-6 md:p-8">
+      <h2 class="mb-2">Need Assistance?</h2>
+      <p>
+        If you encounter any barriers while using our website, please let us know by emailing 
+        <a href="mailto:hello@oliviaarkema.com" style="color: var(--accent-color-1);">
+          hello@oliviaarkema.com
+        </a>.
+      </p>
+      <p class="mt-3">
+        We will work to address the issue as quickly as possible. We are continuously improving accessibility and welcome your feedback.
+      </p>
+    </section>
+
+  </div>
+</main>
+
+<!-- CONTACT / FOOTER -->
+<section id="contact" class="py-14 text-center" style="background: var(--secondary-color); color: var(--white);">
+  <div class="max-w-xl mx-auto px-6">
+
+    <h2 class="text-2xl mb-4">Let's collaborate.</h2>
+
+    <!-- CTA BUTTONS -->
+    <div class="flex flex-col sm:flex-row justify-center gap-3 mb-6">
+
+      <a href="mailto:livarkema@gmail.com" 
+         class="px-6 py-2 rounded-lg border border-white text-white text-sm hover:bg-white hover:text-[#1f3a4a] transition">
+        Email me
+      </a>
+
+      <a href="tel:19706726402" 
+         class="px-6 py-2 rounded-lg bg-[#c6d86d] text-[#0d3921] text-sm font-medium hover:opacity-90 transition">
+        Call me
+      </a>
+
+    </div>
+
+    <!-- SOCIALS -->
+    <div class="flex justify-center gap-5 mb-6">
+      <a href="https://www.facebook.com/people/Olivia-Arkema-Marketing-Web-Design/61564009298913/" aria-label="Facebook">
+        <img src="facebook.png" class="h-5" alt="Facebook logo">
+      </a>
+      <a href="https://www.pinterest.com/livarkema/" aria-label="Pinterest">
+        <img src="pinterest.png" class="h-5" alt="Pinterest logo">
+      </a>
+      <a href="https://x.com/livlavonne" aria-label="X (Twitter)">
+        <img src="twitter.png" class="h-5" alt="Twitter logo">
+      </a>
+      <a href="https://www.linkedin.com/in/oliviaarkema/" aria-label="LinkedIn">
+        <img src="linked-in.png" class="h-5" alt="LinkedIn logo">
+      </a>
+    </div>
+
+    <!-- DIVIDER -->
+    <div style="height:1px; background: rgba(255,255,255,0.25);" class="mb-4"></div>
+
+    <!-- COPYRIGHT -->
+    <p class="text-xs" style="color: rgba(255,255,255,0.7);">
+      © Olivia Arkema 2026
+    </p>
+
+  </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Michigan Web Design for Small Businesses | Olivia Arkema</title>
+<link rel="canonical" href="https://oliviaarkema.com/michigan-web-design">
+<meta name="description" content="Simple, fast websites for Michigan small businesses. Designed to generate leads, build trust, and be easy to maintain.">
+
+<link rel="icon" href="green_bow.png">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-[Inter] bg-[#f4efe9] text-[#2f2f2f]">
+
+<!-- NAV -->
+<header id="navbar" class="fixed w-full z-50 bg-white/90 backdrop-blur border-b border-[#e6dfd7]">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <a href="/" class="text-xl font-bold">OA</a>
+
+    <nav class="hidden md:flex space-x-8 text-[11px] tracking-[.14em] uppercase">
+      <a href="/#home">Home</a>
+      <a href="/#services">Work</a>
+      <a href="/#clients">Projects</a>
+      <a href="/#featuredwork">Writing</a>
+      <a href="/contact">Contact</a>
+    </nav>
+
+    <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+  </div>
+
+  <div id="mobileMenu" class="hidden px-6 pb-4 bg-white border-t border-[#e6dfd7]">
+    <div class="flex flex-col space-y-4 text-[11px] tracking-[.14em] uppercase pt-4">
+      <a href="/#home">Home</a>
+      <a href="/#services">Work</a>
+      <a href="/#clients">Projects</a>
+      <a href="/#featuredwork">Writing</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </div>
+</header>
+
+<script>
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});
+</script>
+
+<!-- HERO -->
+<section class="min-h-[80vh] flex items-center text-center bg-[#1f3a4a] text-white">
+  <div class="max-w-4xl mx-auto px-6">
+
+    <h1 class="text-5xl md:text-6xl mb-6 font-[Prata]">
+      Web Design for Michigan Small Businesses
+    </h1>
+
+    <p class="mb-10 max-w-xl mx-auto text-white/80">
+      Simple, fast websites that help you get more calls, customers, and repeat business.
+    </p>
+
+    <div class="flex flex-col md:flex-row gap-4 justify-center">
+      <a href="/#clients" class="px-8 py-3 rounded-lg border border-white">
+        View Work
+      </a>
+
+      <a href="/contact" class="px-8 py-3 rounded-lg bg-[#c6d86d] text-[#0d3921] font-medium">
+        Get in Touch
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHAT YOU NEED -->
+<section class="py-20 bg-white">
+  <div class="max-w-3xl mx-auto px-6 text-center">
+
+    <h2 class="text-3xl mb-6 font-[Prata]">What You Actually Need</h2>
+
+    <p class="text-[#6f6a5f] mb-6">
+      Most agencies overcomplicate things. You don’t need a massive custom build or dozens of pages.
+    </p>
+
+    <p class="text-[#6f6a5f]">
+      You need a fast, clear website that builds trust and makes it easy for customers to contact you.
+    </p>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="py-24 bg-[#f4efe9]">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+
+    <h2 class="text-4xl mb-12 font-[Prata]">What I Do</h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="card p-8 text-left rounded-xl">
+        <h3 class="mb-3">Web Design & Development</h3>
+        <p class="text-[#6f6a5f]">
+          Clean, modern websites built to convert—not just look good.
+        </p>
+      </div>
+
+      <div class="card p-8 text-left rounded-xl">
+        <h3 class="mb-3">Local SEO Foundations</h3>
+        <p class="text-[#6f6a5f]">
+          Structured so customers in your area can actually find you.
+        </p>
+      </div>
+
+      <div class="card p-8 text-left rounded-xl">
+        <h3 class="mb-3">Messaging & Structure</h3>
+        <p class="text-[#6f6a5f]">
+          Clear layout and copy so visitors understand what you do instantly.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- BEFORE / AFTER -->
+<section class="py-24 bg-[#f4efe9]">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+
+    <h2 class="text-4xl mb-6 font-[Prata]">Real Results</h2>
+
+    <p class="mb-12 max-w-xl mx-auto text-[#6f6a5f]">
+      A recent redesign for a Michigan-based business.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- BEFORE -->
+      <a href="https://web.archive.org/web/20201101143613/https://www.sdgprecisionag.com/" target="_blank"
+         class="group border border-[#e6dfd7] p-6 rounded-xl text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+
+        <p class="text-xs mb-2 text-[#6f6a5f]">BEFORE</p>
+        <h3 class="mb-3">Outdated, hard to navigate</h3>
+
+        <!-- fixed aspect container -->
+        <div class="mb-4 relative w-full aspect-[16/10] overflow-hidden rounded-lg bg-[#e6dfd7]">
+          <img src="sdg_before.png"
+               class="absolute inset-0 w-full h-full object-cover transition group-hover:scale-[1.02]">
+        </div>
+
+        <div class="flex items-center justify-between">
+          <span class="text-sm text-[#6f6a5f]">View old site</span>
+          <span class="text-xl group-hover:translate-x-1 transition">→</span>
+        </div>
+
+      </a>
+
+      <!-- AFTER -->
+      <a href="https://www.sdgprecisionag.com" target="_blank"
+         class="group border border-[#e6dfd7] p-6 rounded-xl text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+
+        <p class="text-xs mb-2 text-[#6f6a5f]">AFTER</p>
+        <h3 class="mb-3">Clean, clear, and built to convert</h3>
+
+        <!-- same exact container -->
+        <div class="mb-4 relative w-full aspect-[16/10] overflow-hidden rounded-lg bg-[#e6dfd7]">
+
+          <iframe 
+            src="https://www.sdgprecisionag.com"
+            class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+          ></iframe>
+
+          <!-- click overlay -->
+          <div class="absolute inset-0"></div>
+
+        </div>
+
+        <div class="flex items-center justify-between">
+          <span class="text-sm text-[#6f6a5f]">Visit site</span>
+          <span class="text-xl group-hover:translate-x-1 transition">→</span>
+        </div>
+
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- WHO IT'S FOR -->
+<section class="py-20 bg-white">
+  <div class="max-w-3xl mx-auto px-6 text-center">
+
+    <h2 class="text-3xl mb-6 font-[Prata]">Who This Is For</h2>
+
+    <p class="text-[#6f6a5f]">
+      Small businesses across Michigan—especially service businesses, contractors, local shops, and independent professionals—who want a professional online presence without the complexity.
+    </p>
+
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section class="py-24 bg-[#f4efe9]">
+  <div class="max-w-4xl mx-auto px-6">
+
+    <h2 class="text-3xl mb-10 text-center font-[Prata]">Simple Process</h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <div class="card p-6 rounded-xl">
+        <h3 class="mb-2">1. Understand</h3>
+        <p class="text-[#6f6a5f]">Your business, customers, and goals.</p>
+      </div>
+
+      <div class="card p-6 rounded-xl">
+        <h3 class="mb-2">2. Structure</h3>
+        <p class="text-[#6f6a5f]">Clear layout that guides action.</p>
+      </div>
+
+      <div class="card p-6 rounded-xl">
+        <h3 class="mb-2">3. Build</h3>
+        <p class="text-[#6f6a5f]">Fast, responsive, and easy to maintain.</p>
+      </div>
+
+      <div class="card p-6 rounded-xl">
+        <h3 class="mb-2">4. Launch</h3>
+        <p class="text-[#6f6a5f]">Set up for long-term growth.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- MICHIGAN -->
+<section class="py-20 bg-white">
+  <div class="max-w-3xl mx-auto px-6 text-center">
+
+    <h2 class="text-3xl mb-6 font-[Prata]">Built for Michigan Businesses</h2>
+
+    <p class="text-[#6f6a5f]">
+      I work with businesses across Michigan, especially in West Michigan communities like Manistee, Ludington, Traverse City, and Grand Rapids.
+    </p>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-20 bg-[#1f3a4a] text-white text-center">
+  <div class="max-w-2xl mx-auto px-6">
+
+    <h2 class="text-3xl mb-6 font-[Prata]">Let’s build something that works.</h2>
+
+    <p class="mb-8 text-white/80">
+      If your website isn’t doing much—or you don’t have one yet—I can help.
+    </p>
+
+    <a href="/contact" class="px-8 py-3 rounded-lg bg-[#c6d86d] text-[#0d3921] font-medium">
+      Get in Touch
+    </a>
+
+  </div>
+</section>
+
+</body>
+</html>
