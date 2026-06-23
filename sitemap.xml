@@ -4,7 +4,7 @@
   <!-- HOME -->
   <url>
     <loc>https://oliviaarkema.com/</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -56,12 +56,19 @@
   <!-- BLOG INDEX -->
   <url>
     <loc>https://oliviaarkema.com/blog</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- BLOG POSTS -->
+  <url>
+    <loc>https://oliviaarkema.com/peak-custom-solutions-website-build</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <url>
     <loc>https://oliviaarkema.com/5-signs-your-small-business-website-needs-a-redesign</loc>
     <lastmod>2026-06-13</lastmod>
@@ -123,7 +130,7 @@
   <!-- CONTACT -->
   <url>
     <loc>https://oliviaarkema.com/contact</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
