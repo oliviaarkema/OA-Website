@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>From Zero to Launch: Building a 20-Page Custom Website for Peak Custom Solutions | Olivia Arkema</title>
+<meta name="description" content="How I designed and built a 20-page custom website for Peak Custom Solutions, an agriculture equipment and powersports dealer — including an automated inventory system and mobile-friendly contact forms.">
+<link rel="canonical" href="https://oliviaarkema.com/peak-custom-solutions-website-build">
+<link rel="icon" href="../oa-logo.png" type="image/png">
+
+<!-- Open Graph -->
+<meta property="og:title" content="From Zero to Launch: Building a 20-Page Custom Website for Peak Custom Solutions">
+<meta property="og:description" content="How I designed and built a 20-page custom website for an agriculture equipment and powersports dealer, including an automated inventory listing system.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://oliviaarkema.com/peak-custom-solutions-website-build">
+<meta property="article:published_time" content="2026-06-22">
+<meta property="article:author" content="Olivia Arkema">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="../style.css">
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Noto+Serif:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- Article structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "From Zero to Launch: Building a 20-Page Custom Website for Peak Custom Solutions",
+  "description": "How I designed and built a 20-page custom website for an agriculture equipment and powersports dealer, including an automated inventory listing system.",
+  "author": { "@type": "Person", "name": "Olivia Arkema", "url": "https://oliviaarkema.com" },
+  "publisher": { "@type": "Person", "name": "Olivia Arkema" },
+  "datePublished": "2026-06-22",
+  "url": "https://oliviaarkema.com/peak-custom-solutions-website-build"
+}
+</script>
+
+<style>
+.nav-link { position:relative; transition:color .2s; }
+.nav-link::after { content:''; position:absolute; bottom:-3px; left:0; width:0; height:2px; background:var(--accent-color-2); border-radius:2px; transition:width .25s ease; }
+.nav-link:hover::after { width:100%; }
+.nav-link:hover { color:var(--primary-color); }
+</style>
+</head>
+
+<body class="font-[Inter] bg-[#f4efe9] text-[#2f2f2f]">
+
+<!-- NAV -->
+<header class="fixed w-full z-50 bg-white/90 backdrop-blur border-b border-[#e6dfd7]">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="/"><img src="../oa-logo.png" class="h-10 w-auto" alt="Olivia Arkema" loading="lazy"></a>
+    <nav class="hidden md:flex space-x-8 text-[11px] tracking-[.14em] uppercase">
+      <a href="/#home" class="nav-link">Home</a>
+      <a href="/#services" class="nav-link">Work</a>
+      <a href="/#clients" class="nav-link">Projects</a>
+      <a href="/#featuredwork" class="nav-link">Writing</a>
+      <a href="/contact" class="nav-link">Contact</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+  </div>
+  <div id="mobileMenu" class="hidden px-6 pb-4 bg-white border-t border-[#e6dfd7]">
+    <div class="flex flex-col space-y-4 text-[11px] tracking-[.14em] uppercase pt-4">
+      <a href="/#home">Home</a>
+      <a href="/#services">Work</a>
+      <a href="/#clients">Projects</a>
+      <a href="/#featuredwork">Writing</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </div>
+</header>
+<script>
+document.getElementById('menuBtn').addEventListener('click', () =>
+  document.getElementById('mobileMenu').classList.toggle('hidden'));
+</script>
+
+<!-- ARTICLE HEADER -->
+<section class="pt-36 pb-12 relative overflow-hidden" style="background:var(--tertiary-color)">
+  <div class="absolute inset-0 pointer-events-none"
+       style="background-image:url('../paper-texture.jpg');background-size:cover;background-position:center;opacity:.10;mix-blend-mode:multiply;"></div>
+  <div class="max-w-3xl mx-auto px-6 relative">
+    <a href="../blog" class="text-[11px] tracking-[.14em] uppercase inline-flex items-center gap-2 mb-8 transition-all hover:gap-3" style="color:var(--accent-color-1)">← All Posts</a>
+    <div class="mb-4">
+      <span class="text-[10px] tracking-widest uppercase font-medium px-2.5 py-1 rounded-full" style="background:var(--accent-color-2);color:var(--primary-color)">Case Study</span>
+    </div>
+    <h1 class="font-[Prata] text-4xl md:text-5xl leading-tight mb-5" style="color:var(--primary-color)">
+      From Zero to Launch: Building a 20-Page Website for Peak Custom Solutions
+    </h1>
+    <p class="text-sm" style="color:var(--text-muted)">By Olivia Arkema · June 22, 2026</p>
+  </div>
+</section>
+
+<!-- FEATURED IMAGE -->
+<div class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 pt-8">
+    <img src="../working-laptop.jpg" alt="Custom website design and development for a small business"
+         class="w-full rounded-2xl object-cover" style="height:400px;box-shadow:0 16px 40px rgba(0,0,0,.12)" loading="lazy">
+  </div>
+</div>
+
+<!-- ARTICLE BODY -->
+<main class="bg-white pb-24">
+  <article class="max-w-2xl mx-auto px-6 pt-12" style="font-size:1.0625rem;line-height:1.8;color:var(--text-dark)">
+
+    <p>When Rob first reached out, his business was thriving offline but had very little web presence to show for it. <a href="https://peakcustomsolutions.com" target="_blank" rel="noopener" style="color:var(--accent-color-1)">Peak Custom Solutions</a> sells and services agriculture equipment, machinery, and specialty powersports vehicles, and he needed a website capable of representing all of it: rotating inventory, multiple product lines, and a clear path for customers to get in touch. I built the site from the ground up to meet each of those needs.</p>
+
+    <h2 class="font-[Prata] text-[1.4rem] leading-snug mt-12 mb-3" style="color:var(--primary-color)">The Scope of the Project</h2>
+    <p>This was not a template-and-go job. I designed and developed 20 fully custom pages covering Rob's product categories, service offerings, company story, and contact information. Every page was built with his customers in mind, from the layout and copy to the navigation structure and calls to action.</p>
+    <p class="mt-5">The site needed to serve two audiences well: buyers browsing for equipment they could trust, and Rob himself, who needed something he could maintain without dedicating hours to it each week.</p>
+
+    <h2 class="font-[Prata] text-[1.4rem] leading-snug mt-12 mb-3" style="color:var(--primary-color)">A Listings Page That Works Automatically</h2>
+    <p>The dynamic listings page is one of my favorite features of this project. I built it with an automated script that refreshes Rob's available inventory on a weekly basis, entirely on its own. No manual logins, no data entry, no risk of customers calling about equipment that sold weeks ago.</p>
+    <p class="mt-5">For a business where inventory turns regularly and the details matter, that kind of automation is more than a convenience. It frees Rob to focus on his customers and his operation rather than his website, while ensuring shoppers always see an accurate picture of what is available.</p>
+
+    <h2 class="font-[Prata] text-[1.4rem] leading-snug mt-12 mb-3" style="color:var(--primary-color)">Contact Forms Built for Real Users</h2>
+    <p>I integrated contact forms throughout the site so visitors always have a clear next step, whether they are interested in a specific piece of equipment, have a service question, or want to request a quote. The forms are built with a clean layout and mobile-friendly design, so customers can reach out just as easily from the field as from a desk.</p>
+
+    <h2 class="font-[Prata] text-[1.4rem] leading-snug mt-12 mb-3" style="color:var(--primary-color)">Letting the Customers Do the Talking</h2>
+    <p>I also developed a dedicated section for customer testimonials. In industries like agriculture and powersports, trust is everything. Featuring real customer voices prominently on the site gives prospective buyers something to connect with before they ever pick up the phone, and it reinforces the reputation Rob has already built in his community.</p>
+
+    <h2 class="font-[Prata] text-[1.4rem] leading-snug mt-12 mb-3" style="color:var(--primary-color)">The Result</h2>
+    <p>Rob now has a polished, professional website that brings all three sides of his business together under one cohesive brand. His listings stay current without any manual effort, his customers have a seamless way to reach him, and his reputation is front and center.</p>
+    <p class="mt-5">It is a site built not just to look good, but to work hard — which feels fitting for the kind of business Rob runs.</p>
+
+    <hr class="my-12 border-[#e6dfd7]">
+
+    <p class="text-sm italic" style="color:var(--text-muted)">Olivia Arkema Creative specializes in building websites and digital tools tailored to the specific needs of small and mid-sized businesses. Have a project in mind? <a href="/contact" style="color:var(--accent-color-1)">Get in touch.</a></p>
+
+  </article>
+</main>
+
+<!-- FOOTER -->
+<section class="py-14 text-center relative overflow-hidden" style="background:var(--secondary-color);color:var(--white)">
+  <div class="absolute inset-0 pointer-events-none"
+       style="background-image:url('../paint-texture.jpg');background-size:cover;opacity:.09;mix-blend-mode:overlay;"></div>
+  <div class="max-w-xl mx-auto px-6 relative">
+    <h2 class="font-[Prata] text-2xl mb-4">Let's collaborate.</h2>
+    <div class="flex flex-col sm:flex-row justify-center gap-3 mb-6">
+      <a href="mailto:livarkema@gmail.com" class="px-6 py-2 rounded-lg border border-white text-white text-sm hover:bg-white hover:text-[#1f3a4a] transition">Email me</a>
+      <a href="tel:19706726402" class="px-6 py-2 rounded-lg text-sm font-medium" style="background:var(--accent-color-2);color:var(--primary-color)">Call me</a>
+    </div>
+    <div class="flex justify-center gap-5 mb-6">
+      <a href="https://www.facebook.com/people/Olivia-Arkema-Marketing-Web-Design/61564009298913/"><img src="../facebook.png" class="h-5" alt="Facebook" loading="lazy"></a>
+      <a href="https://www.pinterest.com/livarkema/"><img src="../pinterest.png" class="h-5" alt="Pinterest" loading="lazy"></a>
+      <a href="https://x.com/livlavonne"><img src="../twitter.png" class="h-5" alt="Twitter" loading="lazy"></a>
+      <a href="https://www.linkedin.com/in/oliviaarkema/"><img src="../linked-in.png" class="h-5" alt="LinkedIn" loading="lazy"></a>
+    </div>
+    <p class="text-xs" style="color:rgba(255,255,255,.4)">© 2026 Olivia Arkema · <a href="/privacypolicy" style="color:rgba(255,255,255,.4)">Privacy Policy</a></p>
+  </div>
+</section>
+
+</body>
+</html>
