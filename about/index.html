@@ -1,47 +1,171 @@
-fix<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta http-equiv="refresh" content="0; url=https://oliviaarkema.com/">
-  
-  <title>Redirecting to Olivia Arkema</title>
-  <link rel="icon" href="../OA-logo-2026.png" type="image/png">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <!-- Your styles -->
-  <link rel="stylesheet" href="../style.css">
-
-  <script type="text/javascript">
-    // JavaScript backup redirect
-    window.location.href = "https://oliviaarkema.com/";
-  </script>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Olivia Arkema</title>
+<meta name="description" content="I'm Olivia Arkema — a web designer, marketer, and researcher helping small businesses build a stronger digital presence.">
+<meta property="og:title" content="About Olivia Arkema">
+<meta property="og:description" content="Web designer, marketer, and researcher helping small businesses grow online.">
+<meta property="og:image" content="https://oliviaarkema.com/website-design-lifestyle.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://oliviaarkema.com/about">
+<link rel="canonical" href="https://oliviaarkema.com/about">
+<link rel="icon" href="../OA-logo-2026.png" type="image/png">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="../style.css">
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Noto+Serif:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+.nav-link { position:relative; color:var(--text-dark); transition:color .2s; }
+.nav-link::after { content:''; position:absolute; bottom:-3px; left:0; width:0; height:2px; background:var(--accent-color-2); border-radius:2px; transition:width .25s ease; }
+.nav-link:hover::after { width:100%; }
+.nav-link:hover { color:var(--primary-color); }
+</style>
 </head>
 
-<body class="font-[Inter]" style="background: var(--tertiary-color); color: var(--text-dark);">
+<body class="font-[Inter] bg-[#f4efe9] text-[#2f2f2f]">
 
-  <main class="min-h-screen flex items-center justify-center px-6">
-
-    <div class="card p-8 md:p-10 text-center max-w-md w-full">
-
-      <p class="mb-4">
-        Redirecting you to 
-        <a href="https://oliviaarkema.com/" style="color: var(--accent-color-1); font-weight: 500;">
-          oliviaarkema.com
-        </a>...
-      </p>
-
-      <p style="color: var(--text-muted);">
-        If you are not redirected automatically, please click the link above.
-      </p>
-
+<!-- NAV -->
+<header class="fixed w-full z-50 bg-white/90 backdrop-blur border-b border-[#e6dfd7]">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="/"><img src="../OA-logo-2026.png" class="h-10 w-auto" alt="Olivia Arkema" loading="lazy"></a>
+    <nav class="hidden md:flex space-x-8 text-[11px] tracking-[.14em] uppercase">
+      <a href="/#home"         class="nav-link">Home</a>
+      <a href="/#services"     class="nav-link">Work</a>
+      <a href="/#clients"      class="nav-link">Projects</a>
+      <a href="/#featuredwork" class="nav-link">Writing</a>
+      <a href="/contact"       class="nav-link">Contact</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+  </div>
+  <div id="mobileMenu" class="hidden px-6 pb-4 bg-white border-t border-[#e6dfd7]">
+    <div class="flex flex-col space-y-4 text-[11px] tracking-[.14em] uppercase pt-4">
+      <a href="/#home">Home</a>
+      <a href="/#services">Work</a>
+      <a href="/#clients">Projects</a>
+      <a href="/#featuredwork">Writing</a>
+      <a href="/contact">Contact</a>
     </div>
+  </div>
+</header>
+<script>
+document.getElementById('menuBtn').addEventListener('click', () =>
+  document.getElementById('mobileMenu').classList.toggle('hidden'));
+</script>
 
-  </main>
+<!-- HERO -->
+<section class="pt-40 pb-20 bg-[#1f3a4a] text-white relative overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none"
+       style="background:radial-gradient(ellipse at 70% 50%, rgba(198,216,109,.12) 0%, transparent 65%);"></div>
+  <div class="absolute inset-0 pointer-events-none"
+       style="background-image:url('../paint-texture.jpg');background-size:cover;background-position:center;opacity:.09;mix-blend-mode:overlay;"></div>
+  <div class="max-w-6xl mx-auto px-6 relative">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="text-xs tracking-[.2em] uppercase mb-5 text-white/50">About me</p>
+        <h1 class="font-[Prata] text-5xl md:text-6xl leading-tight mb-6">Hi, I'm Liv.</h1>
+        <p class="text-white/70 text-lg leading-relaxed max-w-md">
+          I build websites, run marketing strategy, and dig into data for small businesses that are ready to grow — without the agency overhead.
+        </p>
+      </div>
+      <div class="hidden md:flex justify-center">
+        <div class="relative w-64 h-64">
+          <div class="absolute inset-0 rounded-full"
+               style="background:radial-gradient(circle, rgba(198,216,109,.3) 0%, transparent 70%); transform:scale(1.25);"></div>
+          <div class="absolute inset-0 rounded-full border-2 opacity-40"
+               style="border-color:var(--accent-color-2); transform:scale(1.08);"></div>
+          <img src="../profile_pic_with_circle.png" alt="Olivia Arkema"
+               class="relative w-full h-full object-cover rounded-full" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT BODY -->
+<main>
+
+  <!-- Intro -->
+  <section class="py-20 bg-white">
+    <div class="max-w-3xl mx-auto px-6">
+      <p class="text-xs tracking-[.18em] uppercase mb-3" style="color:var(--accent-color-1)">Background</p>
+      <h2 class="font-[Prata] text-3xl mb-8" style="color:var(--primary-color)">The work I do and why I do it</h2>
+      <div class="space-y-5 text-[1.05rem] leading-relaxed" style="color:var(--text-dark)">
+        <p>I started Olivia Arkema Creative because I kept seeing the same problem: small businesses doing great work in the real world, but struggling to show it online. A bad website — or no website at all — costs you customers you never even know you lost.</p>
+        <p>My background is a mix of web design, digital marketing, and data science. That combination means I don't just make things look good — I think about what your customers are looking for, how they find you, and what makes them reach out. Every decision I make is grounded in that.</p>
+        <p>I've worked with agriculture businesses, healthcare organizations, restaurants, service contractors, and independent professionals. The industries vary, but the core challenge is almost always the same: connecting a real, trustworthy business with the people who need it.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="py-20" style="background:var(--tertiary-color)">
+    <div class="max-w-3xl mx-auto px-6">
+      <p class="text-xs tracking-[.18em] uppercase mb-3" style="color:var(--accent-color-1)">What I bring</p>
+      <h2 class="font-[Prata] text-3xl mb-10" style="color:var(--primary-color)">Skills & services</h2>
+      <div class="grid sm:grid-cols-2 gap-6">
+
+        <div class="card p-6">
+          <h3 class="font-[Prata] text-lg mb-2" style="color:var(--primary-color)">Web Design & Development</h3>
+          <p class="text-sm leading-relaxed" style="color:var(--text-muted)">Custom-built websites designed for your customers, not from a template. Fast, mobile-friendly, and built to actually convert.</p>
+        </div>
+
+        <div class="card p-6">
+          <h3 class="font-[Prata] text-lg mb-2" style="color:var(--primary-color)">Marketing Strategy</h3>
+          <p class="text-sm leading-relaxed" style="color:var(--text-muted)">Content, SEO, and digital strategy tailored to small business budgets and real business goals — not vanity metrics.</p>
+        </div>
+
+        <div class="card p-6">
+          <h3 class="font-[Prata] text-lg mb-2" style="color:var(--primary-color)">Market Research</h3>
+          <p class="text-sm leading-relaxed" style="color:var(--text-muted)">Research-backed insights that help you understand your customers, your competition, and your opportunities before you invest.</p>
+        </div>
+
+        <div class="card p-6">
+          <h3 class="font-[Prata] text-lg mb-2" style="color:var(--primary-color)">Data & Automation</h3>
+          <p class="text-sm leading-relaxed" style="color:var(--text-muted)">From automated inventory systems to data analysis, I build tools that save you time and give you a clearer picture of what's working.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume CTA -->
+  <section class="py-20 bg-white">
+    <div class="max-w-3xl mx-auto px-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+      <div>
+        <h2 class="font-[Prata] text-2xl mb-2" style="color:var(--primary-color)">Want the full picture?</h2>
+        <p style="color:var(--text-muted)">Download my resume to see my full background, education, and experience.</p>
+      </div>
+      <a href="../OliviaArkemaResume2026.pdf" target="_blank"
+         class="shrink-0 px-7 py-3 rounded-lg text-sm font-medium hover:opacity-90 transition"
+         style="background:var(--primary-color); color:#fff;">
+        Download Resume
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<section class="py-14 text-center relative overflow-hidden" style="background:var(--secondary-color);color:var(--white)">
+  <div class="absolute inset-0 pointer-events-none"
+       style="background-image:url('../paint-texture.jpg');background-size:cover;opacity:.09;mix-blend-mode:overlay;"></div>
+  <div class="max-w-xl mx-auto px-6 relative">
+    <h2 class="font-[Prata] text-2xl mb-4">Let's collaborate.</h2>
+    <div class="flex flex-col sm:flex-row justify-center gap-3 mb-6">
+      <a href="mailto:livarkema@gmail.com" class="px-6 py-2 rounded-lg border border-white text-white text-sm hover:bg-white hover:text-[#1f3a4a] transition">Email me</a>
+      <a href="tel:19706726402" class="px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition" style="background:var(--accent-color-2);color:var(--primary-color)">Call me</a>
+    </div>
+    <div class="flex justify-center gap-5 mb-6">
+      <a href="https://www.facebook.com/people/Olivia-Arkema-Marketing-Web-Design/61564009298913/"><img src="../facebook.png" class="h-5 brightness-0 invert opacity-70 hover:opacity-100 transition" alt="Facebook" loading="lazy"></a>
+      <a href="https://www.pinterest.com/livarkema/"><img src="../pinterest.png" class="h-5 brightness-0 invert opacity-70 hover:opacity-100 transition" alt="Pinterest" loading="lazy"></a>
+      <a href="https://x.com/livlavonne"><img src="../twitter.png" class="h-5 brightness-0 invert opacity-70 hover:opacity-100 transition" alt="Twitter" loading="lazy"></a>
+      <a href="https://www.linkedin.com/in/oliviaarkema/"><img src="../linked-in.png" class="h-5 brightness-0 invert opacity-70 hover:opacity-100 transition" alt="LinkedIn" loading="lazy"></a>
+    </div>
+    <div style="height:1px; background:rgba(255,255,255,0.2);" class="mb-4"></div>
+    <p class="text-xs" style="color:rgba(255,255,255,.4)">© 2026 Olivia Arkema · <a href="/privacypolicy" style="color:rgba(255,255,255,.4)">Privacy Policy</a></p>
+  </div>
+</section>
 
 </body>
 </html>
