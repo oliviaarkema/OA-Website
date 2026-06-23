@@ -3,95 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta name="description" content="Get in touch with Olivia Arkema for web design, marketing, or research projects.">
   <title>Get in Touch | Olivia Arkema</title>
   <link rel="canonical" href="https://oliviaarkema.com/contact">
-
-  <link rel="stylesheet" href="../style.css">
   <link rel="icon" href="../OA-logo-2026.png" type="image/png">
-
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Prata&family=Noto+Serif:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+  .nav-link { position:relative; color:var(--text-dark); transition:color .2s; }
+  .nav-link::after { content:''; position:absolute; bottom:-3px; left:0; width:0; height:2px; background:var(--accent-color-2); border-radius:2px; transition:width .25s ease; }
+  .nav-link:hover::after { width:100%; }
+  .nav-link:hover { color:var(--primary-color); }
+  </style>
 </head>
 
-<body class="font-[Inter]" style="background: var(--tertiary-color); color: var(--text-dark);">
+<body class="font-[Inter]" style="background:var(--tertiary-color); color:var(--text-dark);">
 
 <!-- NAV -->
-<header id="navbar" class="fixed w-full z-50 bg-white/90 backdrop-blur border-b" style="border-color: rgba(0,0,0,0.08);">
+<header id="navbar" class="fixed w-full z-50 bg-white/90 backdrop-blur border-b border-[#e6dfd7]">
   <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-
-    <a href="../index.html"><img src="../OA-logo-2026.png" class="h-10 w-auto" alt="Olivia Arkema" loading="lazy"></a>
-
+    <a href="/"><img src="../OA-logo-2026.png" class="h-10 w-auto" alt="Olivia Arkema" loading="lazy"></a>
     <nav class="hidden md:flex space-x-8 text-[11px] tracking-[.14em] uppercase">
-      <a href="../index.html#home">Home</a>
-      <a href="../index.html#services">Work</a>
-      <a href="../index.html#clients">Projects</a>
-      <a href="../index.html#featuredwork">Writing</a>
-      <a href="../index.html#contact">Contact</a>
+      <a href="/#home"         class="nav-link">Home</a>
+      <a href="/#services"     class="nav-link">Work</a>
+      <a href="/#clients"      class="nav-link">Projects</a>
+      <a href="/#featuredwork" class="nav-link">Writing</a>
+      <a href="/contact"       class="nav-link">Contact</a>
     </nav>
-
     <button id="menuBtn" class="md:hidden text-2xl">☰</button>
   </div>
-
-  <div id="mobileMenu" class="hidden px-6 pb-4 bg-white border-t">
+  <div id="mobileMenu" class="hidden px-6 pb-4 bg-white border-t border-[#e6dfd7]">
     <div class="flex flex-col space-y-4 text-[11px] tracking-[.14em] uppercase pt-4">
-      <a href="../index.html#home">Home</a>
-      <a href="../index.html#services">Work</a>
-      <a href="../index.html#clients">Projects</a>
-      <a href="../index.html#featuredwork">Writing</a>
-      <a href="../index.html#contact">Contact</a>
+      <a href="/#home">Home</a>
+      <a href="/#services">Work</a>
+      <a href="/#clients">Projects</a>
+      <a href="/#featuredwork">Writing</a>
+      <a href="/contact">Contact</a>
     </div>
   </div>
 </header>
-
 <script>
-menuBtn.addEventListener("click", () => {
-  mobileMenu.classList.toggle("hidden");
-});
+document.getElementById('menuBtn').addEventListener('click', () =>
+  document.getElementById('mobileMenu').classList.toggle('hidden'));
 </script>
 
-<div class="h-24"></div>
-
-<!-- HEADER -->
-<section class="py-20 text-center">
-  <div class="max-w-3xl mx-auto px-6">
-    <h1 class="text-4xl mb-4" style="color: var(--primary-color);">
-      Get in touch
-    </h1>
-    <p style="color: var(--text-muted);">
-      Please fill out the form, and I will get back to you as soon as possible.
-    </p>
+<!-- PAGE HEADER -->
+<section class="pt-40 pb-16 bg-[#1f3a4a] text-white text-center relative overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none"
+       style="background:radial-gradient(ellipse at 70% 50%, rgba(198,216,109,.12) 0%, transparent 65%);"></div>
+  <div class="absolute inset-0 pointer-events-none"
+       style="background-image:url('../paint-texture.jpg');background-size:cover;background-position:center;opacity:.09;mix-blend-mode:overlay;"></div>
+  <div class="max-w-3xl mx-auto px-6 relative">
+    <p class="text-xs tracking-[.2em] uppercase mb-4 text-white/50">Let's work together</p>
+    <h1 class="font-[Prata] text-5xl mb-4">Get in touch</h1>
+    <p class="text-white/65 text-lg">Fill out the form and I'll get back to you as soon as possible.</p>
   </div>
 </section>
 
 <!-- FORM -->
-<main class="pb-24">
+<main class="py-20">
   <div class="max-w-xl mx-auto px-6">
-
     <div class="card p-8">
-
       <form id="contact-form" class="space-y-6">
 
         <div>
-          <label for="name" class="block text-sm mb-1">Name</label>
+          <label for="name" class="block text-sm mb-1" style="color:var(--text-dark)">Name</label>
           <input type="text" id="name" name="name" required
-            class="w-full px-4 py-2 border rounded-lg focus:outline-none"
-            style="border-color: rgba(0,0,0,0.1);">
+            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2"
+            style="border-color:rgba(0,0,0,0.1); focus-ring-color:var(--accent-color-1);">
         </div>
 
         <div>
-          <label for="email" class="block text-sm mb-1">Email</label>
+          <label for="email" class="block text-sm mb-1" style="color:var(--text-dark)">Email</label>
           <input type="email" id="email" name="email" required
             class="w-full px-4 py-2 border rounded-lg focus:outline-none"
-            style="border-color: rgba(0,0,0,0.1);">
+            style="border-color:rgba(0,0,0,0.1);">
         </div>
 
         <div>
-          <label for="message" class="block text-sm mb-1">Message</label>
+          <label for="message" class="block text-sm mb-1" style="color:var(--text-dark)">Message</label>
           <textarea id="message" name="message" required rows="4"
             class="w-full px-4 py-2 border rounded-lg focus:outline-none"
-            style="border-color: rgba(0,0,0,0.1);"></textarea>
+            style="border-color:rgba(0,0,0,0.1);"></textarea>
         </div>
 
         <button type="submit" class="button primary w-full">
@@ -100,66 +94,49 @@ menuBtn.addEventListener("click", () => {
 
       </form>
 
-      <div id="success-message" class="mt-6 text-sm" style="display:none; color: var(--olive-color);">
+      <div id="success-message" class="mt-6 text-sm" style="display:none; color:var(--olive-color);">
         Thank you! Your message has been sent. I'll be in touch soon.
       </div>
-
     </div>
-
   </div>
 </main>
 
 <!-- FOOTER -->
-<section id="contact" class="py-14 text-center" style="background: var(--secondary-color); color: var(--white);">
-  <div class="max-w-xl mx-auto px-6">
-
-    <h2 class="text-2xl mb-4">Let's collaborate.</h2>
-
+<section class="py-14 text-center relative overflow-hidden" style="background:var(--secondary-color); color:var(--white);">
+  <div class="absolute inset-0 pointer-events-none"
+       style="background-image:url('../paint-texture.jpg');background-size:cover;opacity:.09;mix-blend-mode:overlay;"></div>
+  <div class="max-w-xl mx-auto px-6 relative">
+    <h2 class="font-[Prata] text-2xl mb-4">Let's collaborate.</h2>
     <div class="flex flex-col sm:flex-row justify-center gap-3 mb-6">
-      <a href="mailto:livarkema@gmail.com" class="px-6 py-2 rounded-lg border border-white text-white text-sm hover:bg-white hover:text-[#1f3a4a] transition">
-        Email me
-      </a>
-
-      <a href="tel:19706726402" class="px-6 py-2 rounded-lg bg-[#c6d86d] text-[#0d3921] text-sm font-medium">
-        Call me
-      </a>
+      <a href="mailto:livarkema@gmail.com" class="px-6 py-2 rounded-lg border border-white text-white text-sm hover:bg-white hover:text-[#1f3a4a] transition">Email me</a>
+      <a href="tel:19706726402" class="px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition" style="background:var(--accent-color-2);color:var(--primary-color)">Call me</a>
     </div>
-
     <div class="flex justify-center gap-5 mb-6">
-      <a href="https://www.facebook.com/people/Olivia-Arkema-Marketing-Web-Design/61564009298913/"><img src="../facebook.png" class="h-5" alt="Facebook" loading="lazy"></a>
-      <a href="https://www.pinterest.com/livarkema/"><img src="../pinterest.png" class="h-5" alt="Pinterest" loading="lazy"></a>
-      <a href="https://x.com/livlavonne"><img src="../twitter.png" class="h-5" alt="Twitter" loading="lazy"></a>
-      <a href="https://www.linkedin.com/in/oliviaarkema/"><img src="../linked-in.png" class="h-5" alt="LinkedIn" loading="lazy"></a>
+      <a href="https://www.facebook.com/people/Olivia-Arkema-Marketing-Web-Design/61564009298913/"><img src="../facebook.png" class="h-5 brightness-0 invert opacity-70 hover:opacity-100 transition" alt="Facebook" loading="lazy"></a>
+      <a href="https://www.pinterest.com/livarkema/"><img src="../pinterest.png" class="h-5 brightness-0 invert opacity-70 hover:opacity-100 transition" alt="Pinterest" loading="lazy"></a>
+      <a href="https://x.com/livlavonne"><img src="../twitter.png" class="h-5 brightness-0 invert opacity-70 hover:opacity-100 transition" alt="Twitter" loading="lazy"></a>
+      <a href="https://www.linkedin.com/in/oliviaarkema/"><img src="../linked-in.png" class="h-5 brightness-0 invert opacity-70 hover:opacity-100 transition" alt="LinkedIn" loading="lazy"></a>
     </div>
-
-    <div style="height:1px; background: rgba(255,255,255,0.25);" class="mb-4"></div>
-
-    <p class="text-xs" style="color: rgba(255,255,255,0.7);">
-      © Olivia Arkema 2026
-    </p>
-
+    <div style="height:1px; background:rgba(255,255,255,0.2);" class="mb-4"></div>
+    <p class="text-xs" style="color:rgba(255,255,255,.4)">© 2026 Olivia Arkema · <a href="/privacypolicy" style="color:rgba(255,255,255,.4)">Privacy Policy</a></p>
   </div>
 </section>
 
-<!-- FORM SCRIPT (UNCHANGED) -->
 <script>
 const form = document.getElementById('contact-form');
 const successMessage = document.getElementById('success-message');
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
-  
   const formData = new FormData(form);
   const plainFormData = Object.fromEntries(formData.entries());
   const formDataJsonString = JSON.stringify(plainFormData);
-  
   try {
     const response = await fetch('https://formspree.io/f/mrbblzep', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: formDataJsonString
     });
-
     if (response.ok) {
       form.reset();
       successMessage.style.display = 'block';
